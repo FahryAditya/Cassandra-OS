@@ -117,15 +117,16 @@ export const FileManager: React.FC<FileManagerProps> = ({ isOpen, onClose }) => 
                   </span>
                   <div className="space-y-1">
                     {[
-                      { name: 'Root OS', icon: 'hard_drive', active: true },
-                      { name: 'Projects Vault', icon: 'folder', active: false },
-                      { name: 'Network Share', icon: 'cloud', active: false },
-                      { name: 'Trash Enclave', icon: 'delete', active: false },
+                      { name: 'Root OS', path: '/home/cass/Documents/Projects', icon: 'hard_drive', active: true },
+                      { name: 'Projects Vault', path: '/home/cass/Projects', icon: 'folder', active: false },
+                      { name: 'Network Share', path: '/mnt/network-share', icon: 'cloud', active: false },
+                      { name: 'Trash Enclave', path: '/home/cass/.trash', icon: 'delete', active: false },
                     ].map((node) => (
                       <button
                         key={node.name}
+                        onClick={() => setCurrentPath(node.path)}
                         className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg font-body-sm text-body-sm transition-colors text-left cursor-pointer ${
-                          node.active
+                          currentPath === node.path
                             ? 'bg-surface-container-high text-tertiary font-medium'
                             : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface'
                         }`}
@@ -144,6 +145,11 @@ export const FileManager: React.FC<FileManagerProps> = ({ isOpen, onClose }) => 
                   {files.map((file) => (
                     <div
                       key={file.name}
+                      onClick={() => {
+                        if (file.type === 'folder') {
+                          setCurrentPath((prev) => `${prev}/${file.name}`);
+                        }
+                      }}
                       className="group p-3 rounded-xl bg-surface-container-high/40 hover:bg-surface-container-high border border-surface-container-high/40 transition-all cursor-pointer hover:shadow-lg flex flex-col justify-between h-28"
                     >
                       <div className="flex items-start justify-between">
