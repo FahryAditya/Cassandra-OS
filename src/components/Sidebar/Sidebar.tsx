@@ -64,9 +64,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </span>
           <div className="space-y-1">
             {[
-              { id: 'terminal' as WindowId, name: 'Terminal', icon: 'terminal' },
-              { id: 'system-monitor' as WindowId, name: 'System Monitor', icon: 'monitoring' },
-              { id: 'text-editor' as WindowId, name: 'Code Studio', icon: 'code' },
+              { id: 'software-center' as WindowId, name: 'Software Center', icon: 'inventory_2' },
+              { id: 'calculator' as WindowId, name: 'Calculator', icon: 'calculate' },
+              { id: 'user-profile' as WindowId, name: 'User Profile', icon: 'badge' },
+              { id: 'personalization' as WindowId, name: 'Personalization', icon: 'palette' },
             ].map((app) => (
               <button
                 key={app.id}

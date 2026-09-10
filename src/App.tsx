@@ -12,6 +12,10 @@ import { PowerMenu } from './components/PowerMenu/PowerMenu';
 import { Terminal } from './components/Terminal/Terminal';
 import { SystemMonitor } from './components/SystemMonitor/SystemMonitor';
 import { TextEditor } from './components/TextEditor/TextEditor';
+import { Calculator } from './components/Calculator/Calculator';
+import { SoftwareCenter } from './components/SoftwareCenter/SoftwareCenter';
+import { UserProfile } from './components/UserProfile/UserProfile';
+import { Personalization } from './components/Personalization/Personalization';
 import type { WindowId, Workspace } from './types/os';
 
 export default function App() {
@@ -29,6 +33,10 @@ export default function App() {
   const [isTerminalOpen, setIsTerminalOpen] = useState(false);
   const [isSystemMonitorOpen, setIsSystemMonitorOpen] = useState(false);
   const [isTextEditorOpen, setIsTextEditorOpen] = useState(false);
+  const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
+  const [isSoftwareCenterOpen, setIsSoftwareCenterOpen] = useState(false);
+  const [isUserProfileOpen, setIsUserProfileOpen] = useState(false);
+  const [isPersonalizationOpen, setIsPersonalizationOpen] = useState(false);
 
   const [workspaces, setWorkspaces] = useState<Workspace[]>([
     { id: '01', num: '01', name: 'Dev Environment', active: true },
@@ -56,6 +64,10 @@ export default function App() {
     if (id === 'terminal') setIsTerminalOpen((prev) => !prev);
     if (id === 'system-monitor') setIsSystemMonitorOpen((prev) => !prev);
     if (id === 'text-editor') setIsTextEditorOpen((prev) => !prev);
+    if (id === 'calculator') setIsCalculatorOpen((prev) => !prev);
+    if (id === 'software-center') setIsSoftwareCenterOpen((prev) => !prev);
+    if (id === 'user-profile') setIsUserProfileOpen((prev) => !prev);
+    if (id === 'personalization') setIsPersonalizationOpen((prev) => !prev);
   };
 
   return (
@@ -144,6 +156,30 @@ export default function App() {
                 IDE Studio
               </span>
             </button>
+
+            <button
+              onClick={() => setIsSoftwareCenterOpen(true)}
+              className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
+            >
+              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-cyan-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
+                <span className="material-symbols-outlined text-[26px]">inventory_2</span>
+              </div>
+              <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
+                Store
+              </span>
+            </button>
+
+            <button
+              onClick={() => setIsCalculatorOpen(true)}
+              className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
+            >
+              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-amber-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
+                <span className="material-symbols-outlined text-[26px]">calculate</span>
+              </div>
+              <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
+                Calculator
+              </span>
+            </button>
           </div>
 
           {/* Windows Rendering */}
@@ -170,6 +206,26 @@ export default function App() {
           <TextEditor
             isOpen={isTextEditorOpen}
             onClose={() => setIsTextEditorOpen(false)}
+          />
+
+          <Calculator
+            isOpen={isCalculatorOpen}
+            onClose={() => setIsCalculatorOpen(false)}
+          />
+
+          <SoftwareCenter
+            isOpen={isSoftwareCenterOpen}
+            onClose={() => setIsSoftwareCenterOpen(false)}
+          />
+
+          <UserProfile
+            isOpen={isUserProfileOpen}
+            onClose={() => setIsUserProfileOpen(false)}
+          />
+
+          <Personalization
+            isOpen={isPersonalizationOpen}
+            onClose={() => setIsPersonalizationOpen(false)}
           />
         </main>
       </div>
@@ -208,3 +264,4 @@ export default function App() {
     </div>
   );
 }
+

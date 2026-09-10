@@ -37,12 +37,14 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Navigation Bar */}
-        <nav className="hidden lg:flex items-center gap-1 bg-surface-container-lowest/60 p-1 rounded-lg border border-surface-container-high/30">
+        <nav className="hidden xl:flex items-center gap-1 bg-surface-container-lowest/60 p-1 rounded-lg border border-surface-container-high/30">
           {[
             { id: 'desktop-workspace', label: 'Workspace', action: () => setActiveTab('desktop-workspace') },
             { id: 'file-manager', label: 'Files', action: () => toggleWindow('file-manager') },
             { id: 'terminal', label: 'Terminal', action: () => toggleWindow('terminal') },
             { id: 'system-monitor', label: 'Monitor', action: () => toggleWindow('system-monitor') },
+            { id: 'software-center', label: 'Software', action: () => toggleWindow('software-center') },
+            { id: 'calculator', label: 'Calculator', action: () => toggleWindow('calculator') },
             { id: 'notification-center', label: 'Notifications', action: () => toggleWindow('notification-center') },
             { id: 'system-settings', label: 'Settings', action: () => toggleWindow('settings') },
             { id: 'power-menu', label: 'Power', action: () => toggleWindow('power-menu') },
@@ -71,6 +73,15 @@ export const Header: React.FC<HeaderProps> = ({
             <span>32% RAM</span>
           </div>
 
+          {/* Personalization Trigger */}
+          <button
+            onClick={() => toggleWindow('personalization')}
+            className="p-2 rounded-lg bg-surface-container-lowest/80 text-on-surface-variant hover:text-tertiary border border-surface-container-high/40 cursor-pointer"
+            title="Personalization Theme"
+          >
+            <span className="material-symbols-outlined text-[18px]">palette</span>
+          </button>
+
           {/* Notifications Trigger */}
           <button
             onClick={() => toggleWindow('notification-center')}
@@ -98,11 +109,11 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="hidden sm:inline">Controls</span>
           </button>
 
-          {/* User Power Menu Avatar */}
+          {/* User Profile Avatar */}
           <button
-            onClick={() => toggleWindow('power-menu')}
+            onClick={() => toggleWindow('user-profile')}
             className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)] cursor-pointer hover:scale-105 transition-transform"
-            title="Power & Session Menu"
+            title="User Profile & Account"
           >
             <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
           </button>

@@ -9,7 +9,11 @@ export type WindowId =
   | 'power-menu'
   | 'terminal'
   | 'system-monitor'
-  | 'text-editor';
+  | 'text-editor'
+  | 'calculator'
+  | 'software-center'
+  | 'user-profile'
+  | 'personalization';
 
 export interface AppWindow {
   id: WindowId;
@@ -37,7 +41,7 @@ export interface QuickToggle {
 }
 
 export interface PinnedApp {
-  id: string;
+  id: WindowId;
   name: string;
   icon: string;
   color: string;
@@ -71,4 +75,15 @@ export interface SystemProcess {
   cpu: number;
   memory: string;
   status: 'running' | 'sleeping' | 'idle';
+}
+
+export interface SoftwareApp {
+  id: string;
+  name: string;
+  category: string;
+  icon: string;
+  installed: boolean;
+  version: string;
+  rating: number;
+  description: string;
 }
