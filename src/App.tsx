@@ -6,21 +6,36 @@ import { SystemSearch } from './components/SystemSearch/SystemSearch';
 import { FileManager } from './components/FileManager/FileManager';
 import { Settings } from './components/Settings/Settings';
 import { ControlCenter } from './components/ControlCenter/ControlCenter';
+import { NotificationCenter } from './components/NotificationCenter/NotificationCenter';
+import { LockScreen } from './components/LockScreen/LockScreen';
+import { PowerMenu } from './components/PowerMenu/PowerMenu';
+import { Terminal } from './components/Terminal/Terminal';
+import { SystemMonitor } from './components/SystemMonitor/SystemMonitor';
+import { TextEditor } from './components/TextEditor/TextEditor';
 import type { WindowId, Workspace } from './types/os';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('desktop-workspace');
+
+  // Window states
   const [isLauncherOpen, setIsLauncherOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isFileManagerOpen, setIsFileManagerOpen] = useState(true);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isControlCenterOpen, setIsControlCenterOpen] = useState(false);
+  const [isNotificationOpen, setIsNotificationOpen] = useState(false);
+  const [isLocked, setIsLocked] = useState(false);
+  const [isPowerMenuOpen, setIsPowerMenuOpen] = useState(false);
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isSystemMonitorOpen, setIsSystemMonitorOpen] = useState(false);
+  const [isTextEditorOpen, setIsTextEditorOpen] = useState(false);
 
   const [workspaces, setWorkspaces] = useState<Workspace[]>([
     { id: '01', num: '01', name: 'Dev Environment', active: true },
     { id: '02', num: '02', name: 'Telemetry & Ops', active: false, badge: '3' },
     { id: '03', num: '03', name: 'Storage Nodes', active: false },
-    { id: '04', num: '04', name: 'Kernel Conf', active: false },
+    { id: '04', num: '04', name: 'System Monitor', active: false },
+    { id: '05', num: '05', name: 'Kernel Conf', active: false },
   ]);
 
   const handleSelectWorkspace = (id: string) => {
@@ -35,10 +50,19 @@ export default function App() {
     if (id === 'app-launcher') setIsLauncherOpen((prev) => !prev);
     if (id === 'system-search') setIsSearchOpen((prev) => !prev);
     if (id === 'control-center') setIsControlCenterOpen((prev) => !prev);
+    if (id === 'notification-center') setIsNotificationOpen((prev) => !prev);
+    if (id === 'lock-screen') setIsLocked(true);
+    if (id === 'power-menu') setIsPowerMenuOpen((prev) => !prev);
+    if (id === 'terminal') setIsTerminalOpen((prev) => !prev);
+    if (id === 'system-monitor') setIsSystemMonitorOpen((prev) => !prev);
+    if (id === 'text-editor') setIsTextEditorOpen((prev) => !prev);
   };
 
   return (
     <div className="min-h-screen bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden relative">
+      {/* Full-screen Lock Screen Overlay */}
+      <LockScreen isLocked={isLocked} onUnlock={() => setIsLocked(false)} />
+
       {/* Header Bar */}
       <Header
         activeTab={activeTab}
@@ -46,6 +70,7 @@ export default function App() {
         toggleWindow={toggleWindow}
         toggleControlCenter={() => setIsControlCenterOpen((prev) => !prev)}
         isControlCenterOpen={isControlCenterOpen}
+        unreadNotificationsCount={2}
       />
 
       {/* Sidebar */}
@@ -71,7 +96,7 @@ export default function App() {
           </div>
 
           {/* Desktop Shortcuts */}
-          <div className="absolute top-6 right-8 grid grid-cols-1 gap-6 pointer-events-auto">
+          <div className="absolute top-6 right-8 grid grid-cols-1 gap-4 pointer-events-auto">
             <button
               onClick={() => setIsFileManagerOpen(true)}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
@@ -80,31 +105,43 @@ export default function App() {
                 <span className="material-symbols-outlined text-[26px]">database</span>
               </div>
               <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight group-hover:text-tertiary">
-                Mainframe_01
+                Files
               </span>
             </button>
 
             <button
-              onClick={() => setIsSearchOpen(true)}
+              onClick={() => setIsTerminalOpen(true)}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-secondary shadow-lg group-hover:scale-105 group-hover:border group-hover:border-secondary/40 transition-all border border-surface-container-high">
-                <span className="material-symbols-outlined text-[26px]">cloud_sync</span>
+                <span className="material-symbols-outlined text-[26px]">terminal</span>
               </div>
               <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight group-hover:text-secondary">
-                Sync_Vault
+                Terminal
               </span>
             </button>
 
             <button
-              onClick={() => setIsLauncherOpen(true)}
+              onClick={() => setIsSystemMonitorOpen(true)}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
-              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
-                <span className="material-symbols-outlined text-[26px]">apps</span>
+              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-emerald-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
+                <span className="material-symbols-outlined text-[26px]">monitoring</span>
               </div>
               <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
-                Launcher
+                Monitor
+              </span>
+            </button>
+
+            <button
+              onClick={() => setIsTextEditorOpen(true)}
+              className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
+            >
+              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-purple-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
+                <span className="material-symbols-outlined text-[26px]">code</span>
+              </div>
+              <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
+                IDE Studio
               </span>
             </button>
           </div>
@@ -118,6 +155,21 @@ export default function App() {
           <Settings
             isOpen={isSettingsOpen}
             onClose={() => setIsSettingsOpen(false)}
+          />
+
+          <Terminal
+            isOpen={isTerminalOpen}
+            onClose={() => setIsTerminalOpen(false)}
+          />
+
+          <SystemMonitor
+            isOpen={isSystemMonitorOpen}
+            onClose={() => setIsSystemMonitorOpen(false)}
+          />
+
+          <TextEditor
+            isOpen={isTextEditorOpen}
+            onClose={() => setIsTextEditorOpen(false)}
           />
         </main>
       </div>
@@ -141,6 +193,17 @@ export default function App() {
       <ControlCenter
         isOpen={isControlCenterOpen}
         onClose={() => setIsControlCenterOpen(false)}
+      />
+
+      <NotificationCenter
+        isOpen={isNotificationOpen}
+        onClose={() => setIsNotificationOpen(false)}
+      />
+
+      <PowerMenu
+        isOpen={isPowerMenuOpen}
+        onClose={() => setIsPowerMenuOpen(false)}
+        onLock={() => setIsLocked(true)}
       />
     </div>
   );

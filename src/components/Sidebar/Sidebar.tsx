@@ -17,7 +17,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="flex flex-col gap-4">
         {/* Workspace Section Header */}
         <div className="px-6 flex items-center justify-between">
-          <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+          <span className="font-label-sm text-xs text-on-surface-variant uppercase tracking-wider font-semibold">
             Workspaces
           </span>
           <button className="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px] transition-colors">
@@ -32,36 +32,61 @@ export const Sidebar: React.FC<SidebarProps> = ({
               key={ws.id}
               onClick={() => {
                 onSelectWorkspace(ws.id);
+                if (ws.id === '02') toggleWindow('terminal');
                 if (ws.id === '03') toggleWindow('file-manager');
-                if (ws.id === '04') toggleWindow('settings');
+                if (ws.id === '04') toggleWindow('system-monitor');
+                if (ws.id === '05') toggleWindow('settings');
               }}
               className={`flex items-center justify-between px-4 py-2.5 rounded-lg transition-all text-left cursor-pointer ${
                 ws.active
                   ? 'bg-surface-container-high text-tertiary font-medium border-l-2 border-tertiary shadow-sm'
-                  : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm'
+                  : 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-xs'
               }`}
             >
               <div className="flex items-center gap-3">
-                <span className="font-code-sm text-code-sm opacity-70">{ws.num}</span>
+                <span className="font-code-sm text-xs opacity-70">{ws.num}</span>
                 <span>{ws.name}</span>
               </div>
 
               {ws.active ? (
                 <span className="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]" />
               ) : ws.badge ? (
-                <span className="font-code-sm text-code-sm text-outline">{ws.badge}</span>
+                <span className="font-code-sm text-xs text-outline">{ws.badge}</span>
               ) : null}
             </button>
           ))}
         </nav>
+
+        {/* Quick App Launch Shortcuts */}
+        <div className="px-6 pt-2 border-t border-surface-container-high/40">
+          <span className="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider font-semibold block mb-2">
+            Active Utilities
+          </span>
+          <div className="space-y-1">
+            {[
+              { id: 'terminal' as WindowId, name: 'Terminal', icon: 'terminal' },
+              { id: 'system-monitor' as WindowId, name: 'System Monitor', icon: 'monitoring' },
+              { id: 'text-editor' as WindowId, name: 'Code Studio', icon: 'code' },
+            ].map((app) => (
+              <button
+                key={app.id}
+                onClick={() => toggleWindow(app.id)}
+                className="w-full flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-tertiary text-xs transition-colors cursor-pointer"
+              >
+                <span className="material-symbols-outlined text-[16px] text-tertiary">{app.icon}</span>
+                <span>{app.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Footer Telemetry & System Status */}
       <div className="px-4 flex flex-col gap-3">
         <div className="p-3 rounded-lg bg-surface-container-lowest/80 border border-surface-container-high/40">
-          <div className="flex items-center justify-between mb-1.5 font-label-sm text-label-sm text-on-surface-variant">
+          <div className="flex items-center justify-between mb-1.5 font-label-sm text-xs text-on-surface-variant">
             <span>CPU Load</span>
-            <span className="text-tertiary font-code-sm text-code-sm">18.4%</span>
+            <span className="text-tertiary font-code-sm text-xs">18.4%</span>
           </div>
           <div className="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
             <div
@@ -71,7 +96,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
         </div>
 
-        <div className="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-2">
+        <div className="flex items-center justify-between text-on-surface-variant font-code-sm text-xs px-2">
           <span>Uptime: 14d 08h</span>
           <span className="material-symbols-outlined text-[16px] text-tertiary">shield</span>
         </div>

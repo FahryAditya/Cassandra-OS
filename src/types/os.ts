@@ -1,4 +1,15 @@
-export type WindowId = 'file-manager' | 'settings' | 'app-launcher' | 'system-search' | 'control-center';
+export type WindowId =
+  | 'file-manager'
+  | 'settings'
+  | 'app-launcher'
+  | 'system-search'
+  | 'control-center'
+  | 'notification-center'
+  | 'lock-screen'
+  | 'power-menu'
+  | 'terminal'
+  | 'system-monitor'
+  | 'text-editor';
 
 export interface AppWindow {
   id: WindowId;
@@ -40,4 +51,24 @@ export interface FileItem {
   modified: string;
   icon: string;
   color?: string;
+}
+
+export interface NotificationItem {
+  id: string;
+  title: string;
+  time: string;
+  message: string;
+  source: string;
+  type: 'system' | 'security' | 'update' | 'app';
+  icon: string;
+  read: boolean;
+}
+
+export interface SystemProcess {
+  pid: number;
+  name: string;
+  user: string;
+  cpu: number;
+  memory: string;
+  status: 'running' | 'sleeping' | 'idle';
 }
