@@ -21,31 +21,32 @@ import { SystemTray } from './components/SystemTray/SystemTray';
 import { WorkspaceSwitcher } from './components/WorkspaceSwitcher/WorkspaceSwitcher';
 import { DiskEnclave } from './components/DiskEnclave/DiskEnclave';
 import { NetworkMesh } from './components/NetworkMesh/NetworkMesh';
+
+import { WindowProvider, useWindowManager } from './context/WindowContext';
+import { WindowFrame } from './components/WindowFrame/WindowFrame';
+import { SnapPreview } from './components/WindowFrame/SnapPreview';
+import { WindowSwitcherModal } from './components/WindowSwitcherModal/WindowSwitcherModal';
 import type { WindowId, Workspace } from './types/os';
 
-export default function App() {
+function DesktopContent() {
+  const {
+    openWindow,
+    closeWindow,
+    snapPreviewState,
+    snapPreviewRect,
+  } = useWindowManager();
+
   const [activeTab, setActiveTab] = useState('desktop-workspace');
 
-  // Window states
+  // Popover overlays
   const [isLauncherOpen, setIsLauncherOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isFileManagerOpen, setIsFileManagerOpen] = useState(true);
-  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isControlCenterOpen, setIsControlCenterOpen] = useState(false);
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isLocked, setIsLocked] = useState(false);
   const [isPowerMenuOpen, setIsPowerMenuOpen] = useState(false);
-  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
-  const [isSystemMonitorOpen, setIsSystemMonitorOpen] = useState(false);
-  const [isTextEditorOpen, setIsTextEditorOpen] = useState(false);
-  const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
-  const [isSoftwareCenterOpen, setIsSoftwareCenterOpen] = useState(false);
-  const [isUserProfileOpen, setIsUserProfileOpen] = useState(false);
-  const [isPersonalizationOpen, setIsPersonalizationOpen] = useState(false);
   const [isSystemTrayOpen, setIsSystemTrayOpen] = useState(false);
   const [isWorkspaceSwitcherOpen, setIsWorkspaceSwitcherOpen] = useState(false);
-  const [isDiskEnclaveOpen, setIsDiskEnclaveOpen] = useState(false);
-  const [isNetworkMeshOpen, setIsNetworkMeshOpen] = useState(false);
 
   // Context menu state
   const [isContextMenuOpen, setIsContextMenuOpen] = useState(false);
@@ -65,26 +66,18 @@ export default function App() {
     );
   };
 
-  const toggleWindow = (id: WindowId) => {
-    if (id === 'file-manager') setIsFileManagerOpen((prev) => !prev);
-    if (id === 'settings') setIsSettingsOpen((prev) => !prev);
+  const handleToggleWindow = (id: WindowId) => {
     if (id === 'app-launcher') setIsLauncherOpen((prev) => !prev);
-    if (id === 'system-search') setIsSearchOpen((prev) => !prev);
-    if (id === 'control-center') setIsControlCenterOpen((prev) => !prev);
-    if (id === 'notification-center') setIsNotificationOpen((prev) => !prev);
-    if (id === 'lock-screen') setIsLocked(true);
-    if (id === 'power-menu') setIsPowerMenuOpen((prev) => !prev);
-    if (id === 'terminal') setIsTerminalOpen((prev) => !prev);
-    if (id === 'system-monitor') setIsSystemMonitorOpen((prev) => !prev);
-    if (id === 'text-editor') setIsTextEditorOpen((prev) => !prev);
-    if (id === 'calculator') setIsCalculatorOpen((prev) => !prev);
-    if (id === 'software-center') setIsSoftwareCenterOpen((prev) => !prev);
-    if (id === 'user-profile') setIsUserProfileOpen((prev) => !prev);
-    if (id === 'personalization') setIsPersonalizationOpen((prev) => !prev);
-    if (id === 'system-tray') setIsSystemTrayOpen((prev) => !prev);
-    if (id === 'workspace-switcher') setIsWorkspaceSwitcherOpen((prev) => !prev);
-    if (id === 'disk-enclave') setIsDiskEnclaveOpen((prev) => !prev);
-    if (id === 'network-mesh') setIsNetworkMeshOpen((prev) => !prev);
+    else if (id === 'system-search') setIsSearchOpen((prev) => !prev);
+    else if (id === 'control-center') setIsControlCenterOpen((prev) => !prev);
+    else if (id === 'notification-center') setIsNotificationOpen((prev) => !prev);
+    else if (id === 'lock-screen') setIsLocked(true);
+    else if (id === 'power-menu') setIsPowerMenuOpen((prev) => !prev);
+    else if (id === 'system-tray') setIsSystemTrayOpen((prev) => !prev);
+    else if (id === 'workspace-switcher') setIsWorkspaceSwitcherOpen((prev) => !prev);
+    else {
+      openWindow(id);
+    }
   };
 
   const handleContextMenu = (e: React.MouseEvent) => {
@@ -95,6 +88,12 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden relative">
+      {/* Ghost Snap Area Overlay */}
+      <SnapPreview snapState={snapPreviewState} rect={snapPreviewRect} />
+
+      {/* Alt + Tab Window Switcher Modal */}
+      <WindowSwitcherModal />
+
       {/* Full-screen Lock Screen Overlay */}
       <LockScreen isLocked={isLocked} onUnlock={() => setIsLocked(false)} />
 
@@ -102,7 +101,7 @@ export default function App() {
       <Header
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        toggleWindow={toggleWindow}
+        toggleWindow={handleToggleWindow}
         toggleControlCenter={() => setIsControlCenterOpen((prev) => !prev)}
         isControlCenterOpen={isControlCenterOpen}
         unreadNotificationsCount={2}
@@ -112,7 +111,7 @@ export default function App() {
       <Sidebar
         workspaces={workspaces}
         onSelectWorkspace={handleSelectWorkspace}
-        toggleWindow={toggleWindow}
+        toggleWindow={handleToggleWindow}
       />
 
       {/* Desktop Main Workspace Area */}
@@ -134,9 +133,9 @@ export default function App() {
           </div>
 
           {/* Desktop Shortcuts */}
-          <div className="absolute top-6 right-8 grid grid-cols-1 gap-4 pointer-events-auto">
+          <div className="absolute top-6 right-8 grid grid-cols-1 gap-4 pointer-events-auto z-10">
             <button
-              onClick={() => setIsFileManagerOpen(true)}
+              onClick={() => openWindow('file-manager')}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-tertiary shadow-lg group-hover:scale-105 group-hover:border group-hover:border-tertiary/40 transition-all border border-surface-container-high">
@@ -148,7 +147,7 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setIsTerminalOpen(true)}
+              onClick={() => openWindow('terminal')}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-secondary shadow-lg group-hover:scale-105 group-hover:border group-hover:border-secondary/40 transition-all border border-surface-container-high">
@@ -160,7 +159,7 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setIsSystemMonitorOpen(true)}
+              onClick={() => openWindow('system-monitor')}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-emerald-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
@@ -172,7 +171,7 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setIsDiskEnclaveOpen(true)}
+              onClick={() => openWindow('disk-enclave')}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-amber-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
@@ -184,7 +183,7 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setIsNetworkMeshOpen(true)}
+              onClick={() => openWindow('network-mesh')}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-sky-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
@@ -196,61 +195,50 @@ export default function App() {
             </button>
           </div>
 
-          {/* Windows Rendering */}
-          <FileManager
-            isOpen={isFileManagerOpen}
-            onClose={() => setIsFileManagerOpen(false)}
-          />
+          {/* Interactive Window Frames Stacking Engine */}
+          <WindowFrame id="file-manager">
+            <FileManager isOpen={true} onClose={() => closeWindow('file-manager')} />
+          </WindowFrame>
 
-          <Settings
-            isOpen={isSettingsOpen}
-            onClose={() => setIsSettingsOpen(false)}
-          />
+          <WindowFrame id="settings">
+            <Settings isOpen={true} onClose={() => closeWindow('settings')} />
+          </WindowFrame>
 
-          <Terminal
-            isOpen={isTerminalOpen}
-            onClose={() => setIsTerminalOpen(false)}
-          />
+          <WindowFrame id="terminal">
+            <Terminal isOpen={true} onClose={() => closeWindow('terminal')} />
+          </WindowFrame>
 
-          <SystemMonitor
-            isOpen={isSystemMonitorOpen}
-            onClose={() => setIsSystemMonitorOpen(false)}
-          />
+          <WindowFrame id="system-monitor">
+            <SystemMonitor isOpen={true} onClose={() => closeWindow('system-monitor')} />
+          </WindowFrame>
 
-          <TextEditor
-            isOpen={isTextEditorOpen}
-            onClose={() => setIsTextEditorOpen(false)}
-          />
+          <WindowFrame id="text-editor">
+            <TextEditor isOpen={true} onClose={() => closeWindow('text-editor')} />
+          </WindowFrame>
 
-          <Calculator
-            isOpen={isCalculatorOpen}
-            onClose={() => setIsCalculatorOpen(false)}
-          />
+          <WindowFrame id="calculator">
+            <Calculator isOpen={true} onClose={() => closeWindow('calculator')} />
+          </WindowFrame>
 
-          <SoftwareCenter
-            isOpen={isSoftwareCenterOpen}
-            onClose={() => setIsSoftwareCenterOpen(false)}
-          />
+          <WindowFrame id="software-center">
+            <SoftwareCenter isOpen={true} onClose={() => closeWindow('software-center')} />
+          </WindowFrame>
 
-          <UserProfile
-            isOpen={isUserProfileOpen}
-            onClose={() => setIsUserProfileOpen(false)}
-          />
+          <WindowFrame id="user-profile">
+            <UserProfile isOpen={true} onClose={() => closeWindow('user-profile')} />
+          </WindowFrame>
 
-          <Personalization
-            isOpen={isPersonalizationOpen}
-            onClose={() => setIsPersonalizationOpen(false)}
-          />
+          <WindowFrame id="personalization">
+            <Personalization isOpen={true} onClose={() => closeWindow('personalization')} />
+          </WindowFrame>
 
-          <DiskEnclave
-            isOpen={isDiskEnclaveOpen}
-            onClose={() => setIsDiskEnclaveOpen(false)}
-          />
+          <WindowFrame id="disk-enclave">
+            <DiskEnclave isOpen={true} onClose={() => closeWindow('disk-enclave')} />
+          </WindowFrame>
 
-          <NetworkMesh
-            isOpen={isNetworkMeshOpen}
-            onClose={() => setIsNetworkMeshOpen(false)}
-          />
+          <WindowFrame id="network-mesh">
+            <NetworkMesh isOpen={true} onClose={() => closeWindow('network-mesh')} />
+          </WindowFrame>
         </main>
       </div>
 
@@ -259,13 +247,13 @@ export default function App() {
         isOpen={isContextMenuOpen}
         position={contextMenuPos}
         onClose={() => setIsContextMenuOpen(false)}
-        toggleWindow={toggleWindow}
+        toggleWindow={handleToggleWindow}
       />
 
       <SystemTray
         isOpen={isSystemTrayOpen}
         onClose={() => setIsSystemTrayOpen(false)}
-        toggleWindow={toggleWindow}
+        toggleWindow={handleToggleWindow}
       />
 
       <WorkspaceSwitcher
@@ -273,13 +261,13 @@ export default function App() {
         onClose={() => setIsWorkspaceSwitcherOpen(false)}
         workspaces={workspaces}
         onSelectWorkspace={handleSelectWorkspace}
-        toggleWindow={toggleWindow}
+        toggleWindow={handleToggleWindow}
       />
 
       <AppLauncher
         isOpen={isLauncherOpen}
         onClose={() => setIsLauncherOpen(false)}
-        toggleWindow={toggleWindow}
+        toggleWindow={handleToggleWindow}
         onOpenSearch={() => {
           setIsLauncherOpen(false);
           setIsSearchOpen(true);
@@ -310,4 +298,10 @@ export default function App() {
   );
 }
 
-
+export default function App() {
+  return (
+    <WindowProvider>
+      <DesktopContent />
+    </WindowProvider>
+  );
+}
