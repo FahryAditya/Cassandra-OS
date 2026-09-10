@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #051424;
+  --color-surface-dim: #051424;
+  --color-background: #051424;
+  --color-surface-container-lowest: #010f1f;
+  --color-surface-container-low: #0d1c2d;
+  --color-surface-container: #122131;
+  --color-surface-container-high: #1c2b3c;
+  --color-surface-container-highest: #273647;
+  --color-surface-bright: #2c3a4c;
+  --color-surface-variant: #273647;
+  --color-on-surface: #d4e4fa;
+  --color-on-surface-variant: #c4c5d7;
+  --color-on-background: #d4e4fa;
+  --color-primary: #bac3ff;
+  --color-primary-container: #4361ee;
+  --color-on-primary: #00218d;
+  --color-on-primary-container: #f4f2ff;
+  --color-secondary: #a4c9ff;
+  --color-secondary-container: #036ec6;
+  --color-on-secondary: #00315d;
+  --color-tertiary: #5bd5fc;
+  --color-tertiary-container: #007995;
+  --color-on-tertiary: #003543;
+  --color-outline: #8e8fa1;
+
+  --font-body-sm: 'Inter', system-ui, sans-serif;
+  --font-body-md: 'Inter', system-ui, sans-serif;
+  --font-headline-md: 'Inter', system-ui, sans-serif;
+  --font-code-sm: 'JetBrains Mono', monospace;
+  --font-code-md: 'JetBrains Mono', monospace;
+  --font-label-sm: 'JetBrains Mono', monospace;
+  --font-label-md: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #051424;
+    color: #d4e4fa;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
+  }
+}
+
+/* Custom scrollbar hiding */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

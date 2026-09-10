@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#051424", "tertiary": "#5bd5fc", "surface-container-highest": "#273647", "tertiary-fixed": "#b7eaff", "secondary-fixed-dim": "#a4c9ff", "surface-dim": "#051424", "primary-container": "#4361ee", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "secondary": "#a4c9ff", "inverse-on-surface": "#233143", "surface-tint": "#bac3ff", "error": "#ffb4ab", "on-secondary-fixed": "#001c39", "background": "#051424", "surface-container-high": "#1c2b3c", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "surface-bright": "#2c3a4c", "on-error": "#690005", "surface-variant": "#273647", "error-container": "#93000a", "outline-variant": "#444655", "on-tertiary-fixed-variant": "#004e61", "on-secondary": "#00315d", "surface-container": "#122131", "on-secondary-fixed-variant": "#004884", "on-tertiary": "#003543", "on-primary": "#00218d", "surface-container-lowest": "#010f1f", "secondary-fixed": "#d4e3ff", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "on-surface-variant": "#c4c5d7", "tertiary-container": "#007995", "primary-fixed": "#dee1ff", "inverse-primary": "#2e4edc", "outline": "#8e8fa1", "on-tertiary-container": "#e4f6ff", "on-error-container": "#ffdad6", "on-secondary-container": "#eaf0ff", "primary-fixed-dim": "#bac3ff", "on-tertiary-fixed": "#001f28", "on-primary-fixed-variant": "#0031c4", "primary": "#bac3ff", "on-primary-container": "#f4f2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "panel-dock-width": "320px", "gutter": "12px", "space-xs": "4px", "space-2xs": "2px", "space-xl": "24px", "space-2xl": "32px", "titlebar-height": "36px", "taskbar-height": "48px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, "fontFamily": { "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "code-sm": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "15px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,7,32,0.6)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CassandraOS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">CassandraOS</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">v3.4.0-LTS</span></div><nav class="hidden md:flex items-center gap-space-sm bg-surface-container-lowest/60 p-space-2xs rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]"><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="desktop-workspace" href="#">Workspace</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="file-manager" href="#">Files</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="terminal" href="#">Terminal</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]" data-path="system-monitor" href="#">Monitor</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="notification-center" href="#">Notifications</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="system-settings" href="#">Settings</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="power-menu" href="#">Power</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-tertiary text-[16px]">memory</span><span>32% RAM</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/85 backdrop-blur-xl z-30 flex flex-col justify-between py-space-md shadow-[4px_0_24px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspaces</span><span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px]">add</span></div><nav class="flex flex-col px-space-sm gap-space-2xs" data-active-classes="bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="desktop-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">01</span><span>Dev Environment</span></div><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="terminal" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">02</span><span>Telemetry & Ops</span></div><span class="font-code-sm text-code-sm text-outline">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="file-manager" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">03</span><span>Storage Nodes</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary" data-path="system-monitor" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">04</span><span>System Monitor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-settings" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">05</span><span>Kernel Conf</span></div></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest/80"><div class="flex items-center justify-between mb-space-2xs font-label-sm text-label-sm text-on-surface-variant"><span>CPU Load</span><span class="text-tertiary font-code-sm text-code-sm">18.4%</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 18.4%"></div></div></div><div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-sm"><span>Uptime: 14d 08h</span><span class="material-symbols-outlined text-[16px] text-tertiary">shield</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-14 min-h-screen bg-surface relative"><div class="flex flex-col w-full p-space-lg">
+<div class="w-full max-w-[1240px] mx-auto flex flex-col gap-space-lg">
+<!-- Window Breadcrumb / Status Strip -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container-lowest/80 rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">tune</span>
+<span>System Preferences</span>
+<span>/</span>
+<span class="text-tertiary">User Accounts & Identities</span>
+<span>/</span>
+<span class="font-code-sm text-code-sm text-on-surface">UID 1000 (Primary)</span>
+</div>
+<div class="flex items-center gap-space-md font-code-sm text-code-sm">
+<span class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#5bd5fc]"></span>
+          PAM Auth: Strict
+        </span>
+<span class="text-outline">|</span>
+<span class="text-on-surface-variant">Keyring: Enclave Secured</span>
+</div>
+</div>
+<!-- Main Window Stage (Split Navigation & Configuration Pane) -->
+<div class="grid grid-cols-12 gap-space-lg items-start">
+<!-- Sub-navigation Column (Settings Accounts Category) -->
+<aside class="col-span-12 lg:col-span-3 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="px-space-xs pb-space-xs flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Identity & Access</span>
+<span class="font-code-sm text-code-sm text-tertiary">4 Sections</span>
+</div>
+<nav class="flex flex-col gap-space-2xs">
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container-high text-tertiary font-body-md text-body-md transition-all" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Profile & Identity</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-all" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Authentication & MFA</span>
+</div>
+<span class="font-code-sm text-code-sm px-space-xs bg-surface-container-highest text-secondary rounded">FIDO2</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-all" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>SSH Public Keys</span>
+</div>
+<span class="font-code-sm text-code-sm px-space-xs bg-surface-container-highest text-tertiary rounded">3 Active</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-all" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Linked Services</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">GitLab, OIDC</span>
+</a>
+</nav>
+<div class="h-px bg-surface-container-highest my-space-xs"></div>
+<!-- Quick Enclave Diagnostics Panel -->
+<div class="bg-surface-container-lowest/80 p-space-sm rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Security Audit Score</span>
+<span class="font-code-sm text-code-sm text-tertiary">98/100</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 98%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline mt-space-2xs">SELinux enforcing; TPM 2.0 bound</span>
+</div>
+</div>
+<!-- Session Footprint Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Credentials</span>
+<div class="flex items-center justify-between mt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface">Kerberos TGT</span>
+<span class="font-code-sm text-code-sm text-secondary">Valid 9h 12m</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">GPG Agent</span>
+<span class="font-code-sm text-code-sm text-tertiary">Slot 04 PIN Cached</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">YubiKey Bio</span>
+<span class="font-code-sm text-code-sm text-tertiary">Ready on /dev/hidraw0</span>
+</div>
+</div>
+</aside>
+<!-- Main Profile Workspace Body -->
+<section class="col-span-12 lg:col-span-9 flex flex-col gap-space-lg">
+<!-- User Identity Header Banner -->
+<div class="relative bg-surface-container-low rounded-xl p-space-xl overflow-hidden shadow-lg">
+<!-- Subtle ambient cyber backdrop decoration -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 -bottom-20 w-64 h-64 rounded-full bg-tertiary/10 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col sm:flex-row items-center sm:items-start gap-space-xl z-10">
+<!-- Avatar Frame with glowing cyan ring & overlay trigger -->
+<div class="relative group cursor-pointer flex-shrink-0">
+<div class="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-tertiary via-primary-container to-tertiary-fixed shadow-[0_0_24px_rgba(91,213,252,0.45)]">
+<img class="w-full h-full object-cover rounded-full bg-surface-container-highest" data-alt="High-resolution tactical cyberpunk engineer profile portrait, subtle neon cyan ambient reflections on dark visor, highly detailed photorealistic face against deep space navy server racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNFgrTm4VBuRzz5x_Oj6jHXRxAwEUf-TyvBu4UQ5wCmGdfr51r_K77lJ4a8GfGiGwpklqCrpFtRKPDsHPCTT7nYsrFCMDwPkhlRor5nPQuHEijTb8lUJHzplRdSjFmcnaTdWYBK-zsaX0CJ8iYXAcguFcUYD8sSDQwLA7Vsoq_lPFaZWmbSkwewHHFQ9CrpQg0uMrrJNvNg9vQ2-P0sEZGNpeGcxiNpFfWsLhP4wyo8kFrDmxPUF47"/>
+</div>
+<!-- Camera / Upload Badge Button -->
+<button aria-label="Change Avatar" class="absolute bottom-1 right-1 w-8 h-8 rounded-full bg-surface-container-high text-tertiary flex items-center justify-center shadow-md hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+<!-- Identity Core Meta -->
+<div class="flex flex-col items-center sm:items-start text-center sm:text-left gap-space-xs flex-1">
+<div class="flex flex-wrap items-center gap-space-sm justify-center sm:justify-start">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Cassandra Administrator</h1>
+<span class="px-space-sm py-space-2xs rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-semibold shadow-[0_0_12px_rgba(67,97,238,0.4)]">Administrator</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-body-md text-body-md">
+<span class="font-code-md text-code-md text-secondary font-medium">@cass_dev</span>
+<span>•</span>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#5bd5fc]"></span>
+<span>Active Session (tty2 · pts/0)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-xl">
+                Primary cluster architect and host hypervisor controller for CassandraOS distributed nodes. Hardware root of trust authenticated.
+              </p>
+<div class="flex items-center gap-space-md mt-space-sm font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Last Login: <span class="text-on-surface font-code-sm text-code-sm">Today at 08:14 UTC</span></span>
+<span class="text-outline">·</span>
+<span class="text-on-surface-variant">IP: <span class="text-on-surface font-code-sm text-code-sm">127.0.0.1 (Loopback / WireGuard)</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Form Configuration Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Column 1: User Particulars & System Attributes -->
+<div class="bg-surface-container-low rounded-xl p-space-xl flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">manage_accounts</span>
+<span>Account Particulars</span>
+</h2>
+<span class="font-code-sm text-code-sm text-outline">POSIX POSIX_SPEC</span>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault()">
+<!-- Username (Immutable Unix Handle) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Unix Username (Handle)</label>
+<div class="flex items-center bg-surface-container px-space-md py-space-sm rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-[18px] text-outline mr-space-sm">alternate_email</span>
+<input class="w-full bg-transparent text-on-surface font-code-md text-code-md focus:outline-none" readonly="" type="text" value="cass_dev"/>
+<span class="material-symbols-outlined text-[16px] text-outline" title="System Locked UID">lock</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">POSIX UID 1000; Group 1000 (cass_dev)</span>
+</div>
+<!-- Full Display Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Display Name (GECOS)</label>
+<div class="flex items-center bg-surface-container px-space-md py-space-sm rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-[18px] text-tertiary mr-space-sm">person</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none" type="text" value="Cassandra Administrator"/>
+</div>
+</div>
+<!-- Registered Email Address -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">System Notification Email</label>
+<div class="flex items-center bg-surface-container px-space-md py-space-sm rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-[18px] text-tertiary mr-space-sm">mail</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none" type="email" value="developer@cassandra-os.org"/>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">Receives emergency cron panic warnings</span>
+</div>
+<!-- Account Type Dropdown -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Account Type & Privileges</label>
+<div class="relative flex items-center bg-surface-container px-space-md py-space-sm rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-[18px] text-tertiary mr-space-sm">admin_panel_settings</span>
+<select class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none appearance-none cursor-pointer">
+<option class="bg-surface-container-high text-on-surface" selected="">Administrator (Root Privileges / Wheel)</option>
+<option class="bg-surface-container-high text-on-surface">Standard System Operator</option>
+<option class="bg-surface-container-high text-on-surface">Sandboxed Guest Runtime</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Default Shell Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Login Shell Path</label>
+<div class="flex items-center bg-surface-container px-space-md py-space-sm rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-[18px] text-outline mr-space-sm">terminal</span>
+<input class="w-full bg-transparent text-on-surface font-code-md text-code-md focus:outline-none" type="text" value="/bin/zsh"/>
+<span class="font-code-sm text-code-sm text-tertiary">Valid</span>
+</div>
+</div>
+</form>
+</div>
+<!-- Column 2: Security, Keys & Session Policies -->
+<div class="flex flex-col gap-space-lg">
+<!-- Security & Credentials Section -->
+<div class="bg-surface-container-low rounded-xl p-space-xl flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">security</span>
+<span>Security & Credentials</span>
+</h2>
+<span class="material-symbols-outlined text-[18px] text-tertiary">shield</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Change Password -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">password</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Account Password</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Last updated 42 days ago (SHA-512)</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-highest hover:bg-surface-bright text-on-surface font-body-sm text-body-sm rounded-lg transition-colors" type="button">
+                    Change Password
+                  </button>
+</div>
+<!-- Manage FIDO2 / Biometric Keys -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Hardware FIDO2 & Biometrics</span>
+<span class="font-code-sm text-code-sm text-secondary">2 Hardware Tokens Registered</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-highest hover:bg-surface-bright text-on-surface font-body-sm text-body-sm rounded-lg transition-colors" type="button">
+                    Manage FIDO2
+                  </button>
+</div>
+<!-- Configure SSH Public Keys -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">vpn_key</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">SSH Authorized Keys</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Ed25519 (Cluster, Host, Backup)</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-highest hover:bg-surface-bright text-tertiary font-body-sm text-body-sm rounded-lg transition-colors" type="button">
+                    Configure Keys (3)
+                  </button>
+</div>
+</div>
+</div>
+<!-- Account Preferences & Toggles -->
+<div class="bg-surface-container-low rounded-xl p-space-xl flex flex-col gap-space-md shadow-md">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-sm pb-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">settings_power</span>
+<span>Session & Escalation Policies</span>
+</h2>
+<div class="flex flex-col gap-space-md">
+<!-- Toggle 1: Auto-login on boot (OFF) -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col max-w-sm">
+<span class="font-body-md text-body-md font-medium text-on-surface">Auto-login on Boot</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bypasses display manager password gate on cold startup.</span>
+</div>
+<button aria-checked="false" class="w-12 h-6 bg-surface-container-highest rounded-full relative p-space-2xs transition-colors cursor-pointer" role="switch" type="button">
+<div class="w-5 h-5 bg-outline rounded-full shadow-md transition-transform transform translate-x-0"></div>
+</button>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<!-- Toggle 2: Require password on wake (ON) -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col max-w-sm">
+<span class="font-body-md text-body-md font-medium text-on-surface">Require Password on Wake</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediately locks session whenever screensaver triggers or lid suspends.</span>
+</div>
+<button aria-checked="true" class="w-12 h-6 bg-primary-container rounded-full relative p-space-2xs transition-colors cursor-pointer shadow-[0_0_10px_rgba(67,97,238,0.5)]" role="switch" type="button">
+<div class="w-5 h-5 bg-on-primary rounded-full shadow-md transition-transform transform translate-x-6"></div>
+</button>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<!-- Dropdown: Sudo password cache timeout -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col max-w-sm">
+<span class="font-body-md text-body-md font-medium text-on-surface">Sudo Password Cache Grace Period</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Duration elevated root credentials persist per pseudo-terminal.</span>
+</div>
+<div class="relative bg-surface-container px-space-md py-space-xs rounded-lg shadow-inner">
+<select class="bg-transparent text-tertiary font-code-sm text-code-sm focus:outline-none appearance-none cursor-pointer pr-space-lg">
+<option class="bg-surface-container-high text-on-surface">5 minutes</option>
+<option class="bg-surface-container-high text-on-surface" selected="">15 minutes (Standard)</option>
+<option class="bg-surface-container-high text-on-surface">30 minutes</option>
+<option class="bg-surface-container-high text-on-surface">Always Prompt (0 min)</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-tertiary absolute right-2 top-2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Security Device Mosaic (Rich Visual Telemetry) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Item 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary shadow-inner">
+<svg class="w-6 h-6 text-tertiary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<rect height="11" rx="2" ry="2" width="18" x="3" y="11"></rect>
+<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Disk Key Enclave</span>
+<span class="font-code-md text-code-md text-on-surface font-medium">LUKS2 Hardware Tied</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shadow-inner">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m4.93 4.93 4.24 4.24"></path>
+<path d="m14.83 9.17 4.24-4.24"></path>
+<path d="m14.83 14.83 4.24 4.24"></path>
+<path d="m9.17 14.83-4.24 4.24"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Passkey Storage</span>
+<span class="font-code-md text-code-md text-on-surface font-medium">FIDO2 L3 Ready</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary shadow-inner">
+<svg class="w-6 h-6 text-tertiary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+<polyline points="2 17 12 22 22 17"></polyline>
+<polyline points="2 12 12 17 22 12"></polyline>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Kernel Ring</span>
+<span class="font-code-md text-code-md text-on-surface font-medium">Ring-0 Isolated</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar (Save Changes / Discard) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-lg sticky bottom-14 z-20">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span>All local PAM attributes match /etc/passwd & shadow registry</span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="px-space-lg py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-md text-body-md transition-colors w-full sm:w-auto text-center" type="button">
+              Discard
+            </button>
+<button class="px-space-xl py-space-sm rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-md text-body-md font-medium shadow-[0_0_16px_rgba(67,97,238,0.45)] active:scale-95 transition-all flex items-center justify-center gap-space-xs w-full sm:w-auto" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Changes</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex items-center justify-between px-space-md shadow-[0_-4px_24px_rgba(0,7,32,0.8)]"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center p-space-2xs rounded-lg hover:bg-surface-container-high transition-colors group" type="button"><img alt="Launcher" class="h-7 w-7 object-contain drop-shadow-[0_0_8px_rgba(91,213,252,0.5)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="File Manager" type="button"><span class="material-symbols-outlined text-[20px]">folder</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Terminal" type="button"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="System Monitor" type="button"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Settings" type="button"><span class="material-symbols-outlined text-[20px]">settings</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-error flex flex-col items-center group" title="Power" type="button"><span class="material-symbols-outlined text-[20px]">power_settings_new</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button></div></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">wifi</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">bluetooth</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">volume_up</span><div class="flex items-center gap-space-2xs hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">battery_charging_full</span><span class="font-code-sm text-code-sm">98%</span></div><div class="relative flex items-center hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-0 right-0 w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></div></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="font-label-md text-label-md text-on-surface cursor-pointer hover:text-tertiary transition-colors">14:28 · Thu, Oct 24</div></div></footer></body></html>
