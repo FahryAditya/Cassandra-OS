@@ -66,7 +66,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
             {[
               { id: 'software-center' as WindowId, name: 'Software Center', icon: 'inventory_2' },
               { id: 'calculator' as WindowId, name: 'Calculator', icon: 'calculate' },
-              { id: 'user-profile' as WindowId, name: 'User Profile', icon: 'badge' },
+              { id: 'disk-enclave' as WindowId, name: 'Disk Enclave', icon: 'hard_drive' },
+              { id: 'network-mesh' as WindowId, name: 'Network Mesh', icon: 'shield_lock' },
               { id: 'personalization' as WindowId, name: 'Personalization', icon: 'palette' },
             ].map((app) => (
               <button

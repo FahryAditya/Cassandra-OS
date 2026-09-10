@@ -68,10 +68,25 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Telemetry & Actions */}
         <div className="flex items-center gap-3">
-          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-xs border border-surface-container-high/40">
-            <span className="material-symbols-outlined text-tertiary text-[16px]">memory</span>
-            <span>32% RAM</span>
-          </div>
+          {/* Mission Control / Workspace Switcher */}
+          <button
+            onClick={() => toggleWindow('workspace-switcher')}
+            className="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-lowest/80 rounded-lg text-on-surface-variant hover:text-tertiary font-code-sm text-xs border border-surface-container-high/40 cursor-pointer transition-colors"
+            title="Workspace Switcher (Super+Tab)"
+          >
+            <span className="material-symbols-outlined text-tertiary text-[16px]">layers</span>
+            <span className="hidden lg:inline">Spaces</span>
+          </button>
+
+          {/* System Tray Hardware Trigger */}
+          <button
+            onClick={() => toggleWindow('system-tray')}
+            className="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-lowest/80 rounded-lg text-on-surface-variant hover:text-tertiary font-code-sm text-xs border border-surface-container-high/40 cursor-pointer transition-colors"
+            title="Network & Hardware Tray"
+          >
+            <span className="material-symbols-outlined text-tertiary text-[16px]">hub</span>
+            <span className="hidden md:inline">32% RAM</span>
+          </button>
 
           {/* Personalization Trigger */}
           <button

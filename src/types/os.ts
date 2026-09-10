@@ -13,7 +13,11 @@ export type WindowId =
   | 'calculator'
   | 'software-center'
   | 'user-profile'
-  | 'personalization';
+  | 'personalization'
+  | 'system-tray'
+  | 'workspace-switcher'
+  | 'disk-enclave'
+  | 'network-mesh';
 
 export interface AppWindow {
   id: WindowId;

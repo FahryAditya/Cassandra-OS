@@ -16,6 +16,11 @@ import { Calculator } from './components/Calculator/Calculator';
 import { SoftwareCenter } from './components/SoftwareCenter/SoftwareCenter';
 import { UserProfile } from './components/UserProfile/UserProfile';
 import { Personalization } from './components/Personalization/Personalization';
+import { ContextMenu } from './components/ContextMenu/ContextMenu';
+import { SystemTray } from './components/SystemTray/SystemTray';
+import { WorkspaceSwitcher } from './components/WorkspaceSwitcher/WorkspaceSwitcher';
+import { DiskEnclave } from './components/DiskEnclave/DiskEnclave';
+import { NetworkMesh } from './components/NetworkMesh/NetworkMesh';
 import type { WindowId, Workspace } from './types/os';
 
 export default function App() {
@@ -37,6 +42,14 @@ export default function App() {
   const [isSoftwareCenterOpen, setIsSoftwareCenterOpen] = useState(false);
   const [isUserProfileOpen, setIsUserProfileOpen] = useState(false);
   const [isPersonalizationOpen, setIsPersonalizationOpen] = useState(false);
+  const [isSystemTrayOpen, setIsSystemTrayOpen] = useState(false);
+  const [isWorkspaceSwitcherOpen, setIsWorkspaceSwitcherOpen] = useState(false);
+  const [isDiskEnclaveOpen, setIsDiskEnclaveOpen] = useState(false);
+  const [isNetworkMeshOpen, setIsNetworkMeshOpen] = useState(false);
+
+  // Context menu state
+  const [isContextMenuOpen, setIsContextMenuOpen] = useState(false);
+  const [contextMenuPos, setContextMenuPos] = useState({ x: 0, y: 0 });
 
   const [workspaces, setWorkspaces] = useState<Workspace[]>([
     { id: '01', num: '01', name: 'Dev Environment', active: true },
@@ -68,6 +81,16 @@ export default function App() {
     if (id === 'software-center') setIsSoftwareCenterOpen((prev) => !prev);
     if (id === 'user-profile') setIsUserProfileOpen((prev) => !prev);
     if (id === 'personalization') setIsPersonalizationOpen((prev) => !prev);
+    if (id === 'system-tray') setIsSystemTrayOpen((prev) => !prev);
+    if (id === 'workspace-switcher') setIsWorkspaceSwitcherOpen((prev) => !prev);
+    if (id === 'disk-enclave') setIsDiskEnclaveOpen((prev) => !prev);
+    if (id === 'network-mesh') setIsNetworkMeshOpen((prev) => !prev);
+  };
+
+  const handleContextMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setContextMenuPos({ x: e.clientX, y: e.clientY });
+    setIsContextMenuOpen(true);
   };
 
   return (
@@ -94,7 +117,10 @@ export default function App() {
 
       {/* Desktop Main Workspace Area */}
       <div className="pl-64 pt-14 pb-4 min-h-screen relative">
-        <main className="w-full h-[calc(100vh-3.5rem)] relative overflow-hidden flex flex-col items-center justify-center p-4">
+        <main
+          onContextMenu={handleContextMenu}
+          className="w-full h-[calc(100vh-3.5rem)] relative overflow-hidden flex flex-col items-center justify-center p-4"
+        >
           {/* Cybernetic Wallpaper Ambience */}
           <div
             className="absolute inset-0 bg-cover bg-center pointer-events-none opacity-40 -z-10"
@@ -146,38 +172,26 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setIsTextEditorOpen(true)}
-              className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
-            >
-              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-purple-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
-                <span className="material-symbols-outlined text-[26px]">code</span>
-              </div>
-              <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
-                IDE Studio
-              </span>
-            </button>
-
-            <button
-              onClick={() => setIsSoftwareCenterOpen(true)}
-              className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
-            >
-              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-cyan-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
-                <span className="material-symbols-outlined text-[26px]">inventory_2</span>
-              </div>
-              <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
-                Store
-              </span>
-            </button>
-
-            <button
-              onClick={() => setIsCalculatorOpen(true)}
+              onClick={() => setIsDiskEnclaveOpen(true)}
               className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
             >
               <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-amber-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
-                <span className="material-symbols-outlined text-[26px]">calculate</span>
+                <span className="material-symbols-outlined text-[26px]">hard_drive</span>
               </div>
               <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
-                Calculator
+                Enclave
+              </span>
+            </button>
+
+            <button
+              onClick={() => setIsNetworkMeshOpen(true)}
+              className="group flex flex-col items-center gap-1 w-20 cursor-pointer focus:outline-none"
+            >
+              <div className="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-sky-400 shadow-lg group-hover:scale-105 transition-all border border-surface-container-high">
+                <span className="material-symbols-outlined text-[26px]">shield_lock</span>
+              </div>
+              <span className="font-label-sm text-[11px] text-on-surface text-center tracking-tight">
+                Mesh Shield
               </span>
             </button>
           </div>
@@ -227,10 +241,41 @@ export default function App() {
             isOpen={isPersonalizationOpen}
             onClose={() => setIsPersonalizationOpen(false)}
           />
+
+          <DiskEnclave
+            isOpen={isDiskEnclaveOpen}
+            onClose={() => setIsDiskEnclaveOpen(false)}
+          />
+
+          <NetworkMesh
+            isOpen={isNetworkMeshOpen}
+            onClose={() => setIsNetworkMeshOpen(false)}
+          />
         </main>
       </div>
 
       {/* Popovers & Overlays */}
+      <ContextMenu
+        isOpen={isContextMenuOpen}
+        position={contextMenuPos}
+        onClose={() => setIsContextMenuOpen(false)}
+        toggleWindow={toggleWindow}
+      />
+
+      <SystemTray
+        isOpen={isSystemTrayOpen}
+        onClose={() => setIsSystemTrayOpen(false)}
+        toggleWindow={toggleWindow}
+      />
+
+      <WorkspaceSwitcher
+        isOpen={isWorkspaceSwitcherOpen}
+        onClose={() => setIsWorkspaceSwitcherOpen(false)}
+        workspaces={workspaces}
+        onSelectWorkspace={handleSelectWorkspace}
+        toggleWindow={toggleWindow}
+      />
+
       <AppLauncher
         isOpen={isLauncherOpen}
         onClose={() => setIsLauncherOpen(false)}
@@ -264,4 +309,5 @@ export default function App() {
     </div>
   );
 }
+
 
