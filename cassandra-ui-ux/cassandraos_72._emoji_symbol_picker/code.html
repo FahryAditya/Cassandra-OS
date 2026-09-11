@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Desktop Ambient Canvas Context -->
+<div class="relative w-full min-h-[calc(100vh-theme(spacing.titlebar-height)-theme(spacing.taskbar-height))] flex items-center justify-center p-space-md sm:p-space-xl overflow-hidden">
+<!-- Ghost Workspace Background Application Cards -->
+<div class="absolute inset-0 pointer-events-none select-none opacity-30 flex gap-space-lg p-space-lg">
+<!-- Inactive Terminal Window Silhouette -->
+<div class="hidden lg:flex flex-col w-1/2 h-[82%] bg-surface-container-lowest/70 rounded-xl p-space-md shadow-2xl backdrop-blur-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low px-space-md py-space-xs rounded">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error/40"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary/40"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary/40"></span>
+<span class="ml-space-sm font-code-sm text-code-sm text-on-surface-variant">terminal@cassandra: ~/kernel</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">zsh (pid 4410)</span>
+</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant space-y-space-xs opacity-75">
+<p><span class="text-tertiary">systemctl</span> status networkd.service</p>
+<p class="text-secondary">[OK] Active daemon initialized at 14:02:18</p>
+<p class="text-on-surface-variant/60">// Listening socket stream on port 8099...</p>
+</div>
+</div>
+<!-- Inactive System Monitor Silhouette -->
+<div class="hidden lg:flex flex-col flex-1 h-[82%] bg-surface-container-lowest/60 rounded-xl p-space-md shadow-2xl backdrop-blur-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low px-space-md py-space-xs rounded">
+<span class="font-label-sm text-label-sm text-primary">TELEMETRY_PIPELINE</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="h-32 w-full bg-surface-container-low rounded-lg p-space-sm flex items-end gap-1.5 opacity-60">
+<div class="w-full bg-primary-container h-[42%] rounded-t-xs"></div>
+<div class="w-full bg-primary-container h-[64%] rounded-t-xs"></div>
+<div class="w-full bg-tertiary h-[89%] rounded-t-xs"></div>
+<div class="w-full bg-primary-container h-[55%] rounded-t-xs"></div>
+<div class="w-full bg-primary-container h-[71%] rounded-t-xs"></div>
+<div class="w-full bg-tertiary h-[95%] rounded-t-xs"></div>
+<div class="w-full bg-primary-container h-[38%] rounded-t-xs"></div>
+</div>
+</div>
+</div>
+<!-- Soft Radial Gradient Spotlight Backdrop for the Popover -->
+<div class="absolute inset-0 bg-surface-dim/75 backdrop-blur-xl transition-all"></div>
+<!-- MAIN FLOATING PICKER POPOVER -->
+<div class="relative z-10 w-full max-w-[620px] bg-surface-container-low rounded-xl shadow-[0_24px_64px_rgba(1,15,31,0.85),0_0_0_1px_rgba(91,213,252,0.22)] overflow-hidden flex flex-col">
+<!-- Window Chrome Header -->
+<div class="h-titlebar-height px-space-md bg-surface-container flex items-center justify-between select-none">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Close" class="w-2.5 h-2.5 rounded-full bg-[#ef4444] hover:opacity-80 transition-opacity cursor-pointer" type="button"></button>
+<button aria-label="Minimize" class="w-2.5 h-2.5 rounded-full bg-[#f5c400] hover:opacity-80 transition-opacity cursor-pointer" type="button"></button>
+<button aria-label="Expand" class="w-2.5 h-2.5 rounded-full bg-[#26b170] hover:opacity-80 transition-opacity cursor-pointer" type="button"></button>
+<span class="ml-space-sm font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">sentiment_satisfied</span>
+<span>Glyph &amp; Emoji Vault</span>
+</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container-highest px-space-xs py-0.5 rounded text-[10px]">UTF-8 / UNICODE 15.1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 bg-surface-container-high px-1.5 py-0.5 rounded">
+<span>⌘</span><span>.</span>
+</span>
+</div>
+</div>
+<!-- Search Input & Quick Filter Row -->
+<div class="p-space-md pb-space-sm bg-surface-container-low flex flex-col gap-space-sm">
+<div class="relative flex items-center w-full">
+<span class="absolute left-space-md material-symbols-outlined text-on-surface-variant text-[18px] pointer-events-none">search</span>
+<input class="w-full bg-surface-container-highest text-on-surface pl-10 pr-24 py-2 rounded-lg font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-tertiary placeholder:text-on-surface-variant/60 shadow-inner" id="glyph-search" placeholder="Search emoji, symbols, math, kaomoji, logic..." type="text"/>
+<div class="absolute right-space-sm flex items-center gap-space-2xs pointer-events-none">
+<kbd class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-surface-container text-on-surface-variant shadow-sm">ESC</kbd>
+<kbd class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-surface-container text-on-surface-variant shadow-sm">↵</kbd>
+</div>
+</div>
+<!-- Horizontal Category Pill Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto py-1 text-on-surface-variant no-scrollbar" id="category-tabs">
+<button class="category-pill active flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="all" type="button">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+<span>Recent</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="smileys" type="button">
+<span class="material-symbols-outlined text-[15px]">mood</span>
+<span>Expressions</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="tech" type="button">
+<span class="material-symbols-outlined text-[15px]">terminal</span>
+<span>Dev &amp; Tech</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="math" type="button">
+<span class="material-symbols-outlined text-[15px]">functions</span>
+<span>Math &amp; Logic</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="objects" type="button">
+<span class="material-symbols-outlined text-[15px]">deployed_code</span>
+<span>Objects</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="arrows" type="button">
+<span class="material-symbols-outlined text-[15px]">multiple_stop</span>
+<span>Flows</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-all" data-cat="kaomoji" type="button">
+<span class="material-symbols-outlined text-[15px]">text_fields</span>
+<span>Kaomoji</span>
+</button>
+</div>
+</div>
+<!-- Frequently & Recently Used Bar -->
+<div class="px-space-md py-space-xs bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Quick Buffer</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant/60">(Last 8 Cached)</span>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-error transition-colors" id="clear-recents-btn" type="button">Clear</button>
+</div>
+<div class="px-space-md py-space-sm bg-surface-container-high/40 flex items-center gap-space-xs overflow-x-auto" id="recents-row">
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="tech" data-code="U+26A1" data-glyph="⚡" data-name="High Voltage" type="button">⚡</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="tech" data-code="U+1F680" data-glyph="🚀" data-name="Rocket Launch" type="button">🚀</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="tech" data-code="U+1F4BB" data-glyph="💻" data-name="Laptop Computer" type="button">💻</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="smileys" data-code="U+1F525" data-glyph="🔥" data-name="Fire Flame" type="button">🔥</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="math" data-code="U+03BB" data-glyph="λ" data-name="Greek Small Letter Lambda" type="button">λ</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="smileys" data-code="U+1F9E0" data-glyph="🧠" data-name="Neural Brain" type="button">🧠</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="tech" data-code="U+1F6E1" data-glyph="🛡️" data-name="Shield Guard" type="button">🛡️</button>
+<button class="glyph-item group flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-primary-container text-on-surface hover:text-on-primary-container text-xl transition-transform active:scale-90" data-cat="objects" data-code="U+2615" data-glyph="☕" data-name="Hot Beverage" type="button">☕</button>
+</div>
+<!-- Main Scrollable Glyphs Body Grid -->
+<div class="max-h-[360px] overflow-y-auto p-space-md space-y-space-md" id="glyphs-scroll-container">
+<!-- SECTION 1: Developer & Tech Glyphs -->
+<div class="glyph-section" data-section-cat="tech">
+<div class="flex items-center justify-between mb-space-xs sticky top-0 bg-surface-container-low/95 backdrop-blur-md py-1 z-10">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1.5 uppercase font-medium">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+              Developer &amp; Tech Glyphs
+            </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">14 ITEMS</span>
+</div>
+<div class="grid grid-cols-8 gap-space-xs">
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+26A1" data-glyph="⚡" data-name="High Voltage / Zap" type="button">⚡</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F680" data-glyph="🚀" data-name="Rocket / Deploy" type="button">🚀</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F4BB" data-glyph="💻" data-name="Personal Terminal" type="button">💻</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F47E" data-glyph="👾" data-name="Alien Monster / Bug" type="button">👾</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F6F0" data-glyph="🛰️" data-name="Satellite Uplink" type="button">🛰️</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2699" data-glyph="⚙️" data-name="Gear Configuration" type="button">⚙️</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F5C4" data-glyph="🗄️" data-name="File Cabinet / Storage" type="button">🗄️</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F4E6" data-glyph="📦" data-name="Package Bundle" type="button">📦</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F512" data-glyph="🔒" data-name="Locked Invariant" type="button">🔒</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F513" data-glyph="🔓" data-name="Unlocked Permissions" type="button">🔓</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F511" data-glyph="🔑" data-name="Public SSH Key" type="button">🔑</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F4E1" data-glyph="📡" data-name="Antenna Signal" type="button">📡</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F4BE" data-glyph="💾" data-name="Floppy Diskette" type="button">💾</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F9EA" data-glyph="🧪" data-name="Test Suite Fixture" type="button">🧪</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F9F0" data-glyph="🧰" data-name="Developer Toolkit" type="button">🧰</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F52D" data-glyph="🔭" data-name="Telescope Observation" type="button">🔭</button>
+</div>
+</div>
+<!-- SECTION 2: Math & Logic Symbols -->
+<div class="glyph-section" data-section-cat="math">
+<div class="flex items-center justify-between mb-space-xs sticky top-0 bg-surface-container-low/95 backdrop-blur-md py-1 z-10">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1.5 uppercase font-medium">
+<span class="material-symbols-outlined text-[14px]">functions</span>
+              Math &amp; Logic Quantifiers
+            </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">16 ITEMS</span>
+</div>
+<div class="grid grid-cols-8 gap-space-xs font-code-md">
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+03BB" data-glyph="λ" data-name="Lambda Calculus" type="button">λ</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2211" data-glyph="∑" data-name="N-Ary Summation" type="button">∑</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+220F" data-glyph="∏" data-name="N-Ary Product" type="button">∏</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+222B" data-glyph="∫" data-name="Definite Integral" type="button">∫</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2202" data-glyph="∂" data-name="Partial Differential" type="button">∂</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2207" data-glyph="∇" data-name="Del Vector Gradient" type="button">∇</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+221E" data-glyph="∞" data-name="Absolute Infinity" type="button">∞</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2248" data-glyph="≈" data-name="Asymptotically Equal" type="button">≈</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2260" data-glyph="≠" data-name="Not Equal" type="button">≠</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2261" data-glyph="≡" data-name="Identical Equivalence" type="button">≡</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2200" data-glyph="∀" data-name="Universal For All" type="button">∀</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2203" data-glyph="∃" data-name="Existential There Exists" type="button">∃</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2208" data-glyph="∈" data-name="Element Set Inclusion" type="button">∈</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2209" data-glyph="∉" data-name="Not An Element Of" type="button">∉</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2286" data-glyph="⊆" data-name="Subset or Equal" type="button">⊆</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2295" data-glyph="⊕" data-name="Circled Plus / XOR" type="button">⊕</button>
+</div>
+</div>
+<!-- SECTION 3: Smileys & Expressions -->
+<div class="glyph-section" data-section-cat="smileys">
+<div class="flex items-center justify-between mb-space-xs sticky top-0 bg-surface-container-low/95 backdrop-blur-md py-1 z-10">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1.5 uppercase font-medium">
+<span class="material-symbols-outlined text-[14px]">mood</span>
+              Smileys &amp; Emotional Status
+            </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">16 ITEMS</span>
+</div>
+<div class="grid grid-cols-8 gap-space-xs">
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F916" data-glyph="🤖" data-name="Robot Automaton" type="button">🤖</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F9E0" data-glyph="🧠" data-name="Deep Cognition" type="button">🧠</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F440" data-glyph="👀" data-name="Observing Eyes" type="button">👀</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2728" data-glyph="✨" data-name="Luminescent Sparkles" type="button">✨</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F3AF" data-glyph="🎯" data-name="Bullseye Target" type="button">🎯</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F525" data-glyph="🔥" data-name="Blazing Hot" type="button">🔥</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2615" data-glyph="☕" data-name="Caffeine Injection" type="button">☕</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F355" data-glyph="🍕" data-name="Sprint Fuel" type="button">🍕</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F7E2" data-glyph="🟢" data-name="Status: Operational" type="button">🟢</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F7E1" data-glyph="🟡" data-name="Status: Warning Degraded" type="button">🟡</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F534" data-glyph="🔴" data-name="Status: Critical Outage" type="button">🔴</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F480" data-glyph="💀" data-name="Kernel Panic / Dead" type="button">💀</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1FAE1" data-glyph="🫡" data-name="Acknowledged Salute" type="button">🫡</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F914" data-glyph="🤔" data-name="Pondering Edge Case" type="button">🤔</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1FAE0" data-glyph="🫠" data-name="Melting Under Load" type="button">🫠</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+1F389" data-glyph="🎉" data-name="Release Milestone" type="button">🎉</button>
+</div>
+</div>
+<!-- SECTION 4: Directional Flows & Arrows -->
+<div class="glyph-section" data-section-cat="arrows">
+<div class="flex items-center justify-between mb-space-xs sticky top-0 bg-surface-container-low/95 backdrop-blur-md py-1 z-10">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1.5 uppercase font-medium">
+<span class="material-symbols-outlined text-[14px]">multiple_stop</span>
+              Control Flow &amp; Vectors
+            </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">8 ITEMS</span>
+</div>
+<div class="grid grid-cols-8 gap-space-xs font-code-md">
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+2192" data-glyph="→" data-name="Rightwards Arrow" type="button">→</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+21D2" data-glyph="⇒" data-name="Double Rightwards / Yields" type="button">⇒</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+21C4" data-glyph="⇄" data-name="Bidirectional Stream" type="button">⇄</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+21B3" data-glyph="↳" data-name="Downward Turn Subroutine" type="button">↳</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+21BA" data-glyph="↺" data-name="Anticlockwise Loop" type="button">↺</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+21BB" data-glyph="↻" data-name="Clockwise Restart" type="button">↻</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+21F6" data-glyph="⇶" data-name="Three Rightward Strokes" type="button">⇶</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-lg transition-colors cursor-pointer" data-code="U+26A1" data-glyph="⚡" data-name="Interrupt Signal" type="button">⚡</button>
+</div>
+</div>
+<!-- SECTION 5: Kaomoji -->
+<div class="glyph-section" data-section-cat="kaomoji">
+<div class="flex items-center justify-between mb-space-xs sticky top-0 bg-surface-container-low/95 backdrop-blur-md py-1 z-10">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1.5 uppercase font-medium">
+<span class="material-symbols-outlined text-[14px]">text_fields</span>
+              Terminal Kaomoji
+            </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">4 PRESETS</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs font-code-sm text-center">
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer px-2 truncate" data-code="ASCII-SET" data-glyph="¯\_(ツ)_/¯" data-name="Shrugging Acceptance" type="button">¯\_(ツ)_/¯</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer px-2 truncate" data-code="ASCII-SET" data-glyph="(╯°□°)╯︵ ┻━┻" data-name="Table Flip Rage" type="button">(╯°□°)╯︵ ┻━┻</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer px-2 truncate" data-code="ASCII-SET" data-glyph="┬─┬ノ( º _ ºノ)" data-name="Table Restore" type="button">┬─┬ノ( º _ ºノ)</button>
+<button class="glyph-item flex items-center justify-center h-10 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer px-2 truncate" data-code="ASCII-SET" data-glyph="(⌐■_■)" data-name="Deal With It / SysAdmin" type="button">(⌐■_■)</button>
+</div>
+</div>
+</div>
+<!-- Live Hover / Inspection Preview Dock -->
+<div class="p-space-md bg-surface-container flex items-center justify-between transition-all" id="inspector-footer">
+<div class="flex items-center gap-space-md min-w-0">
+<!-- Big Magnified Preview Window -->
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-3xl shadow-inner text-tertiary" id="preview-box">
+            ⚡
+          </div>
+<!-- Glyph Meta Data Info -->
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-body-lg text-on-surface font-semibold truncate" id="preview-name">High Voltage / Zap</span>
+<span class="font-code-sm text-[11px] px-1.5 py-0.5 rounded bg-surface-container-highest text-tertiary" id="preview-code">U+26A1</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span id="preview-desc">Ready for clipboard or active terminal pipe</span>
+</div>
+</div>
+</div>
+<!-- Action Trigger -->
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="hidden font-code-sm text-code-sm text-tertiary animate-pulse" id="copy-confirmation">Copied!</span>
+<button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-secondary-container text-on-primary-container font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-md active:scale-95 transition-all" id="copy-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Insert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right-Hand Quick Settings / Context Hint Overlay -->
+<div class="hidden xl:flex flex-col absolute right-8 top-1/2 -translate-y-1/2 w-64 bg-surface-container-low/80 backdrop-blur-md rounded-xl p-space-md shadow-xl gap-space-sm pointer-events-auto">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Keymap Shortcuts</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">keyboard</span>
+</div>
+<div class="space-y-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<span>Navigate</span>
+<kbd class="text-tertiary">Arrows</kbd>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<span>Copy Glyph</span>
+<kbd class="text-tertiary">Enter</kbd>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<span>Close Vault</span>
+<kbd class="text-tertiary">Esc</kbd>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<span>Switch Category</span>
+<kbd class="text-tertiary">Tab</kbd>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-high rounded text-center font-label-sm text-[11px] text-tertiary">
+        Pipeline: CassandraOS InputEngine 4.8
+      </div>
+</div>
+</div>
+</div>
+<script>
+  (function initEmojiPicker() {
+    const previewBox = document.getElementById('preview-box');
+    const previewName = document.getElementById('preview-name');
+    const previewCode = document.getElementById('preview-code');
+    const copyBtn = document.getElementById('copy-btn');
+    const copyConfirm = document.getElementById('copy-confirmation');
+    const searchInput = document.getElementById('glyph-search');
+    const categoryTabs = document.querySelectorAll('.category-pill');
+    const sections = document.querySelectorAll('.glyph-section');
+    const allGlyphs = document.querySelectorAll('.glyph-item');
+    const recentsRow = document.getElementById('recents-row');
+    const clearRecentsBtn = document.getElementById('clear-recents-btn');
+
+    let currentSelectedGlyph = '⚡';
+
+    // Update Bottom Preview Card
+    function updatePreview(glyph, name, code) {
+      if (!glyph) return;
+      currentSelectedGlyph = glyph;
+      previewBox.textContent = glyph;
+      previewName.textContent = name || 'Glyph Element';
+      previewCode.textContent = code || 'U+----';
+    }
+
+    // Bind Hover and Click on all glyph elements
+    allGlyphs.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const glyph = btn.getAttribute('data-glyph');
+        const name = btn.getAttribute('data-name');
+        const code = btn.getAttribute('data-code');
+        updatePreview(glyph, name, code);
+      });
+
+      btn.addEventListener('click', () => {
+        const glyph = btn.getAttribute('data-glyph');
+        const name = btn.getAttribute('data-name');
+        const code = btn.getAttribute('data-code');
+        updatePreview(glyph, name, code);
+        triggerCopy(glyph);
+      });
+    });
+
+    // Copy Feedback Behavior
+    function triggerCopy(textToCopy) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(textToCopy);
+      }
+      copyConfirm.classList.remove('hidden');
+      setTimeout(() => {
+        copyConfirm.classList.add('hidden');
+      }, 1200);
+    }
+
+    copyBtn.addEventListener('click', () => {
+      triggerCopy(currentSelectedGlyph);
+    });
+
+    // Real-Time Filter Search
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase().trim();
+      
+      sections.forEach(sec => {
+        let hasVisibleChild = false;
+        const items = sec.querySelectorAll('.glyph-item');
+        
+        items.forEach(item => {
+          const name = (item.getAttribute('data-name') || '').toLowerCase();
+          const glyph = item.getAttribute('data-glyph') || '';
+          const code = (item.getAttribute('data-code') || '').toLowerCase();
+          
+          if (name.includes(term) || glyph.includes(term) || code.includes(term) || term === '') {
+            item.classList.remove('hidden');
+            hasVisibleChild = true;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        if (hasVisibleChild) {
+          sec.classList.remove('hidden');
+        } else {
+          sec.classList.add('hidden');
+        }
+      });
+    });
+
+    // Category Tabs Switching
+    categoryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        categoryTabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary-container');
+          t.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        tab.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        tab.classList.add('bg-primary-container', 'text-on-primary-container');
+
+        const cat = tab.getAttribute('data-cat');
+        sections.forEach(sec => {
+          const secCat = sec.getAttribute('data-section-cat');
+          if (cat === 'all' || secCat === cat) {
+            sec.classList.remove('hidden');
+            sec.querySelectorAll('.glyph-item').forEach(i => i.classList.remove('hidden'));
+          } else {
+            sec.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Clear Recents Row
+    if (clearRecentsBtn && recentsRow) {
+      clearRecentsBtn.addEventListener('click', () => {
+        recentsRow.innerHTML = '<span class="text-on-surface-variant/50 font-label-sm text-label-sm py-1">Buffer cleared</span>';
+      });
+    }
+
+  })();
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

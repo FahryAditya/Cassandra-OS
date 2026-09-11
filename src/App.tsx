@@ -21,6 +21,51 @@ import { SystemTray } from './components/SystemTray/SystemTray';
 import { WorkspaceSwitcher } from './components/WorkspaceSwitcher/WorkspaceSwitcher';
 import { DiskEnclave } from './components/DiskEnclave/DiskEnclave';
 import { NetworkMesh } from './components/NetworkMesh/NetworkMesh';
+import { BatteryPower } from './components/BatteryPower/BatteryPower';
+import { StorageManager } from './components/StorageManager/StorageManager';
+import { AppPermissions } from './components/AppPermissions/AppPermissions';
+import { PrivacyCenter } from './components/PrivacyCenter/PrivacyCenter';
+import { SecurityCenter } from './components/SecurityCenter/SecurityCenter';
+import { UpdateCenter } from './components/UpdateCenter/UpdateCenter';
+import { BackupRestore } from './components/BackupRestore/BackupRestore';
+import { SystemRecovery } from './components/SystemRecovery/SystemRecovery';
+import { HardwareInfo } from './components/HardwareInfo/HardwareInfo';
+import { AboutCassandra } from './components/AboutCassandra/AboutCassandra';
+import { ErrorCrashCenter } from './components/ErrorCrashCenter/ErrorCrashCenter';
+import { WifiNetworks } from './components/WifiNetworks/WifiNetworks';
+import { EthernetSettings } from './components/EthernetSettings/EthernetSettings';
+import { VpnSettings } from './components/VpnSettings/VpnSettings';
+import { NetworkDetails } from './components/NetworkDetails/NetworkDetails';
+import { BluetoothDevices } from './components/BluetoothDevices/BluetoothDevices';
+import { PrintersScanners } from './components/PrintersScanners/PrintersScanners';
+import { CameraSettings } from './components/CameraSettings/CameraSettings';
+import { MicrophoneSettings } from './components/MicrophoneSettings/MicrophoneSettings';
+import { AudioDevices } from './components/AudioDevices/AudioDevices';
+import { NotificationsSettings } from './components/NotificationsSettings/NotificationsSettings';
+import { DoNotDisturb } from './components/DoNotDisturb/DoNotDisturb';
+import { AccessibilitySettings } from './components/AccessibilitySettings/AccessibilitySettings';
+import { LanguageRegion } from './components/LanguageRegion/LanguageRegion';
+import { DateTimeSettings } from './components/DateTimeSettings/DateTimeSettings';
+import { DefaultApps } from './components/DefaultApps/DefaultApps';
+import { StartupApps } from './components/StartupApps/StartupApps';
+import { AppStorage } from './components/AppStorage/AppStorage';
+import { AppDetails } from './components/AppDetails/AppDetails';
+import { SystemDiagnostics } from './components/SystemDiagnostics/SystemDiagnostics';
+import { QuickSettings } from './components/QuickSettings/QuickSettings';
+import { RecentApps } from './components/RecentApps/RecentApps';
+import { AllApplications } from './components/AllApplications/AllApplications';
+import { AppCategories } from './components/AppCategories/AppCategories';
+import { AppSearchResults } from './components/AppSearchResults/AppSearchResults';
+import { FileSearchResults } from './components/FileSearchResults/FileSearchResults';
+import { GlobalSearchResults } from './components/GlobalSearchResults/GlobalSearchResults';
+import { ClipboardHistory } from './components/ClipboardHistory/ClipboardHistory';
+import { ScreenshotTool } from './components/ScreenshotTool/ScreenshotTool';
+import { ScreenRecording } from './components/ScreenRecording/ScreenRecording';
+import { ColorPicker } from './components/ColorPicker/ColorPicker';
+import { EmojiPicker } from './components/EmojiPicker/EmojiPicker';
+import { OnScreenKeyboard } from './components/OnScreenKeyboard/OnScreenKeyboard';
+import { NotificationHistory } from './components/NotificationHistory/NotificationHistory';
+import { RunningApps } from './components/RunningApps/RunningApps';
 
 import { WindowProvider, useWindowManager } from './context/WindowContext';
 import { WindowFrame } from './components/WindowFrame/WindowFrame';
@@ -238,6 +283,200 @@ function DesktopContent() {
 
           <WindowFrame id="network-mesh">
             <NetworkMesh isOpen={true} onClose={() => closeWindow('network-mesh')} />
+          </WindowFrame>
+
+          <WindowFrame id="battery-power">
+            <BatteryPower isOpen={true} onClose={() => closeWindow('battery-power')} />
+          </WindowFrame>
+
+          <WindowFrame id="storage-manager">
+            <StorageManager isOpen={true} onClose={() => closeWindow('storage-manager')} />
+          </WindowFrame>
+
+          <WindowFrame id="app-permissions">
+            <AppPermissions isOpen={true} onClose={() => closeWindow('app-permissions')} />
+          </WindowFrame>
+
+          <WindowFrame id="privacy-center">
+            <PrivacyCenter
+              isOpen={true}
+              onClose={() => closeWindow('privacy-center')}
+              onOpenPermissions={() => {
+                closeWindow('privacy-center');
+                openWindow('app-permissions');
+              }}
+            />
+          </WindowFrame>
+
+          <WindowFrame id="security-center">
+            <SecurityCenter isOpen={true} onClose={() => closeWindow('security-center')} />
+          </WindowFrame>
+
+          <WindowFrame id="update-center">
+            <UpdateCenter isOpen={true} onClose={() => closeWindow('update-center')} />
+          </WindowFrame>
+
+          <WindowFrame id="backup-restore">
+            <BackupRestore isOpen={true} onClose={() => closeWindow('backup-restore')} />
+          </WindowFrame>
+
+          <WindowFrame id="system-recovery">
+            <SystemRecovery isOpen={true} onClose={() => closeWindow('system-recovery')} />
+          </WindowFrame>
+
+          <WindowFrame id="hardware-info">
+            <HardwareInfo isOpen={true} onClose={() => closeWindow('hardware-info')} />
+          </WindowFrame>
+
+          <WindowFrame id="about-cassandra">
+            <AboutCassandra
+              isOpen={true}
+              onClose={() => closeWindow('about-cassandra')}
+              onOpenUpdates={() => {
+                closeWindow('about-cassandra');
+                openWindow('update-center');
+              }}
+            />
+          </WindowFrame>
+
+          <WindowFrame id="error-crash-center">
+            <ErrorCrashCenter isOpen={true} onClose={() => closeWindow('error-crash-center')} />
+          </WindowFrame>
+
+          <WindowFrame id="wifi-networks">
+            <WifiNetworks isOpen={true} onClose={() => closeWindow('wifi-networks')} />
+          </WindowFrame>
+
+          <WindowFrame id="ethernet-settings">
+            <EthernetSettings isOpen={true} onClose={() => closeWindow('ethernet-settings')} />
+          </WindowFrame>
+
+          <WindowFrame id="vpn-settings">
+            <VpnSettings isOpen={true} onClose={() => closeWindow('vpn-settings')} />
+          </WindowFrame>
+
+          <WindowFrame id="network-details">
+            <NetworkDetails isOpen={true} onClose={() => closeWindow('network-details')} />
+          </WindowFrame>
+
+          <WindowFrame id="bluetooth-devices">
+            <BluetoothDevices isOpen={true} onClose={() => closeWindow('bluetooth-devices')} />
+          </WindowFrame>
+
+          <WindowFrame id="printers-scanners">
+            <PrintersScanners isOpen={true} onClose={() => closeWindow('printers-scanners')} />
+          </WindowFrame>
+
+          <WindowFrame id="camera-settings">
+            <CameraSettings isOpen={true} onClose={() => closeWindow('camera-settings')} />
+          </WindowFrame>
+
+          <WindowFrame id="microphone-settings">
+            <MicrophoneSettings isOpen={true} onClose={() => closeWindow('microphone-settings')} />
+          </WindowFrame>
+
+          <WindowFrame id="audio-devices">
+            <AudioDevices isOpen={true} onClose={() => closeWindow('audio-devices')} />
+          </WindowFrame>
+
+          <WindowFrame id="notifications-settings">
+            <NotificationsSettings isOpen={true} onClose={() => closeWindow('notifications-settings')} />
+          </WindowFrame>
+
+          <WindowFrame id="do-not-disturb">
+            <DoNotDisturb isOpen={true} onClose={() => closeWindow('do-not-disturb')} />
+          </WindowFrame>
+
+          <WindowFrame id="accessibility-settings">
+            <AccessibilitySettings isOpen={true} onClose={() => closeWindow('accessibility-settings')} />
+          </WindowFrame>
+
+          <WindowFrame id="language-region">
+            <LanguageRegion isOpen={true} onClose={() => closeWindow('language-region')} />
+          </WindowFrame>
+
+          <WindowFrame id="date-time">
+            <DateTimeSettings />
+          </WindowFrame>
+
+          <WindowFrame id="default-apps">
+            <DefaultApps />
+          </WindowFrame>
+
+          <WindowFrame id="startup-apps">
+            <StartupApps />
+          </WindowFrame>
+
+          <WindowFrame id="app-storage">
+            <AppStorage />
+          </WindowFrame>
+
+          <WindowFrame id="app-details">
+            <AppDetails />
+          </WindowFrame>
+
+          <WindowFrame id="system-diagnostics">
+            <SystemDiagnostics />
+          </WindowFrame>
+
+          <WindowFrame id="quick-settings">
+            <QuickSettings onClose={() => closeWindow('quick-settings')} onOpenSettings={() => { closeWindow('quick-settings'); openWindow('settings'); }} />
+          </WindowFrame>
+
+          <WindowFrame id="recent-apps">
+            <RecentApps onClose={() => closeWindow('recent-apps')} />
+          </WindowFrame>
+
+          <WindowFrame id="all-applications">
+            <AllApplications onClose={() => closeWindow('all-applications')} />
+          </WindowFrame>
+
+          <WindowFrame id="app-categories">
+            <AppCategories />
+          </WindowFrame>
+
+          <WindowFrame id="app-search-results">
+            <AppSearchResults />
+          </WindowFrame>
+
+          <WindowFrame id="file-search-results">
+            <FileSearchResults />
+          </WindowFrame>
+
+          <WindowFrame id="global-search-results">
+            <GlobalSearchResults />
+          </WindowFrame>
+
+          <WindowFrame id="clipboard-history">
+            <ClipboardHistory />
+          </WindowFrame>
+
+          <WindowFrame id="screenshot-tool">
+            <ScreenshotTool />
+          </WindowFrame>
+
+          <WindowFrame id="screen-recording">
+            <ScreenRecording />
+          </WindowFrame>
+
+          <WindowFrame id="color-picker">
+            <ColorPicker />
+          </WindowFrame>
+
+          <WindowFrame id="emoji-picker">
+            <EmojiPicker />
+          </WindowFrame>
+
+          <WindowFrame id="on-screen-keyboard">
+            <OnScreenKeyboard />
+          </WindowFrame>
+
+          <WindowFrame id="notification-history">
+            <NotificationHistory />
+          </WindowFrame>
+
+          <WindowFrame id="running-applications">
+            <RunningApps />
           </WindowFrame>
         </main>
       </div>

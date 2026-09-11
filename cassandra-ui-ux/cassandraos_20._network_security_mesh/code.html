@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#051424", "tertiary": "#5bd5fc", "surface-container-highest": "#273647", "tertiary-fixed": "#b7eaff", "secondary-fixed-dim": "#a4c9ff", "surface-dim": "#051424", "primary-container": "#4361ee", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "secondary": "#a4c9ff", "inverse-on-surface": "#233143", "surface-tint": "#bac3ff", "error": "#ffb4ab", "on-secondary-fixed": "#001c39", "background": "#051424", "surface-container-high": "#1c2b3c", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "surface-bright": "#2c3a4c", "on-error": "#690005", "surface-variant": "#273647", "error-container": "#93000a", "outline-variant": "#444655", "on-tertiary-fixed-variant": "#004e61", "on-secondary": "#00315d", "surface-container": "#122131", "on-secondary-fixed-variant": "#004884", "on-tertiary": "#003543", "on-primary": "#00218d", "surface-container-lowest": "#010f1f", "secondary-fixed": "#d4e3ff", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "on-surface-variant": "#c4c5d7", "tertiary-container": "#007995", "primary-fixed": "#dee1ff", "inverse-primary": "#2e4edc", "outline": "#8e8fa1", "on-tertiary-container": "#e4f6ff", "on-error-container": "#ffdad6", "on-secondary-container": "#eaf0ff", "primary-fixed-dim": "#bac3ff", "on-tertiary-fixed": "#001f28", "on-primary-fixed-variant": "#0031c4", "primary": "#bac3ff", "on-primary-container": "#f4f2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "panel-dock-width": "320px", "gutter": "12px", "space-xs": "4px", "space-2xs": "2px", "space-xl": "24px", "space-2xl": "32px", "titlebar-height": "36px", "taskbar-height": "48px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, "fontFamily": { "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "code-sm": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "15px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,7,32,0.6)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CassandraOS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">CassandraOS</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">v3.4.0-LTS</span></div><nav class="hidden md:flex items-center gap-space-sm bg-surface-container-lowest/60 p-space-2xs rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]"><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="desktop-workspace" href="#">Workspace</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="file-manager" href="#">Files</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="terminal" href="#">Terminal</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]" data-path="system-monitor" href="#">Monitor</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="notification-center" href="#">Notifications</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="system-settings" href="#">Settings</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="power-menu" href="#">Power</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-tertiary text-[16px]">memory</span><span>32% RAM</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/85 backdrop-blur-xl z-30 flex flex-col justify-between py-space-md shadow-[4px_0_24px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspaces</span><span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px]">add</span></div><nav class="flex flex-col px-space-sm gap-space-2xs" data-active-classes="bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="desktop-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">01</span><span>Dev Environment</span></div><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="terminal" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">02</span><span>Telemetry & Ops</span></div><span class="font-code-sm text-code-sm text-outline">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="file-manager" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">03</span><span>Storage Nodes</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary" data-path="system-monitor" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">04</span><span>System Monitor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-settings" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">05</span><span>Kernel Conf</span></div></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest/80"><div class="flex items-center justify-between mb-space-2xs font-label-sm text-label-sm text-on-surface-variant"><span>CPU Load</span><span class="text-tertiary font-code-sm text-code-sm">18.4%</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 18.4%"></div></div></div><div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-sm"><span>Uptime: 14d 08h</span><span class="material-symbols-outlined text-[16px] text-tertiary">shield</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-14 min-h-screen bg-surface relative"><div class="flex flex-col w-full p-space-lg gap-space-lg">
+<!-- Window Chrome Outer Frame -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden flex flex-col">
+<!-- Titlebar (36px fixed ergonomic height) -->
+<div class="h-titlebar-height bg-surface-container-low px-space-md flex items-center justify-between select-none">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-[#EF4444] inline-block cursor-pointer opacity-90 hover:opacity-100 transition-opacity"></span>
+<span class="w-3 h-3 rounded-full bg-[#F5C400] inline-block cursor-pointer opacity-90 hover:opacity-100 transition-opacity"></span>
+<span class="w-3 h-3 rounded-full bg-[#26B170] inline-block cursor-pointer opacity-90 hover:opacity-100 transition-opacity"></span>
+</div>
+<span class="text-outline mx-space-2xs">/</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">shield_lock</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Cassandra Network Shield & Mesh Topology</span>
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-xs py-space-2xs rounded">v3.4-prod</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse shadow-[0_0_8px_#5bd5fc]"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant uppercase">ACTIVE MESH // 0.04ms Inter-node Latency</span>
+</div>
+<div class="h-3 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-tertiary">
+<span class="material-symbols-outlined text-[15px]">vpn_key</span>
+<span>WG0-TUNNEL</span>
+</div>
+</div>
+</div>
+<!-- Subheader: Cluster Threat & Subsystem Telemetry Bar -->
+<div class="bg-surface-container px-space-lg py-space-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xl">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">eBPF PACKET FILTER</span>
+<span class="font-code-md text-code-md text-on-surface font-medium flex items-center gap-space-xs">
+              ACTIVE KERNEL HOOK
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">THREAT LEVEL ASSESS</span>
+<span class="font-code-md text-code-md text-[#26B170] font-medium">0.02% (NOMINAL)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ENCRYPTED RESOLVER</span>
+<span class="font-code-md text-code-md text-on-surface">DoH 1.1.1.1 + Pi-hole Mirror</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Badges -->
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm bg-surface-container-highest text-tertiary px-space-sm py-space-2xs rounded">POLICIES: STRICT</span>
+<span class="font-code-sm text-code-sm bg-primary-container text-on-primary-container px-space-sm py-space-2xs rounded shadow-[0_0_10px_rgba(67,97,238,0.3)]">SYN-FLOOD: MITIGATED</span>
+</div>
+</div>
+<!-- Metric Ribbon (Sparklines & Real-time Rates) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md p-space-lg bg-surface-container-low">
+<!-- Ingress / Egress Card -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">THROUGHPUT (LIVE)</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">swap_vert</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-tertiary">48.2</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">MB/s IN</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-secondary">12.6</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">MB/s OUT</span>
+</div>
+</div>
+<!-- Sparkline SVG -->
+<svg class="w-24 h-10 text-tertiary" fill="none" viewbox="0 0 100 40">
+<path d="M0 32 Q 15 35, 25 18 T 50 24 T 75 8 T 100 12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0 32 Q 15 35, 25 18 T 50 24 T 75 8 T 100 12 L 100 40 L 0 40 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Sockets Card -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ACTIVE SOCKETS</span>
+<span class="material-symbols-outlined text-primary text-[18px]">hub</span>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">418</span>
+<span class="font-code-sm text-code-sm text-tertiary">ESTABLISHED</span>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant">
+<span>TCP: 362</span>
+<span>UDP: 48</span>
+<span>RAW: 8</span>
+</div>
+</div>
+<!-- Blocked Threats Card -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">BLOCKED THREATS (24H)</span>
+<span class="material-symbols-outlined text-[#EF4444] text-[18px]">gpp_bad</span>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-[#EF4444]">142</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">UNAUTH PROBES</span>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-tertiary">Last: 45.143.22.9</span>
+<span>DROP AUTO</span>
+</div>
+</div>
+<!-- Cluster Mesh Heartbeat -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TOPOLOGY CONVERGENCE</span>
+<span class="material-symbols-outlined text-[#26B170] text-[18px]">lan</span>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-[#26B170]">100%</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">3/3 PEERS SYNC</span>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant">
+<span>MTU: 1420 (WG)</span>
+<span class="text-secondary">eBGP Mesh v4/v6</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Split: Left (Hardware/NICs) & Right (Mesh Graph & Firewall Matrix) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg p-space-lg bg-surface">
+<!-- LEFT PANE: Network Interfaces & Virtual Fabric (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">settings_ethernet</span>
+<span class="font-headline-md text-headline-md text-on-surface">Physical & Virtual NICs</span>
+</div>
+<button class="p-space-xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- NIC List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Interface 1: wlan0 -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">wifi</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold">wlan0</span>
+<span class="font-code-sm text-code-sm bg-surface-container-lowest text-tertiary px-space-xs py-space-2xs rounded">Wi-Fi 6E</span>
+</div>
+<span class="font-code-sm text-code-sm text-[#26B170] flex items-center gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+                UP
+              </span>
+</div>
+<div class="flex flex-col gap-space-2xs mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>SSID: <span class="text-on-surface">CASS-NET-5G</span></span>
+<span class="text-tertiary">1.2 Gbps link</span>
+</div>
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>Auth: WPA3-Enterprise</span>
+<span>IPv4: 192.168.10.42/24</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-tertiary h-full rounded-full" style="width: 74%;"></div>
+</div>
+</div>
+</div>
+<!-- Interface 2: eth0 Fiber Trunk -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">cable</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold">eth0</span>
+<span class="font-code-sm text-code-sm bg-surface-container-lowest text-primary px-space-xs py-space-2xs rounded">10 GbE SFP+</span>
+</div>
+<span class="font-code-sm text-code-sm text-[#26B170] flex items-center gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+                TRUNK-OK
+              </span>
+</div>
+<div class="flex flex-col gap-space-2xs mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>Medium: Fiber Direct (OM4)</span>
+<span class="text-primary font-medium">9.82 Gbps util</span>
+</div>
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>Hardware: Intel X520-DA2</span>
+<span>MAC: 0C:4D:E9:11:A2:80</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-primary h-full rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+</div>
+<!-- Interface 3: wg0 WireGuard Tunnel -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">vpn_lock</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold">wg0</span>
+<span class="font-code-sm text-code-sm bg-surface-container-lowest text-tertiary px-space-xs py-space-2xs rounded">WireGuard L3</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary flex items-center gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span>
+                ENCRYPTED
+              </span>
+</div>
+<div class="flex flex-col gap-space-2xs mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="truncate">Endpoint: sg-ap-east-gw.cassandra.net</span>
+</div>
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>Mesh IP: 10.88.0.4/32</span>
+<span class="text-on-surface">Handshake: 18s ago</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-tertiary h-full rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+</div>
+<!-- Interface 4: docker0 / Container Fabric -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer group shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">grid_view</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold">docker0 / podman</span>
+<span class="font-code-sm text-code-sm bg-surface-container-lowest text-secondary px-space-xs py-space-2xs rounded">Bridge</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">V-BRIDGE</span>
+</div>
+<div class="flex flex-col gap-space-2xs mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>Subnet: 172.18.0.0/16</span>
+<span>Active Pods: 14</span>
+</div>
+<div class="flex justify-between font-code-sm text-code-sm">
+<span>Forwarding: NAT Isolation</span>
+<span>Rules: 28 Filtered</span>
+</div>
+</div>
+</div>
+</div>
+<!-- System Routing Table Peek -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs font-code-sm text-code-sm">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-2xs">
+<span class="uppercase font-semibold">Kernel Route Table (IPv4)</span>
+<span class="text-tertiary">proto bird</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-tertiary">default via 192.168.10.1</span>
+<span class="text-outline">dev wlan0 metric 100</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-secondary">10.88.0.0/16 dev wg0</span>
+<span class="text-outline">metric 50</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">172.18.0.0/16 dev docker0</span>
+<span class="text-outline">metric 200</span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANE: Topology Mesh Visualizer & Firewall Ingress Matrix (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- SECTION 1: Cluster Mesh Topology Interactive Visualizer -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">account_tree</span>
+<span class="font-headline-md text-headline-md text-on-surface">Live Mesh Topology & Ingress Inspector</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="flex items-center gap-space-2xs"><span class="w-2 h-2 rounded-full bg-[#26B170]"></span> Sync</span>
+<span class="flex items-center gap-space-2xs ml-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> Inspecting</span>
+</div>
+</div>
+<!-- Visual Node Canvas Topology Map -->
+<div class="relative bg-surface-container-lowest rounded-lg p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md overflow-hidden">
+<!-- Background Topology Circuit Grid -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#5bd5fc 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Node 1: Local Device (Cassandra Core) -->
+<div class="relative z-10 bg-surface-container-high p-space-md rounded-lg flex flex-col gap-space-xs min-w-[170px] shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">HOST LOCAL</span>
+<span class="w-2 h-2 rounded-full bg-[#26B170] shadow-[0_0_8px_#26B170]"></span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">CassandraOS</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">10.88.0.4/32</div>
+<div class="flex items-center gap-space-2xs mt-space-2xs text-[11px] text-tertiary font-code-sm">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span>eBPF Filter ON</span>
+</div>
+</div>
+<!-- Inter-node Mesh Vector Link 1 -->
+<div class="hidden md:flex flex-1 flex-col items-center justify-center px-space-xs relative">
+<div class="w-full h-0.5 bg-gradient-to-r from-tertiary to-primary relative overflow-hidden">
+<div class="absolute inset-0 bg-white/60 w-8 h-full animate-[marquee_2s_linear_infinite]"></div>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary mt-space-2xs">WireGuard // 0.04ms</span>
+</div>
+<!-- Node 2: Cloud Gateway Edge -->
+<div class="relative z-10 bg-surface-container-high p-space-md rounded-lg flex flex-col gap-space-xs min-w-[170px] shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary">CLOUD EDGE</span>
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#4361ee]"></span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">sg-ap-east-gw</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">10.88.0.1 (BGP)</div>
+<div class="flex items-center gap-space-2xs mt-space-2xs text-[11px] text-secondary font-code-sm">
+<span class="material-symbols-outlined text-[13px]">public</span>
+<span>WAN Ingress 48M</span>
+</div>
+</div>
+<!-- Inter-node Mesh Vector Link 2 -->
+<div class="hidden md:flex flex-1 flex-col items-center justify-center px-space-xs relative">
+<div class="w-full h-0.5 bg-gradient-to-r from-primary to-tertiary relative overflow-hidden">
+<div class="absolute inset-0 bg-white/60 w-8 h-full animate-[marquee_2s_linear_infinite]"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary mt-space-2xs">TLS 1.3 // 0.12ms</span>
+</div>
+<!-- Node 3: Cluster DB & Telemetry -->
+<div class="relative z-10 bg-surface-container-high p-space-md rounded-lg flex flex-col gap-space-xs min-w-[170px] shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">DATA FABRIC</span>
+<span class="w-2 h-2 rounded-full bg-[#26B170] shadow-[0_0_8px_#26B170]"></span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">Cassandra Node-0</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">172.18.4.12:9042</div>
+<div class="flex items-center gap-space-2xs mt-space-2xs text-[11px] text-[#26B170] font-code-sm">
+<span class="material-symbols-outlined text-[13px]">database</span>
+<span>CQL Active Sync</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Interactive Firewall Rule Matrix -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">table_rows</span>
+<span class="font-headline-md text-headline-md text-on-surface">Ingress Rule Matrix & Filter Rules</span>
+<span class="font-code-sm text-code-sm bg-surface-container-highest text-on-surface-variant px-space-xs py-space-2xs rounded">6 Enforced</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<input class="bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-space-md py-space-xs rounded-lg focus:outline-none focus:ring-1 focus:ring-tertiary pl-8 w-60 placeholder-outline" placeholder="Search rules, ports, CIDRs..." type="text"/>
+<span class="material-symbols-outlined text-outline text-[16px] absolute left-2.5 top-2">search</span>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm rounded-lg flex items-center gap-space-2xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter</span>
+</button>
+</div>
+</div>
+<!-- Firewall Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-space-sm px-space-md">Rule ID</th>
+<th class="py-space-sm px-space-md">Protocol / Port</th>
+<th class="py-space-sm px-space-md">Dir</th>
+<th class="py-space-sm px-space-md">Source CIDR</th>
+<th class="py-space-sm px-space-md">Action Policy</th>
+<th class="py-space-sm px-space-md">State</th>
+<th class="py-space-sm px-space-md text-right">Quick Toggle</th>
+</tr>
+</thead>
+<tbody class="font-code-sm text-code-sm divide-y-0">
+<!-- Row 1: SSH TCP 22 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md text-tertiary font-medium">FW-IN-001</td>
+<td class="py-space-sm px-space-md text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-tertiary">TCP</span>
+<span>22 (SSH Enclave)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">IN</td>
+<td class="py-space-sm px-space-md text-on-surface">10.88.0.0/16</td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-[#26B170]/20 text-[#26B170] font-semibold">ALLOW</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">ENFORCED</td>
+<td class="py-space-sm px-space-md text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" onchange="console.log('toggle rule 1')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+<!-- Row 2: HTTPS TCP 443 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md text-tertiary font-medium">FW-IN-002</td>
+<td class="py-space-sm px-space-md text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-tertiary">TCP</span>
+<span>443 (HTTPS Ingress)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">IN</td>
+<td class="py-space-sm px-space-md text-on-surface">0.0.0.0/0 (WAN)</td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-[#26B170]/20 text-[#26B170] font-semibold">ALLOW</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">ENFORCED</td>
+<td class="py-space-sm px-space-md text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+<!-- Row 3: Cassandra CQL 9042 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md text-tertiary font-medium">FW-IN-003</td>
+<td class="py-space-sm px-space-md text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-secondary">TCP</span>
+<span>9042 (CQL Native)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">IN</td>
+<td class="py-space-sm px-space-md text-on-surface">172.18.0.0/16</td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-[#26B170]/20 text-[#26B170] font-semibold">ALLOW</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">MESH-ONLY</td>
+<td class="py-space-sm px-space-md text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+<!-- Row 4: ICMP Echo WAN -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md text-tertiary font-medium">FW-IN-004</td>
+<td class="py-space-sm px-space-md text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-outline">ICMP</span>
+<span>Echo Request (Ping)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">IN</td>
+<td class="py-space-sm px-space-md text-on-surface">0.0.0.0/0</td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-[#EF4444]/20 text-[#EF4444] font-semibold">BLOCK</span>
+</td>
+<td class="py-space-sm px-space-md text-[#EF4444]">DROP_SILENT</td>
+<td class="py-space-sm px-space-md text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+<!-- Row 5: WireGuard Port UDP 51820 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md text-tertiary font-medium">FW-IN-005</td>
+<td class="py-space-sm px-space-md text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-tertiary">UDP</span>
+<span>51820 (WireGuard)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">IN</td>
+<td class="py-space-sm px-space-md text-on-surface">sg-ap-east-gw</td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-[#26B170]/20 text-[#26B170] font-semibold">ALLOW</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">ENCRYPTED</td>
+<td class="py-space-sm px-space-md text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+<!-- Row 6: Telnet / Legacy Plaintext Probing -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md text-tertiary font-medium">FW-IN-006</td>
+<td class="py-space-sm px-space-md text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-error">TCP</span>
+<span>23 (Telnet Trap)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">IN</td>
+<td class="py-space-sm px-space-md text-on-surface">0.0.0.0/0</td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-secondary font-semibold">HONEYPOT</span>
+</td>
+<td class="py-space-sm px-space-md text-secondary">LOG & DROP</td>
+<td class="py-space-sm px-space-md text-right">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Action Toolbar -->
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-secondary-container text-on-primary-container font-body-sm text-body-sm font-medium rounded-lg flex items-center gap-space-xs transition-all shadow-[0_0_12px_rgba(67,97,238,0.4)] active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_moderator</span>
+<span>Add Inbound Rule</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm rounded-lg flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">replay</span>
+<span>Flush eBPF Filter</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm rounded-lg flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export WireGuard Config</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-sm bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-tertiary font-code-sm text-code-sm rounded-lg flex items-center gap-space-xs transition-colors" id="pcapBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">capture</span>
+<span>Packet Capture (pcap)</span>
+<span class="w-2 h-2 rounded-full bg-tertiary" id="pcapDot"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Persistent Bottom Status & Telemetry Strip -->
+<div class="bg-surface-container-low px-space-lg py-space-xs flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<div class="flex items-center gap-space-lg">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[14px]">sensors</span>
+<span>Mesh Ingress: 142.9 kpps</span>
+</span>
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">memory</span>
+<span>eBPF Buffer: 4.2 MB / 64 MB</span>
+</span>
+<span class="flex items-center gap-space-xs text-[#26B170]">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>Zero Packet Drops</span>
+</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span>Session ID: cs-mesh-88f29</span>
+<span class="text-outline">|</span>
+<span class="text-tertiary">Real-time Stream Active</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive packet capture state toggle
+  const pcapBtn = document.getElementById('pcapBtn');
+  const pcapDot = document.getElementById('pcapDot');
+  let capturing = false;
+
+  if (pcapBtn && pcapDot) {
+    pcapBtn.addEventListener('click', () => {
+      capturing = !capturing;
+      if (capturing) {
+        pcapDot.classList.remove('bg-tertiary');
+        pcapDot.classList.add('bg-[#EF4444]', 'animate-ping');
+        pcapBtn.classList.add('text-[#EF4444]');
+      } else {
+        pcapDot.classList.remove('bg-[#EF4444]', 'animate-ping');
+        pcapDot.classList.add('bg-tertiary');
+        pcapBtn.classList.remove('text-[#EF4444]');
+      }
+    });
+  }
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex items-center justify-between px-space-md shadow-[0_-4px_24px_rgba(0,7,32,0.8)]"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center p-space-2xs rounded-lg hover:bg-surface-container-high transition-colors group" type="button"><img alt="Launcher" class="h-7 w-7 object-contain drop-shadow-[0_0_8px_rgba(91,213,252,0.5)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="File Manager" type="button"><span class="material-symbols-outlined text-[20px]">folder</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Terminal" type="button"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="System Monitor" type="button"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Settings" type="button"><span class="material-symbols-outlined text-[20px]">settings</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-error flex flex-col items-center group" title="Power" type="button"><span class="material-symbols-outlined text-[20px]">power_settings_new</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button></div></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">wifi</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">bluetooth</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">volume_up</span><div class="flex items-center gap-space-2xs hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">battery_charging_full</span><span class="font-code-sm text-code-sm">98%</span></div><div class="relative flex items-center hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-0 right-0 w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></div></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="font-label-md text-label-md text-on-surface cursor-pointer hover:text-tertiary transition-colors">14:28 · Thu, Oct 24</div></div></footer></body></html>

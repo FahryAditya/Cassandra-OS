@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#c4c5d7","primary":"#bac3ff","on-secondary-container":"#eaf0ff","error":"#ffb4ab","primary-container":"#4361ee","secondary-container":"#036ec6","tertiary":"#5bd5fc","outline":"#8e8fa1","inverse-primary":"#2e4edc","surface-variant":"#273647","on-secondary-fixed":"#001c39","secondary":"#a4c9ff","on-tertiary-container":"#e4f6ff","on-primary-fixed-variant":"#0031c4","on-secondary":"#00315d","tertiary-container":"#007995","surface-container-low":"#0d1c2d","surface-container-highest":"#273647","tertiary-fixed-dim":"#5bd5fc","on-tertiary":"#003543","surface-dim":"#051424","on-primary-container":"#f4f2ff","on-error":"#690005","surface-container":"#122131","primary-fixed":"#dee1ff","surface":"#051424","on-surface":"#d4e4fa","surface-container-lowest":"#010f1f","on-primary-fixed":"#001159","surface-container-high":"#1c2b3c","on-primary":"#00218d","error-container":"#93000a","outline-variant":"#444655","on-secondary-fixed-variant":"#004884","secondary-fixed":"#d4e3ff","surface-tint":"#bac3ff","background":"#051424","secondary-fixed-dim":"#a4c9ff","inverse-surface":"#d4e4fa","tertiary-fixed":"#b7eaff","on-tertiary-fixed":"#001f28","on-background":"#d4e4fa","on-tertiary-fixed-variant":"#004e61","primary-fixed-dim":"#bac3ff","surface-bright":"#2c3a4c","inverse-on-surface":"#233143","on-error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"taskbar-height":"48px","gutter":"12px","space-md":"12px","space-xs":"4px","space-sm":"8px","titlebar-height":"36px","space-xl":"24px","space-2xl":"32px","space-lg":"16px","space-2xs":"2px","panel-dock-width":"320px"},fontFamily:{"headline-lg":["Inter"],"body-sm":["Inter"],"headline-xl":["Inter"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"code-sm":["JetBrains Mono"],"headline-md":["Inter"],"body-lg":["Inter"],"label-sm":["JetBrains Mono"],"code-md":["JetBrains Mono"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #4361ee
+- Font: inter
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CassandraOS</span><span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-surface-container-highest text-tertiary rounded">v4.19-PRO</span></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">memory</span>CPU: 14.2%</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[16px]">storage</span>MEM: 6.8/32 GB</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px]">speed</span>IOPS: 18.4k</span></div><div class="flex items-center gap-space-sm"><button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-md"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">System Control</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Configuration</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="application-management" href="#"><span class="material-symbols-outlined text-[18px]">apps</span>Application Manager</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">vital_signs</span>Diagnostics &amp; Metrics</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="network-telemetry" href="#"><span class="material-symbols-outlined text-[18px]">hub</span>Network Telemetry</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="security-policies" href="#"><span class="material-symbols-outlined text-[18px]">security</span>Security &amp; Auth</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="storage-volumes" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span>Storage Volumes</a></nav></div><div class="p-space-sm bg-surface-container rounded-lg"><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-space-xs"><span>Node Uptime</span><span class="text-tertiary">19d 04h 12m</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-primary h-1 rounded-full w-4/5"></div></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-16 px-space-gutter min-h-screen bg-surface"><div class="w-full my-space-gutter rounded-xl bg-surface-container-low/95 backdrop-blur-2xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height bg-surface-container-high/80 px-space-md flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><span class="w-[11px] h-[11px] rounded-full bg-[#EF4444] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="w-[11px] h-[11px] rounded-full bg-[#F5C400] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="w-[11px] h-[11px] rounded-full bg-[#26B170] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="ml-space-sm font-body-sm text-body-sm text-on-surface-variant">Cassandra Control Panel // Session active</span></div><div class="flex items-center gap-space-xs text-outline"><button class="w-6 h-6 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">dock_to_right</span></button><button class="w-6 h-6 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">close_fullscreen</span></button></div></div><div class="p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[15px]">public</span>
+<span class="tracking-wider uppercase">Settings / Regional &amp; Localization</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface">Language &amp; Region</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high px-space-xs py-space-2xs rounded">cass-locale v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configures display lexicon, system collation profiles, regional calendar standards, and numeric parsing kernels.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Revert Defaults</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-primary-container text-on-primary-container shadow-[0_0_12px_rgba(67,97,238,0.4)] hover:brightness-110 active:scale-95 transition-all font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Apply Changes</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+</span>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">Display Language</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Primary system UI lexicon and semantic engine translations</div>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-highest text-tertiary hover:bg-surface-bright transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>+ Add Language Pack</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-6 rounded overflow-hidden shadow flex flex-col shrink-0">
+<div class="w-full h-1/2 bg-[#EF4444]"></div>
+<div class="w-full h-1/2 bg-white"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg font-medium text-on-surface">Bahasa Indonesia (ID)</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded bg-primary-container text-on-primary-container font-medium">PRIMARY ACTIVE</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">id_ID.UTF-8 • Coverage: 100% Core Shell &amp; POSIX Utils</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-6 rounded overflow-hidden bg-[#0A2472] flex items-center justify-center text-tertiary font-code-sm text-code-sm font-bold shrink-0">
+                US
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-body-md text-on-surface">English (United States)</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded bg-surface-container-highest text-on-surface-variant">FALLBACK</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">en_US.UTF-8 Enforced • System Runtime Fallback</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" title="Move Up">
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_up</span>
+</button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" title="Settings">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+<span class="uppercase tracking-wider">Geographic Region</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Regional Locale Profile</label>
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">map</span>
+<span class="font-body-md text-body-md">Indonesia (WITA - Asia/Makassar)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span>Offset: UTC +08:00</span>
+<span class="text-tertiary">TZ: ID-WITA</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">straighten</span>
+<span class="uppercase tracking-wider">System Units</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Standard Measurement Tier</label>
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">scale</span>
+<span class="font-body-md text-body-md font-medium">Metric (°C, Meters, Kilograms)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span>Pressure: hPa / Bar</span>
+<span class="text-primary">SI Canonical</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">preview</span>
+<span class="font-headline-md text-headline-md text-on-surface">Format Preview Kernel</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Active Output Parser ID: CLDR-44-ID</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Date Standard</span>
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs bg-surface-container rounded text-tertiary">DD/MM/YYYY</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">Kamis, 24 Oktober 2024</div>
+<div class="font-code-md text-code-md text-secondary">24/10/2024</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Calendar: Gregorian (Solar)</span>
+<span class="text-tertiary font-medium">First day: Senin</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Time Rendering</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-primary font-medium">24H</span>
+<button class="w-8 h-4 rounded-full bg-primary-container p-space-2xs flex items-center justify-end cursor-pointer transition-all" id="clock-toggle">
+<div class="w-3 h-3 rounded-full bg-on-primary-container"></div>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="font-headline-md text-headline-md text-on-surface font-mono font-semibold" id="live-time-24">14:28:02 WITA</div>
+<div class="font-code-md text-code-md text-on-surface-variant font-mono" id="live-time-12">02:28:02 PM (Alternative)</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Precision: Microsecond tick</span>
+<span class="text-primary font-medium">NTP Synchronized</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Numeric System</span>
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs bg-surface-container rounded text-secondary">Dot-Grouping</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="font-headline-md text-headline-md text-on-surface font-mono font-semibold">1.234.567,89</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Negative: -1.234.567,89 • Sci: 1,23e+6</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Separator: Dot (.)</span>
+<span class="text-secondary font-medium">Decimal: Comma (,)</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Currency Format</span>
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs bg-surface-container rounded text-tertiary">ISO-4217 IDR</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="font-headline-md text-headline-md text-tertiary font-mono font-semibold">Rp 15.750.000,00</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Prefix positioning • Precision: 2 decimals</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Short notation: Rp 15,75 jt</span>
+<span class="text-tertiary font-medium">Indonesian Rupiah</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">keyboard</span>
+<span class="font-headline-md text-headline-md">Input Sources</span>
+</div>
+<button class="p-space-xs rounded bg-surface-container text-tertiary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs bg-primary-container text-on-primary-container rounded font-bold">ID</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Indonesian QWERTY</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Default Hardware Layout</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_8px_currentColor]"></span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container opacity-85 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs bg-surface-container-highest text-on-surface-variant rounded font-bold">US</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">English (US)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Alternative ANSI Map</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] cursor-grab">drag_indicator</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Switching Shortcut</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<kbd class="font-code-sm text-code-sm px-space-xs py-space-2xs rounded bg-surface-container-highest text-on-surface shadow-sm">Super</kbd>
+<span class="text-outline font-code-sm text-code-sm">+</span>
+<kbd class="font-code-sm text-code-sm px-space-xs py-space-2xs rounded bg-surface-container-highest text-on-surface shadow-sm">Space</kbd>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Locale Density Map</span>
+<span class="font-code-sm text-code-sm text-tertiary">IDN-SE</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest p-space-sm flex flex-col items-center justify-center">
+<svg class="w-full h-24 text-secondary/40" fill="none" viewbox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M20,60 Q40,40 70,55 T130,45 T190,65 T250,35 T290,50" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2"></path>
+<circle class="fill-outline" cx="70" cy="55" r="4"></circle>
+<circle class="fill-outline" cx="130" cy="45" r="4"></circle>
+<circle class="fill-tertiary animate-ping opacity-60" cx="210" cy="58" r="6"></circle>
+<circle class="fill-tertiary" cx="210" cy="58" r="4"></circle>
+<text class="fill-on-surface font-label-sm text-[10px]" x="218" y="55">Makassar (WITA)</text>
+</svg>
+<div class="w-full flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant pt-space-xs">
+<span>Lat: -5.1477° S</span>
+<span>Lon: 119.4327° E</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Spellcheck Engine</span>
+<span class="text-on-surface font-medium">Hunspell (id_ID v1.2)</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Collation Priority</span>
+<span class="text-on-surface font-medium">Latin-1 Standard</span>
+</div>
+<div class="flex items-center justify-between">
+<span>BiDi Typography Support</span>
+<span class="text-primary font-medium">LTR Enabled</span>
+</div>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container p-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 object-cover rounded-lg shrink-0" data-alt="Cybernetic tactile keyboard glowing in dark deep cobalt blue lighting with illuminated Indonesian language characters keycaps in high tech minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASlubgcBIFLrJH1f1g8TtI0qNFjQDv72YvLlwKMGDWam7SWiZG3JNzNa9rREYxiios2QaSixve1txbhrjHqDKRkR3aK_mpeuL8vpcSYee7bsiKzi6qs3zW1lU4D5MAAsi17RO1Iz-zTk3YJiKhvnf7IeoXIfQ-RG_i_g4PlSHIe_QgP3G52Zam0C6jrGemoE8rvKoQOdy9_We3Oypt873qyZ8ctpUM8Kih9ZTSHPChIfm-yMQ6WBUa"/>
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Live Input Kernel</span>
+<span class="font-body-sm text-body-sm text-on-surface">Keyboard layout active with automatic dead-key accent parsing.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full rounded-xl bg-surface-container-low p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface-variant">LC_ALL:</span>
+<span class="text-tertiary font-semibold">id_ID.UTF-8</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm">
+<span class="text-on-surface-variant">LC_COLLATE:</span>
+<span class="text-on-surface font-medium">en_US.UTF-8</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm">
+<span class="text-on-surface-variant">ENCODING:</span>
+<span class="text-secondary font-medium">UTF-8 Strict (BOM-Ignored)</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm">
+<span class="text-on-surface-variant">TIME_SOURCE:</span>
+<span class="text-primary font-medium">id.pool.ntp.org</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified_user</span>
+<span>Collation integrity verified (SHA-256: 8f4e21...0c)</span>
+</div>
+</div>
+</div>
+<script>
+  (function initLocalePreview() {
+    let mode24 = true;
+    const btn = document.getElementById('clock-toggle');
+    const time24El = document.getElementById('live-time-24');
+    const time12El = document.getElementById('live-time-12');
+
+    function updateClocks() {
+      const now = new Date();
+      // WITA is UTC+8
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const witaDate = new Date(utc + (3600000 * 8));
+      
+      const hours = witaDate.getHours();
+      const mins = String(witaDate.getMinutes()).padStart(2, '0');
+      const secs = String(witaDate.getSeconds()).padStart(2, '0');
+
+      const hours24 = String(hours).padStart(2, '0');
+      const hours12 = hours % 12 || 12;
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      
+      if (time24El && time12El) {
+        if (mode24) {
+          time24El.textContent = `${hours24}:${mins}:${secs} WITA`;
+          time12El.textContent = `${String(hours12).padStart(2, '0')}:${mins}:${secs} ${ampm} (Alternative)`;
+        } else {
+          time24El.textContent = `${String(hours12).padStart(2, '0')}:${mins}:${secs} ${ampm} WITA`;
+          time12El.textContent = `${hours24}:${mins}:${secs} (24H Alternative)`;
+        }
+      }
+    }
+
+    if (btn) {
+      btn.addEventListener('click', function() {
+        mode24 = !mode24;
+        const knob = btn.firstElementChild;
+        if (mode24) {
+          btn.className = "w-8 h-4 rounded-full bg-primary-container p-space-2xs flex items-center justify-end cursor-pointer transition-all";
+        } else {
+          btn.className = "w-8 h-4 rounded-full bg-surface-container-highest p-space-2xs flex items-center justify-start cursor-pointer transition-all";
+        }
+        updateClocks();
+      });
+    }
+
+    updateClocks();
+    setInterval(updateClocks, 1000);
+  })();
+</script></div></div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.4)]"><div class="h-full w-full px-space-md flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface flex items-center gap-space-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[16px]">grid_view</span>Root</button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs font-code-sm text-code-sm"><span class="px-space-sm py-space-xs rounded bg-primary-container text-on-primary-container">1</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">2</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">3</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">4</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-code-sm text-code-sm text-on-surface">Settings</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded opacity-75"><span class="w-2 h-2 rounded-full bg-outline"></span><span class="font-code-sm text-code-sm text-on-surface-variant">Logs Tail</span></div></div><div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">wifi</span>ENG-NET</span><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">volume_up</span>100%</span><span class="text-on-surface font-label-md text-label-md">14:48:22 UTC</span></div></div></footer></body></html>

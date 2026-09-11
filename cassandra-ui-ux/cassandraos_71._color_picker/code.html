@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full relative min-h-[calc(100vh-84px)] overflow-hidden items-center justify-center p-space-lg">
+<!-- Dynamic Desktop Ambient Backdrop -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden select-none">
+<div class="absolute top-12 left-1/4 w-[480px] h-[480px] rounded-full bg-primary-container/10 blur-[120px]"></div>
+<div class="absolute bottom-16 right-1/4 w-[420px] h-[420px] rounded-full bg-tertiary/10 blur-[140px]"></div>
+<div class="absolute top-1/2 right-12 w-64 h-64 rounded-full bg-secondary-container/15 blur-[90px]"></div>
+<!-- Ghost Workspace Window Silhouette in Background -->
+<div class="absolute top-6 left-12 w-[620px] h-[380px] rounded-xl bg-surface-container-lowest/50 backdrop-blur-md p-space-md opacity-40 shadow-2xl">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container-highest/30">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-2.5 rounded-full bg-error/60"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-outline-variant/60"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-outline-variant/60"></div>
+<span class="font-label-sm text-label-sm text-outline ml-space-xs">terminal://telemetry-node-04</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">pts/2</span>
+</div>
+<div class="space-y-1 font-code-sm text-code-sm text-on-surface-variant/40">
+<p class="text-tertiary/50">$ cassandra-daemon --stream-render --vulkan</p>
+<p>[0.021s] Render target swapchain bound: 3840x2160 @ 144Hz</p>
+<p>[0.089s] Optical pipeline online. LUT: rec2020-linear-hdr</p>
+<p>[0.114s] Shader matrix: sampling grid 11x11 subpixel stride</p>
+</div>
+</div>
+</div>
+<!-- Main Floating Utility Window: Color Picker -->
+<div class="relative w-full max-w-[820px] rounded-xl bg-surface-container-low/95 backdrop-blur-2xl shadow-[0_24px_64px_-12px_rgba(0,7,32,0.9),0_0_0_1px_rgba(91,213,252,0.25),0_0_36px_rgba(67,97,238,0.2)] z-20 overflow-hidden flex flex-col">
+<!-- Window Chrome / Titlebar -->
+<div class="h-titlebar-height px-space-md bg-surface-container-lowest/80 flex items-center justify-between select-none">
+<div class="flex items-center gap-space-sm">
+<!-- Traffic Lights -->
+<div class="flex items-center gap-space-xs">
+<button aria-label="Close" class="w-2.5 h-2.5 rounded-full bg-[#EF4444] hover:brightness-125 transition-all" type="button"></button>
+<button aria-label="Minimize" class="w-2.5 h-2.5 rounded-full bg-[#F5C400] hover:brightness-125 transition-all" type="button"></button>
+<button aria-label="Maximize" class="w-2.5 h-2.5 rounded-full bg-[#26B170] hover:brightness-125 transition-all" type="button"></button>
+</div>
+<div class="h-3.5 w-px bg-surface-container-highest mx-space-2xs"></div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">colorize</span>
+<span class="font-label-md text-label-md text-on-surface tracking-wide">EYEDROPPER // SAMPLER</span>
+<span class="font-code-sm text-code-sm text-tertiary/70 bg-surface-container-high px-space-xs py-0.5 rounded ml-space-xs">v3.4.2</span>
+</div>
+</div>
+<!-- Live Sampling Indicator / Badges -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-space-2xs px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>8x OPTICAL MATRIX</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-2xs px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">speed</span>
+<span>GPU SAMPLED</span>
+</div>
+<button class="w-6 h-6 flex items-center justify-center rounded hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Eyedropper Options" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Main Content Interior -->
+<div class="p-space-lg flex flex-col gap-space-lg">
+<!-- Top Grid: Magnifier Reticle & Color Swatch Hero Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Magnifier Reticle Section (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container rounded-lg p-space-md flex flex-col items-center justify-between relative shadow-inner overflow-hidden">
+<div class="w-full flex items-center justify-between pb-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Magnifier Matrix</span>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-tertiary">
+<span class="material-symbols-outlined text-[13px]">my_location</span>
+<span>X: 1920   Y: 1080</span>
+</div>
+</div>
+<!-- Circular 8x Matrix Display -->
+<div class="relative w-56 h-56 my-space-sm flex items-center justify-center">
+<!-- Ambient Glow behind Reticle -->
+<div class="absolute inset-0 rounded-full bg-tertiary/20 blur-xl"></div>
+<!-- Circular Viewport Container with 1px border glow -->
+<div class="relative w-52 h-52 rounded-full overflow-hidden shadow-[0_0_30px_rgba(91,213,252,0.35)] bg-surface-container-lowest flex items-center justify-center">
+<!-- 9x9 Zoomed Subpixel Grid Pattern -->
+<div class="absolute inset-0 grid grid-cols-9 grid-rows-9 gap-[1.5px] p-1.5 bg-surface-container-lowest">
+<!-- Outer Pixels with gradient variance -->
+<div class="bg-[#122e6b]"></div><div class="bg-[#16367c]"></div><div class="bg-[#1a3f8f]"></div><div class="bg-[#204ca6]"></div><div class="bg-[#285bc0]"></div><div class="bg-[#2a61cd]"></div><div class="bg-[#2353b3]"></div><div class="bg-[#1b4194]"></div><div class="bg-[#143274]"></div>
+<div class="bg-[#193d8a]"></div><div class="bg-[#2350b0]"></div><div class="bg-[#2c65da]"></div><div class="bg-[#3876e6]"></div><div class="bg-[#4388f0]"></div><div class="bg-[#4084ec]"></div><div class="bg-[#3370e0]"></div><div class="bg-[#2657bf]"></div><div class="bg-[#1b4194]"></div>
+<div class="bg-[#1f4aa4]"></div><div class="bg-[#2f6ce6]"></div><div class="bg-[#3e86f3]"></div><div class="bg-[#4b98fa]"></div><div class="bg-[#56a8fb]"></div><div class="bg-[#53a4fa]"></div><div class="bg-[#438ef5]"></div><div class="bg-[#3372e2]"></div><div class="bg-[#2353b3]"></div>
+<div class="bg-[#265ac4]"></div><div class="bg-[#3d83f1]"></div><div class="bg-[#4ca0f9]"></div><div class="bg-[#56befd]"></div><div class="bg-[#59c9fc]"></div><div class="bg-[#57c2fd]"></div><div class="bg-[#4da5fa]"></div><div class="bg-[#3a7fe9]"></div><div class="bg-[#295ec8]"></div>
+<!-- Center Row -->
+<div class="bg-[#2c67da]"></div><div class="bg-[#4491f5]"></div><div class="bg-[#54b3fc]"></div><div class="bg-[#5bd3fc]"></div>
+<!-- CENTER TARGET PIXEL (Laser Cyan #4CC9F0 / #5bd5fc) -->
+<div class="bg-tertiary relative shadow-[inset_0_0_6px_rgba(255,255,255,0.8)] z-10 scale-105">
+<div class="absolute -inset-0.5 border border-on-primary-container animate-pulse"></div>
+</div>
+<div class="bg-[#5bd3fc]"></div><div class="bg-[#53aefb]"></div><div class="bg-[#428cf1]"></div><div class="bg-[#2c66d8]"></div>
+<div class="bg-[#265ac4]"></div><div class="bg-[#3d83f1]"></div><div class="bg-[#4ca0f9]"></div><div class="bg-[#56befd]"></div><div class="bg-[#59c9fc]"></div><div class="bg-[#57c2fd]"></div><div class="bg-[#4da5fa]"></div><div class="bg-[#3a7fe9]"></div><div class="bg-[#295ec8]"></div>
+<div class="bg-[#1f4aa4]"></div><div class="bg-[#2f6ce6]"></div><div class="bg-[#3e86f3]"></div><div class="bg-[#4b98fa]"></div><div class="bg-[#56a8fb]"></div><div class="bg-[#53a4fa]"></div><div class="bg-[#438ef5]"></div><div class="bg-[#3372e2]"></div><div class="bg-[#2353b3]"></div>
+<div class="bg-[#193d8a]"></div><div class="bg-[#2350b0]"></div><div class="bg-[#2c65da]"></div><div class="bg-[#3876e6]"></div><div class="bg-[#4388f0]"></div><div class="bg-[#4084ec]"></div><div class="bg-[#3370e0]"></div><div class="bg-[#2657bf]"></div><div class="bg-[#1b4194]"></div>
+<div class="bg-[#122e6b]"></div><div class="bg-[#16367c]"></div><div class="bg-[#1a3f8f]"></div><div class="bg-[#204ca6]"></div><div class="bg-[#285bc0]"></div><div class="bg-[#2a61cd]"></div><div class="bg-[#2353b3]"></div><div class="bg-[#1b4194]"></div><div class="bg-[#143274]"></div>
+</div>
+<!-- Reticle Crosshairs Overlay -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<!-- Horizontal Axis -->
+<div class="w-full h-px bg-white/40 shadow-[0_0_4px_rgba(255,255,255,0.8)]"></div>
+<!-- Vertical Axis -->
+<div class="absolute h-full w-px bg-white/40 shadow-[0_0_4px_rgba(255,255,255,0.8)]"></div>
+<!-- Central Target Focus Box -->
+<div class="absolute w-7 h-7 rounded-sm shadow-[0_0_8px_rgba(91,213,252,0.9)] bg-transparent"></div>
+</div>
+<!-- Concentric Range Rings -->
+<div class="absolute inset-2 rounded-full border border-tertiary/20 pointer-events-none"></div>
+<div class="absolute inset-8 rounded-full border border-dashed border-tertiary/30 pointer-events-none"></div>
+</div>
+<!-- Compass / Axis Markers -->
+<span class="absolute top-1 text-[9px] font-code-sm text-tertiary/70 select-none">N</span>
+<span class="absolute bottom-1 text-[9px] font-code-sm text-tertiary/70 select-none">S</span>
+<span class="absolute left-1 text-[9px] font-code-sm text-tertiary/70 select-none">W</span>
+<span class="absolute right-1 text-[9px] font-code-sm text-tertiary/70 select-none">E</span>
+</div>
+<!-- Bottom Sampling Toolbar in Magnifier -->
+<div class="w-full flex items-center justify-between pt-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<div class="flex items-center gap-space-xs">
+<span class="text-tertiary">GRID:</span>
+<span class="text-on-surface font-medium">9×9 px</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-tertiary">STRIDE:</span>
+<span class="text-on-surface font-medium">1.0 Subpixel</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span>LOCKED</span>
+</div>
+</div>
+</div>
+<!-- Color Preview Swatch & Perception Metrics (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-inner gap-space-md">
+<!-- Header of swatch -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Active Chroma</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Laser Cyan (Electric)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high px-space-xs py-0.5 rounded">P3 Gamut 99.4%</span>
+</div>
+</div>
+<!-- Giant Main Color Block with Dual Split Tone & Contrast Ratings -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden flex flex-col justify-between p-space-md shadow-[0_8px_24px_-4px_rgba(0,0,0,0.6)]" style="background: linear-gradient(135deg, #5bd5fc 0%, #3ca0e0 100%);">
+<div class="flex items-start justify-between z-10">
+<div class="bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-2xs rounded flex items-center gap-space-xs">
+<span class="font-code-md text-code-md font-bold text-tertiary">#4CC9F0</span>
+<span class="text-on-surface-variant text-[11px] font-code-sm">sRGB</span>
+</div>
+<div class="bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-2xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">WCAG AAA (Dark)</span>
+</div>
+</div>
+<!-- Complementary & Split Complementary Pill Bar -->
+<div class="z-10 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md p-space-xs rounded">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-space-2xs">HARMONIES</span>
+<div class="flex items-center gap-space-xs">
+<!-- Main Sample -->
+<div class="w-5 h-5 rounded-full bg-[#4CC9F0] shadow-sm" title="Base: #4CC9F0"></div>
+<!-- Complement -->
+<div class="w-5 h-5 rounded-full bg-[#F0734C] shadow-sm" title="Complement: #F0734C"></div>
+<!-- Analogous Left -->
+<div class="w-5 h-5 rounded-full bg-[#4CEEF0] shadow-sm" title="Analogous L: #4CEEF0"></div>
+<!-- Analogous Right -->
+<div class="w-5 h-5 rounded-full bg-[#4C75F0] shadow-sm" title="Analogous R: #4C75F0"></div>
+<!-- Triadic -->
+<div class="w-5 h-5 rounded-full bg-[#F04CA4] shadow-sm" title="Triad: #F04CA4"></div>
+</div>
+</div>
+<!-- Quick action -->
+<button class="flex items-center gap-space-2xs px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container hover:bg-secondary-container transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[13px]">palette</span>
+<span>Analyze Harmony</span>
+</button>
+</div>
+</div>
+<!-- Color Channels / Perceptual Lightness Bars -->
+<div class="grid grid-cols-3 gap-space-sm font-code-sm text-code-sm">
+<!-- Red Channel -->
+<div class="bg-surface-container-high p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between text-on-surface-variant">
+<span>R (Red)</span>
+<span class="text-on-surface font-semibold">76 / 255</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 29.8%"></div>
+</div>
+</div>
+<!-- Green Channel -->
+<div class="bg-surface-container-high p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between text-on-surface-variant">
+<span>G (Green)</span>
+<span class="text-on-surface font-semibold">201 / 255</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-[#26B170] rounded-full" style="width: 78.8%"></div>
+</div>
+</div>
+<!-- Blue Channel -->
+<div class="bg-surface-container-high p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between text-on-surface-variant">
+<span>B (Blue)</span>
+<span class="text-on-surface font-semibold">240 / 255</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 94.1%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mid Section: Copyable Format Specifications Table -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between pb-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Values Breakdown</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(Standard Industrial Color Models)</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary/70">Press ⌥ + C to Copy Primary Hex</span>
+</div>
+<!-- Format Rows Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- HEX Row -->
+<div class="flex items-center justify-between p-space-xs bg-surface-container-high rounded hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-12 font-code-sm text-code-sm font-bold text-tertiary">HEX</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold tracking-wider">#4CC9F0</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">⌘1</span>
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs transition-all active:scale-95" onclick="navigator.clipboard.writeText('#4CC9F0')" title="Copy HEX" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+</div>
+<!-- RGB Row -->
+<div class="flex items-center justify-between p-space-xs bg-surface-container-high rounded hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-12 font-code-sm text-code-sm font-bold text-secondary">RGB</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold tracking-wider">rgb(76, 201, 240)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">⌘2</span>
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs transition-all active:scale-95" onclick="navigator.clipboard.writeText('rgb(76, 201, 240)')" title="Copy RGB" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+</div>
+<!-- HSL Row -->
+<div class="flex items-center justify-between p-space-xs bg-surface-container-high rounded hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-12 font-code-sm text-code-sm font-bold text-tertiary">HSL</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold tracking-wider">hsl(194°, 86%, 62%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">⌘3</span>
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs transition-all active:scale-95" onclick="navigator.clipboard.writeText('hsl(194, 86%, 62%)')" title="Copy HSL" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+</div>
+<!-- CMYK Row -->
+<div class="flex items-center justify-between p-space-xs bg-surface-container-high rounded hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-12 font-code-sm text-code-sm font-bold text-secondary">CMYK</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold tracking-wider">cmyk(68%, 16%, 0%, 6%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">⌘4</span>
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs transition-all active:scale-95" onclick="navigator.clipboard.writeText('cmyk(68%, 16%, 0%, 6%)')" title="Copy CMYK" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+</div>
+<!-- CSS Variable (Wide Row spanning full width on md screens) -->
+<div class="md:col-span-2 flex items-center justify-between p-space-xs bg-surface-container-high rounded hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-12 font-code-sm text-code-sm font-bold text-primary">CSS</span>
+<span class="font-code-md text-code-md text-tertiary font-medium tracking-wide">var(--accent-laser-cyan, #4CC9F0);</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">⌘5</span>
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-sm text-label-sm flex items-center gap-space-2xs transition-all active:scale-95" onclick="navigator.clipboard.writeText('var(--accent-laser-cyan, #4CC9F0);')" title="Copy CSS Variable" type="button">
+<span class="material-symbols-outlined text-[13px]">code</span>
+<span>Copy Token</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Recent Swatches History & Palette Vault -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md shadow-inner">
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Recent Swatches</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">History (8)</span>
+</div>
+<!-- Swatches Tray -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1">
+<!-- Swatch 1 (Current Active) -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#4CC9F0] shadow-md ring-2 ring-tertiary scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-tertiary shadow-lg whitespace-nowrap z-30">#4CC9F0</div>
+</div>
+<!-- Swatch 2 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#4361EE] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-secondary shadow-lg whitespace-nowrap z-30">#4361EE</div>
+</div>
+<!-- Swatch 3 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#0A2472] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-secondary-fixed shadow-lg whitespace-nowrap z-30">#0A2472</div>
+</div>
+<!-- Swatch 4 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#26B170] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-on-surface shadow-lg whitespace-nowrap z-30">#26B170</div>
+</div>
+<!-- Swatch 5 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#F5C400] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-on-surface shadow-lg whitespace-nowrap z-30">#F5C400</div>
+</div>
+<!-- Swatch 6 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#EF4444] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-error shadow-lg whitespace-nowrap z-30">#EF4444</div>
+</div>
+<!-- Swatch 7 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#7209B7] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-on-surface shadow-lg whitespace-nowrap z-30">#7209B7</div>
+</div>
+<!-- Swatch 8 -->
+<div class="relative group cursor-pointer">
+<div class="w-8 h-8 rounded bg-[#03045E] shadow-md hover:scale-105 transition-transform"></div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-lowest px-1.5 py-0.5 rounded font-code-sm text-code-sm text-on-surface shadow-lg whitespace-nowrap z-30">#03045E</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="px-space-md py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-space-2xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export ACO / ASE</span>
+</button>
+<button class="px-space-md py-space-xs rounded bg-primary-container hover:bg-secondary-container text-on-primary-container font-label-md text-label-md flex items-center gap-space-2xs transition-all shadow-md active:scale-98" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+<span>Save to Palette</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Utility Panel Status Footer Bar -->
+<div class="h-8 px-space-md bg-surface-container-lowest/90 flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span>RETICLE STREAM: 60 FPS</span>
+</span>
+<span class="hidden sm:inline">COLOR PROFILE: Display P3 calibrated</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span>HOLD [SHIFT] FOR PRECISE STEP</span>
+<span>•</span>
+<span class="text-tertiary">ESC TO DISMISS</span>
+</div>
+</div>
+</div>
+</div></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

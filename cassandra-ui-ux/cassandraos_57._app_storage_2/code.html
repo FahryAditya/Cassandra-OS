@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#c4c5d7","primary":"#bac3ff","on-secondary-container":"#eaf0ff","error":"#ffb4ab","primary-container":"#4361ee","secondary-container":"#036ec6","tertiary":"#5bd5fc","outline":"#8e8fa1","inverse-primary":"#2e4edc","surface-variant":"#273647","on-secondary-fixed":"#001c39","secondary":"#a4c9ff","on-tertiary-container":"#e4f6ff","on-primary-fixed-variant":"#0031c4","on-secondary":"#00315d","tertiary-container":"#007995","surface-container-low":"#0d1c2d","surface-container-highest":"#273647","tertiary-fixed-dim":"#5bd5fc","on-tertiary":"#003543","surface-dim":"#051424","on-primary-container":"#f4f2ff","on-error":"#690005","surface-container":"#122131","primary-fixed":"#dee1ff","surface":"#051424","on-surface":"#d4e4fa","surface-container-lowest":"#010f1f","on-primary-fixed":"#001159","surface-container-high":"#1c2b3c","on-primary":"#00218d","error-container":"#93000a","outline-variant":"#444655","on-secondary-fixed-variant":"#004884","secondary-fixed":"#d4e3ff","surface-tint":"#bac3ff","background":"#051424","secondary-fixed-dim":"#a4c9ff","inverse-surface":"#d4e4fa","tertiary-fixed":"#b7eaff","on-tertiary-fixed":"#001f28","on-background":"#d4e4fa","on-tertiary-fixed-variant":"#004e61","primary-fixed-dim":"#bac3ff","surface-bright":"#2c3a4c","inverse-on-surface":"#233143","on-error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"taskbar-height":"48px","gutter":"12px","space-md":"12px","space-xs":"4px","space-sm":"8px","titlebar-height":"36px","space-xl":"24px","space-2xl":"32px","space-lg":"16px","space-2xs":"2px","panel-dock-width":"320px"},fontFamily:{"headline-lg":["Inter"],"body-sm":["Inter"],"headline-xl":["Inter"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"code-sm":["JetBrains Mono"],"headline-md":["Inter"],"body-lg":["Inter"],"label-sm":["JetBrains Mono"],"code-md":["JetBrains Mono"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #4361ee
+- Font: inter
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CassandraOS</span><span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-surface-container-highest text-tertiary rounded">v4.19-PRO</span></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">memory</span>CPU: 14.2%</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[16px]">storage</span>MEM: 6.8/32 GB</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px]">speed</span>IOPS: 18.4k</span></div><div class="flex items-center gap-space-sm"><button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-md"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">System Control</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Configuration</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="application-management" href="#"><span class="material-symbols-outlined text-[18px]">apps</span>Application Manager</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">vital_signs</span>Diagnostics &amp; Metrics</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="network-telemetry" href="#"><span class="material-symbols-outlined text-[18px]">hub</span>Network Telemetry</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="security-policies" href="#"><span class="material-symbols-outlined text-[18px]">security</span>Security &amp; Auth</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="storage-volumes" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span>Storage Volumes</a></nav></div><div class="p-space-sm bg-surface-container rounded-lg"><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-space-xs"><span>Node Uptime</span><span class="text-tertiary">19d 04h 12m</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-primary h-1 rounded-full w-4/5"></div></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-16 px-space-gutter min-h-screen bg-surface"><div class="w-full my-space-gutter rounded-xl bg-surface-container-low/95 backdrop-blur-2xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height bg-surface-container-high/80 px-space-md flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><span class="w-[11px] h-[11px] rounded-full bg-[#EF4444] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="w-[11px] h-[11px] rounded-full bg-[#F5C400] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="w-[11px] h-[11px] rounded-full bg-[#26B170] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="ml-space-sm font-body-sm text-body-sm text-on-surface-variant">Cassandra Control Panel // Session active</span></div><div class="flex items-center gap-space-xs text-outline"><button class="w-6 h-6 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">dock_to_right</span></button><button class="w-6 h-6 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">close_fullscreen</span></button></div></div><div class="p-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface-variant hover:text-on-surface cursor-pointer">Settings</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant hover:text-on-surface cursor-pointer">Applications &amp; Storage</span>
+<span class="text-outline">/</span>
+<span class="text-tertiary font-medium">App Storage Breakdown</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm px-space-sm py-space-2xs rounded bg-surface-container text-tertiary">NVMe-0: 256.0 GB EXT4</span>
+<span class="font-code-sm text-code-sm px-space-sm py-space-2xs rounded bg-surface-container text-secondary">IOPS Limit: None</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-xl shadow-xl">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-64 h-64 rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">pie_chart</span>
+<span>Filesystem Quota Telemetry</span>
+</div>
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            94.2 GB <span class="font-headline-md text-headline-md font-normal text-on-surface-variant">Allocated Across 84 Applications</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            System volumes are currently operating at 36.8% of primary root allocation. High-capacity workloads are monitored under realtime tiering.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<div class="flex flex-col gap-space-2xs bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline">Reclaimable Cache</span>
+<span class="font-code-md text-code-md text-tertiary font-semibold">9.04 GB</span>
+</div>
+<button class="px-space-lg py-space-md rounded-lg bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-md text-label-md flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.98]" id="clean-cache-btn" onclick="triggerGlobalClean()">
+<span class="material-symbols-outlined text-[18px]">auto_delete</span>
+<span>Clean All Temporary Caches (reclaim 9.0 GB)</span>
+</button>
+</div>
+</div>
+<div class="relative z-10 mt-space-lg pt-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center font-code-sm text-code-sm text-on-surface-variant">
+<span>Global Storage Distribution (94.2 GB / 256.0 GB Total Root Drive)</span>
+<span class="text-tertiary">36.8% Used</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 33.1%;" title="Neural Models: 31.2 GB"></div>
+<div class="h-full bg-tertiary" style="width: 24.2%;" title="Docker Volumes: 22.8 GB"></div>
+<div class="h-full bg-secondary" style="width: 19.5%;" title="Cassandra IDE: 18.4 GB"></div>
+<div class="h-full bg-primary-container" style="width: 4.8%;" title="Navigator: 4.6 GB"></div>
+<div class="h-full bg-outline-variant" style="width: 18.4%;" title="Remaining 80 Apps: 17.2 GB"></div>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg mt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>Neural Models (31.2 GB)</div>
+<div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Container Volumes (22.8 GB)</div>
+<div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span>Development Runtimes (18.4 GB)</div>
+<div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Web Data (4.6 GB)</div>
+<div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-outline-variant"></span>Other 80 Apps (17.2 GB)</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md">
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" id="app-search" oninput="filterApps(this.value)" placeholder="Filter applications, runtime bins, or cache roots..." type="text"/>
+<span class="absolute right-space-sm top-1/2 -translate-y-1/2 font-code-sm text-code-sm text-outline px-space-xs py-space-2xs rounded bg-surface-container">⌘F</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-space-2xs rounded-lg">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+<select class="bg-transparent text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer" id="sort-select" onchange="sortAppRows(this.value)">
+<option class="bg-surface-container-high text-on-surface" value="size">Sort by Total Size</option>
+<option class="bg-surface-container-high text-on-surface" value="name">Sort by App Name</option>
+<option class="bg-surface-container-high text-on-surface" value="cache">Sort by Cache Footprint</option>
+</select>
+</button>
+</div>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="refreshStorageScan()" title="Force Re-indexing">
+<span class="material-symbols-outlined text-[18px]" id="refresh-icon">sync</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm w-full" id="apps-container">
+<div class="app-row rounded-xl bg-surface-container-low transition-all duration-200 shadow-md" data-cache="3.2" data-name="Neural Model Studio (Local LLM Weights)" data-size="31.2">
+<div class="p-space-lg flex flex-col gap-space-md cursor-pointer" onclick="toggleExpand('panel-llm')">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">neurology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Neural Model Studio</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">v2.1.0-hf</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-sm text-label-sm">AI Engine</span>
+<span class="px-space-xs py-space-2xs rounded bg-error-container text-error font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[13px]">warning</span>Exceeds 15 GB Quota
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">GGUF Quantized Tensors &amp; High-RAM Context Memory Pools</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="text-right">
+<div class="font-code-md text-code-md font-bold text-on-surface">31.2 GB</div>
+<div class="font-body-sm text-body-sm text-tertiary">33.1% of apps</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined transition-transform duration-200" id="icon-panel-llm">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 89.7%;" title="GGUF Models: 28.0 GB"></div>
+<div class="h-full bg-tertiary" style="width: 10.3%;" title="Context Buffers: 3.2 GB"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>GGUF Models: 28.0 GB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Context Buffers: 3.2 GB</span>
+</div>
+</div>
+</div>
+<div class="hidden px-space-lg pb-space-lg pt-space-xs bg-surface-container rounded-b-xl" id="panel-llm">
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface">Model Vault Location</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">/var/lib/cassandra/neural-studio/gguf/ (Llama-3-70B-Q4_K_M.gguf)</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors">
+                Offload To External NVMe
+              </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors" onclick="clearSpecificCache(this, '3.2 GB')">
+                Prune KV Context Buffers (3.2 GB)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="app-row rounded-xl bg-surface-container-low transition-all duration-200 shadow-md" data-cache="2.1" data-name="Docker Engine &amp; Containers" data-size="22.8">
+<div class="p-space-lg flex flex-col gap-space-md cursor-pointer" onclick="toggleExpand('panel-docker')">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">deployed_code</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Docker Engine &amp; Containers</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">v26.1.1</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-tertiary font-label-sm text-label-sm">Virtualization</span>
+<span class="px-space-xs py-space-2xs rounded bg-error-container text-error font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[13px]">warning</span>Exceeds 15 GB Quota
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Runtime Daemons, OverlayFS Layers, and Mounted Host Data</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="text-right">
+<div class="font-code-md text-code-md font-bold text-on-surface">22.8 GB</div>
+<div class="font-body-sm text-body-sm text-tertiary">24.2% of apps</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined transition-transform duration-200" id="icon-panel-docker">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 63.6%;" title="Base Images: 14.5 GB"></div>
+<div class="h-full bg-tertiary" style="width: 27.2%;" title="Volumes: 6.2 GB"></div>
+<div class="h-full bg-secondary" style="width: 9.2%;" title="Build Cache: 2.1 GB"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>Base Images: 14.5 GB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Volumes: 6.2 GB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span>Build Cache: 2.1 GB</span>
+</div>
+</div>
+</div>
+<div class="hidden px-space-lg pb-space-lg pt-space-xs bg-surface-container rounded-b-xl" id="panel-docker">
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface">Container Storage Driver</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">overlay2 // backing filesystem extfs (12 inactive dangling images)</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors">
+                Inspect Volumes
+              </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors" onclick="clearSpecificCache(this, '2.1 GB')">
+                Prune Build Cache (2.1 GB)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="app-row rounded-xl bg-surface-container-low transition-all duration-200 shadow-md" data-cache="2.4" data-name="Cassandra Studio IDE (v3.4.1)" data-size="18.4">
+<div class="p-space-lg flex flex-col gap-space-md cursor-pointer" onclick="toggleExpand('panel-ide')">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Cassandra Studio IDE</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">v3.4.1</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-secondary font-label-sm text-label-sm">Developer Tools</span>
+<span class="px-space-xs py-space-2xs rounded bg-error-container text-error font-label-sm text-label-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[13px]">warning</span>Exceeds 15 GB Quota
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Primary Integrated Development Suite &amp; Language Server Hub</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="text-right">
+<div class="font-code-md text-code-md font-bold text-on-surface">18.4 GB</div>
+<div class="font-body-sm text-body-sm text-tertiary">19.5% of apps</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined rotate-180 transition-transform duration-200" id="icon-panel-ide">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 17.4%;" title="Binary: 3.2 GB"></div>
+<div class="h-full bg-tertiary" style="width: 69.6%;" title="Workspace Projects: 12.8 GB"></div>
+<div class="h-full bg-secondary" style="width: 13.0%;" title="Cache &amp; Plugins: 2.4 GB"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>Binary: 3.2 GB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Workspace Projects: 12.8 GB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span>Cache &amp; Plugins: 2.4 GB</span>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg pt-space-xs bg-surface-container rounded-b-xl" id="panel-ide">
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface">Workspace Index &amp; Extension Bundle</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">24 active extensions enabled • 1.2 GB language server indexes</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<a class="px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors" href="#">
+                Manage Plugins
+              </a>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors flex items-center gap-space-xs" onclick="clearSpecificCache(this, '2.4 GB')">
+<span class="material-symbols-outlined text-[15px]">cleaning_services</span>
+<span>Clear Cache (2.4 GB)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="app-row rounded-xl bg-surface-container-low transition-all duration-200 shadow-md" data-cache="1.08" data-name="Cassandra Web Navigator" data-size="4.6">
+<div class="p-space-lg flex flex-col gap-space-md cursor-pointer" onclick="toggleExpand('panel-browser')">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">public</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Cassandra Web Navigator</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">v124.0.2</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Networking</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Sandboxed Multiprocess Web Browser Engine</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="text-right">
+<div class="font-code-md text-code-md font-bold text-on-surface">4.6 GB</div>
+<div class="font-body-sm text-body-sm text-tertiary">4.9% of apps</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined transition-transform duration-200" id="icon-panel-browser">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 9.1%;" title="Application: 420 MB"></div>
+<div class="h-full bg-tertiary" style="width: 67.4%;" title="IndexedDB &amp; Data: 3.1 GB"></div>
+<div class="h-full bg-secondary" style="width: 23.5%;" title="Browser Cache: 1.08 GB"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>App: 420 MB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>IndexedDB: 3.1 GB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span>Browser Cache: 1.08 GB</span>
+</div>
+</div>
+</div>
+<div class="hidden px-space-lg pb-space-lg pt-space-xs bg-surface-container rounded-b-xl" id="panel-browser">
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface">Cached Site Data &amp; Web Workers</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Service workers: 18 registered • HTTP Disk Cache: 1.08 GB</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors">
+                Clear Cookies &amp; State
+              </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors" onclick="clearSpecificCache(this, '1.08 GB')">
+                Purge Web Cache (1.08 GB)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="app-row rounded-xl bg-surface-container-low transition-all duration-200 shadow-md" data-cache="1.42" data-name="WebRTC Video Conference" data-size="1.8">
+<div class="p-space-lg flex flex-col gap-space-md cursor-pointer" onclick="toggleExpand('panel-webrtc')">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-container shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">video_call</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface truncate">WebRTC Video Conference</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">v4.8</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Communication</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ultra-low Latency AV Conferencing &amp; Stream Recorder</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="text-right">
+<div class="font-code-md text-code-md font-bold text-on-surface">1.8 GB</div>
+<div class="font-body-sm text-body-sm text-tertiary">1.9% of apps</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined transition-transform duration-200" id="icon-panel-webrtc">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 21.1%;" title="App: 380 MB"></div>
+<div class="h-full bg-tertiary" style="width: 78.9%;" title="Recorded Logs: 1.42 GB"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>App: 380 MB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Recorded Logs &amp; Streams: 1.42 GB</span>
+</div>
+</div>
+</div>
+<div class="hidden px-space-lg pb-space-lg pt-space-xs bg-surface-container rounded-b-xl" id="panel-webrtc">
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface">Local Recording Archives</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Auto-saved session logs and stream capture buffers</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors" onclick="clearSpecificCache(this, '1.42 GB')">
+                Prune Recordings (1.42 GB)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="app-row rounded-xl bg-surface-container-low transition-all duration-200 shadow-md" data-cache="0.155" data-name="MuPDF Document Reader" data-size="0.24">
+<div class="p-space-lg flex flex-col gap-space-md cursor-pointer" onclick="toggleExpand('panel-mupdf')">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-outline shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface truncate">MuPDF Document Reader</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">v1.23</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Productivity</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">High-speed Lightweight PDF, XPS &amp; EPUB Renderer</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="text-right">
+<div class="font-code-md text-code-md font-bold text-on-surface">240 MB</div>
+<div class="font-body-sm text-body-sm text-tertiary">0.2% of apps</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined transition-transform duration-200" id="icon-panel-mupdf">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 35.4%;" title="Lightweight binary: 85 MB"></div>
+<div class="h-full bg-tertiary" style="width: 64.6%;" title="Font Caches: 155 MB"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span>Binary: 85 MB</span>
+<span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Font Caches: 155 MB</span>
+</div>
+</div>
+</div>
+<div class="hidden px-space-lg pb-space-lg pt-space-xs bg-surface-container rounded-b-xl" id="panel-mupdf">
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface">Vector Glyphs &amp; Shaper Caches</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Pre-compiled typography glyph maps</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:bg-inverse-primary transition-colors" onclick="clearSpecificCache(this, '155 MB')">
+                Purge Font Caches (155 MB)
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span>All background caches are auto-purged if system free disk falls below 8.0 GB.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+          Configure Storage Policies
+        </button>
+</div>
+</div>
+</div>
+<script>
+    function toggleExpand(id) {
+      const panel = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      if (!panel) return;
+      if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      } else {
+        panel.classList.add('hidden');
+        if (icon) icon.classList.remove('rotate-180');
+      }
+    }
+
+    function filterApps(query) {
+      const q = (query || '').toLowerCase().trim();
+      const rows = document.querySelectorAll('.app-row');
+      rows.forEach(row => {
+        const name = row.getAttribute('data-name').toLowerCase();
+        if (name.includes(q)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function sortAppRows(criteria) {
+      const container = document.getElementById('apps-container');
+      const rows = Array.from(container.querySelectorAll('.app-row'));
+      
+      rows.sort((a, b) => {
+        if (criteria === 'size') {
+          return parseFloat(b.getAttribute('data-size')) - parseFloat(a.getAttribute('data-size'));
+        } else if (criteria === 'name') {
+          return a.getAttribute('data-name').localeCompare(b.getAttribute('data-name'));
+        } else if (criteria === 'cache') {
+          return parseFloat(b.getAttribute('data-cache')) - parseFloat(a.getAttribute('data-cache'));
+        }
+        return 0;
+      });
+
+      rows.forEach(row => container.appendChild(row));
+    }
+
+    function clearSpecificCache(btn, amount) {
+      const prevText = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[14px]">progress_activity</span> Purging...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = '✓ Reclaimed ' + amount;
+        btn.classList.remove('bg-primary-container', 'hover:bg-inverse-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      }, 700);
+    }
+
+    function triggerGlobalClean() {
+      const btn = document.getElementById('clean-cache-btn');
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> Cleaning in parallel...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> Reclaimed 9.04 GB Root Storage';
+        btn.classList.remove('bg-primary-container', 'hover:bg-inverse-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      }, 1100);
+    }
+
+    function refreshStorageScan() {
+      const icon = document.getElementById('refresh-icon');
+      icon.classList.add('animate-spin');
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+      }, 800);
+    }
+  </script>
+</div></div></div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.4)]"><div class="h-full w-full px-space-md flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface flex items-center gap-space-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[16px]">grid_view</span>Root</button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs font-code-sm text-code-sm"><span class="px-space-sm py-space-xs rounded bg-primary-container text-on-primary-container">1</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">2</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">3</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">4</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-code-sm text-code-sm text-on-surface">Settings</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded opacity-75"><span class="w-2 h-2 rounded-full bg-outline"></span><span class="font-code-sm text-code-sm text-on-surface-variant">Logs Tail</span></div></div><div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">wifi</span>ENG-NET</span><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">volume_up</span>100%</span><span class="text-on-surface font-label-md text-label-md">14:48:22 UTC</span></div></div></footer></body></html>

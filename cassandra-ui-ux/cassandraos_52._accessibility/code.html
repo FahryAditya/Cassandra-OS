@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#0031c4",
+          "surface-dim": "#051424",
+          "primary-fixed-dim": "#bac3ff",
+          "on-background": "#d4e4fa",
+          "on-tertiary": "#003543",
+          "surface": "#051424",
+          "inverse-on-surface": "#233143",
+          "on-tertiary-fixed-variant": "#004e61",
+          "on-tertiary-fixed": "#001f28",
+          "secondary": "#a4c9ff",
+          "secondary-fixed-dim": "#a4c9ff",
+          "inverse-primary": "#2e4edc",
+          "surface-variant": "#273647",
+          "surface-container-lowest": "#010f1f",
+          "surface-tint": "#bac3ff",
+          "on-surface": "#d4e4fa",
+          "on-secondary-container": "#eaf0ff",
+          "outline": "#8e8fa1",
+          "error": "#ffb4ab",
+          "primary": "#bac3ff",
+          "error-container": "#93000a",
+          "on-primary-container": "#f4f2ff",
+          "on-tertiary-container": "#e4f6ff",
+          "surface-container": "#122131",
+          "outline-variant": "#444655",
+          "on-primary-fixed": "#001159",
+          "primary-fixed": "#dee1ff",
+          "tertiary-fixed-dim": "#5bd5fc",
+          "on-secondary": "#00315d",
+          "on-primary": "#00218d",
+          "surface-container-highest": "#273647",
+          "on-error": "#690005",
+          "tertiary-container": "#007995",
+          "surface-container-high": "#1c2b3c",
+          "tertiary": "#5bd5fc",
+          "surface-bright": "#2c3a4c",
+          "tertiary-fixed": "#b7eaff",
+          "on-secondary-fixed": "#001c39",
+          "background": "#051424",
+          "secondary-fixed": "#d4e3ff",
+          "surface-container-low": "#0d1c2d",
+          "secondary-container": "#036ec6",
+          "on-surface-variant": "#c4c5d7",
+          "inverse-surface": "#d4e4fa",
+          "primary-container": "#4361ee",
+          "on-secondary-fixed-variant": "#004884"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "titlebar-height": "36px",
+          "taskbar-height": "48px",
+          "space-lg": "16px",
+          "space-xl": "24px",
+          "space-sm": "8px",
+          "space-md": "12px",
+          "space-xs": "4px",
+          "space-2xs": "2px",
+          "gutter": "12px",
+          "panel-dock-width": "320px",
+          "space-2xl": "32px"
+        },
+        "fontFamily": {
+          "body-sm": ["Inter"],
+          "headline-md": ["Inter"],
+          "code-md": ["JetBrains Mono"],
+          "label-sm": ["JetBrains Mono"],
+          "headline-xl": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-md": ["JetBrains Mono"],
+          "headline-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "code-sm": ["JetBrains Mono"]
+        },
+        "fontSize": {
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "code-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400"}],
+          "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "code-sm": ["11px", {"lineHeight": "15px", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-12 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span></div><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Cassandra<span class="text-tertiary">OS</span></span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-tertiary font-medium"><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="display" href="#">Display</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-and-audio" href="#">Camera &amp; Audio</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="peripherals" href="#">Peripherals</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="#">Notifications</a><a aria-current="page" class="px-space-sm py-1 rounded transition-colors bg-surface-container-high text-tertiary font-medium" data-path="accessibility" href="#">Accessibility</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-secondary text-[14px]">memory</span><span class="font-label-sm text-label-sm text-secondary">CPU 14%</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="font-label-sm text-label-sm text-tertiary">RAM 4.2G</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="material-symbols-outlined text-primary text-[14px]">swap_vert</span><span class="font-label-sm text-label-sm text-on-surface-variant">1.2 Gbps</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="pt-12 pb-16"><aside class="fixed left-0 top-12 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col justify-between p-space-md shadow-[2px_0_12px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Hardware &amp; System</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera" href="#">Camera</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="microphone" href="#">Microphone</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audio-devices" href="#">Audio Devices</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="#">Notifications</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="do-not-disturb" href="#">Do Not Disturb</a><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-medium" data-path="accessibility" href="#">Accessibility</a></nav></div><div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Audio Daemon</span><span class="font-label-sm text-label-sm text-tertiary">RUNNING</span></div><div class="font-code-sm text-code-sm text-outline">pipewire 0.3.82 (low-latency)</div></div></aside><div class="pl-64"><div class="p-space-lg"><div class="bg-surface-container/95 backdrop-blur-2xl rounded-xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height px-space-md bg-surface-container-high/90 flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><div class="w-[11px] h-[11px] rounded-full bg-[#EF4444] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#F5C400] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26B170] cursor-pointer hover:opacity-80 transition-opacity"></div></div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">tune</span><span>System Preferences — Hardware, Sound &amp; Accessibility</span></div><div class="w-12"></div></div><main class="pt-12 w-full p-space-xl bg-surface min-h-[calc(100vh-176px)]"><div class="flex flex-col w-full">
+<div class="flex items-center justify-between pb-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<span>Settings</span>
+<span class="text-tertiary">/</span>
+<span>Universal Access</span>
+<span class="text-tertiary">/</span>
+<span class="text-on-surface">Accessibility</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Vision &amp; Display Ergonomics</h1>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-code-sm text-code-sm">cass-access-engine v3.1</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span class="font-label-md text-label-md">Reset Calibration</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-inverse-primary text-on-primary-container font-medium transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md">Apply Profile</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-space-xl items-start">
+<div class="col-span-12 lg:col-span-3 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-sm shadow-md flex flex-col gap-space-xs">
+<span class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Access Pillars</span>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-body-md text-body-md shadow-md text-left transition-all" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span class="font-medium">Vision</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md text-left transition-all" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">hearing</span>
+<span>Hearing &amp; Audio</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">2 active</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md text-left transition-all" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">touch_app</span>
+<span>Motor &amp; Dexterity</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Off</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md text-left transition-all" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Speech &amp; Cognitive</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Custom</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Active Workspace Sync</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">sync</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Profiles automatically replicate to low-latency Wayland compositor overlays.</p>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline">Target Display</span>
+<span class="font-code-sm text-code-sm text-secondary">DP-1 (3840x2160@144Hz)</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-9 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">format_size</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Display Scaling &amp; Text Ergonomics</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adjust vector point density and rasterized glyph scale globally across CassandraOS.</p>
+</div>
+</div>
+<div class="px-space-sm py-1 rounded bg-surface-container text-tertiary font-code-md text-code-md font-medium" id="scale-indicator">125%</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>100% (Dense)</span>
+<span>125% (Recommended)</span>
+<span>150%</span>
+<span>175%</span>
+<span>200% (High Clarity)</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-[#5bd5fc]" id="scale-slider" max="200" min="100" step="5" type="range" value="125"/>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-inner flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">preview</span> Real-Time Render Sample</span>
+<span class="font-code-sm text-code-sm text-secondary">Font: Inter / Subpixel Antialiased</span>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-lg transition-all" id="sample-card">
+<p class="font-body-lg text-body-lg text-on-surface leading-snug" id="sample-text">The quick brown fox jumps over the lazy developer's terminal.</p>
+<div class="mt-space-xs flex items-center gap-space-sm font-code-sm text-code-sm text-outline">
+<span class="text-tertiary">$</span>
+<span>cassandra --mode=universal-access --contrast=balanced</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Screen Magnifier</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Realtime compositor lens zoom</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="magnifier-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Magnification Level</span>
+<span class="font-code-sm text-code-sm text-tertiary font-medium" id="zoom-val">2.5x</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-[#5bd5fc]" id="zoom-slider" max="8.0" min="1.5" step="0.5" type="range" value="2.5"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface" for="lens-mode">Magnifier Lens Mode</label>
+<div class="relative">
+<select class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg appearance-none font-body-md text-body-md shadow-inner focus:outline-none focus:bg-surface-container-high cursor-pointer" id="lens-mode">
+<option value="fullscreen">Full Screen Tracking</option>
+<option selected="" value="docked">Docked Overhead Band</option>
+<option value="pip">Picture-in-Picture Floating Lens</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">keyboard_command_key</span>
+<span>Shortcut: Super + Scroll Up/Down</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Color &amp; Contrast Engine</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Subsystem chromatic balance</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">High Contrast Interface</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Maximizes luminance offsets</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface" for="color-filter-select">Color Filter Calibration</label>
+<div class="relative">
+<select class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg appearance-none font-body-md text-body-md shadow-inner focus:outline-none focus:bg-surface-container-high cursor-pointer" id="color-filter-select">
+<option value="none">None (Natural Gamut)</option>
+<option value="grayscale">Grayscale / Monochromatic</option>
+<option value="protanopia">Protanopia (Red-Weak)</option>
+<option value="deuteranopia">Deuteranopia (Green-Weak)</option>
+<option value="tritanopia">Tritanopia (Blue-Weak)</option>
+<option value="inverted">Inverted Polar Luminance</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">Reduce Transparency &amp; Blur</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enhances background separation</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">Reduce Motion &amp; Frame Pacing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Disables compositor transitions</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ICC Color Engine</span>
+<span class="font-code-sm text-code-sm text-tertiary">D65-sRGB-CALIBRATED</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Cursor &amp; Pointer Enhancement</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hardware-accelerated tracking icon</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Cursor Hardware Scale</span>
+<span class="font-code-sm text-code-sm text-tertiary font-medium">Medium (32px)</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs pt-space-2xs">
+<button class="py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md text-center transition-colors" type="button">Standard</button>
+<button class="py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md text-center font-medium shadow-sm" type="button">Medium</button>
+<button class="py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md text-center transition-colors" type="button">Large</button>
+<button class="py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md text-center transition-colors" type="button">Max (64px)</button>
+</div>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<div>
+<span class="font-body-md text-body-md text-on-surface block">Luminescent Highlighter Ring</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Draws high-visibility halo (#4CC9F0)</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container rounded-lg">
+<div class="relative w-8 h-8 flex items-center justify-center bg-surface-container-lowest rounded-lg">
+<span class="w-5 h-5 rounded-full bg-tertiary/20 absolute animate-ping"></span>
+<span class="w-4 h-4 rounded-full border-2 border-tertiary absolute"></span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">near_me</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Halo Indicator Active</span>
+<span class="font-code-sm text-code-sm text-outline">Pulse frequency: 1.2Hz on movement</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">VoiceOver Screen Reader</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Speech synthesis engine daemon</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Global Keybinding Trigger</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-tertiary">Super + Alt + S</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediately starts vocalizing current window focus, cursor coordinates, and tree nodes.</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline">Synthesizer Voice</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Neural Nova (En-US)</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline">Rate of Speech</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">210 WPM (1.1x)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Audio Routing</span>
+<span class="font-code-sm text-code-sm text-secondary">Virtual Sink [stream:voiceover]</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const scaleSlider = document.getElementById('scale-slider');
+    const scaleIndicator = document.getElementById('scale-indicator');
+    const sampleText = document.getElementById('sample-text');
+    const zoomSlider = document.getElementById('zoom-slider');
+    const zoomVal = document.getElementById('zoom-val');
+
+    if (scaleSlider && scaleIndicator && sampleText) {
+      scaleSlider.addEventListener('input', function(e) {
+        const val = e.target.value;
+        scaleIndicator.textContent = val + '%';
+        sampleText.style.fontSize = (15 * (val / 100)) + 'px';
+        sampleText.style.lineHeight = (22 * (val / 100)) + 'px';
+      });
+    }
+
+    if (zoomSlider && zoomVal) {
+      zoomSlider.addEventListener('input', function(e) {
+        zoomVal.textContent = parseFloat(e.target.value).toFixed(1) + 'x';
+      });
+    }
+  })();
+</script></main></div></div></div></div><footer class="fixed bottom-0 left-0 right-0 h-taskbar-height bg-surface-container-lowest/95 backdrop-blur-xl z-50 flex items-center justify-between px-space-lg shadow-[0_-2px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-5 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-sm relative"><span class="material-symbols-outlined text-[20px]">settings</span><span class="absolute -bottom-1 w-1.5 h-1.5 rounded-full bg-tertiary"></span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">mic</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">accessibility_new</span></button></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-tertiary cursor-pointer hover:text-on-surface">wifi</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">volume_up</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">battery_full</span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-on-surface font-medium">10:42 AM</span><span class="font-code-sm text-code-sm text-outline">Oct 24, 2024</span></div></div></footer></body></html>

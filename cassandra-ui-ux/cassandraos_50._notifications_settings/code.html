@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#0031c4",
+          "surface-dim": "#051424",
+          "primary-fixed-dim": "#bac3ff",
+          "on-background": "#d4e4fa",
+          "on-tertiary": "#003543",
+          "surface": "#051424",
+          "inverse-on-surface": "#233143",
+          "on-tertiary-fixed-variant": "#004e61",
+          "on-tertiary-fixed": "#001f28",
+          "secondary": "#a4c9ff",
+          "secondary-fixed-dim": "#a4c9ff",
+          "inverse-primary": "#2e4edc",
+          "surface-variant": "#273647",
+          "surface-container-lowest": "#010f1f",
+          "surface-tint": "#bac3ff",
+          "on-surface": "#d4e4fa",
+          "on-secondary-container": "#eaf0ff",
+          "outline": "#8e8fa1",
+          "error": "#ffb4ab",
+          "primary": "#bac3ff",
+          "error-container": "#93000a",
+          "on-primary-container": "#f4f2ff",
+          "on-tertiary-container": "#e4f6ff",
+          "surface-container": "#122131",
+          "outline-variant": "#444655",
+          "on-primary-fixed": "#001159",
+          "primary-fixed": "#dee1ff",
+          "tertiary-fixed-dim": "#5bd5fc",
+          "on-secondary": "#00315d",
+          "on-primary": "#00218d",
+          "surface-container-highest": "#273647",
+          "on-error": "#690005",
+          "tertiary-container": "#007995",
+          "surface-container-high": "#1c2b3c",
+          "tertiary": "#5bd5fc",
+          "surface-bright": "#2c3a4c",
+          "tertiary-fixed": "#b7eaff",
+          "on-secondary-fixed": "#001c39",
+          "background": "#051424",
+          "secondary-fixed": "#d4e3ff",
+          "surface-container-low": "#0d1c2d",
+          "secondary-container": "#036ec6",
+          "on-surface-variant": "#c4c5d7",
+          "inverse-surface": "#d4e4fa",
+          "primary-container": "#4361ee",
+          "on-secondary-fixed-variant": "#004884"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "titlebar-height": "36px",
+          "taskbar-height": "48px",
+          "space-lg": "16px",
+          "space-xl": "24px",
+          "space-sm": "8px",
+          "space-md": "12px",
+          "space-xs": "4px",
+          "space-2xs": "2px",
+          "gutter": "12px",
+          "panel-dock-width": "320px",
+          "space-2xl": "32px"
+        },
+        "fontFamily": {
+          "body-sm": ["Inter"],
+          "headline-md": ["Inter"],
+          "code-md": ["JetBrains Mono"],
+          "label-sm": ["JetBrains Mono"],
+          "headline-xl": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-md": ["JetBrains Mono"],
+          "headline-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "code-sm": ["JetBrains Mono"]
+        },
+        "fontSize": {
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "code-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400"}],
+          "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "code-sm": ["11px", {"lineHeight": "15px", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-12 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span></div><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Cassandra<span class="text-tertiary">OS</span></span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-tertiary font-medium"><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="display" href="#">Display</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-and-audio" href="#">Camera &amp; Audio</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="peripherals" href="#">Peripherals</a><a aria-current="page" class="px-space-sm py-1 rounded transition-colors bg-surface-container-high text-tertiary font-medium" data-path="notifications" href="#">Notifications</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-secondary text-[14px]">memory</span><span class="font-label-sm text-label-sm text-secondary">CPU 14%</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="font-label-sm text-label-sm text-tertiary">RAM 4.2G</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="material-symbols-outlined text-primary text-[14px]">swap_vert</span><span class="font-label-sm text-label-sm text-on-surface-variant">1.2 Gbps</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="pt-12 pb-16"><aside class="fixed left-0 top-12 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col justify-between p-space-md shadow-[2px_0_12px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Hardware &amp; System</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera" href="#">Camera</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="microphone" href="#">Microphone</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audio-devices" href="#">Audio Devices</a><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-medium" data-path="notifications" href="#">Notifications</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="do-not-disturb" href="#">Do Not Disturb</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></nav></div><div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Audio Daemon</span><span class="font-label-sm text-label-sm text-tertiary">RUNNING</span></div><div class="font-code-sm text-code-sm text-outline">pipewire 0.3.82 (low-latency)</div></div></aside><div class="pl-64"><div class="p-space-lg"><div class="bg-surface-container/95 backdrop-blur-2xl rounded-xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height px-space-md bg-surface-container-high/90 flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><div class="w-[11px] h-[11px] rounded-full bg-[#EF4444] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#F5C400] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26B170] cursor-pointer hover:opacity-80 transition-opacity"></div></div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">tune</span><span>System Preferences — Hardware, Sound &amp; Accessibility</span></div><div class="w-12"></div></div><main class="pt-12 w-full p-space-xl bg-surface min-h-[calc(100vh-176px)]"><div class="flex flex-col w-full gap-space-xl">
+<!-- System Architecture Breadcrumb & Daemon Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span>SYSTEM</span>
+<span class="text-tertiary">/</span>
+<span>DAEMONS</span>
+<span class="text-tertiary">/</span>
+<span class="text-secondary font-medium">NOTIFICATIONS &amp; DISPATCH</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Notifications &amp; Banners</h1>
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-xs py-0.5 rounded shadow-inner">cass-notify-daemon v2.3-p4</span>
+</div>
+</div>
+<!-- Telemetry Real-time Counter Badge -->
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PIPEWIRE BUS:</span>
+<span class="font-code-sm text-code-sm text-tertiary">SYNCED (0.4ms)</span>
+</div>
+<div class="h-3 w-[1px] bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">DROPPED:</span>
+<span class="font-code-sm text-code-sm text-on-surface">0 pkt</span>
+</div>
+</div>
+</div>
+<!-- Master Switch Hero Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-xl shadow-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">notifications_active</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Allow System Notifications</span>
+<span class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded">ACTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Master switch for real-time IPC messaging, lock screen previews, and status bar hooks.</p>
+</div>
+</div>
+<!-- Master Interactive Toggle -->
+<button aria-checked="true" class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out shadow-md" id="master-toggle" role="switch">
+<span class="translate-x-7 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-on-primary shadow-sm ring-0 transition duration-200 ease-in-out my-0.5 ml-0.5"></span>
+</button>
+</div>
+<!-- Quick Sub-Toggles Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Sub Toggle 1 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">screen_lock_portrait</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Lock screen previews</span>
+<span class="font-label-sm text-label-sm text-outline">Show sender details</span>
+</div>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container focus:ring-tertiary accent-primary-container cursor-pointer" type="checkbox"/>
+</label>
+<!-- Sub Toggle 2 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">volume_up</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Notification sound</span>
+<span class="font-label-sm text-label-sm text-outline">Global acoustic alerts</span>
+</div>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container focus:ring-tertiary accent-primary-container cursor-pointer" type="checkbox"/>
+</label>
+<!-- Sub Toggle 3 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">mark_chat_unread</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Taskbar dock badges</span>
+<span class="font-label-sm text-label-sm text-outline">Numeric queue counts</span>
+</div>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container focus:ring-tertiary accent-primary-container cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Section: Delivery Routing Topology -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Dispatch Topology</span>
+<span class="font-code-sm text-code-sm text-outline">#routing-mode</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Current rule: Instant Display</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Mode 1: Active Standard -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-high relative overflow-hidden shadow-lg cursor-pointer transition-transform hover:-translate-y-0.5">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_8px_#5bd5fc]"></span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Standard Banners</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Displays real-time floating overlay glass cards anchored at top-right with low-latency rendering.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span>DEFAULT DISPATCH</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Mode 2: Focus Priority Only -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">do_not_disturb_on</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">FILTER ON</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Focus Priority Only</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Suppresses peripheral noises and normal banners. Allows only system kernel warnings and priority whitelist.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>SELECT MODE</span>
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Mode 3: Summarized Digest -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">view_timeline</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">TIMED</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Summarized Digest</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Batches non-critical logs and messages into periodic structured intelligence briefing tiles.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>SCHEDULE (09:00, 18:00)</span>
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Per-Application Rules Bento & Table Stack -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Application Access &amp; Matrix</span>
+<span class="font-code-sm text-code-sm text-outline">[5 REGISTERED CLIENTS]</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<input class="bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-space-md py-1.5 pl-8 focus:outline-none focus:ring-1 focus:ring-tertiary placeholder-outline w-48 shadow-inner" placeholder="Filter apps (/)..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-[16px]">search</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">sort</span>
+<span>Priority</span>
+</button>
+</div>
+</div>
+<!-- Apps List Container -->
+<div class="flex flex-col gap-space-xs rounded-xl bg-surface-container-lowest p-space-xs shadow-inner">
+<!-- APP ROW 1: Expanded Detailed Card (Cassandra Studio IDE) -->
+<div class="flex flex-col rounded-xl bg-surface-container-low transition-all shadow-md overflow-hidden">
+<!-- Row Trigger Bar -->
+<div class="flex items-center justify-between p-space-md hover:bg-surface-container-high/40 transition-colors cursor-pointer" onclick="toggleExpand('app-ide-details')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">developer_mode_tv</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Cassandra Studio IDE</span>
+<span class="font-code-sm text-code-sm text-tertiary bg-tertiary-container/30 text-tertiary px-space-xs rounded">PID 8942</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">org.cassandra.ide.desktop</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<!-- Pill Badge: Urgent/High -->
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-medium shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>High (Bypasses DND)</span>
+</div>
+<!-- Switch -->
+<div class="flex items-center" onclick="event.stopPropagation()">
+<button aria-checked="true" class="relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-on-primary shadow ring-0 transition duration-200 ease-in-out my-0.5 ml-0.5"></span>
+</button>
+</div>
+<!-- Expand Chevron (Open state) -->
+<button class="text-on-surface-variant hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[20px] transform rotate-180 transition-transform" id="chevron-ide">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Expanded Detailed Configuration Subpanel -->
+<div class="flex flex-col gap-space-md p-space-lg bg-surface-container/60" id="app-ide-details">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Checkbox Matrix -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Presentation Flags</span>
+<label class="flex items-center gap-space-sm text-on-surface font-body-sm text-body-sm cursor-pointer hover:text-on-surface-variant">
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-primary-container accent-primary-container" type="checkbox"/>
+<span>Show banner toasts on compile failure &amp; breakpoint triggers</span>
+</label>
+<label class="flex items-center gap-space-sm text-on-surface font-body-sm text-body-sm cursor-pointer hover:text-on-surface-variant">
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-primary-container accent-primary-container" type="checkbox"/>
+<span>Lock screen preview (sanitized stacktrace)</span>
+</label>
+<label class="flex items-center gap-space-sm text-on-surface font-body-sm text-body-sm cursor-pointer hover:text-on-surface-variant">
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-primary-container accent-primary-container" type="checkbox"/>
+<span>Keep notification persistence in history tray</span>
+</label>
+</div>
+<!-- Sound & Routing Specs -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Audio &amp; Dispatch Escalation</span>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acoustic Signature:</span>
+<button class="flex items-center gap-space-xs text-tertiary hover:underline font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">volume_up</span>
+<span>Test sample</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded-lg">
+<span class="material-symbols-outlined text-outline text-[16px]">audio_file</span>
+<span class="font-code-sm text-code-sm text-on-surface">Chime-Subtle.ogg</span>
+<span class="font-label-sm text-label-sm text-outline ml-auto">48kHz FLAC Encoded</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dispatch Channel:</span>
+<span class="font-code-sm text-code-sm text-secondary">unix://run/user/1000/notify-ipc</span>
+</div>
+</div>
+</div>
+<!-- Quick Actions Footer within row -->
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors">
+              Reset Application Defaults
+            </button>
+<button class="px-space-md py-1 rounded bg-primary-container hover:bg-secondary-container text-on-primary font-label-sm text-label-sm font-medium transition-colors">
+              Apply Channel Overrides
+            </button>
+</div>
+</div>
+</div>
+<!-- APP ROW 2: Terminal & Kernel Alerts (ON - Urgent) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-error flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Terminal &amp; Kernel Alerts</span>
+<span class="font-code-sm text-code-sm text-outline bg-surface-container px-space-xs rounded">SYS-RING-0</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">dmesg, oom-killer, systemd-journald events</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+<span>Urgent (Bypasses All)</span>
+</div>
+<button aria-checked="true" class="relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-on-primary shadow ring-0 transition duration-200 ease-in-out my-0.5 ml-0.5"></span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- APP ROW 3: Email & Messaging (ON - Normal) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">mail</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Email &amp; Messaging</span>
+<span class="font-code-sm text-code-sm text-outline bg-surface-container px-space-xs rounded">IMAP/Matrix</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">Sync daemon: mail-sync.timer (every 5m)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Normal</span>
+</div>
+<button aria-checked="true" class="relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-on-primary shadow ring-0 transition duration-200 ease-in-out my-0.5 ml-0.5"></span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- APP ROW 4: Package Updater (ON - Low) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-outline flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">system_update_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Package Updater</span>
+<span class="font-code-sm text-code-sm text-outline bg-surface-container px-space-xs rounded">apt/flatpak</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">Upstream sync checks and security advisory badges</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container text-outline font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>Low</span>
+</div>
+<button aria-checked="true" class="relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-on-primary shadow ring-0 transition duration-200 ease-in-out my-0.5 ml-0.5"></span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- APP ROW 5: Docker Container Events (OFF) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors opacity-75">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-outline flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">deployed_code</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Docker Container Events</span>
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-lowest px-space-xs rounded">unix.sock</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">State changes, healthcheck transitions, volume locks</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-outline font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>Muted</span>
+</div>
+<button aria-checked="false" class="relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full bg-surface-container-highest transition-colors duration-200 ease-in-out" role="switch">
+<span class="translate-x-0.5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-outline shadow ring-0 transition duration-200 ease-in-out my-0.5 ml-0.5"></span>
+</button>
+<button class="text-outline hover:text-on-surface p-1">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Preference & Audit Retention Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Notification retention period:</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">30 days</span>
+<span class="font-label-sm text-label-sm text-outline ml-space-xs">(automatic vacuuming via cron)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-tertiary font-body-sm text-body-sm transition-colors shadow-sm" href="#">
+<span>Notification History &amp; Audit Log</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  function toggleExpand(elementId) {
+    const el = document.getElementById(elementId);
+    const chevron = document.getElementById('chevron-ide');
+    if (!el) return;
+    if (el.classList.contains('hidden')) {
+      el.classList.remove('hidden');
+      if (chevron) chevron.classList.add('rotate-180');
+    } else {
+      el.classList.add('hidden');
+      if (chevron) chevron.classList.remove('rotate-180');
+    }
+  }
+
+  // Interactive toggle for master button demo
+  const masterBtn = document.getElementById('master-toggle');
+  if (masterBtn) {
+    masterBtn.addEventListener('click', () => {
+      const knob = masterBtn.querySelector('span');
+      const isChecked = masterBtn.getAttribute('aria-checked') === 'true';
+      if (isChecked) {
+        masterBtn.setAttribute('aria-checked', 'false');
+        masterBtn.classList.remove('bg-primary-container');
+        masterBtn.classList.add('bg-surface-container-highest');
+        knob.classList.remove('translate-x-7');
+        knob.classList.add('translate-x-0.5');
+      } else {
+        masterBtn.setAttribute('aria-checked', 'true');
+        masterBtn.classList.remove('bg-surface-container-highest');
+        masterBtn.classList.add('bg-primary-container');
+        knob.classList.remove('translate-x-0.5');
+        knob.classList.add('translate-x-7');
+      }
+    });
+  }
+</script></main></div></div></div></div><footer class="fixed bottom-0 left-0 right-0 h-taskbar-height bg-surface-container-lowest/95 backdrop-blur-xl z-50 flex items-center justify-between px-space-lg shadow-[0_-2px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-5 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-sm relative"><span class="material-symbols-outlined text-[20px]">settings</span><span class="absolute -bottom-1 w-1.5 h-1.5 rounded-full bg-tertiary"></span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">mic</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">accessibility_new</span></button></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-tertiary cursor-pointer hover:text-on-surface">wifi</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">volume_up</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">battery_full</span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-on-surface font-medium">10:42 AM</span><span class="font-code-sm text-code-sm text-outline">Oct 24, 2024</span></div></div></footer></body></html>

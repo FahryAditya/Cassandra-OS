@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full p-gutter sm:p-space-lg gap-space-lg">
+<!-- Desktop Breadcrumb & Session Metadata Header -->
+<div class="w-full flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low px-space-lg py-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">bolt</span>
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="text-on-surface-variant">Settings</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">System</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Battery &amp; Power</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-code-sm text-code-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>PID: 5120</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>cass-powerd (active)</span>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container text-on-surface-variant">
+<span>Bus: ACPI 6.4</span>
+</div>
+</div>
+</div>
+<!-- Top Hero Section: Battery Gauge & Profile Selector -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Hero Gauge Panel -->
+<div class="lg:col-span-6 xl:col-span-5 bg-surface-container rounded-xl p-space-xl flex flex-col justify-between shadow-md relative overflow-hidden">
+<!-- Glow ambient backdrop -->
+<div class="absolute -top-16 -left-16 w-56 h-56 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-56 h-56 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[18px]">battery_charging_full</span>
+<span>CELL HARVEST &amp; TELEMETRY</span>
+</div>
+<span class="font-code-sm text-code-sm px-space-sm py-space-2xs rounded-full bg-surface-container-high text-tertiary flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+          HEALTH 96%
+        </span>
+</div>
+<!-- Circular SVG Gauge -->
+<div class="flex flex-col items-center justify-center my-space-md">
+<div class="relative w-56 h-56 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 160 160">
+<!-- Background track -->
+<circle class="text-surface-container-highest" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-width="9"></circle>
+<!-- Progress track (78%) -> Circumference = 2 * PI * 68 ≈ 427.25 -> dashoffset = 427.25 * (1 - 0.78) = 93.99 -->
+<circle class="text-tertiary transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-dasharray="427.25" stroke-dashoffset="94" stroke-linecap="round" stroke-width="9" style="filter: drop-shadow(0 0 8px rgba(91, 213, 252, 0.45));"></circle>
+</svg>
+<!-- Metric interior overlay -->
+<div class="absolute flex flex-col items-center text-center">
+<div class="flex items-center gap-space-2xs text-tertiary mb-space-2xs">
+<span class="material-symbols-outlined text-[20px] animate-bounce">bolt</span>
+<span class="font-code-sm text-code-sm tracking-wider uppercase">PD-IN</span>
+</div>
+<span class="font-code-md text-[44px] leading-none font-bold text-on-surface tracking-tighter">78<span class="font-code-sm text-headline-md text-tertiary">%</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs uppercase tracking-wide">100W USB-PD Active</span>
+</div>
+</div>
+</div>
+<!-- Runtime Estimate Matrix -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">timelapse</span>
+            UNTIL FULL
+          </span>
+<span class="font-code-md text-code-md text-on-surface font-semibold mt-space-2xs">1h 12m</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">battery_saver</span>
+            DISCHARGE RUNTIME
+          </span>
+<span class="font-code-md text-code-md text-on-surface font-semibold mt-space-2xs">8h 45m</span>
+</div>
+</div>
+</div>
+<!-- Power Mode Selector & Policy Breakdown -->
+<div class="lg:col-span-6 xl:col-span-7 bg-surface-container rounded-xl p-space-xl flex flex-col justify-between shadow-md">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Governor Policy Profile</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate power dispatching algorithm and SoC thermal ceilings.</p>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-space-2xs rounded bg-surface-container-high text-primary uppercase">Active Governor</span>
+</div>
+<!-- Sleek Segmented Control -->
+<div class="mt-space-lg p-space-xs bg-surface-container-lowest rounded-xl grid grid-cols-1 md:grid-cols-3 gap-space-xs">
+<!-- Power Saver option -->
+<button class="flex flex-col items-center justify-center p-space-md rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-left group" type="button">
+<span class="material-symbols-outlined text-[24px] mb-space-xs group-hover:text-primary">eco</span>
+<span class="font-label-md text-label-md font-semibold">Power Saver</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 text-center scale-90">Limit clock &amp; background tasks</span>
+</button>
+<!-- Balanced (Selected) -->
+<button class="relative flex flex-col items-center justify-center p-space-md rounded-lg bg-primary-container text-on-primary-container shadow-md transition-all" type="button">
+<div class="absolute -top-1.5 right-2 px-space-xs py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-[9px] uppercase tracking-wider font-bold">Standard</div>
+<span class="material-symbols-outlined text-[24px] mb-space-xs">tune</span>
+<span class="font-label-md text-label-md font-bold">Balanced</span>
+<span class="font-body-sm text-body-sm text-on-primary-container/90 text-center scale-90">Adaptive clock scaling</span>
+</button>
+<!-- Performance option -->
+<button class="flex flex-col items-center justify-center p-space-md rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" type="button">
+<span class="material-symbols-outlined text-[24px] mb-space-xs group-hover:text-tertiary">speed</span>
+<span class="font-label-md text-label-md font-semibold">Performance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 text-center scale-90">Maximize TDP &amp; thread priority</span>
+</button>
+</div>
+<!-- Active Policy Explanation Banner -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-high flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Balanced Policy: Dynamic clock scaling &amp; thermal throttling balance</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+              Automates P-core and E-core frequency transitions using predictive load analysis. Sustained TDP pinned at 28W during AC charging; scales dynamically to 18W on DC battery draw.
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-lg">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Core Voltage</span>
+<div class="font-code-md text-code-md text-on-surface font-semibold mt-space-2xs">1.048 V</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pack Temp</span>
+<div class="font-code-md text-code-md text-tertiary font-semibold mt-space-2xs">31.4 °C</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cycle Count</span>
+<div class="font-code-md text-code-md text-on-surface font-semibold mt-space-2xs">142 cycles</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Middle Section: System Toggles & Controls -->
+<div class="w-full flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">toggle_on</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Automation &amp; Threshold Controls</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DAEMON REFRESH: 1000ms</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Card 1: Battery Saver -->
+<div class="bg-surface-container rounded-xl p-space-lg flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">energy_savings_leaf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Battery Saver at 20%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Auto-engage low-power governors when reserves drop beneath safety margin.</span>
+</div>
+</div>
+<!-- Active Toggle Switch -->
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end shrink-0 transition-colors" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary-container shadow-sm"></span>
+</button>
+</div>
+<!-- Card 2: Dim Screen -->
+<div class="bg-surface-container rounded-xl p-space-lg flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">brightness_medium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dim screen when idle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Ramp down eDP panel luminance to 15% during input inactivity.</span>
+</div>
+</div>
+<!-- Toggle & Dropdown Combo -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-on-surface font-code-sm text-code-sm pl-space-sm pr-space-xl py-space-xs rounded-lg cursor-pointer focus:outline-none focus:ring-1 focus:ring-tertiary">
+<option>2 min</option>
+<option selected="">5 min</option>
+<option>10 min</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute right-space-xs top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary-container shadow-sm"></span>
+</button>
+</div>
+</div>
+<!-- Card 3: Sleep Inactivity -->
+<div class="bg-surface-container rounded-xl p-space-lg flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[22px]">bedtime</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sleep after inactivity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Suspend active session to S2idle RAM preservation mode.</span>
+</div>
+</div>
+<!-- Dropdown and Toggle Combo -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-on-surface font-code-sm text-code-sm pl-space-sm pr-space-xl py-space-xs rounded-lg cursor-pointer focus:outline-none focus:ring-1 focus:ring-tertiary">
+<option>10 minutes</option>
+<option selected="">15 minutes</option>
+<option>30 minutes</option>
+<option>Never</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute right-space-xs top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary-container shadow-sm"></span>
+</button>
+</div>
+</div>
+<!-- Card 4: Battery Health & Charge Threshold -->
+<div class="bg-surface-container rounded-xl p-space-lg flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[22px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Battery Health &amp; Charge Threshold</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-semibold uppercase">80% Cap</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Prevent lithium-ion cell degradation by terminating charge at 80% maximum.</span>
+</div>
+</div>
+<!-- Active Toggle Switch -->
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end shrink-0 transition-colors" role="switch" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary-container shadow-sm"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Usage by App / Subsystem Mini-Chart & Diagnostics -->
+<div class="w-full bg-surface-container rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Subsystem Energy Utilization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Detailed discharge breakdown aggregated over the current power cycle.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">Last 24 Hours</button>
+<button class="px-space-sm py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm" type="button">Active Session</button>
+</div>
+</div>
+<!-- Aggregate Stacked Bar Visual -->
+<div class="w-full flex flex-col gap-space-2xs">
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden flex">
+<div class="h-full bg-primary-container" style="width: 34%" title="Cassandra Studio IDE: 34%"></div>
+<div class="h-full bg-tertiary" style="width: 22%" title="Wayland Compositor &amp; GPU Pipeline: 22%"></div>
+<div class="h-full bg-secondary" style="width: 15%" title="Docker Containerd Daemons: 15%"></div>
+<div class="h-full bg-secondary-container" style="width: 8%" title="Audio &amp; PipeWire Engine: 8%"></div>
+<div class="h-full bg-surface-container-highest" style="width: 21%" title="System Idle &amp; Kernel: 21%"></div>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant pt-space-2xs">
+<span>Active Discharging: 18.2W</span>
+<span>Baseline Idle: 3.4W</span>
+</div>
+</div>
+<!-- Individual Horizontal App Drain Meters -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-xs">
+<!-- App 1: Cassandra Studio IDE -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">developer_mode_tv</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cassandra Studio IDE</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Active: 2h 40m • 8 threads</span>
+</div>
+</div>
+<span class="font-code-md text-code-md text-primary font-bold">34%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 34%"></div>
+</div>
+</div>
+<!-- App 2: Wayland Compositor & GPU Pipeline -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-tertiary/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">window</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Wayland Compositor &amp; GPU Pipeline</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Render: 120Hz VSync • EGL</span>
+</div>
+</div>
+<span class="font-code-md text-code-md text-tertiary font-bold">22%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 22%"></div>
+</div>
+</div>
+<!-- App 3: Docker Containerd Daemons -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">deployed_code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Docker Containerd Daemons</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">14 containers isolated</span>
+</div>
+</div>
+<span class="font-code-md text-code-md text-secondary font-bold">15%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<!-- App 4: Audio & PipeWire Engine -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">graphic_eq</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Audio &amp; PipeWire Engine</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Low Latency DSP node</span>
+</div>
+</div>
+<span class="font-code-md text-code-md text-secondary font-bold">8%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 8%"></div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

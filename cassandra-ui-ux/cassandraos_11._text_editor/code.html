@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#051424", "tertiary": "#5bd5fc", "surface-container-highest": "#273647", "tertiary-fixed": "#b7eaff", "secondary-fixed-dim": "#a4c9ff", "surface-dim": "#051424", "primary-container": "#4361ee", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "secondary": "#a4c9ff", "inverse-on-surface": "#233143", "surface-tint": "#bac3ff", "error": "#ffb4ab", "on-secondary-fixed": "#001c39", "background": "#051424", "surface-container-high": "#1c2b3c", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "surface-bright": "#2c3a4c", "on-error": "#690005", "surface-variant": "#273647", "error-container": "#93000a", "outline-variant": "#444655", "on-tertiary-fixed-variant": "#004e61", "on-secondary": "#00315d", "surface-container": "#122131", "on-secondary-fixed-variant": "#004884", "on-tertiary": "#003543", "on-primary": "#00218d", "surface-container-lowest": "#010f1f", "secondary-fixed": "#d4e3ff", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "on-surface-variant": "#c4c5d7", "tertiary-container": "#007995", "primary-fixed": "#dee1ff", "inverse-primary": "#2e4edc", "outline": "#8e8fa1", "on-tertiary-container": "#e4f6ff", "on-error-container": "#ffdad6", "on-secondary-container": "#eaf0ff", "primary-fixed-dim": "#bac3ff", "on-tertiary-fixed": "#001f28", "on-primary-fixed-variant": "#0031c4", "primary": "#bac3ff", "on-primary-container": "#f4f2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "panel-dock-width": "320px", "gutter": "12px", "space-xs": "4px", "space-2xs": "2px", "space-xl": "24px", "space-2xl": "32px", "titlebar-height": "36px", "taskbar-height": "48px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, "fontFamily": { "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "code-sm": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "15px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,7,32,0.6)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CassandraOS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">CassandraOS</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">v3.4.0-LTS</span></div><nav class="hidden md:flex items-center gap-space-sm bg-surface-container-lowest/60 p-space-2xs rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]"><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="desktop-workspace" href="#">Workspace</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="file-manager" href="#">Files</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="terminal" href="#">Terminal</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]" data-path="system-monitor" href="#">Monitor</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="notification-center" href="#">Notifications</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="system-settings" href="#">Settings</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="power-menu" href="#">Power</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-tertiary text-[16px]">memory</span><span>32% RAM</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/85 backdrop-blur-xl z-30 flex flex-col justify-between py-space-md shadow-[4px_0_24px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspaces</span><span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px]">add</span></div><nav class="flex flex-col px-space-sm gap-space-2xs" data-active-classes="bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="desktop-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">01</span><span>Dev Environment</span></div><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="terminal" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">02</span><span>Telemetry & Ops</span></div><span class="font-code-sm text-code-sm text-outline">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="file-manager" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">03</span><span>Storage Nodes</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary" data-path="system-monitor" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">04</span><span>System Monitor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-settings" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">05</span><span>Kernel Conf</span></div></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest/80"><div class="flex items-center justify-between mb-space-2xs font-label-sm text-label-sm text-on-surface-variant"><span>CPU Load</span><span class="text-tertiary font-code-sm text-code-sm">18.4%</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 18.4%"></div></div></div><div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-sm"><span>Uptime: 14d 08h</span><span class="material-symbols-outlined text-[16px] text-tertiary">shield</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-14 min-h-screen bg-surface relative"><div class="flex flex-col w-full min-h-[calc(100vh-7rem)] p-space-md lg:p-space-xl relative overflow-hidden select-none">
+<!-- Desktop Ambient Canvas Atmosphere -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-[500px] h-[500px] rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<!-- Floating Workspace Header Context / Breadcrumb Strip -->
+<div class="w-full flex items-center justify-between mb-space-md text-on-surface-variant px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">WS-01</span>
+<span class="font-body-sm text-body-sm text-outline">/</span>
+<span class="font-body-sm text-body-sm text-on-surface">CassandraOS Code Studio</span>
+<span class="font-code-sm text-code-sm text-outline-variant">PID: 4092</span>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-2xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> LSP Sync 12ms</span>
+<span class="hidden sm:inline bg-surface-container px-space-sm py-space-2xs rounded text-outline">MEM 84.6 MB</span>
+</div>
+</div>
+<!-- Primary Floating Window: Code Studio -->
+<div class="w-full max-w-7xl mx-auto rounded-xl bg-surface-container-lowest/95 backdrop-blur-2xl shadow-[0_24px_60px_-12px_rgba(0,7,32,0.9),0_0_24px_rgba(67,97,238,0.15)] flex flex-col overflow-hidden relative">
+<!-- Window Chrome / Titlebar -->
+<div class="h-titlebar-height w-full bg-surface-container-low/90 px-space-md flex items-center justify-between select-none">
+<!-- Left: Window Controls (Traffic Lights) & Identity -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Close" class="w-3 h-3 rounded-full bg-error hover:opacity-80 transition-opacity shadow-[0_0_8px_rgba(255,180,171,0.4)]" type="button"></button>
+<button aria-label="Minimize" class="w-3 h-3 rounded-full bg-[#f5c400] hover:opacity-80 transition-opacity shadow-[0_0_8px_rgba(245,196,0,0.3)]" type="button"></button>
+<button aria-label="Maximize" class="w-3 h-3 rounded-full bg-[#26b170] hover:opacity-80 transition-opacity shadow-[0_0_8px_rgba(38,177,112,0.3)]" type="button"></button>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">terminal</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">code-studio</span>
+</div>
+</div>
+<!-- Center: Filename & Window Title -->
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-md text-label-md text-on-surface font-medium">main.rs</span>
+<span class="font-label-sm text-label-sm text-outline">— CassandraOS Code Studio (v3.4.0-LTS)</span>
+</div>
+<!-- Right: Action Window Utilities -->
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<button class="p-space-2xs hover:bg-surface-container-high rounded hover:text-on-surface transition-colors" title="Split Editor" type="button">
+<span class="material-symbols-outlined text-[16px]">splitscreen</span>
+</button>
+<button class="p-space-2xs hover:bg-surface-container-high rounded hover:text-on-surface transition-colors" title="Dock Window" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_in_picture_alt</span>
+</button>
+</div>
+</div>
+<!-- Toolbar: File Actions, Search/Replace, Tabs Bar -->
+<div class="w-full bg-surface-container/70 flex flex-col">
+<!-- Action Command Bar -->
+<div class="px-space-md py-space-xs flex items-center justify-between">
+<!-- File System Operations -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-surface-container-high/60 hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-tertiary">note_add</span>
+<span class="hidden sm:inline">New File</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">file_open</span>
+<span class="hidden sm:inline">Open</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-primary-container text-on-primary-container font-body-sm text-body-sm shadow-[0_0_12px_rgba(67,97,238,0.35)] hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[15px]">save</span>
+<span>Save</span>
+<span class="bg-surface-container-lowest/50 text-[10px] px-1 rounded font-code-sm text-on-primary">Ctrl+S</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">save_as</span>
+<span class="hidden sm:inline">Save As</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest mx-space-2xs"></div>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-tertiary">play_arrow</span>
+<span class="hidden sm:inline">Cargo Run</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">bug_report</span>
+<span class="hidden sm:inline">Debug</span>
+</button>
+</div>
+<!-- Search / Replace & Tools -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center bg-surface-container-lowest/80 rounded-lg px-space-sm py-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-outline mr-space-2xs">search</span>
+<input class="bg-transparent text-on-surface font-code-sm text-code-sm outline-none placeholder:text-outline-variant w-32 sm:w-48" placeholder="Search symbol or text..." type="text"/>
+<span class="font-code-sm text-[10px] text-outline-variant ml-space-xs">⌘F</span>
+</div>
+<button class="p-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Replace" type="button">
+<span class="material-symbols-outlined text-[18px]">find_replace</span>
+</button>
+<button class="p-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-tertiary transition-colors" title="Command Palette" type="button">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+</div>
+</div>
+<!-- Tab Strip Row -->
+<div class="flex items-center overflow-x-auto bg-surface-container-lowest/50 pt-space-xs px-space-xs gap-space-2xs scrollbar-none">
+<!-- Active Tab: main.rs -->
+<div class="flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low rounded-t-lg text-tertiary shadow-[0_-2px_10px_rgba(0,7,32,0.5)] cursor-pointer group">
+<span class="material-symbols-outlined text-[14px] text-tertiary">code</span>
+<span class="font-code-sm text-code-sm font-medium">main.rs</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant hover:text-on-surface rounded p-0.5 hover:bg-surface-container-highest transition-colors">close</span>
+</div>
+<!-- Inactive Tab: kernel_config.toml -->
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-t-lg text-on-surface-variant hover:bg-surface-container/50 hover:text-on-surface cursor-pointer group transition-colors">
+<span class="material-symbols-outlined text-[14px] text-outline">tune</span>
+<span class="font-code-sm text-code-sm">kernel_config.toml</span>
+<span class="material-symbols-outlined text-[13px] opacity-0 group-hover:opacity-100 text-outline hover:text-on-surface rounded p-0.5 hover:bg-surface-container-highest transition-all">close</span>
+</div>
+<!-- Inactive Tab: Cargo.toml -->
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-t-lg text-on-surface-variant hover:bg-surface-container/50 hover:text-on-surface cursor-pointer group transition-colors">
+<span class="material-symbols-outlined text-[14px] text-outline">inventory_2</span>
+<span class="font-code-sm text-code-sm">Cargo.toml</span>
+<span class="material-symbols-outlined text-[13px] opacity-0 group-hover:opacity-100 text-outline hover:text-on-surface rounded p-0.5 hover:bg-surface-container-highest transition-all">close</span>
+</div>
+<!-- Tab Add Button -->
+<button class="p-space-2xs text-outline-variant hover:text-on-surface hover:bg-surface-container-high rounded ml-space-xs transition-colors" title="New Tab" type="button">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+<!-- Main Body: Code & Text Editing Canvas -->
+<div class="flex flex-1 w-full bg-surface-container-lowest relative overflow-hidden font-code-md text-code-md">
+<!-- Left Gutter: Line Numbers & Git Decorators (1 to 24) -->
+<div class="w-14 bg-surface-container-low/40 py-space-sm flex flex-col select-none text-right pr-space-md text-outline-variant">
+<span class="h-6 leading-6 text-[12px]">1</span>
+<span class="h-6 leading-6 text-[12px]">2</span>
+<span class="h-6 leading-6 text-[12px] text-tertiary/70 font-semibold">3</span>
+<span class="h-6 leading-6 text-[12px]">4</span>
+<span class="h-6 leading-6 text-[12px]">5</span>
+<span class="h-6 leading-6 text-[12px]">6</span>
+<span class="h-6 leading-6 text-[12px]">7</span>
+<span class="h-6 leading-6 text-[12px]">8</span>
+<span class="h-6 leading-6 text-[12px]">9</span>
+<span class="h-6 leading-6 text-[12px]">10</span>
+<span class="h-6 leading-6 text-[12px]">11</span>
+<span class="h-6 leading-6 text-[12px]">12</span>
+<span class="h-6 leading-6 text-[12px]">13</span>
+<!-- Active Line Number -->
+<span class="h-6 leading-6 text-[12px] text-tertiary font-bold bg-surface-container-high/40 rounded-l">14</span>
+<span class="h-6 leading-6 text-[12px]">15</span>
+<span class="h-6 leading-6 text-[12px]">16</span>
+<span class="h-6 leading-6 text-[12px]">17</span>
+<span class="h-6 leading-6 text-[12px]">18</span>
+<span class="h-6 leading-6 text-[12px]">19</span>
+<span class="h-6 leading-6 text-[12px]">20</span>
+<span class="h-6 leading-6 text-[12px]">21</span>
+<span class="h-6 leading-6 text-[12px]">22</span>
+<span class="h-6 leading-6 text-[12px]">23</span>
+<span class="h-6 leading-6 text-[12px]">24</span>
+</div>
+<!-- Code Text Editing Canvas -->
+<div class="flex-1 py-space-sm pl-space-md pr-space-xl overflow-x-auto text-on-surface whitespace-pre leading-6 relative">
+<!-- Line 1: Comment -->
+<div class="h-6 flex items-center text-[#64748B] italic"><span class="select-none text-outline/40 mr-2">//</span>//! CassandraOS Kernel Microservices Engine v3.4.0</div>
+<!-- Line 2: Empty -->
+<div class="h-6"></div>
+<!-- Line 3: Imports -->
+<div class="h-6 flex items-center">
+<span class="text-primary-container font-medium">use</span> 
+          <span class="text-on-surface">std::sync::Arc;</span>
+</div>
+<!-- Line 4: Tokio Import -->
+<div class="h-6 flex items-center">
+<span class="text-primary-container font-medium">use</span> 
+          <span class="text-tertiary">tokio</span><span class="text-outline">::</span><span class="text-on-surface">sync</span><span class="text-outline">::</span><span class="text-tertiary">Mutex</span><span class="text-on-surface">;</span>
+</div>
+<!-- Line 5: System Telemetry import -->
+<div class="h-6 flex items-center">
+<span class="text-primary-container font-medium">use</span> 
+          <span class="text-secondary">cassandra_telemetry</span><span class="text-outline">::</span><span class="text-on-surface">{</span><span class="text-tertiary">TraceNode</span><span class="text-on-surface">,</span> <span class="text-tertiary">MetricGauge</span><span class="text-on-surface">};</span>
+</div>
+<!-- Line 6: Empty -->
+<div class="h-6"></div>
+<!-- Line 7: Macro Attribute -->
+<div class="h-6 flex items-center text-tertiary-fixed-dim">
+<span class="text-tertiary">#[derive(</span><span class="text-secondary">Debug, Clone</span><span class="text-tertiary">)]</span>
+</div>
+<!-- Line 8: Struct Definition -->
+<div class="h-6 flex items-center">
+<span class="text-primary-container font-medium">pub struct</span> <span class="text-tertiary font-medium">RuntimeSupervisor</span> <span class="text-on-surface">{</span>
+</div>
+<!-- Line 9: Struct Member -->
+<div class="h-6 flex items-center">
+              <span class="text-on-surface">node_id:</span> <span class="text-tertiary">String</span><span class="text-on-surface">,</span>
+</div>
+<!-- Line 10: Struct Member 2 -->
+<div class="h-6 flex items-center">
+              <span class="text-on-surface">capacity:</span> <span class="text-tertiary">usize</span><span class="text-on-surface">,</span>
+</div>
+<!-- Line 11: Struct Member 3 -->
+<div class="h-6 flex items-center">
+              <span class="text-on-surface">active_channels:</span> <span class="text-tertiary">Arc</span><span class="text-outline"><</span><span class="text-tertiary">Mutex</span><span class="text-outline"><</span><span class="text-tertiary">Vec</span><span class="text-outline"><</span><span class="text-tertiary">TraceNode</span><span class="text-outline">>>></span><span class="text-on-surface">,</span>
+</div>
+<!-- Line 12: Struct Close -->
+<div class="h-6 flex items-center text-on-surface">}</div>
+<!-- Line 13: Empty -->
+<div class="h-6"></div>
+<!-- Line 14: Active Line Highlight & Cursor -->
+<div class="h-6 flex items-center bg-surface-container-high/40 -mx-space-md px-space-md rounded shadow-[inset_2px_0_0_0_#5bd5fc]">
+<span class="text-primary-container font-medium">impl</span> <span class="text-tertiary font-medium">RuntimeSupervisor</span> <span class="text-on-surface">{</span>
+<!-- Blinking Caret -->
+<span class="inline-block w-2 h-4 bg-tertiary ml-1 animate-pulse shadow-[0_0_6px_#5bd5fc]"></span>
+</div>
+<!-- Line 15: Async fn Definition -->
+<div class="h-6 flex items-center">
+              <span class="text-primary-container font-medium">pub async fn</span> <span class="text-tertiary">spawn_orchestrator</span><span class="text-on-surface">(</span><span class="text-secondary">&self</span><span class="text-on-surface">) -></span> <span class="text-tertiary">Result</span><span class="text-outline"><</span><span class="text-on-surface">()</span><span class="text-outline">,</span> <span class="text-error">KernelFault</span><span class="text-outline">></span> <span class="text-on-surface">{</span>
+</div>
+<!-- Line 16: Comment in body -->
+<div class="h-6 flex items-center text-[#64748B] italic">
+                  <span class="select-none text-outline/40 mr-1">//</span> Initialize low-latency ring buffer telemetry
+        </div>
+<!-- Line 17: Gauge binding -->
+<div class="h-6 flex items-center">
+                  <span class="text-primary-container font-medium">let</span> <span class="text-secondary">mut gauge</span> = <span class="text-tertiary">MetricGauge</span><span class="text-outline">::</span><span class="text-tertiary">initialize</span><span class="text-on-surface">(</span><span class="text-[#26B170]">"ring_buffer_core_0"</span><span class="text-on-surface">)</span><span class="text-tertiary">?</span><span class="text-on-surface">;</span>
+</div>
+<!-- Line 18: Thread spawn -->
+<div class="h-6 flex items-center">
+                  <span class="text-secondary">gauge</span><span class="text-outline">.</span><span class="text-tertiary">set_max_throughput</span><span class="text-on-surface">(</span><span class="text-[#F59E0B]">4_096_000</span><span class="text-on-surface">);</span>
+</div>
+<!-- Line 19: Log trace -->
+<div class="h-6 flex items-center">
+                  <span class="text-tertiary">println!</span><span class="text-on-surface">(</span><span class="text-[#26B170]">"[CassandraOS] Supervisor mounted to IPC pipe: {}"</span><span class="text-on-surface">,</span> <span class="text-secondary">&self</span><span class="text-outline">.</span><span class="text-on-surface">node_id);</span>
+</div>
+<!-- Line 20: Loop or stream -->
+<div class="h-6 flex items-center">
+                  <span class="text-secondary">tokio</span><span class="text-outline">::</span><span class="text-on-surface">time</span><span class="text-outline">::</span><span class="text-tertiary">sleep</span><span class="text-on-surface">(</span><span class="text-secondary">std</span><span class="text-outline">::</span><span class="text-on-surface">time</span><span class="text-outline">::</span><span class="text-tertiary">Duration</span><span class="text-outline">::</span><span class="text-tertiary">from_millis</span><span class="text-on-surface">(</span><span class="text-[#F59E0B]">25</span><span class="text-on-surface">))</span><span class="text-tertiary">.await</span><span class="text-on-surface">;</span>
+</div>
+<!-- Line 21: Result Ok -->
+<div class="h-6 flex items-center">
+                  <span class="text-tertiary">Ok</span><span class="text-on-surface">(())</span>
+</div>
+<!-- Line 22: Fn close -->
+<div class="h-6 flex items-center text-on-surface">    }</div>
+<!-- Line 23: Impl close -->
+<div class="h-6 flex items-center text-on-surface">}</div>
+<!-- Line 24: End line -->
+<div class="h-6 flex items-center text-[#64748B] italic"><span class="select-none text-outline/40 mr-1">//</span> EOF</div>
+</div>
+<!-- Right Code Minimap Overview Bar -->
+<div class="hidden md:flex w-28 bg-surface-container-low/30 border-none flex-col py-space-sm px-space-xs select-none relative overflow-hidden">
+<!-- Visible Viewport Indicator Box -->
+<div class="absolute top-2 left-1 right-1 h-36 bg-surface-container-highest/40 rounded shadow-[inset_0_0_0_1px_rgba(91,213,252,0.3)] pointer-events-none"></div>
+<!-- Minimap Simulated Lines -->
+<div class="flex flex-col gap-1 opacity-70">
+<div class="h-1 w-20 bg-outline-variant/40 rounded"></div>
+<div class="h-1 w-4 bg-transparent"></div>
+<div class="h-1 w-14 bg-primary-container/80 rounded"></div>
+<div class="h-1 w-24 bg-tertiary/70 rounded"></div>
+<div class="h-1 w-18 bg-secondary/70 rounded"></div>
+<div class="h-1 w-2 bg-transparent"></div>
+<div class="h-1 w-16 bg-tertiary rounded"></div>
+<div class="h-1 w-22 bg-primary-container/60 rounded"></div>
+<div class="h-1 w-12 bg-on-surface-variant/40 ml-2 rounded"></div>
+<div class="h-1 w-10 bg-on-surface-variant/40 ml-2 rounded"></div>
+<div class="h-1 w-20 bg-tertiary/80 ml-2 rounded"></div>
+<div class="h-1 w-2 bg-on-surface-variant/40 rounded"></div>
+<div class="h-1 w-1 bg-transparent"></div>
+<div class="h-1 w-16 bg-primary-container rounded shadow-[0_0_4px_#5bd5fc]"></div>
+<div class="h-1 w-24 bg-tertiary ml-2 rounded"></div>
+<div class="h-1 w-16 bg-outline-variant/40 ml-4 rounded"></div>
+<div class="h-1 w-20 bg-[#26B170]/80 ml-4 rounded"></div>
+<div class="h-1 w-14 bg-[#F59E0B]/80 ml-4 rounded"></div>
+<div class="h-1 w-22 bg-[#26B170]/80 ml-4 rounded"></div>
+<div class="h-1 w-18 bg-secondary ml-4 rounded"></div>
+<div class="h-1 w-8 bg-tertiary ml-4 rounded"></div>
+<div class="h-1 w-2 bg-on-surface-variant/50 ml-2 rounded"></div>
+<div class="h-1 w-2 bg-on-surface-variant/50 rounded"></div>
+<div class="h-1 w-10 bg-outline-variant/30 rounded"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Status Bar -->
+<div class="h-7 w-full bg-surface-container-low px-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant select-none">
+<!-- Left: Diagnostics & Git Branch -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-2xs text-tertiary font-medium">
+<span class="material-symbols-outlined text-[14px]">fork_right</span>
+<span>main*</span>
+</div>
+<div class="flex items-center gap-space-2xs text-[#26b170]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>rust-analyzer ready</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-outline">
+<span>0 errors</span>
+<span>•</span>
+<span>0 warnings</span>
+</div>
+</div>
+<!-- Right: Cursor Position, Encodings, Indentation -->
+<div class="flex items-center gap-space-md font-code-sm text-code-sm">
+<div class="text-tertiary font-medium">Ln 14, Col 28</div>
+<div class="hidden sm:block text-outline">Spaces: 4</div>
+<div class="hidden sm:block text-outline">UTF-8</div>
+<div class="flex items-center gap-space-2xs bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Rust (2021)</span>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-pointer hover:text-on-surface">notification_important</span>
+</div>
+</div>
+</div>
+<!-- Ambient Workspace Floating Utility Pill (Secondary OS Visual Context) -->
+<div class="w-full max-w-7xl mx-auto mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-space-xs">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-xs text-outline">
+<span class="material-symbols-outlined text-[14px]">keyboard</span>
+<span>Shortcuts:</span>
+</span>
+<span class="bg-surface-container px-space-xs py-space-2xs rounded font-code-sm text-code-sm text-on-surface">Ctrl+S</span> Save
+      <span class="bg-surface-container px-space-xs py-space-2xs rounded font-code-sm text-code-sm text-on-surface">Ctrl+Shift+P</span> Commands
+      <span class="bg-surface-container px-space-xs py-space-2xs rounded font-code-sm text-code-sm text-on-surface">Alt+Enter</span> Quick Fix
+    </div>
+<div class="hidden sm:flex items-center gap-space-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>CassandraOS Kernel Shell (tty1)</span>
+</div>
+</div>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex items-center justify-between px-space-md shadow-[0_-4px_24px_rgba(0,7,32,0.8)]"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center p-space-2xs rounded-lg hover:bg-surface-container-high transition-colors group" type="button"><img alt="Launcher" class="h-7 w-7 object-contain drop-shadow-[0_0_8px_rgba(91,213,252,0.5)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="File Manager" type="button"><span class="material-symbols-outlined text-[20px]">folder</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Terminal" type="button"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="System Monitor" type="button"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Settings" type="button"><span class="material-symbols-outlined text-[20px]">settings</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-error flex flex-col items-center group" title="Power" type="button"><span class="material-symbols-outlined text-[20px]">power_settings_new</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button></div></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">wifi</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">bluetooth</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">volume_up</span><div class="flex items-center gap-space-2xs hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">battery_charging_full</span><span class="font-code-sm text-code-sm">98%</span></div><div class="relative flex items-center hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-0 right-0 w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></div></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="font-label-md text-label-md text-on-surface cursor-pointer hover:text-tertiary transition-colors">14:28 · Thu, Oct 24</div></div></footer></body></html>

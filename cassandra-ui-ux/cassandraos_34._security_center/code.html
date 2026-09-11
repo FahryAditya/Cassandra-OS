@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full px-space-lg py-space-md gap-space-lg">
+<!-- Window Breadcrumb Header & OS Meta -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low/60 backdrop-blur-xl px-space-lg py-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">settings</span>
+<span class="hover:text-on-surface cursor-pointer">Settings</span>
+<span class="text-outline">/</span>
+<span class="hover:text-on-surface cursor-pointer">Security</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold tracking-wide">Security Center</span>
+</div>
+<span class="hidden sm:inline-flex items-center px-space-xs py-space-2xs rounded bg-surface-container-highest font-code-sm text-code-sm text-secondary">v4.19-hardened</span>
+</div>
+<div class="flex items-center gap-space-md font-code-sm text-code-sm self-end md:self-auto">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-on-surface-variant">SELinux:</span> Enforcing
+      </div>
+<div class="h-3 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>TPM 2.0 PCR Validation OK</span>
+</div>
+</div>
+</div>
+<!-- Top Hero Status Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high/90 shadow-xl p-space-xl">
+<!-- Ambient back glow using theme tokens -->
+<div class="absolute -top-16 -right-16 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 left-1/4 w-96 h-96 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl">
+<!-- Left side: Icon, Status, and Hardening Details -->
+<div class="flex items-start gap-space-lg max-w-2xl">
+<div class="relative flex-shrink-0 w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center shadow-lg">
+<div class="absolute inset-0 rounded-xl bg-tertiary/15 animate-ping opacity-25"></div>
+<span class="material-symbols-outlined text-[32px] text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">System is Secure &amp; Hardened</h1>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              SHIELD LEVEL 5
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Kernel integrity verified · Secure Boot active · Last vulnerability scan: <span class="text-on-surface font-medium">2 hours ago</span>
+</p>
+<div class="flex items-center gap-space-lg mt-space-xs font-code-sm text-code-sm text-secondary">
+<span>SHA256 Root: 9fa4..bc11</span>
+<span>Zero Day Exploit Mitigation: Active</span>
+<span class="text-tertiary">Posture Score: 99.4%</span>
+</div>
+</div>
+</div>
+<!-- Right side: Tactical Action Buttons -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto self-stretch sm:self-auto justify-end flex-shrink-0">
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all active:scale-95 shadow-sm" id="export-log-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+<span>Export Audit Log</span>
+</button>
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs px-space-xl py-space-sm rounded bg-primary-container hover:bg-secondary-container text-on-primary-container font-label-md text-label-md font-semibold transition-all active:scale-95 shadow-md" id="scan-now-btn" type="button">
+<span class="material-symbols-outlined text-[18px]" id="scan-icon">security_update_good</span>
+<span id="scan-text">Scan Now</span>
+</button>
+</div>
+</div>
+<!-- Scan Progress Bar (Interactive Toggle) -->
+<div class="hidden mt-space-lg pt-space-md flex flex-col gap-space-xs" id="scan-progress-container">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-tertiary font-code-sm">Scanning dynamic modules &amp; kernel ring buffers...</span>
+<span class="font-code-sm text-on-surface" id="scan-percent">34%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-300" id="scan-bar" style="width: 34%"></div>
+</div>
+</div>
+</div>
+<!-- Security Feature Grid (6 Essential Controls) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card 1: eBPF Firewall -->
+<div class="group flex flex-col justify-between bg-surface-container/90 hover:bg-surface-container-high/90 rounded-xl p-space-lg shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[20px]">local_fire_department</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-2xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">Protected</span>
+<!-- Toggle Switch -->
+<button aria-checked="true" class="toggle-switch w-10 h-5 bg-primary-container rounded-full relative transition-colors focus:outline-none" onclick="toggleSwitch(this)" role="switch">
+<span class="block w-4 h-4 rounded-full bg-on-primary-container translate-x-5 transition-transform"></span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">eBPF Firewall &amp; Packet Filter</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Filtering ingress/egress against SYN flood &amp; malicious ports at raw kernel link layer.
+          </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between font-code-sm text-code-sm text-secondary bg-surface-container-low/50 px-space-md py-space-xs rounded-lg">
+<span class="truncate">Drop rate: 0.001% (4,129 pkts)</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">pulse_alert</span>
+</div>
+</div>
+<!-- Card 2: Login & Authentication -->
+<div class="group flex flex-col justify-between bg-surface-container/90 hover:bg-surface-container-high/90 rounded-xl p-space-lg shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[20px]">passkey</span>
+</div>
+<span class="px-space-sm py-space-2xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">Hardened</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Login &amp; Authentication</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            PIN + YubiKey FIDO2 Biometrics enforced for terminal escalation and system lock recovery.
+          </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Security Keys Linked</span>
+<a class="inline-flex items-center gap-space-2xs font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">
+          Configure MFA →
+        </a>
+</div>
+</div>
+<!-- Card 3: Disk Encryption & LUKS2 -->
+<div class="group flex flex-col justify-between bg-surface-container/90 hover:bg-surface-container-high/90 rounded-xl p-space-lg shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[20px]">lock</span>
+</div>
+<span class="px-space-sm py-space-2xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">Active Enclave</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Disk Encryption &amp; LUKS2</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            APFS/ZFS root partition AES-XTS-256 encrypted with hardware TPM key bind.
+          </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant bg-surface-container-low/50 px-space-md py-space-xs rounded-lg">
+<span class="truncate">Key derivation: Argon2id</span>
+<span class="text-tertiary flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Sealed</span>
+</div>
+</div>
+<!-- Card 4: Antivirus & Threat Scanner -->
+<div class="group flex flex-col justify-between bg-surface-container/90 hover:bg-surface-container-high/90 rounded-xl p-space-lg shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[20px]">security</span>
+</div>
+<span class="px-space-sm py-space-2xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">Up to date</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Antivirus &amp; Threat Scanner</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            ClamAV/Cassandra heuristics active · 0 threats found across 284k monitored file inodes.
+          </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Daily DB: rev. 8921</span>
+<button class="px-space-md py-space-2xs rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+          Quick Scan
+        </button>
+</div>
+</div>
+<!-- Card 5: App Sandbox & Namespaces -->
+<div class="group flex flex-col justify-between bg-surface-container/90 hover:bg-surface-container-high/90 rounded-xl p-space-lg shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[20px]">layers</span>
+</div>
+<span class="px-space-sm py-space-2xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">Enforced</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">App Sandbox &amp; Namespaces</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Bubblewrap containerization active for all untrusted third-party binaries and shell plugins.
+          </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant bg-surface-container-low/50 px-space-md py-space-xs rounded-lg">
+<span>Active Cgroups: 18</span>
+<span class="text-tertiary">Zero IPC Leaks</span>
+</div>
+</div>
+<!-- Card 6: Core Memory Protection -->
+<div class="group flex flex-col justify-between bg-surface-container/90 hover:bg-surface-container-high/90 rounded-xl p-space-lg shadow-md transition-all duration-200">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[20px]">memory</span>
+</div>
+<span class="px-space-sm py-space-2xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Core Memory Protection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Kernel address space layout randomization (ASLR) &amp; DEP enabled with CET shadow stack.
+          </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between font-code-sm text-code-sm text-secondary bg-surface-container-low/50 px-space-md py-space-xs rounded-lg">
+<span>Entropy: 32-bit KASLR</span>
+<span class="text-primary font-medium">NX-Bit Enforced</span>
+</div>
+</div>
+</div>
+<!-- Realtime Telemetry & Threat Surface Vectors -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Live Packet Inspection Stream -->
+<div class="lg:col-span-2 bg-surface-container-low/90 rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">monitor_heart</span>
+<span class="font-headline-md text-headline-md text-on-surface">Realtime Ingress Threat Mitigation</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> Live Link
+        </span>
+</div>
+<!-- Realtime Ingress Histogram SVG Chart -->
+<div class="w-full bg-surface-container-lowest/70 rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-code-sm text-code-sm text-on-surface-variant mb-space-xs">
+<span>Filter throughput: 4.8 Gbps</span>
+<span>Zero drop anomalies</span>
+</div>
+<svg class="w-full h-24 overflow-visible" preserveaspectratio="none" viewbox="0 0 500 80">
+<!-- Background Grid Lines -->
+<line class="text-surface-container-highest/30" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="500" y1="20" y2="20"></line>
+<line class="text-surface-container-highest/30" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="500" y1="50" y2="50"></line>
+<!-- Smooth Ingress Area Gradient Chart -->
+<defs>
+<lineargradient id="area-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop class="text-tertiary" offset="0%" stop-color="currentColor" stop-opacity="0.35"></stop>
+<stop class="text-tertiary" offset="100%" stop-color="currentColor" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M 0,65 Q 40,25 80,45 T 160,20 T 240,40 T 320,15 T 400,30 T 480,18 L 500,25 L 500,80 L 0,80 Z" fill="url(#area-gradient)"></path>
+<path class="text-tertiary" d="M 0,65 Q 40,25 80,45 T 160,20 T 240,40 T 320,15 T 400,30 T 480,18 L 500,25" fill="none" stroke="currentColor" stroke-width="2"></path>
+<!-- Secondary Mitigated Spike Track -->
+<path class="text-primary-container" d="M 0,72 Q 50,55 100,68 T 200,50 T 300,65 T 400,48 L 500,62" fill="none" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1.5"></path>
+</svg>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+<span>-60s</span>
+<span>-45s</span>
+<span>-30s</span>
+<span>-15s</span>
+<span>Now (eBPF XDP hook active)</span>
+</div>
+</div>
+<!-- Recent Hardening Events -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-code-sm text-code-sm">
+<div class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<div class="flex flex-col truncate">
+<span class="text-on-surface">Port 22/SSH Brute Force</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">IP 194.26.29.112 drop after 3 auth fails</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<div class="flex flex-col truncate">
+<span class="text-on-surface">Kernel KASLR Seed Refresh</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">Verified boot entropy pool randomized</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side Security Posture Checklist & TPM Profile -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Hardware Vault Status</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">enhanced_encryption</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">token</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">TPM 2.0 Chip</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">STMicroelectronics Spec 2.0</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">BOUND</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">key</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Secure Boot Keys</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cassandra Root PK installed</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">VALID</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">shield_locked</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Kernel Lockdown</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confidentiality mode active</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">LOCKED</span>
+</div>
+</div>
+<!-- Quick Action Footer for Vault -->
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span>Manage Enclave Keys</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive scanning simulation
+  const scanBtn = document.getElementById('scan-now-btn');
+  const scanIcon = document.getElementById('scan-icon');
+  const scanText = document.getElementById('scan-text');
+  const progressContainer = document.getElementById('scan-progress-container');
+  const progressBar = document.getElementById('scan-bar');
+  const percentText = document.getElementById('scan-percent');
+
+  let isScanning = false;
+  let scanInterval;
+
+  if (scanBtn) {
+    scanBtn.addEventListener('click', () => {
+      if (isScanning) return;
+      isScanning = true;
+      scanText.textContent = 'Scanning...';
+      scanIcon.classList.add('animate-spin');
+      progressContainer.classList.remove('hidden');
+
+      let progress = 0;
+      clearInterval(scanInterval);
+      scanInterval = setInterval(() => {
+        progress += Math.floor(Math.random() * 8) + 4;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(scanInterval);
+          setTimeout(() => {
+            isScanning = false;
+            scanText.textContent = 'Scan Complete';
+            scanIcon.classList.remove('animate-spin');
+            scanIcon.textContent = 'task_alt';
+            setTimeout(() => {
+              scanText.textContent = 'Scan Now';
+              scanIcon.textContent = 'security_update_good';
+              progressContainer.classList.add('hidden');
+            }, 3000);
+          }, 400);
+        }
+        progressBar.style.width = progress + '%';
+        percentText.textContent = progress + '%';
+      }, 150);
+    });
+  }
+
+  // Generic switch toggling
+  function toggleSwitch(element) {
+    const isChecked = element.getAttribute('aria-checked') === 'true';
+    element.setAttribute('aria-checked', (!isChecked).toString());
+    const knob = element.querySelector('span');
+
+    if (isChecked) {
+      element.classList.remove('bg-primary-container');
+      element.classList.add('bg-surface-container-highest');
+      knob.classList.remove('translate-x-5');
+      knob.classList.add('translate-x-0.5');
+    } else {
+      element.classList.add('bg-primary-container');
+      element.classList.remove('bg-surface-container-highest');
+      knob.classList.add('translate-x-5');
+      knob.classList.remove('translate-x-0.5');
+    }
+  }
+
+  // Export audit log notification demo
+  const exportBtn = document.getElementById('export-log-btn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      const originalText = exportBtn.innerHTML;
+      exportBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-tertiary">check</span><span>Log Exported (.tar.gz)</span>';
+      setTimeout(() => {
+        exportBtn.innerHTML = originalText;
+      }, 2500);
+    });
+  }
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#007995", "surface-variant": "#273647", "surface-tint": "#bac3ff", "secondary-fixed": "#d4e3ff", "primary-fixed": "#dee1ff", "on-secondary-fixed-variant": "#004884", "on-background": "#d4e4fa", "on-tertiary-fixed": "#001f28", "surface-container-highest": "#273647", "surface-container-lowest": "#010f1f", "primary-fixed-dim": "#bac3ff", "on-error": "#690005", "on-tertiary": "#003543", "on-secondary-container": "#eaf0ff", "on-secondary": "#00315d", "tertiary": "#5bd5fc", "error-container": "#93000a", "surface-container-low": "#0d1c2d", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "surface-bright": "#2c3a4c", "on-tertiary-container": "#e4f6ff", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "on-surface-variant": "#c4c5d7", "error": "#ffb4ab", "primary": "#bac3ff", "surface-container-high": "#1c2b3c", "outline": "#8e8fa1", "primary-container": "#4361ee", "tertiary-fixed": "#b7eaff", "surface-container": "#122131", "on-error-container": "#ffdad6", "on-secondary-fixed": "#001c39", "outline-variant": "#444655", "secondary-fixed-dim": "#a4c9ff", "inverse-primary": "#2e4edc", "secondary": "#a4c9ff", "surface-dim": "#051424", "on-primary-fixed-variant": "#0031c4", "inverse-on-surface": "#233143", "on-primary": "#00218d", "surface": "#051424", "on-primary-container": "#f4f2ff", "on-surface": "#d4e4fa", "on-tertiary-fixed-variant": "#004e61", "background": "#051424" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "12px", "space-md": "12px", "space-2xl": "32px", "space-lg": "16px", "space-xs": "4px", "space-sm": "8px", "taskbar-height": "48px", "titlebar-height": "36px", "space-xl": "24px", "space-2xs": "2px", "panel-dock-width": "320px" }, "fontFamily": { "body-sm": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "code-sm": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-xl": [ "Inter" ], "code-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "code-sm": [ "11px", { "lineHeight": "15px", "fontWeight": "400" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background text-on-surface antialiased min-h-screen pb-taskbar-height"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-space-lg flex flex-col justify-between py-space-xs"><div class="h-titlebar-height flex items-center justify-between w-full"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-[11px] h-[11px] rounded-full bg-[#ef4444]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#f5c400]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26b170]"></div></div><div class="flex items-center gap-space-xs text-on-surface-variant"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-body-sm text-body-sm text-tertiary font-semibold tracking-wide">CassandraOS</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface-variant">Settings</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface">Preferences &amp; Administration</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg"><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">CPU</span><span class="font-code-sm text-code-sm text-tertiary">14%</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">RAM</span><span class="font-code-sm text-code-sm text-secondary">6.2G</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">NET</span><span class="font-code-sm text-code-sm text-on-surface">↓42K ↑8K</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#">Language &amp; Region</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="date-and-time" href="#">Date &amp; Time</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#">Default Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#">Startup Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#">App Storage</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="application-details" href="#">Application Details</a><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="system-diagnostics" href="#">System Diagnostics</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-report" href="#">System Report</a></nav></div></div></header><aside class="fixed left-0 top-20 bottom-taskbar-height w-64 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-2xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Administration</span></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#"><span class="material-symbols-outlined text-[18px]">translate</span><span class="font-body-md text-body-md">Localization</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#"><span class="material-symbols-outlined text-[18px]">apps</span><span class="font-body-md text-body-md">App Packages</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span class="font-body-md text-body-md">Startup Daemons</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span><span class="font-body-md text-body-md">Storage Quotas</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="system-diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span class="font-body-md text-body-md">Kernel Health</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-report" href="#"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-body-md text-body-md">System Logs</span></a></nav></div><div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Cassandra Kernel</span><span class="font-code-sm text-code-sm text-tertiary">v4.19.8-cs</span></div><span class="material-symbols-outlined text-tertiary text-[20px]">verified</span></div></aside><div class="pl-64"><main class="w-full pt-20 px-space-lg bg-surface min-h-[calc(100vh-theme(spacing.taskbar-height))] flex flex-col"><div class="flex flex-col w-full pb-space-2xl gap-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-xl">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-60 -bottom-24 w-64 h-64 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full bg-surface-container-high text-tertiary tracking-wider uppercase font-medium">Cassandra Hardware Probe v2.4</span>
+<span class="text-outline-variant font-code-sm text-code-sm">/</span>
+<span class="font-label-sm text-label-sm text-outline">NODE_ID: CS-CORE-ALPHA-90</span>
+</div>
+<div class="flex items-baseline gap-space-md flex-wrap mt-space-2xs">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">System Health Score: <span class="text-[#26b170]">98</span><span class="text-on-surface-variant font-body-md text-body-md">/100</span></h1>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-[#26b170]/15 text-[#26b170] font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-[#26b170] animate-pulse"></span>
+            Optimal Condition
+          </span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm mt-space-2xs">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+            Last benchmarked: Today, 14:15 UTC
+          </span>
+<span class="text-outline-variant font-code-sm text-code-sm">•</span>
+<span class="font-code-sm text-code-sm text-secondary">Target: Baremetal Ring 0 Hypervisor</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap self-stretch xl:self-center">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-lg bg-primary-container text-on-primary-container hover:bg-inverse-primary active:scale-[0.98] transition-all shadow-md font-body-md text-body-md font-semibold group" id="runSuiteBtn" onclick="triggerSuiteBenchmark()">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-180 transition-transform duration-500" id="suiteSpinIcon">refresh</span>
+<span>Run Full Diagnostic Suite</span>
+</button>
+<button class="flex items-center justify-center px-space-md py-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-variant active:scale-[0.98] transition-all font-body-md text-body-md" id="pauseTelemetryBtn" onclick="togglePauseTelemetry()">
+<span class="material-symbols-outlined text-[18px]">motion_photos_paused</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-lg pt-space-md bg-surface-container/60 -mx-space-lg -mb-space-lg px-space-lg py-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">HARDWARE CONCURRENCY</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold">32 Execution Threads</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">ACTIVE BUS THROUGHPUT</span>
+<span class="font-code-md text-code-md text-tertiary font-semibold">64.0 GT/s PCIe 5.0</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">COOLING THERMAL HEADROOM</span>
+<span class="font-code-md text-code-md text-[#f5c400] font-semibold">+18.4°C to TjMax</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">KERNEL PARITY INTEGRITY</span>
+<span class="font-code-md text-code-md text-[#26b170] font-semibold">100% Deterministic</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">memory</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Processor &amp; Cores</h2>
+<span class="font-label-sm text-label-sm text-outline">x86_64 Advanced Architecture</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-[#26b170]/15 text-[#26b170] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            PASSED
+          </span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Topology Status</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">16 Cores / 32 Threads Stable</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Core Die Temp</span>
+<span class="font-code-sm text-code-sm text-on-surface">42°C (Ambient 21°C)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Core VID Supply</span>
+<span class="font-code-sm text-code-sm text-on-surface">1.05 V (Static VCore)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Peak Frequency</span>
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">5.7 GHz Max Reached</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/40 rounded-lg p-space-sm">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-space-2xs">
+<span class="text-outline">Thermal Vector Trace</span>
+<span class="text-on-surface font-code-sm text-code-sm">Mean 41.8°C</span>
+</div>
+<svg class="w-full h-9 text-tertiary" fill="none" preserveaspectratio="none" viewbox="0 0 280 36">
+<path d="M0 26 C 30 24, 50 18, 80 20 C 110 22, 140 14, 170 15 C 200 16, 230 8, 280 12" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0 26 C 30 24, 50 18, 80 20 C 110 22, 140 14, 170 15 C 200 16, 230 8, 280 12 L 280 36 L 0 36 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">developer_board</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Memory Integrity</h2>
+<span class="font-label-sm text-label-sm text-outline">Low-Latency Channel A/B</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-[#26b170]/15 text-[#26b170] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            PASSED
+          </span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Capacity</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">64 GB Synchronous DDR5</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Parity / ECC Log</span>
+<span class="font-code-sm text-code-sm text-[#26b170] font-semibold">Zero Bit Errors</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">MemTest86 Hash</span>
+<span class="font-code-sm text-code-sm text-on-surface">100% Verified Pass</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">CAS Latency Timings</span>
+<span class="font-code-sm text-code-sm text-secondary">CL30-38-38-96 @ 6400MT/s</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/40 rounded-lg p-space-sm">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-space-xs">
+<span class="text-outline">64GB Allocation Matrix</span>
+<span class="text-secondary font-code-sm text-code-sm">18.4 GB Used / 45.6 GB Free</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full" style="width: 28%"></div>
+<div class="bg-tertiary h-full opacity-40" style="width: 14%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">hard_drive</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Storage Controllers</h2>
+<span class="font-label-sm text-label-sm text-outline">NVMe Gen5 Direct I/O</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-[#26b170]/15 text-[#26b170] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            PASSED
+          </span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">S.M.A.R.T. Health</span>
+<span class="font-code-sm text-code-sm text-[#26b170] font-semibold">Healthy (100% Reserve)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wear Level Indicator</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">1% Consumed</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sequential Read Rate</span>
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">7,450 MB/s</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sequential Write Rate</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">6,900 MB/s</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/40 rounded-lg p-space-sm">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-space-2xs">
+<span class="text-outline">NVMe I/O Queue Depth</span>
+<span class="font-code-sm text-code-sm text-on-surface">Queue 32/32 (Sync)</span>
+</div>
+<div class="flex gap-1 h-3 items-end">
+<div class="flex-1 bg-tertiary h-[30%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[45%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[60%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[85%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[40%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[20%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[95%] rounded-xs"></div>
+<div class="flex-1 bg-tertiary h-[55%] rounded-xs"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-[#f5c400]">
+<span class="material-symbols-outlined text-[20px]">mode_fan</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Thermal &amp; Cooling</h2>
+<span class="font-label-sm text-label-sm text-outline">Closed Loop Distribution</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-[#f5c400]/15 text-[#f5c400] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+            WARNING
+          </span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">AIO Liquid Pump</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">2,400 RPM (Constrained)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ambient Sensor Excursion</span>
+<span class="font-code-sm text-code-sm text-[#f5c400] font-medium">+3°C Above Baseline</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Exhaust Delta T</span>
+<span class="font-code-sm text-code-sm text-on-surface">11.2°C Gradient</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Radiator Fans (3x120mm)</span>
+<span class="font-code-sm text-code-sm text-on-surface">1,620 RPM (PWM 78%)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-[#f5c400]/10 rounded-lg p-space-sm">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-[#f5c400] font-medium flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">info</span>
+            Heat dissipation alert
+          </span>
+<span class="font-code-sm text-code-sm text-[#f5c400]">Fan curve readjusted</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">GPU Compute &amp; Tensor</h2>
+<span class="font-label-sm text-label-sm text-outline">Parallel GEMM Pipeline</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] animate-spin">sync</span>
+            SCANNING (72%)
+          </span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compute Kernel</span>
+<span class="font-code-sm text-code-sm text-on-surface">CUDA Core Tensor Matrix</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Benchmark Operation</span>
+<span class="font-code-sm text-code-sm text-tertiary font-medium">GEMM FP16 / BF16 Flops</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">VRAM Subsystem</span>
+<span class="font-code-sm text-code-sm text-on-surface">24 GB HBM3 (2.2 TB/s)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estimated TFLOPS</span>
+<span class="font-code-sm text-code-sm text-primary font-semibold">124.6 TFLOPS Verified</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/40 rounded-lg p-space-sm">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-space-xs">
+<span class="text-outline">GEMM Tensor Convergence</span>
+<span class="font-code-sm text-code-sm text-tertiary" id="tensorProgressLabel">72% Completed</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" id="tensorProgressBar" style="width: 72%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">lan</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Network &amp; Kernel</h2>
+<span class="font-label-sm text-label-sm text-outline">WireGuard Netfilter Stack</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded bg-[#26b170]/15 text-[#26b170] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            PASSED
+          </span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Socket Packet Loss</span>
+<span class="font-code-sm text-code-sm text-[#26b170] font-semibold">0.00% (Over 50K packets)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">DNS Lookup Latency</span>
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">4.2 ms (DoH Root)</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Crypto Engine Verify</span>
+<span class="font-code-sm text-code-sm text-on-surface">WireGuard ChaCha20-Poly1305</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs bg-surface-container-low px-space-sm rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">NIC Link Status</span>
+<span class="font-code-sm text-code-sm text-secondary">10 Gbps Full-Duplex</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/40 rounded-lg p-space-sm">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-space-2xs">
+<span class="text-outline">Socket Latency Jitter</span>
+<span class="text-[#26b170] font-code-sm text-code-sm">± 0.18 ms</span>
+</div>
+<svg class="w-full h-9 text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 280 36">
+<path d="M0 18 L 30 18 L 40 10 L 50 26 L 60 18 L 120 18 L 130 8 L 140 28 L 150 18 L 220 18 L 230 12 L 240 22 L 250 18 L 280 18" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-md bg-surface-container-low/50 -mx-space-lg -mt-space-lg px-space-lg py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-tertiary animate-pulse"></div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface">Live Hardware Probe Stream</span>
+<span class="font-code-sm text-code-sm text-outline">/dev/cs_diag_klog</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-label-sm text-label-sm transition-colors" onclick="clearDiagnosticsTerminal()">
+<span class="material-symbols-outlined text-[16px]">clear_all</span>
+          Clear Stream
+        </button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-high hover:bg-surface-variant text-tertiary font-label-sm text-label-sm transition-colors" onclick="exportReport('json')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+          Export .json
+        </button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-sm text-label-sm transition-colors" onclick="exportReport('tar.gz')">
+<span class="material-symbols-outlined text-[16px]">archive</span>
+          Export .tar.gz
+        </button>
+</div>
+</div>
+<div class="h-64 overflow-y-auto bg-[#010f1f] rounded-lg p-space-md mt-space-md font-code-sm text-code-sm text-on-surface-variant flex flex-col gap-1 select-text scroll-smooth" id="terminalBody">
+<div class="text-outline-variant font-code-sm text-code-sm">[00:00:01.002] cassandra_probe: Initializing deep hardware vector inspection...</div>
+<div><span class="text-outline">[14:15:00.118]</span> <span class="text-tertiary font-semibold">CPU0..CPU15:</span> AVX-512 register consistency stress loop passed without parity faults.</div>
+<div><span class="text-outline">[14:15:00.320]</span> <span class="text-secondary font-semibold">MEM_CTRL_0:</span> Read pattern alternating 0xAAAAAAAA / 0x55555555 committed on Bank 0-7.</div>
+<div><span class="text-outline">[14:15:00.892]</span> <span class="text-[#26b170] font-semibold">MEMTEST:</span> Zero bit-flips recorded across 65536MB contiguous buffer.</div>
+<div><span class="text-outline">[14:15:01.104]</span> <span class="text-tertiary font-semibold">NVME_SUB:</span> Namespace /dev/nvme0n1 SMART endurance wear is 0.98%. IOPS verify: OK.</div>
+<div><span class="text-outline">[14:15:01.450]</span> <span class="text-[#f5c400] font-semibold">THERM_SENS:</span> Fan header CHA_FAN2 reported slight airflow impedance delta (+3°C threshold trip).</div>
+<div><span class="text-outline">[14:15:01.884]</span> <span class="text-primary font-semibold">NET_CORE:</span> Handshake ping roundtrip to wireguard cluster edge: 4.2ms nominal.</div>
+<div><span class="text-outline">[14:15:02.190]</span> <span class="text-tertiary font-semibold">GPU_EXEC:</span> Dispatched GEMM FP16 compute kernel batch ID #84992 across 16384 Tensor Cores...</div>
+<div class="flex items-center gap-space-xs text-tertiary" id="liveStreamMarker">
+<span class="text-outline">[14:15:02.812]</span>
+<span class="material-symbols-outlined text-[14px] animate-spin">sync</span>
+<span>Polling sensor array bus /sys/class/hwmon/hwmon0...</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-[#26b170]"></span>
+<span>Daemon: <span class="font-code-sm text-code-sm text-on-surface">cs-diagnosticsd.service active (pid: 1422)</span></span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Log Buffer: 2,410 / 10,000 Lines</span>
+<span class="text-outline-variant font-code-sm text-code-sm">•</span>
+<span class="text-tertiary">Memory Pinning: Enabled</span>
+</div>
+</div>
+</div>
+<div class="hidden fixed bottom-16 right-6 z-50 bg-surface-container-highest p-space-md rounded-xl shadow-2xl flex items-center gap-space-md transition-all" id="exportFeedbackModal">
+<div class="w-8 h-8 rounded-full bg-[#26b170]/20 flex items-center justify-center text-[#26b170]">
+<span class="material-symbols-outlined text-[18px]">download_done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface" id="exportTitle">Report Generated</span>
+<span class="font-label-sm text-label-sm text-outline" id="exportSubtitle">SHA256 signature calculated.</span>
+</div>
+</div>
+</div>
+<script>
+  let telemetryInterval = null;
+  let isTelemetryRunning = true;
+  let tensorProgress = 72;
+
+  function initLogStream() {
+    const term = document.getElementById('terminalBody');
+    const marker = document.getElementById('liveStreamMarker');
+
+    telemetryInterval = setInterval(() => {
+      if (!isTelemetryRunning) return;
+
+      const now = new Date();
+      const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+      
+      const logs = [
+        `<span class="text-outline">[${timeStr}]</span> <span class="text-tertiary font-semibold">TENSOR_GEMM:</span> Iteration tile matrix batch delta validated. Norm: 0.000000e+00.`,
+        `<span class="text-outline">[${timeStr}]</span> <span class="text-primary font-semibold">KERNEL_TRACE:</span> Context switch frequency jitter stable @ 1.8us.`,
+        `<span class="text-outline">[${timeStr}]</span> <span class="text-[#26b170] font-semibold">HW_PROBE:</span> CPU package power equilibrium steady at 125W TDP window.`,
+        `<span class="text-outline">[${timeStr}]</span> <span class="text-secondary font-semibold">PCIE_AER:</span> Uncorrectable Error Status register read: 0x00000000 (CLEAN).`
+      ];
+
+      const newLog = document.createElement('div');
+      newLog.innerHTML = logs[Math.floor(Math.random() * logs.length)];
+      term.insertBefore(newLog, marker);
+      term.scrollTop = term.scrollHeight;
+
+      if (tensorProgress < 99) {
+        tensorProgress += 1;
+        const bar = document.getElementById('tensorProgressBar');
+        const label = document.getElementById('tensorProgressLabel');
+        if (bar && label) {
+          bar.style.width = tensorProgress + '%';
+          label.textContent = tensorProgress + '% Completed';
+        }
+      }
+    }, 2800);
+  }
+
+  function triggerSuiteBenchmark() {
+    const btn = document.getElementById('runSuiteBtn');
+    const icon = document.getElementById('suiteSpinIcon');
+    const term = document.getElementById('terminalBody');
+    const marker = document.getElementById('liveStreamMarker');
+
+    icon.classList.add('animate-spin');
+    btn.classList.add('opacity-75');
+
+    const triggerLog = document.createElement('div');
+    const now = new Date();
+    const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+    triggerLog.innerHTML = `<span class="text-outline">[${timeStr}]</span> <span class="text-[#f5c400] font-semibold">SUITE_DISPATCH:</span> Full system diagnostics sweep re-initiated by user root.`;
+    term.insertBefore(triggerLog, marker);
+    term.scrollTop = term.scrollHeight;
+
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      btn.classList.remove('opacity-75');
+      showToast('Suite Benchmark Cycle Initiated', 'All 6 diagnostic probes are operating at full load.');
+    }, 1200);
+  }
+
+  function clearDiagnosticsTerminal() {
+    const term = document.getElementById('terminalBody');
+    const marker = document.getElementById('liveStreamMarker');
+    term.innerHTML = '';
+    term.appendChild(marker);
+  }
+
+  function togglePauseTelemetry() {
+    isTelemetryRunning = !isTelemetryRunning;
+    const btn = document.getElementById('pauseTelemetryBtn');
+    if (isTelemetryRunning) {
+      btn.classList.remove('text-[#f5c400]');
+      showToast('Telemetry Resumed', 'Live sensor sampling is active.');
+    } else {
+      btn.classList.add('text-[#f5c400]');
+      showToast('Telemetry Paused', 'Stream suspended without disconnecting daemon.');
+    }
+  }
+
+  function exportReport(format) {
+    showToast(`Exported Diagnostic Snapshot (.${format})`, 'Saved to /var/log/cassandra/diagnostics_dump_' + Date.now());
+  }
+
+  function showToast(title, sub) {
+    const modal = document.getElementById('exportFeedbackModal');
+    const titleElem = document.getElementById('exportTitle');
+    const subElem = document.getElementById('exportSubtitle');
+    
+    titleElem.textContent = title;
+    subElem.textContent = sub;
+    modal.classList.remove('hidden');
+
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 3800);
+  }
+
+  initLogStream();
+</script></main></div><footer class="fixed bottom-0 left-0 w-full h-taskbar-height z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)] flex items-center justify-between px-space-md"><div class="flex items-center gap-space-sm"><button class="h-8 w-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-4 w-px bg-surface-variant"></div><div class="flex items-center gap-space-2xs"><button class="h-8 px-space-sm rounded-lg bg-surface-container-high text-tertiary flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-sm text-body-sm">Preferences</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">folder_open</span></button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">volume_up</span><span class="material-symbols-outlined text-[18px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div><div class="h-4 w-px bg-surface-variant"></div><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-medium">10:42 AM</span><span class="font-label-sm text-label-sm text-outline">OCT 24</span></div></div></footer></body></html>

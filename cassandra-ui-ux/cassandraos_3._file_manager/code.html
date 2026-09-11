@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#051424", "tertiary": "#5bd5fc", "surface-container-highest": "#273647", "tertiary-fixed": "#b7eaff", "secondary-fixed-dim": "#a4c9ff", "surface-dim": "#051424", "primary-container": "#4361ee", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "secondary": "#a4c9ff", "inverse-on-surface": "#233143", "surface-tint": "#bac3ff", "error": "#ffb4ab", "on-secondary-fixed": "#001c39", "background": "#051424", "surface-container-high": "#1c2b3c", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "surface-bright": "#2c3a4c", "on-error": "#690005", "surface-variant": "#273647", "error-container": "#93000a", "outline-variant": "#444655", "on-tertiary-fixed-variant": "#004e61", "on-secondary": "#00315d", "surface-container": "#122131", "on-secondary-fixed-variant": "#004884", "on-tertiary": "#003543", "on-primary": "#00218d", "surface-container-lowest": "#010f1f", "secondary-fixed": "#d4e3ff", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "on-surface-variant": "#c4c5d7", "tertiary-container": "#007995", "primary-fixed": "#dee1ff", "inverse-primary": "#2e4edc", "outline": "#8e8fa1", "on-tertiary-container": "#e4f6ff", "on-error-container": "#ffdad6", "on-secondary-container": "#eaf0ff", "primary-fixed-dim": "#bac3ff", "on-tertiary-fixed": "#001f28", "on-primary-fixed-variant": "#0031c4", "primary": "#bac3ff", "on-primary-container": "#f4f2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "panel-dock-width": "320px", "gutter": "12px", "space-xs": "4px", "space-2xs": "2px", "space-xl": "24px", "space-2xl": "32px", "titlebar-height": "36px", "taskbar-height": "48px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, "fontFamily": { "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "code-sm": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "15px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,7,32,0.6)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CassandraOS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">CassandraOS</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">v3.4.0-LTS</span></div><nav class="hidden md:flex items-center gap-space-sm bg-surface-container-lowest/60 p-space-2xs rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]"><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="desktop-workspace" href="#">Workspace</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]" data-path="file-manager" href="#">Files</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="terminal-sessions" href="#">Terminal</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="system-settings" href="#">Settings</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="software-store" href="#">Software</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-tertiary text-[16px]">memory</span><span>32% RAM</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/85 backdrop-blur-xl z-30 flex flex-col justify-between py-space-md shadow-[4px_0_24px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspaces</span><span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px]">add</span></div><nav class="flex flex-col px-space-sm gap-space-2xs" data-active-classes="bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="desktop-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">01</span><span>Dev Environment</span></div><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="terminal-sessions" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">02</span><span>Telemetry & Ops</span></div><span class="font-code-sm text-code-sm text-outline">3</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary" data-path="file-manager" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">03</span><span>Storage Nodes</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-settings" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">04</span><span>Kernel Conf</span></div></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest/80"><div class="flex items-center justify-between mb-space-2xs font-label-sm text-label-sm text-on-surface-variant"><span>CPU Load</span><span class="text-tertiary font-code-sm text-code-sm">18.4%</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 18.4%"></div></div></div><div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-sm"><span>Uptime: 14d 08h</span><span class="material-symbols-outlined text-[16px] text-tertiary">shield</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-14 min-h-screen bg-surface relative"><div class="flex flex-col w-full items-center justify-center p-space-lg select-none relative overflow-hidden">
+<!-- Subtle Ambient Glow Behind Window -->
+<div class="absolute w-[680px] h-[420px] bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -top-12"></div>
+<div class="absolute w-[450px] h-[300px] bg-tertiary-container/15 rounded-full blur-2xl pointer-events-none -bottom-8"></div>
+<!-- Floating OS Application Window Container -->
+<div class="relative w-full max-w-[960px] h-[640px] bg-surface-container-low/95 backdrop-blur-2xl rounded-xl shadow-[0_24px_50px_-12px_rgba(0,7,32,0.95),0_0_24px_rgba(67,97,238,0.18)] flex flex-col overflow-hidden transition-all duration-300" id="file-manager-window">
+<!-- Window Title Bar -->
+<header class="h-titlebar-height w-full bg-surface-container px-space-md flex items-center justify-between cursor-move shrink-0">
+<div class="flex items-center gap-space-sm min-w-0">
+<!-- Traffic lights window controls -->
+<div class="flex items-center gap-space-xs mr-space-xs">
+<button aria-label="Close" class="w-3 h-3 rounded-full bg-[#EF4444] hover:brightness-125 transition-all flex items-center justify-center group shadow-[0_0_6px_rgba(239,68,68,0.6)]" type="button">
+<span class="material-symbols-outlined text-[8px] text-[#450a0a] opacity-0 group-hover:opacity-100 font-bold">close</span>
+</button>
+<button aria-label="Minimize" class="w-3 h-3 rounded-full bg-[#F5C400] hover:brightness-125 transition-all flex items-center justify-center group shadow-[0_0_6px_rgba(245,196,0,0.6)]" type="button">
+<span class="material-symbols-outlined text-[8px] text-[#451a03] opacity-0 group-hover:opacity-100 font-bold">remove</span>
+</button>
+<button aria-label="Maximize" class="w-3 h-3 rounded-full bg-[#26B170] hover:brightness-125 transition-all flex items-center justify-center group shadow-[0_0_6px_rgba(38,177,112,0.6)]" type="button">
+<span class="material-symbols-outlined text-[8px] text-[#052e16] opacity-0 group-hover:opacity-100 font-bold">fullscreen</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs truncate text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">folder_managed</span>
+<span class="font-body-sm text-body-sm tracking-tight text-on-surface">File Manager</span>
+<span class="font-code-sm text-code-sm text-outline px-space-xs">/home/cass/Documents/Projects</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="inline-flex items-center px-space-xs py-space-2xs rounded bg-surface-container-highest text-tertiary">ext4</span>
+<span class="material-symbols-outlined text-[16px] cursor-pointer hover:text-on-surface">push_pin</span>
+</div>
+</header>
+<!-- App Toolbar -->
+<div class="bg-surface-container-low px-space-md py-space-xs flex flex-wrap items-center justify-between gap-space-sm shrink-0">
+<div class="flex items-center gap-space-xs">
+<!-- History Navigation -->
+<div class="flex items-center bg-surface-container rounded-lg p-space-2xs">
+<button aria-label="Back" class="p-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<button aria-label="Forward" class="p-space-2xs rounded hover:bg-surface-container-high text-outline hover:text-on-surface transition-colors flex items-center opacity-50 cursor-not-allowed" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button aria-label="Up Directory" class="p-space-2xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</button>
+</div>
+<!-- Breadcrumb Bar -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-lg font-code-sm text-code-sm min-w-[280px]">
+<span class="material-symbols-outlined text-[16px] text-tertiary">home</span>
+<span class="text-on-surface-variant hover:text-tertiary cursor-pointer">home</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant hover:text-tertiary cursor-pointer">cass</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant hover:text-tertiary cursor-pointer">Documents</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-medium">Projects</span>
+</div>
+</div>
+<!-- Action & View Controls -->
+<div class="flex items-center gap-space-sm">
+<!-- Search -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-sm text-[16px] text-outline pointer-events-none">search</span>
+<input class="bg-surface-container pl-8 pr- space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high w-40 focus:w-56 transition-all" placeholder="Search current..." type="text"/>
+</div>
+<!-- Sort Filter -->
+<button class="flex items-center gap-space-2xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">sort</span>
+<span>Name</span>
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</button>
+<!-- View Toggle Buttons -->
+<div class="flex items-center bg-surface-container p-space-2xs rounded-lg">
+<button class="p-space-2xs rounded bg-primary-container text-on-primary-container flex items-center shadow-sm" id="btn-grid-view" type="button">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+</button>
+<button class="p-space-2xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center" id="btn-list-view" type="button">
+<span class="material-symbols-outlined text-[16px]">view_list</span>
+</button>
+</div>
+<!-- New Folder Primary Action -->
+<button class="flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-body-sm text-body-sm px-space-sm py-space-xs rounded-lg transition-transform active:scale-95 shadow-[0_0_12px_rgba(67,97,238,0.4)]" type="button">
+<span class="material-symbols-outlined text-[16px]">create_new_folder</span>
+<span class="font-medium">New Folder</span>
+</button>
+</div>
+</div>
+<!-- Workspace Window Body: Sidebar + File Canvas -->
+<div class="flex flex-1 min-h-0 w-full overflow-hidden">
+<!-- Left Tree & Navigation Sidebar -->
+<aside class="w-56 bg-surface-container-lowest/80 flex flex-col justify-between p-space-sm shrink-0 overflow-y-auto">
+<div class="flex flex-col gap-space-md">
+<!-- Quick Access / Favorites -->
+<div class="flex flex-col gap-space-2xs">
+<span class="px-space-sm py-space-2xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Favorites</span>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">desktop_windows</span>
+<span>Desktop</span>
+</div>
+</a>
+<!-- Active Folder Item -->
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-medium shadow-[0_0_14px_rgba(67,97,238,0.35)]" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">folder_open</span>
+<span>Documents</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#5bd5fc]"></span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Downloads</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">4</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">image</span>
+<span>Pictures</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">movie</span>
+<span>Videos</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">music_note</span>
+<span>Music</span>
+</div>
+</a>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">delete</span>
+<span>Trash</span>
+</div>
+</a>
+</div>
+<!-- Mounted Devices -->
+<div class="flex flex-col gap-space-2xs">
+<span class="px-space-sm py-space-2xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Devices & Mounts</span>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">hard_drive</span>
+<span class="font-medium">NVMe-Core</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">240 GB</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 62%;"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline text-right">388 / 628 GB used</span>
+</div>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">usb</span>
+<span class="truncate">Vault-Ext-64G</span>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline hover:text-error">eject</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_queue</span>
+<span class="truncate">NAS Cluster</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+</div>
+</div>
+<!-- Sidebar Footer Security / Status Badge -->
+<div class="pt-space-sm px-space-sm">
+<div class="flex items-center gap-space-xs text-outline font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+<span>LUKS Encrypted</span>
+</div>
+</div>
+</aside>
+<!-- Main Directory Items Grid View -->
+<main class="flex-1 bg-surface-container-lowest/50 p-space-md overflow-y-auto flex flex-col justify-between">
+<!-- Files & Folders Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-space-md">
+<!-- SELECTED FOLDER ITEM -->
+<div class="group relative flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-high shadow-[0_0_0_2px_rgba(67,97,238,0.8),0_8px_20px_rgba(0,0,0,0.4)] cursor-pointer transition-all">
+<div class="relative mb-space-xs">
+<span class="material-symbols-outlined text-[48px] text-tertiary drop-shadow-[0_0_12px_rgba(91,213,252,0.4)]">folder</span>
+<span class="absolute bottom-1 right-0 w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate w-full">CassandraOS-Core</span>
+<div class="mt-space-2xs flex flex-col items-center text-on-surface-variant font-code-sm text-code-sm">
+<span>24 items · 1.2 GB</span>
+<span class="text-outline">Today 11:42</span>
+</div>
+</div>
+<!-- Folder Item 2 -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs">
+<span class="material-symbols-outlined text-[48px] text-tertiary opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all">folder</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">Kernel-Modules</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>12 items</span>
+<span>Yesterday</span>
+</div>
+</div>
+<!-- Folder Item 3 -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs">
+<span class="material-symbols-outlined text-[48px] text-tertiary opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all">folder</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">Neural-Pipelines</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>8 items</span>
+<span>Oct 20</span>
+</div>
+</div>
+<!-- File: Rust Source Code -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-error">integration_instructions</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">runtime_engine.rs</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>64.8 KB</span>
+<span>Today 09:15</span>
+</div>
+</div>
+<!-- File: PDF Document -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-error">picture_as_pdf</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">System_Arch_v3.pdf</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>4.3 MB</span>
+<span>Oct 22</span>
+</div>
+</div>
+<!-- File: Markdown Notes -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-tertiary">edit_note</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">ROADMAP_2025.md</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>14.2 KB</span>
+<span>Oct 18</span>
+</div>
+</div>
+<!-- File: Zip / Archive -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-secondary">folder_zip</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">dist_packages.tar.gz</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>184.2 MB</span>
+<span>Oct 14</span>
+</div>
+</div>
+<!-- File: Image / Blueprint Visual -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 rounded-lg overflow-hidden bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Technical schematic diagram of a multi-core kernel processor architecture with glowing cobalt pathways, sleek dark blue layout, high precision cyan blueprints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvsio_3o6TY3pb-LxKJvhrBdEj6D49XdBlFQ8yFWSeKF-pVCM2RataNCk42dbHrE5gdYzvHTU1Jj_TN-secV3b85huMxaPQwwYuvchvVn2fjz7xdJyE9OgBEC73OTo2uZ-chPF-gwtWbFeKPEvF2EtHmcWiq7Fj558PipCk_DNK_fPishDqYlQ4umgQrMbcVHaim7hXYUuk3_MAnXsmjSmU4YDLdosIuoIjYG66XO2AZsH5lULwg6"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">topology_map.png</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>2.1 MB</span>
+<span>Oct 11</span>
+</div>
+</div>
+<!-- File: Image / Render -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 rounded-lg overflow-hidden bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Futuristic server room rendered in cool blue atmospheric lighting, racks with neon cyan LEDs and dark industrial cybernetic finishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa05_COIzYpKqWfEG_7c2ndK4k75VH-i2_s7R5LH7Ce8sRu6q_SXTK4Imn-kL9INIWISpvZsRq3anMAxD39BZL3gWlkHtNhxkycVjq5pYLNr8OPxFFK6-5T64eFE5o9hJzq6s-46e5zXNx3JTBdFtGVNFTc5YfMqWNxtJRC2naMGxuCc3qbFJaXCvIEHjG1RDHb84gcHZhWX_2bT0pkynJaNlepQQKv-rYptWl9MfAWSwBMhmvWACs"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">server_cluster.webp</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>1.8 MB</span>
+<span>Oct 08</span>
+</div>
+</div>
+<!-- File: Config YAML -->
+<div class="group flex flex-col items-center text-center p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-md transition-all cursor-pointer">
+<div class="relative mb-space-xs w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-tertiary">tune</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full">cluster_deploy.yaml</span>
+<div class="mt-space-2xs flex flex-col items-center text-outline font-code-sm text-code-sm">
+<span>8.9 KB</span>
+<span>Sep 29</span>
+</div>
+</div>
+</div>
+<!-- Quick Inline Metadata Details Strip for Focused Item -->
+<div class="mt-space-lg bg-surface-container-high/80 backdrop-blur p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[24px]">folder</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">CassandraOS-Core</span>
+<span class="font-code-sm text-code-sm text-outline">Directory · drwxr-xr-x · cass:developers</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-2xs">
+<span class="text-outline">Items:</span>
+<span class="text-on-surface">24</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="text-outline">Size:</span>
+<span class="text-tertiary">1.2 GB</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="text-outline">Modified:</span>
+<span>Today 11:42 AM</span>
+</div>
+<button class="p-space-2xs rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Inspect Properties" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+<!-- Bottom Status Bar -->
+<footer class="h-8 bg-surface-container px-space-md flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm shrink-0">
+<div class="flex items-center gap-space-md">
+<span class="text-on-surface">18 items</span>
+<span class="text-outline">|</span>
+<span class="text-tertiary font-medium">1 selected (1.2 GB)</span>
+<span class="text-outline">|</span>
+<span>Free space: <strong class="text-on-surface font-normal">242.8 GB</strong></span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<div class="flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-on-surface-variant">Synced with Local SSD</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">zoom_in</span>
+<div class="w-16 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  (function() {
+    const gridBtn = document.getElementById('btn-grid-view');
+    const listBtn = document.getElementById('btn-list-view');
+    if (gridBtn && listBtn) {
+      listBtn.addEventListener('click', () => {
+        listBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+        listBtn.classList.remove('text-on-surface-variant');
+        gridBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        gridBtn.classList.add('text-on-surface-variant');
+      });
+      gridBtn.addEventListener('click', () => {
+        gridBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+        gridBtn.classList.remove('text-on-surface-variant');
+        listBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        listBtn.classList.add('text-on-surface-variant');
+      });
+    }
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex items-center justify-between px-space-md shadow-[0_-4px_24px_rgba(0,7,32,0.8)]"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center p-space-2xs rounded-lg hover:bg-surface-container-high transition-colors group" type="button"><img alt="Launcher" class="h-7 w-7 object-contain drop-shadow-[0_0_8px_rgba(91,213,252,0.5)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="File Manager" type="button"><span class="material-symbols-outlined text-[20px]">folder</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Terminal" type="button"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Settings" type="button"><span class="material-symbols-outlined text-[20px]">settings</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Calculator" type="button"><span class="material-symbols-outlined text-[20px]">calculate</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Software Store" type="button"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button></div></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">wifi</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">bluetooth</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">volume_up</span><div class="flex items-center gap-space-2xs hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">battery_charging_full</span><span class="font-code-sm text-code-sm">98%</span></div><div class="relative flex items-center hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-0 right-0 w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></div></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="font-label-md text-label-md text-on-surface cursor-pointer hover:text-tertiary transition-colors">14:28 · Thu, Oct 24</div></div></footer></body></html>

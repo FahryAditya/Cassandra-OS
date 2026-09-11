@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#051424", "tertiary": "#5bd5fc", "surface-container-highest": "#273647", "tertiary-fixed": "#b7eaff", "secondary-fixed-dim": "#a4c9ff", "surface-dim": "#051424", "primary-container": "#4361ee", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "secondary": "#a4c9ff", "inverse-on-surface": "#233143", "surface-tint": "#bac3ff", "error": "#ffb4ab", "on-secondary-fixed": "#001c39", "background": "#051424", "surface-container-high": "#1c2b3c", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "surface-bright": "#2c3a4c", "on-error": "#690005", "surface-variant": "#273647", "error-container": "#93000a", "outline-variant": "#444655", "on-tertiary-fixed-variant": "#004e61", "on-secondary": "#00315d", "surface-container": "#122131", "on-secondary-fixed-variant": "#004884", "on-tertiary": "#003543", "on-primary": "#00218d", "surface-container-lowest": "#010f1f", "secondary-fixed": "#d4e3ff", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "on-surface-variant": "#c4c5d7", "tertiary-container": "#007995", "primary-fixed": "#dee1ff", "inverse-primary": "#2e4edc", "outline": "#8e8fa1", "on-tertiary-container": "#e4f6ff", "on-error-container": "#ffdad6", "on-secondary-container": "#eaf0ff", "primary-fixed-dim": "#bac3ff", "on-tertiary-fixed": "#001f28", "on-primary-fixed-variant": "#0031c4", "primary": "#bac3ff", "on-primary-container": "#f4f2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "panel-dock-width": "320px", "gutter": "12px", "space-xs": "4px", "space-2xs": "2px", "space-xl": "24px", "space-2xl": "32px", "titlebar-height": "36px", "taskbar-height": "48px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, "fontFamily": { "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "code-sm": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "15px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,7,32,0.6)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CassandraOS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">CassandraOS</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">v3.4.0-LTS</span></div><nav class="hidden md:flex items-center gap-space-sm bg-surface-container-lowest/60 p-space-2xs rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]"><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="desktop-workspace" href="#">Workspace</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="file-manager" href="#">Files</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="terminal" href="#">Terminal</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]" data-path="system-monitor" href="#">Monitor</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="notification-center" href="#">Notifications</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="system-settings" href="#">Settings</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="power-menu" href="#">Power</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-tertiary text-[16px]">memory</span><span>32% RAM</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/85 backdrop-blur-xl z-30 flex flex-col justify-between py-space-md shadow-[4px_0_24px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspaces</span><span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px]">add</span></div><nav class="flex flex-col px-space-sm gap-space-2xs" data-active-classes="bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="desktop-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">01</span><span>Dev Environment</span></div><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="terminal" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">02</span><span>Telemetry & Ops</span></div><span class="font-code-sm text-code-sm text-outline">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="file-manager" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">03</span><span>Storage Nodes</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary" data-path="system-monitor" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">04</span><span>System Monitor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-settings" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">05</span><span>Kernel Conf</span></div></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest/80"><div class="flex items-center justify-between mb-space-2xs font-label-sm text-label-sm text-on-surface-variant"><span>CPU Load</span><span class="text-tertiary font-code-sm text-code-sm">18.4%</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 18.4%"></div></div></div><div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-sm"><span>Uptime: 14d 08h</span><span class="material-symbols-outlined text-[16px] text-tertiary">shield</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-14 min-h-screen bg-surface relative"><div class="flex flex-col w-full p-space-lg gap-space-lg">
+<!-- Desktop Window Envelope -->
+<div class="w-full rounded-xl bg-surface-container-low shadow-[0_24px_50px_-12px_rgba(0,7,32,0.95)] overflow-hidden flex flex-col">
+<!-- Window Chrome Titlebar -->
+<div class="h-titlebar-height bg-surface-container-lowest px-space-md flex items-center justify-between select-none">
+<div class="flex items-center gap-space-md">
+<!-- Traffic Light Controls (App Standard) -->
+<div class="flex items-center gap-space-xs">
+<button aria-label="Close" class="w-2.5 h-2.5 rounded-full bg-error hover:opacity-80 transition-opacity" type="button"></button>
+<button aria-label="Minimize" class="w-2.5 h-2.5 rounded-full bg-secondary-container hover:opacity-80 transition-opacity" type="button"></button>
+<button aria-label="Maximize" class="w-2.5 h-2.5 rounded-full bg-tertiary hover:opacity-80 transition-opacity" type="button"></button>
+</div>
+<div class="h-3.5 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">hard_drive</span>
+<span class="text-on-surface font-medium tracking-tight">CassandraOS Disk Utility & Enclave Manager</span>
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-xs py-0.5 rounded">v3.4</span>
+</div>
+</div>
+<!-- Window Path Breadcrumb / Session Meta -->
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-on-surface-variant">
+<span>nodes</span>
+<span class="text-outline">/</span>
+<span>nvme0n1</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-medium">p4-luks-vault</span>
+<span class="inline-flex items-center gap-space-2xs ml-space-sm px-space-xs py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+          ACTIVE_SESSION
+        </span>
+</div>
+</div>
+<!-- Top Telemetry & Enclave Summary Bar -->
+<div class="bg-surface-container px-space-lg py-space-md grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<!-- Total Block Array -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-sm rounded-lg shadow-sm">
+<div class="p-space-sm bg-primary-container/20 rounded-lg text-primary">
+<span class="material-symbols-outlined text-[24px]">storage</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Block Storage</div>
+<div class="font-headline-md text-headline-md text-on-surface tracking-tight truncate">2.0 TB NVMe Gen4</div>
+<div class="font-code-sm text-code-sm text-tertiary truncate">PCIe 4.0 x4 · 64 GT/s</div>
+</div>
+</div>
+<!-- Enclave Security Status -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-sm rounded-lg shadow-sm md:col-span-2">
+<div class="p-space-sm bg-tertiary-container/20 rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cryptographic Attestation</span>
+<span class="font-code-sm text-code-sm text-tertiary bg-tertiary-container/40 px-space-xs rounded">TPM 2.0 PCR[7]</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface font-medium truncate">LUKS2 Hardware-Bound Enclave: Active & Encrypted</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-space-xs truncate">
+<span>Cipher: aes-xts-plain64</span>
+<span class="text-outline">·</span>
+<span>Key derivation: argon2id (1024 MiB)</span>
+</div>
+</div>
+</div>
+<!-- Drive Health & Thermal -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-sm rounded-lg shadow-sm">
+<div class="p-space-sm bg-surface-container-highest rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[24px]">health_metrics</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Array Health</span>
+<span class="font-code-sm text-code-sm text-tertiary font-bold">99% OK</span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-2xs">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 99%"></div>
+</div>
+</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant mt-space-2xs flex justify-between">
+<span>SMART Passed</span>
+<span class="text-secondary font-medium">38°C Stable</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Workspace Layout: Drive Navigation & Inspection Panels -->
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[580px] bg-surface-container-lowest">
+<!-- Left Column: Block Device Registry -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs pb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Registered Drives & Pools</span>
+<div class="flex items-center gap-space-xs text-tertiary">
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" title="Rescan Bus" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" title="Add Virtual Drive" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Drive Item 1: NVMe Primary Root -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer shadow-sm group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:scale-110 transition-transform">memory</span>
+<div>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold">NVMe Drive 01 · System Root</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">/dev/nvme0n1 · Btrfs Multi-Subvol</div>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-highest px-space-xs py-0.5 rounded">512 GB</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-2xs">
+<span>348.1 GB allocated</span>
+<span class="text-tertiary font-code-sm text-code-sm">68%</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 68%"></div>
+</div>
+</div>
+</div>
+<!-- Drive Item 2: Selected Crypt Enclave -->
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-md cursor-pointer">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary animate-pulse">lock</span>
+<div>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold flex items-center gap-space-xs">
+                    NVMe Drive 02 · Crypt Enclave
+                    <span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_currentColor]"></span>
+</div>
+<div class="font-code-sm text-code-sm text-tertiary">/dev/nvme1n1p1 · /data/secure</div>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-on-primary-container bg-primary-container px-space-xs py-0.5 rounded font-medium">1.5 TB</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-2xs">
+<span>630.0 GB encrypted payload</span>
+<span class="text-tertiary font-code-sm text-code-sm font-semibold">42%</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary" style="width: 42%"></div>
+</div>
+</div>
+</div>
+<!-- Drive Item 3: Removable USB Storage -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer opacity-90 group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:scale-110 transition-transform">usb</span>
+<div>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold">USB Vault-Ext-64G</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">/dev/sdb1 · ExFAT Portable</div>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-highest px-space-xs py-0.5 rounded">64 GB</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-2xs">
+<span>12.4 GB used</span>
+<span class="font-code-sm text-code-sm">19%</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 19%"></div>
+</div>
+</div>
+</div>
+<!-- Drive Item 4: Ceph Distributed Cluster Node -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer opacity-90 group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:scale-110 transition-transform">cloud_sync</span>
+<div>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold">Ceph / NFS Cluster Matrix</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">pool://os-storage-san04</div>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-primary bg-surface-container-highest px-space-xs py-0.5 rounded">18.4 TB</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-2xs">
+<span>14.9 TB distributed load</span>
+<span class="font-code-sm text-code-sm text-primary">81%</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container" style="width: 81%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Enclave Keyrings Mini-Card -->
+<div class="bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-space-xs">
+<span class="uppercase tracking-wider">Hardware Key Slot</span>
+<span class="text-tertiary">FIDO2 / YubiKey #0</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">token</span>
+<div class="font-code-sm text-code-sm text-on-surface truncate">YK-5C-NFC (ID: 0x489F90A)</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Partition Map & Cryptographic Operations -->
+<div class="lg:col-span-8 p-space-lg flex flex-col justify-between gap-space-lg bg-surface-container-low/40">
+<div class="flex flex-col gap-space-lg">
+<!-- Active Partition Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">NVMe Drive 01 — Layout & Crypt Volumes</div>
+<div class="font-code-md text-code-md text-on-surface-variant mt-0.5">
+                Model: SAMSUNG MZVL2512HCJQ-00B00 · GUID Partition Table (GPT) · Sector: 512B
+              </div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm bg-surface-container-high text-tertiary px-space-sm py-1 rounded">Read-Write</span>
+<span class="font-code-sm text-code-sm bg-primary-container text-on-primary-container px-space-sm py-1 rounded">NVMe-1.4</span>
+</div>
+</div>
+<!-- Visual Horizontal Partition Map -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Segmented Block Geometry</span>
+<span class="font-code-sm text-code-sm text-secondary">512.00 GB Available</span>
+</div>
+<!-- Segmented Bar Container -->
+<div class="w-full h-12 bg-surface-container-highest rounded-lg overflow-hidden flex gap-0.5 p-0.5">
+<!-- Partition 1: EFI Boot -->
+<div class="h-full rounded-l bg-tertiary/90 hover:brightness-125 transition-all cursor-pointer flex flex-col justify-center px-space-xs min-w-[32px]" style="width: 6%;" title="Partition 1: EFI System Partition (512 MB)">
+<span class="font-code-sm text-[10px] leading-tight text-on-tertiary font-bold truncate">P1</span>
+<span class="font-label-sm text-[9px] text-on-tertiary truncate">EFI</span>
+</div>
+<!-- Partition 2: System Root -->
+<div class="h-full bg-primary-container hover:brightness-125 transition-all cursor-pointer flex flex-col justify-center px-space-xs" style="width: 24%;" title="Partition 2: System Root (120 GB)">
+<span class="font-code-sm text-[10px] leading-tight text-on-primary font-bold truncate">P2 · Root</span>
+<span class="font-label-sm text-[9px] text-on-primary/80 truncate">120 GB ext4</span>
+</div>
+<!-- Partition 3: Swap -->
+<div class="h-full bg-outline-variant hover:brightness-125 transition-all cursor-pointer flex flex-col justify-center px-space-xs min-w-[28px]" style="width: 8%;" title="Partition 3: Linux Swap Space (16 GB)">
+<span class="font-code-sm text-[10px] leading-tight text-on-surface font-bold truncate">P3</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant truncate">16G</span>
+</div>
+<!-- Partition 4: Encrypted Home (LUKS2) -->
+<div class="h-full rounded-r bg-gradient-to-r from-secondary-container via-primary-container to-tertiary-container hover:brightness-110 transition-all cursor-pointer flex flex-col justify-center px-space-md relative overflow-hidden" style="width: 62%;" title="Partition 4: Crypt-Home (375 GB LUKS2)">
+<div class="flex items-center justify-between text-on-primary-container z-10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">enhanced_encryption</span>
+<span class="font-code-sm text-code-sm font-bold">Partition 4 · /home (luks-crypto-core)</span>
+</div>
+<span class="font-code-sm text-code-sm font-semibold">375.4 GB</span>
+</div>
+<div class="font-label-sm text-[10px] text-on-primary-container/80 z-10">Mounted at /dev/mapper/crypt-home · Btrfs Subvolume @home</div>
+<!-- Micro texture bar overlay -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#5bd5fc_1px,transparent_1px)] [background-size:8px_8px]"></div>
+</div>
+</div>
+<!-- Legend Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span>EFI Boot (512 MB)</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span>Root / (120 GB)</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-outline-variant"></span>
+<span>Swap Space (16 GB)</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary-container"></span>
+<span>LUKS2 Enclave (375 GB)</span>
+</div>
+</div>
+</div>
+<!-- Selected Volume Cryptographic Details Matrix -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-md shadow-inner">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">shield_lock</span>
+<span class="font-headline-md text-headline-md text-on-surface">Target Partition Inspector: /dev/nvme0n1p4</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-0.5 rounded">UUID: c8823b12-9c3a-4e20-80a1</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md font-code-sm text-code-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Encryption Spec</div>
+<div class="text-on-surface font-semibold mt-1">LUKS2 · PBKDF2 / Argon2id</div>
+<div class="text-tertiary text-xs mt-0.5">Payload Offset: 32768 sectors</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Mount Point</div>
+<div class="text-on-surface font-semibold mt-1">/home/cassandra</div>
+<div class="text-secondary text-xs mt-0.5">Options: rw,noatime,compress=zstd:3</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Integrity Mechanism</div>
+<div class="text-on-surface font-semibold mt-1">dm-crypt authenticated</div>
+<div class="text-tertiary text-xs mt-0.5">Sector validation: 4096-byte blocks</div>
+</div>
+</div>
+</div>
+<!-- Disk I/O Real-Time Live Telemetry -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-tertiary">query_stats</span>
+<span>Real-Time Block I/O Throughput</span>
+</div>
+<div class="flex items-center gap-space-md font-code-sm text-code-sm">
+<span class="flex items-center gap-space-xs text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+                  Read: 124.8 MB/s
+                </span>
+<span class="flex items-center gap-space-xs text-secondary font-bold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+                  Write: 45.2 MB/s
+                </span>
+<span class="text-outline">Queue: 2 ops</span>
+</div>
+</div>
+<!-- Inline Compact Sparkline Vector Chart -->
+<div class="w-full h-16 bg-surface-container-lowest rounded-lg p-space-xs flex items-end relative overflow-hidden">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 500 60">
+<defs>
+<lineargradient id="readGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#5bd5fc" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#5bd5fc" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Read Area and Line -->
+<path d="M0,50 Q40,30 80,45 T160,18 T240,35 T320,10 T400,28 T480,12 L500,15 L500,60 L0,60 Z" fill="url(#readGrad)"></path>
+<path d="M0,50 Q40,30 80,45 T160,18 T240,35 T320,10 T400,28 T480,12 L500,15" fill="none" stroke="#5bd5fc" stroke-width="2"></path>
+<!-- Write Line -->
+<path d="M0,55 Q50,48 100,52 T200,42 T300,48 T400,38 T500,40" fill="none" stroke="#a4c9ff" stroke-dasharray="3,3" stroke-width="1.5"></path>
+</svg>
+<div class="absolute top-1 right-2 font-code-sm text-[10px] text-outline">IOPS: 18.2k</div>
+</div>
+</div>
+</div>
+<!-- Utility Action Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Mount Button -->
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-space-xs transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">eject</span>
+<span>Mount</span>
+</button>
+<!-- Unmount Button -->
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-space-xs transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">power_settings_new</span>
+<span>Unmount</span>
+</button>
+<!-- Unlock Enclave Action (Primary Focus) -->
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container hover:bg-inverse-primary text-on-primary-container font-body-sm text-body-sm font-medium flex items-center gap-space-xs transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">key</span>
+<span>Unlock Enclave</span>
+</button>
+<!-- Resize Partition -->
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-space-xs transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">aspect_ratio</span>
+<span>Resize</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<!-- Benchmark Drive -->
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">speed</span>
+<span>Benchmark Drive</span>
+</button>
+<!-- SMART Diagnostic -->
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-tertiary font-body-sm text-body-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">troubleshoot</span>
+<span>SMART Diagnostic</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Enclave Status Footer Bar -->
+<div class="bg-surface-container-lowest px-space-md py-space-xs flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-2xs text-tertiary">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span>
+          Enclave Auto-lock timer: 15m idle
+        </span>
+<span class="hidden sm:inline">|</span>
+<span class="hidden sm:inline">Kernel module: dm_crypt.ko loaded</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span>Bus 001 Dev 002: NVMe Controller v1.4</span>
+</div>
+</div>
+</div>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex items-center justify-between px-space-md shadow-[0_-4px_24px_rgba(0,7,32,0.8)]"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center p-space-2xs rounded-lg hover:bg-surface-container-high transition-colors group" type="button"><img alt="Launcher" class="h-7 w-7 object-contain drop-shadow-[0_0_8px_rgba(91,213,252,0.5)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="File Manager" type="button"><span class="material-symbols-outlined text-[20px]">folder</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Terminal" type="button"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="System Monitor" type="button"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Settings" type="button"><span class="material-symbols-outlined text-[20px]">settings</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-error flex flex-col items-center group" title="Power" type="button"><span class="material-symbols-outlined text-[20px]">power_settings_new</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button></div></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">wifi</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">bluetooth</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">volume_up</span><div class="flex items-center gap-space-2xs hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">battery_charging_full</span><span class="font-code-sm text-code-sm">98%</span></div><div class="relative flex items-center hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-0 right-0 w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></div></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="font-label-md text-label-md text-on-surface cursor-pointer hover:text-tertiary transition-colors">14:28 · Thu, Oct 24</div></div></footer></body></html>

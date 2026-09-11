@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#007995", "surface-variant": "#273647", "surface-tint": "#bac3ff", "secondary-fixed": "#d4e3ff", "primary-fixed": "#dee1ff", "on-secondary-fixed-variant": "#004884", "on-background": "#d4e4fa", "on-tertiary-fixed": "#001f28", "surface-container-highest": "#273647", "surface-container-lowest": "#010f1f", "primary-fixed-dim": "#bac3ff", "on-error": "#690005", "on-tertiary": "#003543", "on-secondary-container": "#eaf0ff", "on-secondary": "#00315d", "tertiary": "#5bd5fc", "error-container": "#93000a", "surface-container-low": "#0d1c2d", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "surface-bright": "#2c3a4c", "on-tertiary-container": "#e4f6ff", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "on-surface-variant": "#c4c5d7", "error": "#ffb4ab", "primary": "#bac3ff", "surface-container-high": "#1c2b3c", "outline": "#8e8fa1", "primary-container": "#4361ee", "tertiary-fixed": "#b7eaff", "surface-container": "#122131", "on-error-container": "#ffdad6", "on-secondary-fixed": "#001c39", "outline-variant": "#444655", "secondary-fixed-dim": "#a4c9ff", "inverse-primary": "#2e4edc", "secondary": "#a4c9ff", "surface-dim": "#051424", "on-primary-fixed-variant": "#0031c4", "inverse-on-surface": "#233143", "on-primary": "#00218d", "surface": "#051424", "on-primary-container": "#f4f2ff", "on-surface": "#d4e4fa", "on-tertiary-fixed-variant": "#004e61", "background": "#051424" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "12px", "space-md": "12px", "space-2xl": "32px", "space-lg": "16px", "space-xs": "4px", "space-sm": "8px", "taskbar-height": "48px", "titlebar-height": "36px", "space-xl": "24px", "space-2xs": "2px", "panel-dock-width": "320px" }, "fontFamily": { "body-sm": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "code-sm": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-xl": [ "Inter" ], "code-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "code-sm": [ "11px", { "lineHeight": "15px", "fontWeight": "400" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background text-on-surface antialiased min-h-screen pb-taskbar-height"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-space-lg flex flex-col justify-between py-space-xs"><div class="h-titlebar-height flex items-center justify-between w-full"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-[11px] h-[11px] rounded-full bg-[#ef4444]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#f5c400]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26b170]"></div></div><div class="flex items-center gap-space-xs text-on-surface-variant"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-body-sm text-body-sm text-tertiary font-semibold tracking-wide">CassandraOS</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface-variant">Settings</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface">Preferences &amp; Administration</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg"><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">CPU</span><span class="font-code-sm text-code-sm text-tertiary">14%</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">RAM</span><span class="font-code-sm text-code-sm text-secondary">6.2G</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">NET</span><span class="font-code-sm text-code-sm text-on-surface">↓42K ↑8K</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#">Language &amp; Region</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="date-and-time" href="#">Date &amp; Time</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#">Default Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#">Startup Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#">App Storage</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="application-details" href="#">Application Details</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-diagnostics" href="#">System Diagnostics</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-report" href="#">System Report</a></nav></div></div></header><aside class="fixed left-0 top-20 bottom-taskbar-height w-64 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-2xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Administration</span></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#"><span class="material-symbols-outlined text-[18px]">translate</span><span class="font-body-md text-body-md">Localization</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#"><span class="material-symbols-outlined text-[18px]">apps</span><span class="font-body-md text-body-md">App Packages</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span class="font-body-md text-body-md">Startup Daemons</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span><span class="font-body-md text-body-md">Storage Quotas</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span class="font-body-md text-body-md">Kernel Health</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-report" href="#"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-body-md text-body-md">System Logs</span></a></nav></div><div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Cassandra Kernel</span><span class="font-code-sm text-code-sm text-tertiary">v4.19.8-cs</span></div><span class="material-symbols-outlined text-tertiary text-[20px]">verified</span></div></aside><div class="pl-64"><main class="w-full pt-20 px-space-lg bg-surface min-h-[calc(100vh-theme(spacing.taskbar-height))] flex flex-col"><div class="flex flex-col w-full gap-space-lg pb-space-2xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-xl shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="absolute -right-16 -top-16 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-64 h-64 bg-tertiary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-2xs z-10">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-semibold">Atomic Precision Engine</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-code-sm text-code-sm text-outline-variant">SYSTEM_EPOCH_ACTIVE</span>
+</div>
+<div class="flex items-baseline gap-space-xs my-space-2xs">
+<span class="font-headline-xl text-[44px] leading-tight font-bold tracking-tight text-on-surface" id="display-hours-mins">10:42</span>
+<span class="font-headline-xl text-[44px] leading-tight font-bold text-outline-variant">:</span>
+<span class="font-headline-xl text-[44px] leading-tight font-bold text-tertiary drop-shadow-[0_0_12px_rgba(91,213,252,0.45)]" id="display-seconds">18</span>
+<span class="font-code-md text-code-md ml-space-xs text-secondary font-medium tracking-wide" id="display-ampm">AM</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">calendar_today</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Thursday, October 24, 2024</span>
+</div>
+<span class="text-surface-variant">/</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">share_location</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">NTP Synced: <span class="text-tertiary">pool.ntp.org</span> (Offset <span class="text-tertiary">-0.2ms</span>)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md z-10 w-full md:w-auto">
+<div class="bg-surface-container-lowest px-space-md py-space-sm rounded-lg flex items-center justify-between sm:justify-start gap-space-md">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Set time automatically</span>
+<span class="font-code-sm text-code-sm text-outline">NTP / PTP Chrony Daemon</span>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-all cursor-pointer" id="toggle-auto-time">
+<div class="w-5 h-5 rounded-full bg-on-primary-container shadow-md"></div>
+</button>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-variant text-tertiary font-body-sm text-body-sm px-space-md py-space-sm rounded-lg flex items-center justify-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sync Now</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Time Zone Selection</h2>
+<p class="font-body-sm text-body-sm text-outline">Geo-spatial reference clock coordinates</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline">UTC</span>
+<span class="font-code-sm text-code-sm font-bold text-tertiary">+07:00</span>
+</div>
+</div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-lowest group">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-luminosity" data-alt="Stylized high contrast minimalist world map cartography graphic with faint geographic vectors on deep navy blue tech grid with glowing cyan meridian lines and coordinates" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqIkl-tzFqp-__OQRjFpEEp8-kVfueTLSsrpiwKe1gSDy7Ci86cCb7Qlwl32swhO2NDES41dq9uRiKieZ-Kcm-KatE1Vk_IPCXhKw5t4qkK22gYqTHP-vgpZT0zHHB_bcp8KNYy-Z22WI4UzXP0895RAaNnpsvYwSpijShgblGEDuPXztqw8o-9rxLHdSNVC2gH9C8NQZW3ILqHQytd98HR9zMmK23n46n4tf2hvQPjDKL3FtzA1F5')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/80 via-transparent to-surface-container-lowest/80 pointer-events-none"></div>
+<div class="absolute top-0 bottom-0 left-[68%] w-12 bg-tertiary/15 backdrop-blur-[1px] flex items-center justify-center pointer-events-none">
+<div class="h-full w-0.5 bg-tertiary shadow-[0_0_8px_#5bd5fc]"></div>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-space-2xs rounded-lg flex items-center gap-space-xs shadow-md">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Band WIB (UTC+7) - Active Focus</span>
+</div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-space-2xs rounded-lg flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-outline text-[14px]">radar</span>
+<span class="font-code-sm text-code-sm text-outline-variant">6.2088° S, 106.8456° E</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="font-body-sm text-body-sm font-medium text-on-surface-variant">Primary Time Zone</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-high text-on-surface font-body-md text-body-md py-space-sm pl-space-md pr-space-xl rounded-lg cursor-pointer focus:outline-none focus:bg-surface-variant transition-colors">
+<option selected="" value="wib">Asia/Jakarta (WIB) GMT+7:00</option>
+<option value="utc">Universal Coordinated Time (UTC) GMT+0:00</option>
+<option value="sg">Asia/Singapore (SGT) GMT+8:00</option>
+<option value="tokyo">Asia/Tokyo (JST) GMT+9:00</option>
+<option value="london">Europe/London (BST) GMT+1:00</option>
+<option value="ny">America/New_York (EDT) GMT-4:00</option>
+<option value="sf">America/Los_Angeles (PDT) GMT-7:00</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 pointer-events-none text-outline">unfold_more</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Set time zone automatically using location</span>
+<span class="font-code-sm text-code-sm text-outline">CoreLocation daemon coordinates lookup</span>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-all cursor-pointer" id="toggle-auto-tz">
+<div class="w-5 h-5 rounded-full bg-on-primary-container shadow-md"></div>
+</button>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Clock Format &amp; Display</h2>
+<p class="font-body-sm text-body-sm text-outline">System-wide presentation and desktop dock indicators</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm justify-between">
+<div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Notation Schema</span>
+<p class="font-code-sm text-code-sm text-outline">Hour radix cycle representation</p>
+</div>
+<div class="flex bg-surface-container-lowest p-1 rounded-lg">
+<button class="flex-1 py-space-2xs text-center font-label-md text-label-md rounded-md text-outline hover:text-on-surface transition-colors" id="btn-format-12">12-Hour</button>
+<button class="flex-1 py-space-2xs text-center font-label-md text-label-md rounded-md bg-primary-container text-on-primary-container font-semibold transition-all" id="btn-format-24">24-Hour</button>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Show Seconds in Dock</span>
+<span class="font-code-sm text-code-sm text-outline">High-frequency refresh</span>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-all cursor-pointer" id="toggle-seconds">
+<div class="w-5 h-5 rounded-full bg-on-primary-container shadow-md"></div>
+</button>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Show Day of Week</span>
+<span class="font-code-sm text-code-sm text-outline">Appends abbreviated day</span>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-all cursor-pointer" id="toggle-dow">
+<div class="w-5 h-5 rounded-full bg-on-primary-container shadow-md"></div>
+</button>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Flashing Delimiters</span>
+<span class="font-code-sm text-code-sm text-outline">Pulsing colon ticks</span>
+</div>
+<button aria-pressed="false" class="w-12 h-6 rounded-full bg-surface-variant p-0.5 flex items-center justify-start transition-all cursor-pointer" id="toggle-flash">
+<div class="w-5 h-5 rounded-full bg-on-surface-variant shadow-md"></div>
+</button>
+</div>
+</div>
+<div class="mt-space-2xs bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">memory</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Hardware RTC Clock synchronization</span>
+<span class="font-code-sm text-code-sm text-outline">Low-level motherboard real-time counter</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container rounded-lg">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-code-sm text-code-sm font-semibold text-tertiary">Synchronized (Local UTC)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Manual Override</h2>
+<p class="font-body-sm text-body-sm text-outline">Independent software clock adjustment</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline-variant bg-surface-container px-space-xs py-space-2xs rounded">Calibrated</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">October 2024</span>
+<div class="flex items-center gap-space-xs">
+<button class="w-7 h-7 rounded-md bg-surface-container-high hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded-md bg-surface-container-high hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm text-outline">
+<span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center font-code-sm text-code-sm">
+<span class="py-1 text-outline-variant">29</span>
+<span class="py-1 text-outline-variant">30</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">1</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">2</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">3</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">4</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">5</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">6</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">7</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">8</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">9</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">10</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">11</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">12</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">13</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">14</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">15</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">16</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">17</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">18</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">19</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">20</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">21</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">22</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">23</span>
+<span class="py-1 bg-primary-container text-on-primary-container font-semibold rounded shadow-sm cursor-pointer">24</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">25</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">26</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">27</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">28</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">29</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">30</span>
+<span class="py-1 text-on-surface hover:bg-surface-container-high rounded cursor-pointer">31</span>
+<span class="py-1 text-outline-variant">1</span>
+<span class="py-1 text-outline-variant">2</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm">
+<span class="font-body-sm text-body-sm font-medium text-on-surface-variant">Precision Dial Spinners</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline mb-1">HOUR</span>
+<button class="w-full py-0.5 flex justify-center text-outline hover:text-tertiary transition-colors" id="hour-up"><span class="material-symbols-outlined text-[16px]">expand_less</span></button>
+<input class="w-full text-center bg-transparent font-code-md text-code-md font-bold text-on-surface py-0.5 focus:outline-none" id="hour-val" readonly="" type="text" value="10"/>
+<button class="w-full py-0.5 flex justify-center text-outline hover:text-tertiary transition-colors" id="hour-down"><span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline mb-1">MIN</span>
+<button class="w-full py-0.5 flex justify-center text-outline hover:text-tertiary transition-colors" id="min-up"><span class="material-symbols-outlined text-[16px]">expand_less</span></button>
+<input class="w-full text-center bg-transparent font-code-md text-code-md font-bold text-on-surface py-0.5 focus:outline-none" id="min-val" readonly="" type="text" value="42"/>
+<button class="w-full py-0.5 flex justify-center text-outline hover:text-tertiary transition-colors" id="min-down"><span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline mb-1">SEC</span>
+<button class="w-full py-0.5 flex justify-center text-outline hover:text-tertiary transition-colors" id="sec-up"><span class="material-symbols-outlined text-[16px]">expand_less</span></button>
+<input class="w-full text-center bg-transparent font-code-md text-code-md font-bold text-tertiary py-0.5 focus:outline-none" id="sec-val" readonly="" type="text" value="18"/>
+<button class="w-full py-0.5 flex justify-center text-outline hover:text-tertiary transition-colors" id="sec-down"><span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-2xs">
+<button class="flex-1 bg-primary hover:bg-surface-tint text-on-primary font-body-sm text-body-sm font-semibold py-space-sm rounded-lg transition-colors shadow-md">
+              Apply Adjustment
+            </button>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface-variant font-body-sm text-body-sm px-space-md py-space-sm rounded-lg transition-colors">
+              Reset
+            </button>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Time Daemon Status</span>
+<span class="font-code-sm text-code-sm text-tertiary">PID: 841 [chronyd]</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm flex flex-col gap-1 text-on-surface-variant">
+<div class="flex justify-between"><span class="text-outline">Stratum Level:</span><span class="text-on-surface">2 (GPS Primary Reference)</span></div>
+<div class="flex justify-between"><span class="text-outline">Root Delay:</span><span class="text-on-surface">1.412 ms</span></div>
+<div class="flex justify-between"><span class="text-outline">Leap Status:</span><span class="text-on-surface">Normal (No insertion)</span></div>
+<div class="flex justify-between"><span class="text-outline">RTC Frequency Drift:</span><span class="text-tertiary">+0.014 PPM</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let seconds = 18;
+    let minutes = 42;
+    let hours = 10;
+    let is24Hour = true;
+
+    const secElem = document.getElementById('display-seconds');
+    const hrsMinsElem = document.getElementById('display-hours-mins');
+    const ampmElem = document.getElementById('display-ampm');
+    const secInput = document.getElementById('sec-val');
+    const minInput = document.getElementById('min-val');
+    const hourInput = document.getElementById('hour-val');
+
+    function updateClocks() {
+      seconds++;
+      if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+          minutes = 0;
+          hours = (hours + 1) % 24;
+        }
+      }
+
+      const secStr = seconds.toString().padStart(2, '0');
+      const minStr = minutes.toString().padStart(2, '0');
+      let hrStr = hours.toString().padStart(2, '0');
+
+      if (!is24Hour) {
+        const h12 = hours % 12 || 12;
+        hrStr = h12.toString().padStart(2, '0');
+        ampmElem.textContent = hours >= 12 ? 'PM' : 'AM';
+        ampmElem.classList.remove('hidden');
+      } else {
+        ampmElem.classList.add('hidden');
+      }
+
+      if (secElem) secElem.textContent = secStr;
+      if (hrsMinsElem) hrsMinsElem.textContent = hrStr + ':' + minStr;
+      if (secInput) secInput.value = secStr;
+      if (minInput) minInput.value = minStr;
+      if (hourInput) hourInput.value = hrStr;
+    }
+
+    setInterval(updateClocks, 1000);
+
+    const btn12 = document.getElementById('btn-format-12');
+    const btn24 = document.getElementById('btn-format-24');
+
+    if (btn12 && btn24) {
+      btn12.addEventListener('click', function() {
+        is24Hour = false;
+        btn12.className = 'flex-1 py-space-2xs text-center font-label-md text-label-md rounded-md bg-primary-container text-on-primary-container font-semibold transition-all';
+        btn24.className = 'flex-1 py-space-2xs text-center font-label-md text-label-md rounded-md text-outline hover:text-on-surface transition-colors';
+        updateClocks();
+      });
+
+      btn24.addEventListener('click', function() {
+        is24Hour = true;
+        btn24.className = 'flex-1 py-space-2xs text-center font-label-md text-label-md rounded-md bg-primary-container text-on-primary-container font-semibold transition-all';
+        btn12.className = 'flex-1 py-space-2xs text-center font-label-md text-label-md rounded-md text-outline hover:text-on-surface transition-colors';
+        updateClocks();
+      });
+    }
+
+    function setupToggle(toggleId) {
+      const toggle = document.getElementById(toggleId);
+      if (!toggle) return;
+      toggle.addEventListener('click', function() {
+        const isPressed = toggle.getAttribute('aria-pressed') === 'true';
+        const newState = !isPressed;
+        toggle.setAttribute('aria-pressed', newState.toString());
+        const knob = toggle.firstElementChild;
+        if (newState) {
+          toggle.classList.remove('bg-surface-variant', 'justify-start');
+          toggle.classList.add('bg-primary-container', 'justify-end');
+          knob.classList.remove('bg-on-surface-variant');
+          knob.classList.add('bg-on-primary-container');
+        } else {
+          toggle.classList.remove('bg-primary-container', 'justify-end');
+          toggle.classList.add('bg-surface-variant', 'justify-start');
+          knob.classList.remove('bg-on-primary-container');
+          knob.classList.add('bg-on-surface-variant');
+        }
+      });
+    }
+
+    ['toggle-auto-time', 'toggle-auto-tz', 'toggle-seconds', 'toggle-dow', 'toggle-flash'].forEach(setupToggle);
+
+    function setupSpinner(upId, downId, inputId, maxVal) {
+      const up = document.getElementById(upId);
+      const down = document.getElementById(downId);
+      const input = document.getElementById(inputId);
+      if (!up || !down || !input) return;
+
+      up.addEventListener('click', function() {
+        let val = parseInt(input.value, 10);
+        val = (val + 1) % (maxVal + 1);
+        input.value = val.toString().padStart(2, '0');
+      });
+
+      down.addEventListener('click', function() {
+        let val = parseInt(input.value, 10);
+        val = val <= 0 ? maxVal : val - 1;
+        input.value = val.toString().padStart(2, '0');
+      });
+    }
+
+    setupSpinner('hour-up', 'hour-down', 'hour-val', 23);
+    setupSpinner('min-up', 'min-down', 'min-val', 59);
+    setupSpinner('sec-up', 'sec-down', 'sec-val', 59);
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 w-full h-taskbar-height z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)] flex items-center justify-between px-space-md"><div class="flex items-center gap-space-sm"><button class="h-8 w-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-4 w-px bg-surface-variant"></div><div class="flex items-center gap-space-2xs"><button class="h-8 px-space-sm rounded-lg bg-surface-container-high text-tertiary flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-sm text-body-sm">Preferences</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">folder_open</span></button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">volume_up</span><span class="material-symbols-outlined text-[18px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div><div class="h-4 w-px bg-surface-variant"></div><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-medium">10:42 AM</span><span class="font-label-sm text-label-sm text-outline">OCT 24</span></div></div></footer></body></html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#051424", "tertiary": "#5bd5fc", "surface-container-highest": "#273647", "tertiary-fixed": "#b7eaff", "secondary-fixed-dim": "#a4c9ff", "surface-dim": "#051424", "primary-container": "#4361ee", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "secondary": "#a4c9ff", "inverse-on-surface": "#233143", "surface-tint": "#bac3ff", "error": "#ffb4ab", "on-secondary-fixed": "#001c39", "background": "#051424", "surface-container-high": "#1c2b3c", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "surface-bright": "#2c3a4c", "on-error": "#690005", "surface-variant": "#273647", "error-container": "#93000a", "outline-variant": "#444655", "on-tertiary-fixed-variant": "#004e61", "on-secondary": "#00315d", "surface-container": "#122131", "on-secondary-fixed-variant": "#004884", "on-tertiary": "#003543", "on-primary": "#00218d", "surface-container-lowest": "#010f1f", "secondary-fixed": "#d4e3ff", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "on-surface-variant": "#c4c5d7", "tertiary-container": "#007995", "primary-fixed": "#dee1ff", "inverse-primary": "#2e4edc", "outline": "#8e8fa1", "on-tertiary-container": "#e4f6ff", "on-error-container": "#ffdad6", "on-secondary-container": "#eaf0ff", "primary-fixed-dim": "#bac3ff", "on-tertiary-fixed": "#001f28", "on-primary-fixed-variant": "#0031c4", "primary": "#bac3ff", "on-primary-container": "#f4f2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "panel-dock-width": "320px", "gutter": "12px", "space-xs": "4px", "space-2xs": "2px", "space-xl": "24px", "space-2xl": "32px", "titlebar-height": "36px", "taskbar-height": "48px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, "fontFamily": { "label-md": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Inter"], "code-sm": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "15px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none overflow-x-hidden min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-40 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,7,32,0.6)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CassandraOS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight">CassandraOS</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-space-2xs rounded">v3.4.0-LTS</span></div><nav class="hidden md:flex items-center gap-space-sm bg-surface-container-lowest/60 p-space-2xs rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]"><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="desktop-workspace" href="#">Workspace</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="file-manager" href="#">Files</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="terminal" href="#">Terminal</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded-lg shadow-[0_0_12px_rgba(67,97,238,0.4)]" data-path="system-monitor" href="#">Monitor</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="notification-center" href="#">Notifications</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="system-settings" href="#">Settings</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded" data-path="power-menu" href="#">Power</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest/80 rounded-lg text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-tertiary text-[16px]">memory</span><span>32% RAM</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(186,195,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/85 backdrop-blur-xl z-30 flex flex-col justify-between py-space-md shadow-[4px_0_24px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspaces</span><span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-[18px]">add</span></div><nav class="flex flex-col px-space-sm gap-space-2xs" data-active-classes="bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="desktop-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">01</span><span>Dev Environment</span></div><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="terminal" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">02</span><span>Telemetry & Ops</span></div><span class="font-code-sm text-code-sm text-outline">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="file-manager" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">03</span><span>Storage Nodes</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-surface-container-high text-tertiary font-medium rounded-lg border-l-2 border-tertiary" data-path="system-monitor" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">04</span><span>System Monitor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="system-settings" href="#"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm">05</span><span>Kernel Conf</span></div></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest/80"><div class="flex items-center justify-between mb-space-2xs font-label-sm text-label-sm text-on-surface-variant"><span>CPU Load</span><span class="text-tertiary font-code-sm text-code-sm">18.4%</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-tertiary rounded-full" style="width: 18.4%"></div></div></div><div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-sm"><span>Uptime: 14d 08h</span><span class="material-symbols-outlined text-[16px] text-tertiary">shield</span></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-14 min-h-screen bg-surface relative"><div class="flex flex-col w-full p-space-lg">
+<!-- Window Container -->
+<div class="flex flex-col w-full rounded-xl bg-surface-container-low shadow-2xl overflow-hidden">
+<!-- Window Chrome / Titlebar -->
+<div class="h-titlebar-height bg-surface-container flex items-center justify-between px-space-md select-none">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-[11px] h-[11px] rounded-full bg-[#EF4444] inline-block cursor-pointer"></span>
+<span class="w-[11px] h-[11px] rounded-full bg-[#F5C400] inline-block cursor-pointer"></span>
+<span class="w-[11px] h-[11px] rounded-full bg-[#26B170] inline-block cursor-pointer"></span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant ml-space-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">System Settings</span>
+<span class="font-code-sm text-code-sm text-outline">/</span>
+<span class="font-body-sm text-body-sm text-on-surface">Personalization</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs rounded bg-surface-container-high text-tertiary">PID: 1042</span>
+</div>
+</div>
+<!-- Window Body Split Layout -->
+<div class="grid grid-cols-12 min-h-[760px]">
+<!-- Sub-Sidebar Navigation (Col 3) -->
+<aside class="col-span-12 md:col-span-3 bg-surface-container-lowest/60 p-space-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-sm py-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Preferences</span>
+</div>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">display_settings</span>
+<span>Display & Resolution</span>
+</a>
+<!-- Active Sidebar Item: Personalization -->
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container-high text-tertiary font-medium shadow-sm font-body-sm text-body-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">palette</span>
+<span class="text-on-surface">Personalization</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#5bd5fc]"></span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">dock</span>
+<span>Dock & Workspace</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Notifications</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Security & Privacy</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Terminal Shell</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">extension</span>
+<span>Extensions</span>
+</a>
+</div>
+<!-- Quick Profile Status Card -->
+<div class="p-space-md rounded-lg bg-surface-container/70 flex items-center gap-space-sm shadow-inner">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-code-md text-code-md font-bold">
+            C3
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Root Operator</span>
+<span class="font-code-sm text-code-sm text-tertiary">Theme: Custom Neon</span>
+</div>
+</div>
+</aside>
+<!-- Main Configuration Content Area (Col 9) -->
+<main class="col-span-12 md:col-span-9 p-space-xl flex flex-col gap-space-xl overflow-y-auto max-h-[820px]">
+<!-- Header -->
+<div class="flex flex-col gap-space-2xs pb-space-md">
+<div class="flex items-center justify-between">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Personalization & Workspace</h1>
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container hover:bg-secondary-container text-on-primary-container font-label-md text-label-md transition-all flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Defaults</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Configure wallpapers, window styling, themes, and shell aesthetics.</p>
+</div>
+<!-- Section 1: Desktop Wallpaper -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-tertiary">01 //</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Desktop Wallpaper</h2>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">4K UHD · Dual-Monitor Sync Active</span>
+</div>
+<!-- Wallpaper Grid -->
+<div class="grid grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1: Deep Horizon (Selected) -->
+<div class="relative flex flex-col rounded-lg overflow-hidden bg-surface-container group cursor-pointer shadow-lg transform transition-transform hover:-translate-y-0.5">
+<div class="relative h-28 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Futuristic glowing deep blue sci-fi landscape horizon with cybernetic lines, deep navy background, atmospheric volumetric lighting, cinematic aesthetic, high precision digital render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiZf4gk29p3MPOsvAa64fRMZrbQ2HfBHOG7kr6lXk2zAUi9Xxp3CtX9HBg8eJ0bcuGArhy8BbTcoU74LTxvgUuXihm7QIscCZDXj1VuBxoCpigFDt_TI0ZFyIescYrqYcyVQ3RtIE4W1OIVZtMmzaTIIdTxnvTlpMFQWkC55m1lveJDzBUgXUYa4lMTNw-fXWYJQqTIkHPGpYRr4gUo2Oo6gI3iH0omb4CSQ1FGJ6Lv6LAKiWkA3hE"/>
+<div class="absolute inset-0 bg-primary-container/20"></div>
+<!-- Selection Badge -->
+<div class="absolute top-2 right-2 w-6 h-6 rounded-full bg-primary-container flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-high flex flex-col">
+<span class="font-label-md text-label-md text-tertiary font-semibold truncate">Deep Horizon</span>
+<span class="font-code-sm text-code-sm text-outline">Default · Active</span>
+</div>
+</div>
+<!-- Card 2: Cyber Polygon -->
+<div class="relative flex flex-col rounded-lg overflow-hidden bg-surface-container group cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="relative h-28 w-full overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Abstract 3D geometric polygon grid network glowing in electric cobalt and dark slate shadows, minimal isometric wireframe pattern, sleek tech interface feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPXMKFVbxuFOm5wpP4Bda1h-H1EBYGC1PD4L_QP1AWAQvfaJ4s319EQJZybCI1J5H17IJsFN-9bdfHROg_rfgF7DpueW3Lc1Ye16aKfmfU4uBkt2s_2OnyLD1b9fdJtUFGPB8bdYEqIMKE2RBpWrQhFbGZpDdWoAe91hHopCQfJR8hP7Rekrp2IjnWAItrk0FxHuyUsofOPeu91Tlm9W1phIzU_mLP6Y9xL3WmeFgdno64Qlbyk-oF"/>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Cyber Polygon</span>
+<span class="font-code-sm text-code-sm text-outline">Geometric Vector</span>
+</div>
+</div>
+<!-- Card 3: Neural Grid -->
+<div class="relative flex flex-col rounded-lg overflow-hidden bg-surface-container group cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="relative h-28 w-full overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Complex neural network nodes pulsing with cyan synaptic discharges across deep dark blue matrix space, technological computational visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcNg42bFiEuUJSt0H-lV5zMLR5NnfltAaU6M9xONVVUabe1fj7kYe_7_c-L8nP2ofD5r1keso6wmInumwJ8OWXYP-Gw9PsFd9937RWDIhM3fS3xfoNy7tD8l_FS42vamr183hPBte3yNpA_KjQ2lFUb--blfTZ_FdQVHf9XAU3PKqYbSx97muswbxRw4TD4O7AGqP9c1ct6y9MR4-fRlJwopaKtO4KUaKea0Fl2C2z8xCErjUw9bM_"/>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Neural Grid</span>
+<span class="font-code-sm text-code-sm text-outline">Dynamic Pulse</span>
+</div>
+</div>
+<!-- Card 4: Aero Oceanic -->
+<div class="relative flex flex-col rounded-lg overflow-hidden bg-surface-container group cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="relative h-28 w-full overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Deep oceanic abyss with luminescent marine fluid currents, dark indigo gradient waves, minimal tranquil dark luxury aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIcZSmoCf7ZsrfhDWsJF5dPDfHuZB05WnCcoEUQ_NRpgBsgkNPtZsjl57A5l1E5vCBlLxiCqp2zJ24BS475Yh5iosO04jh4NPyCQ1_SzZIk0dVfa1FD5W0xip_j8XepTwftqmeej0AeLPDSOsbOZ7dS7edNcnHn8CUQsjBXoiETgVZ7UV_cJK2EryHR6JOA63J92Ab2zz-9pBWA9cq-72f2k61Gn_v8FLFrfpdbnhl7SoydGAVHc0S"/>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Aero Oceanic</span>
+<span class="font-code-sm text-code-sm text-outline">Fluid Organic</span>
+</div>
+</div>
+<!-- Card 5: Upload Custom Wallpaper -->
+<div class="flex flex-col items-center justify-center h-full min-h-[148px] rounded-lg bg-surface-container-lowest/70 hover:bg-surface-container text-on-surface-variant hover:text-tertiary transition-all cursor-pointer p-space-sm text-center group">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center mb-space-xs group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:text-on-primary-container">add_photo_alternate</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium">Upload Custom</span>
+<span class="font-code-sm text-code-sm text-outline">PNG, JPG, WEBP</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Interface Theme -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-tertiary">02 //</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Interface Theme</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg">
+<!-- Dark Mode (Selected) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-high shadow-lg cursor-pointer group">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">dark_mode</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dark Mode</span>
+</div>
+<span class="font-code-sm text-code-sm px-space-xs py-space-2xs rounded bg-primary-container text-on-primary-container">ACTIVE</span>
+</div>
+<!-- Mini UI Mockup Dark -->
+<div class="w-full h-24 rounded-lg bg-surface p-space-xs flex flex-col gap-space-2xs shadow-inner">
+<div class="h-4 w-full bg-surface-container flex items-center justify-between px-space-xs rounded">
+<div class="flex gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#EF4444]"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#F5C400]"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+</div>
+<div class="w-12 h-1 bg-surface-variant rounded"></div>
+</div>
+<div class="flex-1 flex gap-space-xs">
+<div class="w-1/4 bg-surface-container-low rounded p-space-2xs flex flex-col gap-space-2xs">
+<div class="w-full h-1.5 bg-primary-container rounded"></div>
+<div class="w-3/4 h-1 bg-surface-variant rounded"></div>
+</div>
+<div class="flex-1 bg-surface-container rounded p-space-xs flex flex-col justify-between">
+<div class="space-y-1">
+<div class="w-full h-1 bg-tertiary/60 rounded"></div>
+<div class="w-2/3 h-1 bg-surface-variant rounded"></div>
+</div>
+<div class="w-8 h-2 bg-primary-container rounded self-end"></div>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">Calibrated deep navy tones optimized for low ambient light environments.</span>
+</div>
+<!-- Light Mode -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container cursor-pointer transition-colors group">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-on-surface">light_mode</span>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface font-semibold">Light Mode</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">High Contrast</span>
+</div>
+<!-- Mini UI Mockup Light -->
+<div class="w-full h-24 rounded-lg bg-[#E2E8F0] p-space-xs flex flex-col gap-space-2xs shadow-inner">
+<div class="h-4 w-full bg-[#CBD5E1] flex items-center justify-between px-space-xs rounded">
+<div class="flex gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#EF4444]"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#F5C400]"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+</div>
+<div class="w-12 h-1 bg-[#94A3B8] rounded"></div>
+</div>
+<div class="flex-1 flex gap-space-xs">
+<div class="w-1/4 bg-[#F1F5F9] rounded p-space-2xs flex flex-col gap-space-2xs">
+<div class="w-full h-1.5 bg-[#3B82F6] rounded"></div>
+<div class="w-3/4 h-1 bg-[#CBD5E1] rounded"></div>
+</div>
+<div class="flex-1 bg-[#FFFFFF] rounded p-space-xs flex flex-col justify-between">
+<div class="space-y-1">
+<div class="w-full h-1 bg-[#0284C7] rounded"></div>
+<div class="w-2/3 h-1 bg-[#E2E8F0] rounded"></div>
+</div>
+<div class="w-8 h-2 bg-[#3B82F6] rounded self-end"></div>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">High-clarity luminous styling tuned for outdoor daylight conditions.</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Accent Color Spectrum -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-tertiary">03 //</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Accent Color Spectrum</h2>
+</div>
+<span class="font-code-sm text-code-sm text-primary">Active: #4361EE (Electric Cobalt)</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg p-space-md rounded-xl bg-surface-container-high/60">
+<!-- Swatch 1: Electric Blue #4361EE (Selected) -->
+<button class="relative w-10 h-10 rounded-full bg-[#4361EE] shadow-[0_0_12px_#4361EE] flex items-center justify-center transform scale-110">
+<span class="material-symbols-outlined text-white text-[20px]">check</span>
+</button>
+<!-- Swatch 2: Cyan #4CC9F0 -->
+<button class="w-8 h-8 rounded-full bg-[#4CC9F0] hover:scale-110 transition-transform shadow-sm"></button>
+<!-- Swatch 3: Emerald Green #26B170 -->
+<button class="w-8 h-8 rounded-full bg-[#26B170] hover:scale-110 transition-transform shadow-sm"></button>
+<!-- Swatch 4: Amber #F5C400 -->
+<button class="w-8 h-8 rounded-full bg-[#F5C400] hover:scale-110 transition-transform shadow-sm"></button>
+<!-- Swatch 5: Crimson #EF4444 -->
+<button class="w-8 h-8 rounded-full bg-[#EF4444] hover:scale-110 transition-transform shadow-sm"></button>
+<!-- Swatch 6: Violet #8B5CF6 -->
+<button class="w-8 h-8 rounded-full bg-[#8B5CF6] hover:scale-110 transition-transform shadow-sm"></button>
+<div class="h-6 w-px bg-outline-variant/40 mx-space-2xs"></div>
+<!-- Custom Hex Input -->
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">HEX</span>
+<span class="font-code-sm text-code-sm text-on-surface font-mono">#4361EE</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] cursor-pointer hover:text-tertiary">colorize</span>
+</div>
+</div>
+</section>
+<!-- Section 4: System Appearance & Shell Toggles -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-tertiary">04 //</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">System Appearance & Shell Toggles</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Setting: System Font -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">System Font Family</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary UI text and code viewer glyph sets</span>
+</div>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-code-sm text-code-sm py-space-xs px-space-sm rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-tertiary">
+<option selected="">Inter Display / Monospace Fira</option>
+<option>JetBrains Mono Pro</option>
+<option>SF Pro Modular</option>
+<option>Cascadia Code Vector</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Setting: Taskbar Position -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Taskbar Position</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dock pinning orientation and anchor edge</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-space-2xs rounded-lg">
+<button class="flex-1 py-space-xs text-center font-label-sm text-label-sm rounded bg-primary-container text-on-primary-container font-semibold shadow-sm">Bottom</button>
+<button class="flex-1 py-space-xs text-center font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface transition-colors">Top</button>
+<button class="flex-1 py-space-xs text-center font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface transition-colors">Left Dock</button>
+</div>
+</div>
+<!-- Setting: Desktop Icon Size -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Desktop Icon Size</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Grid density and file badge dimensions</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-space-2xs rounded-lg">
+<button class="flex-1 py-space-xs text-center font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface transition-colors">Small</button>
+<button class="flex-1 py-space-xs text-center font-label-sm text-label-sm rounded bg-surface-container-high text-tertiary font-semibold shadow-sm">Medium</button>
+<button class="flex-1 py-space-xs text-center font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface transition-colors">Large</button>
+</div>
+</div>
+<!-- Setting: Window Blur & Animations (Toggle Switch) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Window Blur & Animations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hardware-accelerated backdrop filters</span>
+</div>
+<!-- Custom Active Switch with Cyan Glow -->
+<div class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end shadow-[0_0_12px_#5bd5fc] cursor-pointer">
+<div class="w-5 h-5 rounded-full bg-tertiary shadow-sm"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex items-center justify-between px-space-md shadow-[0_-4px_24px_rgba(0,7,32,0.8)]"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center p-space-2xs rounded-lg hover:bg-surface-container-high transition-colors group" type="button"><img alt="Launcher" class="h-7 w-7 object-contain drop-shadow-[0_0_8px_rgba(91,213,252,0.5)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs"><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="File Manager" type="button"><span class="material-symbols-outlined text-[20px]">folder</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="Terminal" type="button"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-secondary flex flex-col items-center group" title="System Monitor" type="button"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="w-1 h-1 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc] mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant flex flex-col items-center group" title="Settings" type="button"><span class="material-symbols-outlined text-[20px]">settings</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button><button class="relative p-space-xs rounded-lg hover:bg-surface-container-high text-error flex flex-col items-center group" title="Power" type="button"><span class="material-symbols-outlined text-[20px]">power_settings_new</span><span class="w-1 h-1 rounded-full bg-transparent mt-space-2xs"></span></button></div></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">wifi</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">bluetooth</span><span class="material-symbols-outlined text-[18px] hover:text-tertiary cursor-pointer">volume_up</span><div class="flex items-center gap-space-2xs hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">battery_charging_full</span><span class="font-code-sm text-code-sm">98%</span></div><div class="relative flex items-center hover:text-tertiary cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-0 right-0 w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#5bd5fc]"></span></div></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="font-label-md text-label-md text-on-surface cursor-pointer hover:text-tertiary transition-colors">14:28 · Thu, Oct 24</div></div></footer></body></html>

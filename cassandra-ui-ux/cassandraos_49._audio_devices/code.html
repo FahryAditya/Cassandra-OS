@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#0031c4",
+          "surface-dim": "#051424",
+          "primary-fixed-dim": "#bac3ff",
+          "on-background": "#d4e4fa",
+          "on-tertiary": "#003543",
+          "surface": "#051424",
+          "inverse-on-surface": "#233143",
+          "on-tertiary-fixed-variant": "#004e61",
+          "on-tertiary-fixed": "#001f28",
+          "secondary": "#a4c9ff",
+          "secondary-fixed-dim": "#a4c9ff",
+          "inverse-primary": "#2e4edc",
+          "surface-variant": "#273647",
+          "surface-container-lowest": "#010f1f",
+          "surface-tint": "#bac3ff",
+          "on-surface": "#d4e4fa",
+          "on-secondary-container": "#eaf0ff",
+          "outline": "#8e8fa1",
+          "error": "#ffb4ab",
+          "primary": "#bac3ff",
+          "error-container": "#93000a",
+          "on-primary-container": "#f4f2ff",
+          "on-tertiary-container": "#e4f6ff",
+          "surface-container": "#122131",
+          "outline-variant": "#444655",
+          "on-primary-fixed": "#001159",
+          "primary-fixed": "#dee1ff",
+          "tertiary-fixed-dim": "#5bd5fc",
+          "on-secondary": "#00315d",
+          "on-primary": "#00218d",
+          "surface-container-highest": "#273647",
+          "on-error": "#690005",
+          "tertiary-container": "#007995",
+          "surface-container-high": "#1c2b3c",
+          "tertiary": "#5bd5fc",
+          "surface-bright": "#2c3a4c",
+          "tertiary-fixed": "#b7eaff",
+          "on-secondary-fixed": "#001c39",
+          "background": "#051424",
+          "secondary-fixed": "#d4e3ff",
+          "surface-container-low": "#0d1c2d",
+          "secondary-container": "#036ec6",
+          "on-surface-variant": "#c4c5d7",
+          "inverse-surface": "#d4e4fa",
+          "primary-container": "#4361ee",
+          "on-secondary-fixed-variant": "#004884"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "titlebar-height": "36px",
+          "taskbar-height": "48px",
+          "space-lg": "16px",
+          "space-xl": "24px",
+          "space-sm": "8px",
+          "space-md": "12px",
+          "space-xs": "4px",
+          "space-2xs": "2px",
+          "gutter": "12px",
+          "panel-dock-width": "320px",
+          "space-2xl": "32px"
+        },
+        "fontFamily": {
+          "body-sm": ["Inter"],
+          "headline-md": ["Inter"],
+          "code-md": ["JetBrains Mono"],
+          "label-sm": ["JetBrains Mono"],
+          "headline-xl": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-md": ["JetBrains Mono"],
+          "headline-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "code-sm": ["JetBrains Mono"]
+        },
+        "fontSize": {
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "code-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400"}],
+          "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "body-md": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+          "code-sm": ["11px", {"lineHeight": "15px", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-12 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span></div><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Cassandra<span class="text-tertiary">OS</span></span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-tertiary font-medium"><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="display" href="#">Display</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-and-audio" href="#">Camera &amp; Audio</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="peripherals" href="#">Peripherals</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="#">Notifications</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-secondary text-[14px]">memory</span><span class="font-label-sm text-label-sm text-secondary">CPU 14%</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="font-label-sm text-label-sm text-tertiary">RAM 4.2G</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="material-symbols-outlined text-primary text-[14px]">swap_vert</span><span class="font-label-sm text-label-sm text-on-surface-variant">1.2 Gbps</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="pt-12 pb-16"><aside class="fixed left-0 top-12 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col justify-between p-space-md shadow-[2px_0_12px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Hardware &amp; System</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera" href="#">Camera</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="microphone" href="#">Microphone</a><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-medium" data-path="audio-devices" href="#">Audio Devices</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="#">Notifications</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="do-not-disturb" href="#">Do Not Disturb</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></nav></div><div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Audio Daemon</span><span class="font-label-sm text-label-sm text-tertiary">RUNNING</span></div><div class="font-code-sm text-code-sm text-outline">pipewire 0.3.82 (low-latency)</div></div></aside><div class="pl-64"><div class="p-space-lg"><div class="bg-surface-container/95 backdrop-blur-2xl rounded-xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height px-space-md bg-surface-container-high/90 flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><div class="w-[11px] h-[11px] rounded-full bg-[#EF4444] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#F5C400] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26B170] cursor-pointer hover:opacity-80 transition-opacity"></div></div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">tune</span><span>System Preferences — Hardware, Sound &amp; Accessibility</span></div><div class="w-12"></div></div><main class="pt-12 w-full p-space-xl bg-surface min-h-[calc(100vh-176px)]"><div class="flex flex-col w-full gap-space-xl">
+<!-- Sub-header Breadcrumb & Diagnostic Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>SETTINGS</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span>AUDIO &amp; SOUND</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-tertiary">AUDIO DEVICES &amp; ROUTING</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-space-xs">
+        Hardware Topology &amp; Bus Multiplexing
+      </h1>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">pipewire-pulse 1.0.4</span>
+</div>
+<span class="text-outline-variant">|</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">RT-Prio 95</span>
+<span class="text-outline-variant">|</span>
+<button class="flex items-center gap-space-2xs text-secondary hover:text-on-surface font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Rescan Graph</span>
+</button>
+</div>
+</div>
+<!-- Primary Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Master Output & Inputs (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Section: Master Output -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Primary Output Bus</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Default Target: node.382</span>
+</div>
+<!-- Selected Master Output Card (High-Elevation with Cobalt/Laser Cyan Glow) -->
+<div class="relative bg-surface-container-high rounded-xl p-space-lg shadow-[0_0_28px_rgba(67,97,238,0.35),0_0_0_1px_rgba(76,201,240,0.5)] overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Header Row -->
+<div class="flex flex-wrap items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-md">
+<span class="material-symbols-outlined text-[24px]">speaker</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Universal Audio Apollo Solo</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary">Thunderbolt 3</span>
+</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">hw:ApolloSolo,0 | ALSA Native DSD/PCM Multi-channel</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/80 px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">LOCKED • SYNC EXT</span>
+</div>
+</div>
+<!-- Signal & Format Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">SAMPLE RESOLUTION</span>
+<span class="font-code-md text-code-md text-secondary font-medium">96 kHz / 32-bit Float</span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">CHANNEL ROUTING</span>
+<span class="font-code-md text-code-md text-on-surface font-medium">Stereo Front L / R</span>
+</div>
+<div class="col-span-2 sm:col-span-1 bg-surface-container-low px-space-md py-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">PROCESSING CLUSTER</span>
+<span class="font-code-md text-code-md text-tertiary font-medium">UAD-2 DSP Core #1</span>
+</div>
+</div>
+<!-- Volume Slider Control -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">graphic_eq</span>
+                  Master Attenuation
+                </span>
+<span class="font-code-md text-code-md text-tertiary font-bold" id="output-val">68% (-7.2 dB)</span>
+</div>
+<div class="relative w-full h-8 flex items-center">
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden flex items-center p-0.5">
+<div class="h-full bg-gradient-to-r from-primary-container via-primary to-tertiary rounded-full shadow-[0_0_12px_rgba(76,201,240,0.6)]" id="output-progress" style="width: 68%;"></div>
+</div>
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="output-slider" max="100" min="0" type="range" value="68"/>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>-∞ dB</span>
+<span>-18 dB</span>
+<span>-6 dB</span>
+<span>0 dB (Unity)</span>
+</div>
+</div>
+<!-- Profiles & DSP Modes Dropdown Strip -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm pt-space-sm bg-surface-container-lowest/60 p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline">DSP PROFILE</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-on-surface font-body-sm text-body-sm px-space-md py-1.5 pr-8 rounded-lg outline-none cursor-pointer focus:ring-1 focus:ring-tertiary transition-shadow">
+<option selected="">Studio Monitors Balanced (2.0)</option>
+<option>Nearfield Mastering Mode</option>
+<option>High-Impedance Headphone Amp (600Ω)</option>
+<option>Raw Bitstream Direct-Pass</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute right-2 top-2 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Console EQ</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">science</span>
+<span>Test Tone</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Available Secondary Outputs -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider px-space-xs">Standby Output Endpoints</span>
+<div class="space-y-space-xs">
+<!-- Endpoint 1 -->
+<label class="group flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-transparent group-hover:bg-outline"></div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">headphones</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Sony WH-1000XM5</div>
+<div class="font-code-sm text-code-sm text-outline">Bluetooth LDAC 990 kbps • Low Latency A2DP</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">Bat: 84%</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">chevron_right</span>
+</div>
+</label>
+<!-- Endpoint 2 -->
+<label class="group flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-transparent group-hover:bg-outline"></div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">tv</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Dell UltraSharp Display Audio</div>
+<div class="font-code-sm text-code-sm text-outline">DisplayPort 1.4 Native PCM • 48 kHz / 24-bit</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">Digital Pass</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">chevron_right</span>
+</div>
+</label>
+<!-- Endpoint 3 -->
+<label class="group flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all">
+<div class="flex items-center gap-space-md">
+<div class="w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-transparent group-hover:bg-outline"></div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">settings_input_component</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Motherboard Realtek ALC4080</div>
+<div class="font-code-sm text-code-sm text-outline">Rear Line Out (3.5mm Analog) • 192 kHz / 24-bit</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">Analog Unbalanced</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">chevron_right</span>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- Section: Master Input -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Primary Capture &amp; Preamp</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Default Source: node.114</span>
+</div>
+<!-- Selected Input Card -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-wrap items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-md">
+<span class="material-symbols-outlined text-[24px]">mic_external_on</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Universal Audio Apollo Solo - Preamp 1</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface">Analog In 1</span>
+</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">Unison Preamp Emulation: Neve 1073 (Active)</p>
+</div>
+</div>
+<!-- 48V Phantom Power Badge Indicator -->
+<div class="flex items-center gap-space-xs bg-error-container/30 px-space-md py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm text-error font-bold tracking-widest">+48V PHANTOM ENGAGED</span>
+</div>
+</div>
+<!-- Input Level Slider with Meter Simulation -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+                Analog Preamp Gain
+              </span>
+<span class="font-code-md text-code-md text-secondary font-bold" id="input-val">75% (+42.0 dB)</span>
+</div>
+<div class="relative w-full h-8 flex items-center">
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden flex items-center p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary-container via-secondary to-tertiary rounded-full" id="input-progress" style="width: 75%;"></div>
+</div>
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="input-slider" max="100" min="0" type="range" value="75"/>
+</div>
+<!-- Live Peak Metering SVG Representation -->
+<div class="w-full bg-surface-container-lowest p-space-xs rounded-lg flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline px-space-2xs">PEAK</span>
+<div class="flex-1 grid grid-cols-12 gap-0.5 h-2">
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#26B170] rounded-sm"></div>
+<div class="bg-[#F5C400] rounded-sm"></div>
+<div class="bg-[#F5C400] rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">-12 dB</span>
+</div>
+</div>
+<!-- Secondary Input List -->
+<div class="space-y-space-xs pt-space-xs">
+<label class="group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-highest cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-surface-container-lowest"></div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">videocam</span>
+<span class="font-body-md text-body-md text-on-surface">Logitech Brio Integrated Mic Array</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">USB UAC2 (Dual Beamforming)</span>
+</label>
+<label class="group flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-highest cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-surface-container-lowest"></div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">alt_route</span>
+<span class="font-body-md text-body-md text-on-surface">Virtual PipeWire Sink Loopback</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Internal DSP Bridge</span>
+</label>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Engine Telemetry, Routing Matrix & Visualizer (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Audio Server Telemetry Card -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">speed</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Engine Telemetry</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">REALTIME</span>
+</div>
+<!-- Metrics Bento Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">BUFFER LATENCY</span>
+<div class="flex items-baseline gap-space-2xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-tertiary font-bold">2.1</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">ms</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline mt-space-2xs">64 frames @ 96 kHz</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">QUANTUM</span>
+<div class="flex items-baseline gap-space-2xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold">128</span>
+<span class="font-code-sm text-code-sm text-outline">samples</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline mt-space-2xs">Jitter &lt; 0.04 ms</span>
+</div>
+<div class="col-span-2 bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">DSP COPROCESSOR LOAD</span>
+<span class="font-code-md text-code-md text-[#26B170] font-bold">4.8%</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-[#26B170] rounded-full" style="width: 4.8%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>0 XRuns detected</span>
+<span>Headroom: +48.2 dB</span>
+</div>
+</div>
+</div>
+<!-- Spatial Audio Engine Section -->
+<div class="bg-surface-container-high p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">spatial_audio_off</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Spatial Audio Engine</span>
+</div>
+<div class="w-9 h-5 bg-primary-container rounded-full p-0.5 flex items-center justify-end cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-on-primary-container shadow-sm"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Dolby Atmos &amp; HRTF Binaural Synthesis actively transforming 7.1.4 virtual spatial spheres to 2-channel monitor feed.
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-container-low px-space-xs py-0.5 rounded">HRTF: IRCAM-024</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-space-xs py-0.5 rounded">Reverb: Off</span>
+</div>
+</div>
+</div>
+<!-- Live Vector Signal Visualizer / Spectrum (SVG under 2KB) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium">Realtime FFT Spectrum</span>
+<span class="font-code-sm text-code-sm text-outline">RTA-Fast (Oct 1/12)</span>
+</div>
+<div class="w-full h-32 bg-surface-container-lowest rounded-lg p-space-sm flex items-end">
+<svg class="w-full h-full text-tertiary" preserveaspectratio="none" viewbox="0 0 240 80">
+<path d="M0,75 Q15,70 30,58 T60,35 T90,48 T120,20 T150,42 T180,60 T210,68 T240,78 L240,80 L0,80 Z" fill="currentColor" fill-opacity="0.15"></path>
+<path d="M0,75 Q15,70 30,58 T60,35 T90,48 T120,20 T150,42 T180,60 T210,68 T240,78" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0,78 Q15,74 30,65 T60,48 T90,58 T120,38 T150,55 T180,70 T210,74 T240,79" fill="none" opacity="0.6" stroke="#bac3ff" stroke-dasharray="2,2" stroke-width="1.2"></path>
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>20 Hz</span>
+<span>1 kHz</span>
+<span>8 kHz</span>
+<span>24 kHz</span>
+</div>
+</div>
+<!-- Direct Hardware Control Panel Shortcuts -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Auxiliary Daemons</span>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface">Jack Emulation Layer</span>
+<span class="font-code-sm text-code-sm text-tertiary">Active (1024/2)</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface">ALSA Sequencer Gateway</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Bridged</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface">PulseAudio Bridge</span>
+<span class="font-code-sm text-code-sm text-tertiary">Synchronized</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic visual slider updates for volume & preamp
+  const outSlider = document.getElementById('output-slider');
+  const outProgress = document.getElementById('output-progress');
+  const outVal = document.getElementById('output-val');
+
+  if (outSlider && outProgress && outVal) {
+    outSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      outProgress.style.width = val + '%';
+      const db = ((val - 100) * 0.4).toFixed(1);
+      outVal.textContent = `${val}% (${db > 0 ? '+' : ''}${db} dB)`;
+    });
+  }
+
+  const inSlider = document.getElementById('input-slider');
+  const inProgress = document.getElementById('input-progress');
+  const inVal = document.getElementById('input-val');
+
+  if (inSlider && inProgress && inVal) {
+    inSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      inProgress.style.width = val + '%';
+      const gain = (val * 0.56).toFixed(1);
+      inVal.textContent = `${val}% (+${gain} dB)`;
+    });
+  }
+</script></main></div></div></div></div><footer class="fixed bottom-0 left-0 right-0 h-taskbar-height bg-surface-container-lowest/95 backdrop-blur-xl z-50 flex items-center justify-between px-space-lg shadow-[0_-2px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-5 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-sm relative"><span class="material-symbols-outlined text-[20px]">settings</span><span class="absolute -bottom-1 w-1.5 h-1.5 rounded-full bg-tertiary"></span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">mic</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">accessibility_new</span></button></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-tertiary cursor-pointer hover:text-on-surface">wifi</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">volume_up</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">battery_full</span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-on-surface font-medium">10:42 AM</span><span class="font-code-sm text-code-sm text-outline">Oct 24, 2024</span></div></div></footer></body></html>

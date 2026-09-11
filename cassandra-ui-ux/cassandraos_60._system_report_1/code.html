@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#007995", "surface-variant": "#273647", "surface-tint": "#bac3ff", "secondary-fixed": "#d4e3ff", "primary-fixed": "#dee1ff", "on-secondary-fixed-variant": "#004884", "on-background": "#d4e4fa", "on-tertiary-fixed": "#001f28", "surface-container-highest": "#273647", "surface-container-lowest": "#010f1f", "primary-fixed-dim": "#bac3ff", "on-error": "#690005", "on-tertiary": "#003543", "on-secondary-container": "#eaf0ff", "on-secondary": "#00315d", "tertiary": "#5bd5fc", "error-container": "#93000a", "surface-container-low": "#0d1c2d", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "surface-bright": "#2c3a4c", "on-tertiary-container": "#e4f6ff", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "on-surface-variant": "#c4c5d7", "error": "#ffb4ab", "primary": "#bac3ff", "surface-container-high": "#1c2b3c", "outline": "#8e8fa1", "primary-container": "#4361ee", "tertiary-fixed": "#b7eaff", "surface-container": "#122131", "on-error-container": "#ffdad6", "on-secondary-fixed": "#001c39", "outline-variant": "#444655", "secondary-fixed-dim": "#a4c9ff", "inverse-primary": "#2e4edc", "secondary": "#a4c9ff", "surface-dim": "#051424", "on-primary-fixed-variant": "#0031c4", "inverse-on-surface": "#233143", "on-primary": "#00218d", "surface": "#051424", "on-primary-container": "#f4f2ff", "on-surface": "#d4e4fa", "on-tertiary-fixed-variant": "#004e61", "background": "#051424" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "12px", "space-md": "12px", "space-2xl": "32px", "space-lg": "16px", "space-xs": "4px", "space-sm": "8px", "taskbar-height": "48px", "titlebar-height": "36px", "space-xl": "24px", "space-2xs": "2px", "panel-dock-width": "320px" }, "fontFamily": { "body-sm": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "code-sm": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-xl": [ "Inter" ], "code-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "code-sm": [ "11px", { "lineHeight": "15px", "fontWeight": "400" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background text-on-surface antialiased min-h-screen pb-taskbar-height"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-space-lg flex flex-col justify-between py-space-xs"><div class="h-titlebar-height flex items-center justify-between w-full"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-[11px] h-[11px] rounded-full bg-[#ef4444]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#f5c400]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26b170]"></div></div><div class="flex items-center gap-space-xs text-on-surface-variant"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-body-sm text-body-sm text-tertiary font-semibold tracking-wide">CassandraOS</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface-variant">Settings</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface">Preferences &amp; Administration</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg"><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">CPU</span><span class="font-code-sm text-code-sm text-tertiary">14%</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">RAM</span><span class="font-code-sm text-code-sm text-secondary">6.2G</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">NET</span><span class="font-code-sm text-code-sm text-on-surface">↓42K ↑8K</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#">Language &amp; Region</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="date-and-time" href="#">Date &amp; Time</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#">Default Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#">Startup Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#">App Storage</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="application-details" href="#">Application Details</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-diagnostics" href="#">System Diagnostics</a><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="system-report" href="#">System Report</a></nav></div></div></header><aside class="fixed left-0 top-20 bottom-taskbar-height w-64 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-2xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Administration</span></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#"><span class="material-symbols-outlined text-[18px]">translate</span><span class="font-body-md text-body-md">Localization</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#"><span class="material-symbols-outlined text-[18px]">apps</span><span class="font-body-md text-body-md">App Packages</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span class="font-body-md text-body-md">Startup Daemons</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span><span class="font-body-md text-body-md">Storage Quotas</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span class="font-body-md text-body-md">Kernel Health</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="system-report" href="#"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-body-md text-body-md">System Logs</span></a></nav></div><div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Cassandra Kernel</span><span class="font-code-sm text-code-sm text-tertiary">v4.19.8-cs</span></div><span class="material-symbols-outlined text-tertiary text-[20px]">verified</span></div></aside><div class="pl-64"><main class="w-full pt-20 px-space-lg bg-surface min-h-[calc(100vh-theme(spacing.taskbar-height))] flex flex-col"><div class="flex flex-col w-full pb-16 space-y-6">
+<!-- Interactive Toast Notification -->
+<div class="fixed top-24 right-8 z-50 transform translate-y-[-20px] opacity-0 pointer-events-none transition-all duration-300 bg-surface-container-highest/95 backdrop-blur-xl px-4 py-3 rounded-lg shadow-2xl flex items-center gap-3" id="status-toast">
+<span class="material-symbols-outlined text-tertiary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="toast-msg">Action completed</span>
+</div>
+<!-- Document Header Bar -->
+<div class="relative bg-surface-container-low rounded-xl p-6 shadow-xl overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute right-36 bottom-0 w-48 h-48 bg-tertiary-container/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row xl:items-center justify-between gap-6">
+<div class="space-y-2">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="px-2.5 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-semibold tracking-wider uppercase">Telemetry Stream Verified</span>
+<span class="font-code-sm text-code-sm text-outline">•</span>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-lowest px-2 py-0.5 rounded">UUID: REP-20241024-CASS-X1</span>
+<span class="font-code-sm text-code-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> October 24, 2024 - 14:28 UTC
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+          CassandraOS Comprehensive System Audit &amp; Telemetry Report
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          Automated cryptographic hardware snapshot, kernel profile parameters, system runtime metrics, and security compliance telemetry log compiled for administrative sign-off.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface font-body-sm text-body-sm flex items-center gap-2 shadow-sm" id="btn-copy" onclick="triggerCopySummary()">
+<span class="material-symbols-outlined text-[16px] text-tertiary">content_copy</span>
+<span>Copy Summary</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface font-body-sm text-body-sm flex items-center gap-2 shadow-sm" id="btn-share" onclick="triggerShare()">
+<span class="material-symbols-outlined text-[16px] text-secondary">share</span>
+<span>Share Report</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary-container/85 active:scale-95 transition-all text-on-primary-container font-body-sm text-body-sm font-medium flex items-center gap-2 shadow-lg shadow-primary-container/30" id="btn-export" onclick="triggerExportPdf()">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>Export as PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Key Metrics Quick Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between shadow-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Health Index</div>
+<div class="font-headline-md text-headline-md text-tertiary font-bold mt-0.5">99.8%</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Zero Kernel Faults</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[22px]">health_and_safety</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between shadow-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Audit Integrity</div>
+<div class="font-headline-md text-headline-md text-secondary font-bold mt-0.5">Passed</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Level 5 Hardened</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between shadow-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Continuous Uptime</div>
+<div class="font-headline-md text-headline-md text-primary font-bold mt-0.5">6d 14h</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">158 hrs uninterrupted</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[22px]">timelapse</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between shadow-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Thermal Average</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold mt-0.5">48.2°C</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Peak recorded: 68.0°C</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[22px]">device_thermostat</span>
+</div>
+</div>
+</div>
+<!-- Accordion Sections Container -->
+<div class="flex flex-col space-y-3" id="accordion-root">
+<!-- 1. System & Kernel Overview -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-md transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between bg-surface-container-low hover:bg-surface-container transition-colors text-left" onclick="toggleSection('sec-kernel', 'icon-kernel')">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold">1. System &amp; Kernel Overview</span>
+<span class="px-2 py-0.2 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm">Nominal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Host environment, active session daemon, and kernel microcode details</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-code-sm text-code-sm text-outline hidden sm:inline">6.11.4-cassandra-x86_64</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="icon-kernel">expand_more</span>
+</div>
+</button>
+<div class="px-5 pb-5 pt-1 space-y-4" id="sec-kernel">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+<div class="bg-surface-container p-3 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Operating System</span>
+<span class="font-code-md text-code-md text-on-surface font-medium mt-1">CassandraOS Developer LTS</span>
+<span class="font-code-sm text-code-sm text-tertiary mt-0.5">Release Channel: 2024.4-rolling</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Kernel Architecture</span>
+<span class="font-code-md text-code-md text-on-surface font-medium mt-1">6.11.4-cassandra-x86_64</span>
+<span class="font-code-sm text-code-sm text-secondary mt-0.5">SMP PREEMPT_DYNAMIC BPF-hardened</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Compositor / Display Server</span>
+<span class="font-code-md text-code-md text-on-surface font-medium mt-1">CWC v2.4 Wayland Native</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Triple-buffer async presentation</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Registered Hostname</span>
+<span class="font-code-md text-code-md text-on-surface font-medium mt-1">cass-devstation-pro</span>
+<span class="font-code-sm text-code-sm text-outline mt-0.5">Domain: dev.internal.local</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Uptime</span>
+<span class="font-code-md text-code-md text-tertiary font-medium mt-1">6 days 14 hours 22 mins</span>
+<span class="font-code-sm text-code-sm text-outline mt-0.5">Boot Init Time: 1.84s (Systemd-stub)</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Init System &amp; Shell</span>
+<span class="font-code-md text-code-md text-on-surface font-medium mt-1">systemd 256.4 / csh-v3</span>
+<span class="font-code-sm text-code-sm text-outline mt-0.5">PID 1 memory: 18.2 MB</span>
+</div>
+</div>
+<!-- Kernel parameters table -->
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Active Kernel Commandline Flags</span>
+<span class="font-code-sm text-code-sm text-tertiary">/proc/cmdline</span>
+</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant break-all leading-relaxed bg-surface-container-high/40 p-2.5 rounded">
+            BOOT_IMAGE=/vmlinuz-6.11.4-cassandra root=UUID=74fa2e1a-8c34-4b5c-b131-01f1489e24aa ro quiet splash security=selinux selinux=1 mitigations=auto,nosmt=off cgroup_no_v1=all systemd.unified_cgroup_hierarchy=1 pcie_aspm=force amd_pstate=active
+          </div>
+</div>
+</div>
+</div>
+<!-- 2. Hardware Specification Summary -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-md transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between bg-surface-container-low hover:bg-surface-container transition-colors text-left" onclick="toggleSection('sec-hardware', 'icon-hardware')">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold">2. Hardware Specification Summary</span>
+<span class="px-2 py-0.2 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm">Tier 1 Rig</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Silicon microarchitecture, discrete acceleration, and storage bus mapping</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-code-sm text-code-sm text-outline hidden sm:inline">Ryzen 9 7950X • RTX 4090 • 64GB DDR5</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="icon-hardware">expand_more</span>
+</div>
+</button>
+<div class="px-5 pb-5 pt-1 space-y-4" id="sec-hardware">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- CPU Card -->
+<div class="bg-surface-container p-4 rounded-lg space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">developer_board</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Processor (CPU)</span>
+</div>
+<span class="font-code-sm text-code-sm bg-tertiary-container/20 text-tertiary px-2 py-0.5 rounded">16C / 32T</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">AMD Ryzen 9 7950X</div>
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-variant/40">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Base Clock</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">4.50 GHz</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Boost Clock</span>
+<span class="font-code-sm text-code-sm text-secondary font-medium">5.70 GHz</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">L3 Cache</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">64 MB V-Cache</span>
+</div>
+</div>
+</div>
+<!-- GPU Card -->
+<div class="bg-surface-container p-4 rounded-lg space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">aspect_ratio</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Graphics Processing (GPU)</span>
+</div>
+<span class="font-code-sm text-code-sm bg-secondary-container/20 text-secondary px-2 py-0.5 rounded">PCIe 4.0 @ 16x</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">NVIDIA GeForce RTX 4090</div>
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-variant/40">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">VRAM</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">24 GB GDDR6X</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Driver Release</span>
+<span class="font-code-sm text-code-sm text-tertiary font-medium">560.35.03 Proprietary</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Compute Units</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">16,384 CUDA</span>
+</div>
+</div>
+</div>
+<!-- Memory Card -->
+<div class="bg-surface-container p-4 rounded-lg space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">straighten</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">System Memory (RAM)</span>
+</div>
+<span class="font-code-sm text-code-sm bg-primary-container/20 text-primary px-2 py-0.5 rounded">EXPO Profile 1 Active</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">64 GB Dual-Channel DDR5</div>
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-variant/40">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Speed</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">6000 MT/s</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Timings</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">CL30-38-38-96</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">DIMM Topology</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">2x 32GB (Slots 2,4)</span>
+</div>
+</div>
+</div>
+<!-- Storage Card -->
+<div class="bg-surface-container p-4 rounded-lg space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">hard_drive</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Non-Volatile Storage (NVMe)</span>
+</div>
+<span class="font-code-sm text-code-sm bg-tertiary-container/20 text-tertiary px-2 py-0.5 rounded">NVMe 2.0 Direct</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">3 TB High-Speed Array</div>
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-variant/40">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Drive 0 (Root)</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">1TB PCIe 5.0 (9.8 GB/s)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Drive 1 (Data)</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">2TB PCIe 4.0 (7.1 GB/s)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">SMART Life</span>
+<span class="font-code-sm text-code-sm text-tertiary font-medium">99% Remaining</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Performance & Thermal Metrics -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-md transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between bg-surface-container-low hover:bg-surface-container transition-colors text-left" onclick="toggleSection('sec-perf', 'icon-perf')">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">monitoring</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold">3. Performance &amp; Thermal Metrics</span>
+<span class="px-2 py-0.2 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm">Optimal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">24-hour moving rolling telemetry across thermal junctions, load averages &amp; memory pressure</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-code-sm text-code-sm text-outline hidden sm:inline">Load: 18.4% • Temp: 68°C Max • Draw: 142W Avg</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="icon-perf">expand_more</span>
+</div>
+</button>
+<div class="px-5 pb-5 pt-1 space-y-4" id="sec-perf">
+<!-- Visual Telemetry Gauges -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+<div class="bg-surface-container p-4 rounded-lg space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">24h CPU Load Avg</span>
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">18.4%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" style="width: 18.4%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline block">Core min 4.1% | Core max 89.2%</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">Peak Die Temperature</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">68.0°C</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 68%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline block">Tctl/Tdie baseline: 41.5°C</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">RAM Peak Footprint</span>
+<span class="font-code-sm text-code-sm text-primary font-semibold">34.2 / 64 GB</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 53.4%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline block">Buffers/Cache: 12.8 GB active</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">Average Power Draw</span>
+<span class="font-code-sm text-code-sm text-tertiary font-semibold">142 W</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full transition-all duration-500" style="width: 38%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-outline block">Peak transient: 440W sustained</span>
+</div>
+</div>
+<!-- 24H Sparkline SVG Chart -->
+<div class="bg-surface-container-lowest p-4 rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">24-Hour Load &amp; Thermal Timeline Visualization</span>
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container px-2 py-0.5 rounded">Interval: 15m</span>
+</div>
+<div class="flex items-center gap-4 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span> CPU Load</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span> Temp (°C)</span>
+</div>
+</div>
+<div class="w-full h-24 overflow-hidden pt-2">
+<svg class="w-full h-full text-tertiary" preserveaspectratio="none" viewbox="0 0 800 100">
+<defs>
+<lineargradient id="loadGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#5bd5fc" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#5bd5fc" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="tempGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#a4c9ff" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#a4c9ff" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid lines -->
+<line stroke="#273647" stroke-dasharray="4 4" stroke-width="0.5" x1="0" x2="800" y1="25" y2="25"></line>
+<line stroke="#273647" stroke-dasharray="4 4" stroke-width="0.5" x1="0" x2="800" y1="50" y2="50"></line>
+<line stroke="#273647" stroke-dasharray="4 4" stroke-width="0.5" x1="0" x2="800" y1="75" y2="75"></line>
+<!-- Temp Wave -->
+<path d="M0,75 Q80,68 150,72 T300,55 T450,60 T600,45 T720,58 T800,62 L800,100 L0,100 Z" fill="url(#tempGrad)"></path>
+<path d="M0,75 Q80,68 150,72 T300,55 T450,60 T600,45 T720,58 T800,62" fill="none" stroke="#a4c9ff" stroke-width="1.75"></path>
+<!-- Load Wave -->
+<path d="M0,82 Q90,79 170,85 T320,68 T420,30 T530,78 T650,40 T740,75 T800,78 L800,100 L0,100 Z" fill="url(#loadGrad)"></path>
+<path d="M0,82 Q90,79 170,85 T320,68 T420,30 T530,78 T650,40 T740,75 T800,78" fill="none" stroke="#5bd5fc" stroke-width="2"></path>
+</svg>
+</div>
+<div class="flex justify-between font-code-sm text-code-sm text-outline pt-1">
+<span>24h ago</span>
+<span>18h ago</span>
+<span>12h ago</span>
+<span>6h ago</span>
+<span>Current (14:28 UTC)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Security, Integrity & Compliance -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-md transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between bg-surface-container-low hover:bg-surface-container transition-colors text-left" onclick="toggleSection('sec-security', 'icon-security')">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold">4. Security, Integrity &amp; Compliance</span>
+<span class="px-2 py-0.2 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm">Hardened L5</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cryptographic chain of trust, TPM measurement, and cryptographic volume encryption</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-code-sm text-code-sm text-outline hidden sm:inline">SELinux: Enforcing • TPM 2.0 PCR-7 • LUKS2 AES-256</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="icon-security">expand_more</span>
+</div>
+</button>
+<div class="px-5 pb-5 pt-1 space-y-4" id="sec-security">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+<div class="bg-surface-container p-3.5 rounded-lg space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Defense Level</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">shield</span>
+</div>
+<div class="font-headline-md text-headline-md text-tertiary font-bold">Shield L5</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">Max strict isolation profile enabled across all sandboxes.</p>
+</div>
+<div class="bg-surface-container p-3.5 rounded-lg space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">MAC Policy</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">policy</span>
+</div>
+<div class="font-headline-md text-headline-md text-secondary font-bold">SELinux Enforcing</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">0 denials reported in current boot cycle session.</p>
+</div>
+<div class="bg-surface-container p-3.5 rounded-lg space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Hardware Attestation</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">lock</span>
+</div>
+<div class="font-headline-md text-headline-md text-tertiary font-bold">TPM 2.0 Valid</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">PCR-7 secure boot measurement signatures aligned.</p>
+</div>
+<div class="bg-surface-container p-3.5 rounded-lg space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Disk Encryption</span>
+<span class="material-symbols-outlined text-primary text-[18px]">vpn_key</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary font-bold">LUKS2 256-bit</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">AES-XTS-PLAIN64 cipher with Argon2id KDF derivation.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Integrity Heuristic Scan: 0 Anomalies Found</span>
+<div class="font-code-sm text-code-sm text-outline">Rootkit/eBPF probe inspection finished at 14:15 UTC (chkrootkit v0.58 &amp; eBPF-audit)</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-medium">Compliance Clean</span>
+</div>
+</div>
+</div>
+<!-- 5. Recent System Events & Diagnostics -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-md transition-all duration-200">
+<button class="w-full px-5 py-4 flex items-center justify-between bg-surface-container-low hover:bg-surface-container transition-colors text-left" onclick="toggleSection('sec-events', 'icon-events')">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold">5. Recent System Events &amp; Diagnostics</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm">1 Warning</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kernel events, process signals, and IO queue anomalies flagged during run</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-code-sm text-code-sm text-outline hidden sm:inline">1 SIGSEGV Handled • 0 Panics • 1 NVMe Warning</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="icon-events">expand_more</span>
+</div>
+</button>
+<div class="px-5 pb-5 pt-1 space-y-3" id="sec-events">
+<!-- Event item list -->
+<div class="space-y-2">
+<div class="p-3 bg-surface-container rounded-lg flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">info</span>
+<div>
+<div class="font-code-md text-code-md text-on-surface font-medium">SIGSEGV Handled in Application Sandbox</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Process: <code class="text-tertiary">worker-isolated-node[PID: 40912]</code> - Memory violation contained cleanly by micro-sandbox container. Core dumped to /var/crash.</p>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-outline shrink-0">Today 11:14 UTC</span>
+</div>
+<div class="p-3 bg-surface-container rounded-lg flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<div>
+<div class="font-code-md text-code-md text-on-surface font-medium">Kernel Panic Watchdog Check</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Zero oops, zero panics, and zero hard lockups logged across 32 logical execution units.</p>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-outline shrink-0">Continuous</span>
+</div>
+<div class="p-3 bg-surface-container rounded-lg flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">warning</span>
+<div>
+<div class="font-code-md text-code-md text-on-surface font-medium">NVMe Controller Latency Fluctuation (nvme1n1)</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Single transient I/O request queued past 42ms during parallel compile job. Controller resolved without dropped sectors.</p>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-outline shrink-0">Yesterday 22:04 UTC</span>
+</div>
+</div>
+<div class="pt-2 flex justify-end">
+<a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-tertiary hover:underline" href="#">
+<span>Navigate to Full Cassandra Crash &amp; Error Center</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Authenticity & Cryptographic Signature Section -->
+<div class="bg-surface-container-low rounded-xl p-5 shadow-lg space-y-4">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold">Cryptographic Authenticity Verification</span>
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-semibold">SHA-512 Validated</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">This document is tamper-evident and anchored to the local system TPM enclave.</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-body-sm text-body-sm text-tertiary flex items-center gap-1.5" onclick="verifyLocalSignature()">
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+<span>Re-Verify Integrity</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">SHA-512 Digest</span>
+<span class="font-code-sm text-code-sm text-outline">Algorithm: SHA-512 / ED25519-Signed</span>
+</div>
+<div class="font-code-sm text-code-sm text-secondary break-all font-mono select-all bg-surface-container-high/30 p-2 rounded">
+        9f83acde78219bc042a9b3c4155102a94f092305a415b3c4d98ef01b092ac91834ef1907b22a019485bcf6891004283daebf7743901a88432190ccba491aef03
+      </div>
+<div class="flex flex-wrap items-center justify-between text-outline font-code-sm text-code-sm pt-1">
+<span>Signer Authority: CassandraOS Root Authority (devstation-cert-x509)</span>
+<span>Certificate Serial: 0x48A2-E8B1-009F</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleSection(contentId, iconId) {
+    const el = document.getElementById(contentId);
+    const icon = document.getElementById(iconId);
+    if (!el || !icon) return;
+
+    if (el.classList.contains('hidden')) {
+      el.classList.remove('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    } else {
+      el.classList.add('hidden');
+      icon.style.transform = 'rotate(-90deg)';
+    }
+  }
+
+  function showToast(message, iconName = 'check_circle') {
+    const toast = document.getElementById('status-toast');
+    const msg = document.getElementById('toast-msg');
+    const icon = document.getElementById('toast-icon');
+    if (!toast) return;
+
+    msg.innerText = message;
+    icon.innerText = iconName;
+    toast.classList.remove('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+    }, 2800);
+  }
+
+  function triggerCopySummary() {
+    const summary = [
+      "CassandraOS Telemetry Report",
+      "UUID: REP-20241024-CASS-X1",
+      "Kernel: 6.11.4-cassandra-x86_64",
+      "Host: cass-devstation-pro",
+      "Uptime: 6 days 14 hours",
+      "CPU: AMD Ryzen 9 7950X",
+      "GPU: NVIDIA RTX 4090 24GB",
+      "RAM: 64GB DDR5 (34.2GB peak)",
+      "Security: Shield Level 5 Hardened, SELinux Enforcing, TPM 2.0 Valid"
+    ].join("\\n");
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(summary).then(() => {
+        showToast("Summary copied to system clipboard");
+      }).catch(() => {
+        showToast("Summary ready in memory");
+      });
+    } else {
+      showToast("Summary copied to buffer");
+    }
+  }
+
+  function triggerShare() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'CassandraOS System Audit Report',
+        text: 'System Audit REP-20241024-CASS-X1 generated on CassandraOS Developer LTS.',
+        url: window.location.href
+      }).catch(() => {});
+    } else {
+      showToast("Report sharing link generated");
+    }
+  }
+
+  function triggerExportPdf() {
+    showToast("Compiling PDF telemetry bundle...", "picture_as_pdf");
+    setTimeout(() => {
+      window.print();
+    }, 400);
+  }
+
+  function verifyLocalSignature() {
+    showToast("Re-verifying TPM SHA-512 digest against enclave...", "fingerprint");
+    setTimeout(() => {
+      showToast("Signature Valid: Integrity confirmed 100%", "verified");
+    }, 900);
+  }
+</script></main></div><footer class="fixed bottom-0 left-0 w-full h-taskbar-height z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)] flex items-center justify-between px-space-md"><div class="flex items-center gap-space-sm"><button class="h-8 w-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-4 w-px bg-surface-variant"></div><div class="flex items-center gap-space-2xs"><button class="h-8 px-space-sm rounded-lg bg-surface-container-high text-tertiary flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-sm text-body-sm">Preferences</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">folder_open</span></button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">volume_up</span><span class="material-symbols-outlined text-[18px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div><div class="h-4 w-px bg-surface-variant"></div><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-medium">10:42 AM</span><span class="font-label-sm text-label-sm text-outline">OCT 24</span></div></div></footer></body></html>

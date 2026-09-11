@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full min-h-[calc(100vh-84px)] justify-between p-gutter relative overflow-hidden select-none">
+<!-- Subtle Ambient Glow & Grid Backdrop -->
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(circle_at_50%_120%,rgba(67,97,238,0.22),transparent_70%)]"></div>
+<!-- Workspace Ghost Windows / Desktop Background Content (Contextual Depth) -->
+<div class="w-full max-w-7xl mx-auto grid grid-cols-12 gap-space-md mb-space-xl opacity-85">
+<!-- Active Terminal / Text Input Window -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-low rounded-xl shadow-xl p-space-md flex flex-col gap-space-sm backdrop-blur-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-highest/60">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></div>
+<span class="font-code-sm text-code-sm text-on-surface-variant ml-space-xs">sys-core // terminal buffer (tty1)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-tertiary">PID 4092</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UTF-8</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest/70 rounded font-code-md text-code-md text-on-surface flex flex-col gap-space-xs">
+<p class="text-tertiary font-code-sm text-code-sm">$ cassandra-ctl --listen --device=virtual-keyboard-0</p>
+<p class="text-on-surface-variant font-code-sm text-code-sm">[KERNEL] Virtual HID registered at /dev/input/event14</p>
+<div class="flex items-center gap-space-xs pt-space-xs text-secondary-fixed">
+<span class="text-tertiary">cassandra@os-node:~$</span>
+<span class="text-on-primary-container font-medium tracking-wide" id="virtual-display-buffer">deploy --target=cluster-alpha --force</span>
+<span class="w-2 h-4 bg-tertiary inline-block animate-pulse"></span>
+</div>
+</div>
+</div>
+<!-- Quick Diagnostics / Ergonomics Telemetry Pill -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-low rounded-xl shadow-xl p-space-md flex flex-col justify-between backdrop-blur-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary tracking-wider uppercase flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">touch_app</span> Haptic Input Engine
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BUILD 24.10.9</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm my-space-xs">
+<div class="bg-surface-container p-space-sm rounded">
+<p class="font-label-sm text-label-sm text-on-surface-variant">POLLING RATE</p>
+<p class="font-code-md text-code-md text-on-surface font-semibold">1000 Hz</p>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<p class="font-label-sm text-label-sm text-on-surface-variant">PRESSURE MODE</p>
+<p class="font-code-md text-code-md text-tertiary font-semibold">Linear Dynamic</p>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-space-2xs text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Ready for HID injection</span>
+<span class="font-code-sm text-code-sm">vKey Driver 3.4</span>
+</div>
+</div>
+</div>
+<!-- VIRTUAL ON-SCREEN KEYBOARD DOCKED/HOVERING CONTAINER (88% Width) -->
+<section class="w-full max-w-[1380px] mx-auto flex flex-col gap-space-xs mb-space-xs z-30 transition-all duration-300">
+<!-- Floating Toolbar Header -->
+<div class="w-full flex items-center justify-between px-space-md py-space-xs bg-surface-container-low/95 backdrop-blur-2xl rounded-t-xl shadow-2xl">
+<!-- Left: Layout Selector & Status Tag -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded shadow-sm hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-tertiary text-[16px]">keyboard</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">US QWERTY / Standard 84-Key</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">expand_more</span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest font-code-sm text-code-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="text-on-surface">Docked:</span> Hardware Layer
+          <span class="text-outline-variant">|</span>
+<span class="text-tertiary">Latency: 0.2ms</span>
+</div>
+</div>
+<!-- Right: Action & Mode Toggles -->
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-space-2xs font-label-sm text-label-sm" id="toggle-caps-indicator" title="Caps Lock Mode" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>CAPS</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-space-2xs font-label-sm text-label-sm" title="Numeric Pad View" type="button">
+<span class="material-symbols-outlined text-[15px]">pin</span>
+<span class="hidden sm:inline">Numpad</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-space-2xs font-label-sm text-label-sm" title="Symbol Matrix" type="button">
+<span class="material-symbols-outlined text-[15px]">functions</span>
+<span class="hidden sm:inline">Symbols</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high transition-all flex items-center gap-space-2xs font-label-sm text-label-sm" title="Voice Dictation" type="button">
+<span class="material-symbols-outlined text-[15px]">mic</span>
+<span class="hidden sm:inline">Dictation</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest mx-space-2xs"></div>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Keyboard Settings" type="button">
+<span class="material-symbols-outlined text-[16px]">settings</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Undock / Float Keyboard" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_full</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Minimize / Hide" type="button">
+<span class="material-symbols-outlined text-[16px]">minimize</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-error-container hover:text-on-error-container text-on-surface-variant flex items-center justify-center transition-colors" title="Close On-Screen Keyboard" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- MAIN KEYBOARD BODY -->
+<div class="w-full bg-surface-container-low/95 backdrop-blur-2xl rounded-b-xl shadow-[0_20px_60px_-15px_rgba(0,7,32,0.9)] p-space-sm flex flex-col gap-space-xs">
+<!-- ROW 0: Esc + Function Row + Media Controls -->
+<div class="grid grid-cols-16 gap-1 w-full text-center">
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-error hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-md text-label-md transition-all" data-key="Escape" type="button">
+          ESC
+        </button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F1" type="button">F1</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F2" type="button">F2</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F3" type="button">F3</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F4" type="button">F4</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F5" type="button">F5</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F6" type="button">F6</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F7" type="button">F7</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F8" type="button">F8</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F9" type="button">F9</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F10" type="button">F10</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F11" type="button">F11</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high active:bg-primary-container active:text-on-primary-container flex items-center justify-center font-label-sm text-label-sm transition-all" data-key="F12" type="button">F12</button>
+<!-- Dedicated Media Controls -->
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container-lowest text-tertiary hover:bg-surface-container flex items-center justify-center transition-all" data-action="mute" title="Mute Volume" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_off</span>
+</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container-lowest text-tertiary hover:bg-surface-container flex items-center justify-center transition-all" data-action="voldown" title="Volume Down" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_down</span>
+</button>
+<button class="key-btn col-span-1 h-9 rounded bg-surface-container-lowest text-tertiary hover:bg-surface-container flex items-center justify-center transition-all" data-action="volup" title="Volume Up" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+</div>
+<!-- ROW 1: Number Row (~ to Backspace) -->
+<div class="flex gap-1 w-full h-11">
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="`" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">~</span>
+<span class="leading-none">`</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="1" type="button">
+<span class="text-[10px] text-tertiary leading-none">!</span>
+<span class="leading-none">1</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="2" type="button">
+<span class="text-[10px] text-tertiary leading-none">@</span>
+<span class="leading-none">2</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="3" type="button">
+<span class="text-[10px] text-tertiary leading-none">#</span>
+<span class="leading-none">3</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="4" type="button">
+<span class="text-[10px] text-tertiary leading-none">$</span>
+<span class="leading-none">4</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="5" type="button">
+<span class="text-[10px] text-tertiary leading-none">%</span>
+<span class="leading-none">5</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="6" type="button">
+<span class="text-[10px] text-tertiary leading-none">^</span>
+<span class="leading-none">6</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="7" type="button">
+<span class="text-[10px] text-tertiary leading-none">&amp;</span>
+<span class="leading-none">7</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="8" type="button">
+<span class="text-[10px] text-tertiary leading-none">*</span>
+<span class="leading-none">8</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="9" type="button">
+<span class="text-[10px] text-tertiary leading-none">(</span>
+<span class="leading-none">9</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="0" type="button">
+<span class="text-[10px] text-tertiary leading-none">)</span>
+<span class="leading-none">0</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="-" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">_</span>
+<span class="leading-none">-</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="=" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">+</span>
+<span class="leading-none">=</span>
+</button>
+<button class="key-btn w-24 rounded bg-surface-container-lowest hover:bg-surface-container active:bg-error-container text-tertiary hover:text-on-surface flex items-center justify-center gap-space-2xs font-label-md text-label-md transition-all shadow-sm" data-key="Backspace" type="button">
+<span class="material-symbols-outlined text-[18px]">backspace</span>
+<span class="hidden sm:inline">Del</span>
+</button>
+</div>
+<!-- ROW 2: Tab + QWERTY Row -->
+<div class="flex gap-1 w-full h-11">
+<button class="key-btn w-20 rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-start px-space-sm font-label-md text-label-md transition-all shadow-sm" data-key="Tab" type="button">
+<span class="material-symbols-outlined text-[16px] mr-1 text-tertiary">keyboard_tab</span>
+<span>Tab</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="q" type="button">Q</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="w" type="button">W</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="e" type="button">E</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="r" type="button">R</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="t" type="button">T</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="y" type="button">Y</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="u" type="button">U</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="i" type="button">I</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="o" type="button">O</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="p" type="button">P</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="[" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">{</span>
+<span class="leading-none">[</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="]" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">}</span>
+<span class="leading-none">]</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="\" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">|</span>
+<span class="leading-none">\</span>
+</button>
+</div>
+<!-- ROW 3: Caps Lock + Home Row + Enter -->
+<div class="flex gap-1 w-full h-11">
+<button class="key-btn w-24 rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-between px-space-sm font-label-md text-label-md transition-all shadow-sm" data-key="CapsLock" id="key-caps-lock" type="button">
+<span>Caps</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant" id="caps-dot"></span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="a" type="button">A</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="s" type="button">S</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="d" type="button">D</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm relative" data-key="f" type="button">
+<span>F</span>
+<span class="absolute bottom-1 w-2.5 h-0.5 rounded-full bg-outline-variant"></span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="g" type="button">G</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="h" type="button">H</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm relative" data-key="j" type="button">
+<span>J</span>
+<span class="absolute bottom-1 w-2.5 h-0.5 rounded-full bg-outline-variant"></span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="k" type="button">K</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="l" type="button">L</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key=";" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">:</span>
+<span class="leading-none">;</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="'" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">"</span>
+<span class="leading-none">'</span>
+</button>
+<!-- Accent Enter Key (#4361EE) -->
+<button class="key-btn w-28 rounded bg-primary-container hover:bg-inverse-primary active:bg-on-primary text-on-primary-container flex items-center justify-center gap-space-xs font-label-md text-label-md font-bold shadow-lg transition-all" data-key="Enter" type="button">
+<span>Return</span>
+<span class="material-symbols-outlined text-[18px]">keyboard_return</span>
+</button>
+</div>
+<!-- ROW 4: Left Shift + Z to / + Right Shift -->
+<div class="flex gap-1 w-full h-11">
+<button class="key-btn w-32 rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-start px-space-sm gap-space-2xs font-label-md text-label-md transition-all shadow-sm" data-key="Shift" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">arrow_upward</span>
+<span>Shift</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="z" type="button">Z</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="x" type="button">X</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="c" type="button">C</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="v" type="button">V</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="b" type="button">B</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="n" type="button">N</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex items-center justify-center font-code-md text-code-md font-medium transition-all shadow-sm" data-key="m" type="button">M</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="," type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">&lt;</span>
+<span class="leading-none">,</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="." type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">&gt;</span>
+<span class="leading-none">.</span>
+</button>
+<button class="key-btn flex-1 rounded bg-surface-container-high hover:bg-primary-container/70 active:bg-primary text-on-surface flex flex-col items-center justify-center font-code-md text-code-md transition-all shadow-sm" data-key="/" type="button">
+<span class="text-[10px] text-on-surface-variant leading-none">?</span>
+<span class="leading-none">/</span>
+</button>
+<button class="key-btn w-36 rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-end px-space-sm gap-space-2xs font-label-md text-label-md transition-all shadow-sm" data-key="Shift" type="button">
+<span>Shift</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">arrow_upward</span>
+</button>
+</div>
+<!-- ROW 5: Modifier row (Ctrl, Super, Alt, Spacebar Glide, AltGr, Arrow Cluster) -->
+<div class="flex gap-1 w-full h-11 items-center">
+<!-- Control Key -->
+<button class="key-btn w-16 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-center font-label-md text-label-md transition-all shadow-sm" data-key="Control" type="button">
+          Ctrl
+        </button>
+<!-- Super / Cassandra Key -->
+<button class="key-btn w-16 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary-container text-tertiary flex items-center justify-center gap-1 font-label-sm text-label-sm transition-all shadow-sm" data-key="Meta" title="Cassandra Meta Key" type="button">
+<img alt="Cassandra OS" class="w-4 h-4 object-contain brightness-125" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/>
+<span class="font-bold">OS</span>
+</button>
+<!-- Alt Key -->
+<button class="key-btn w-16 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-center font-label-md text-label-md transition-all shadow-sm" data-key="Alt" type="button">
+          Alt
+        </button>
+<!-- Large Spacebar with Trackpad Glide Indicator -->
+<button class="key-btn flex-[6] h-full rounded bg-surface-container-high hover:bg-surface-container active:bg-primary relative flex items-center justify-center transition-all shadow-sm group" data-key=" " type="button">
+<div class="flex items-center gap-1.5 opacity-40 group-hover:opacity-75 transition-opacity">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="w-24 h-1 rounded-full bg-tertiary/70"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="absolute bottom-1 font-label-sm text-label-sm text-on-surface-variant/40 tracking-wider">SPACE // SWIPE TO GLIDE</span>
+</button>
+<!-- Alt Gr -->
+<button class="key-btn w-16 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-on-surface-variant hover:text-on-surface flex items-center justify-center font-label-md text-label-md transition-all shadow-sm" data-key="AltGraph" type="button">
+          AltGr
+        </button>
+<!-- Function Key -->
+<button class="key-btn w-14 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-tertiary flex items-center justify-center font-label-md text-label-md transition-all shadow-sm" data-key="Fn" type="button">
+          Fn
+        </button>
+<!-- Dedicated Arrow Navigation Cluster (Inverted T) -->
+<div class="flex gap-1 h-full items-center pl-1">
+<!-- Left Arrow -->
+<button class="key-btn w-12 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-tertiary flex items-center justify-center transition-all shadow-sm" data-key="ArrowLeft" title="Left" type="button">
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_left</span>
+</button>
+<!-- Up / Down Stacked -->
+<div class="flex flex-col gap-1 h-full w-12 justify-between">
+<button class="key-btn w-full h-[21px] rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-tertiary flex items-center justify-center transition-all shadow-sm" data-key="ArrowUp" title="Up" type="button">
+<span class="material-symbols-outlined text-[15px]">keyboard_arrow_up</span>
+</button>
+<button class="key-btn w-full h-[21px] rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-tertiary flex items-center justify-center transition-all shadow-sm" data-key="ArrowDown" title="Down" type="button">
+<span class="material-symbols-outlined text-[15px]">keyboard_arrow_down</span>
+</button>
+</div>
+<!-- Right Arrow -->
+<button class="key-btn w-12 h-full rounded bg-surface-container-lowest hover:bg-surface-container active:bg-primary text-tertiary flex items-center justify-center transition-all shadow-sm" data-key="ArrowRight" title="Right" type="button">
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const buffer = document.getElementById('virtual-display-buffer');
+    const capsLockBtn = document.getElementById('key-caps-lock');
+    const capsDot = document.getElementById('caps-dot');
+    const capsIndicatorTop = document.getElementById('toggle-caps-indicator');
+    let isCaps = false;
+
+    function toggleCaps() {
+      isCaps = !isCaps;
+      if (isCaps) {
+        capsDot.classList.remove('bg-outline-variant');
+        capsDot.classList.add('bg-tertiary');
+        capsIndicatorTop.classList.add('text-tertiary', 'bg-surface-container-high');
+      } else {
+        capsDot.classList.add('bg-outline-variant');
+        capsDot.classList.remove('bg-tertiary');
+        capsIndicatorTop.classList.remove('text-tertiary', 'bg-surface-container-high');
+      }
+    }
+
+    if (capsLockBtn) capsLockBtn.addEventListener('click', toggleCaps);
+    if (capsIndicatorTop) capsIndicatorTop.addEventListener('click', toggleCaps);
+
+    // Interactive Keypress Visual Feedback & Terminal Buffer Simulation
+    const keys = document.querySelectorAll('.key-btn');
+    keys.forEach(key => {
+      key.addEventListener('click', () => {
+        const val = key.getAttribute('data-key');
+        if (!val) return;
+
+        // Visual haptic trigger
+        key.classList.add('scale-[0.96]', 'ring-1', 'ring-tertiary');
+        setTimeout(() => {
+          key.classList.remove('scale-[0.96]', 'ring-1', 'ring-tertiary');
+        }, 120);
+
+        if (!buffer) return;
+
+        if (val === 'Backspace') {
+          buffer.textContent = buffer.textContent.slice(0, -1);
+        } else if (val === 'Enter') {
+          buffer.textContent = '';
+        } else if (val === ' ') {
+          buffer.textContent += ' ';
+        } else if (val.length === 1) {
+          buffer.textContent += isCaps ? val.toUpperCase() : val;
+        }
+      });
+    });
+
+    // Mirror physical keyboard strokes to on-screen keyboard visual states
+    window.addEventListener('keydown', (e) => {
+      const match = Array.from(keys).find(k => {
+        const target = k.getAttribute('data-key');
+        return target && target.toLowerCase() === e.key.toLowerCase();
+      });
+
+      if (match) {
+        match.classList.add('bg-primary', 'text-on-primary', 'scale-[0.96]');
+        setTimeout(() => {
+          match.classList.remove('bg-primary', 'text-on-primary', 'scale-[0.96]');
+        }, 150);
+      }
+    });
+  })();
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full relative min-h-[calc(100vh-84px)] items-center justify-center p-space-md sm:p-space-xl select-none">
+<!-- Dimmed Ambient Desktop Underlay -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container/10 blur-[100px]"></div>
+<div class="absolute top-1/2 -right-32 w-80 h-80 rounded-full bg-tertiary-container/10 blur-[90px]"></div>
+<div class="absolute bottom-10 left-1/3 w-[500px] h-48 rounded-full bg-surface-container-high/40 blur-[80px]"></div>
+</div>
+<!-- Clipboard Manager Floating Window Shell (Elevated Tactical Modal) -->
+<div class="relative w-full max-w-4xl bg-surface-container-lowest/95 backdrop-blur-2xl rounded-xl shadow-2xl overflow-hidden flex flex-col transition-all duration-200">
+<!-- Window Chrome / Titlebar -->
+<div class="h-titlebar-height px-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-error cursor-pointer hover:opacity-80 transition-opacity" title="Close window"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container cursor-pointer hover:opacity-80 transition-opacity" title="Minimize"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-container cursor-pointer hover:opacity-80 transition-opacity" title="Maximize"></div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium tracking-tight ml-space-xs">sys://clip.daemon.v2</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-tertiary font-code-sm text-code-sm tracking-wider uppercase">Active Sync</span>
+<span class="text-outline text-code-sm">•</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">PID: 2049</span>
+</div>
+</div>
+<!-- Main Header Bar -->
+<div class="p-space-lg bg-surface-container-lowest flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Clipboard History</h1>
+<span class="font-code-sm text-code-sm text-tertiary bg-surface-container px-space-xs py-0.5 rounded font-medium" id="clipCountLabel">14 items saved</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real-time local snapshot buffer across workspace contexts</p>
+</div>
+<!-- Action Area: Search & Clear All Button -->
+<div class="flex items-center gap-space-sm">
+<div class="relative flex-1 md:w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">search</span>
+<input class="w-full pl-9 pr-8 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container focus:outline-none transition-colors" id="searchClippings" placeholder="Filter clippings (⌘F)..." type="text"/>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[14px] text-outline cursor-pointer hover:text-on-surface" onclick="document.getElementById('searchClippings').value='';">backspace</span>
+</div>
+<!-- Clear All Action with Popover Protection -->
+<div class="relative">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-error hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1.5" id="clearAllTrigger" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_sweep</span>
+<span>Clear All</span>
+</button>
+<!-- Floating Confirm Popover (Default Hidden) -->
+<div class="hidden absolute right-0 top-full mt-2 w-64 p-space-md bg-surface-container-high rounded-lg shadow-2xl z-50" id="clearConfirmBox">
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-1">Purge clipboard buffer?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">12 unpinned clippings will be permanently removed.</p>
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1 rounded text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors" id="cancelClear" type="button">Cancel</button>
+<button class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-medium hover:opacity-90 transition-opacity" id="confirmClear" type="button">Purge All</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scrollable Content Canvas -->
+<div class="overflow-y-auto max-h-[655px] p-space-lg space-y-space-xl">
+<!-- SECTION 1: Pinned Clippings -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">push_pin</span>
+<span class="font-label-md text-label-md text-tertiary font-bold tracking-wider uppercase">Pinned Clippings</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">2 items locked in memory</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Pinned 1: Ed25519 SSH Public Key Snippet -->
+<div class="group relative flex flex-col justify-between bg-surface-container rounded-xl p-space-md shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/30 text-primary font-code-sm text-code-sm uppercase font-medium tracking-wide">Key</span>
+<span class="font-code-sm text-code-sm text-outline">id_ed25519.pub</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-6 h-6 flex items-center justify-center rounded text-tertiary hover:bg-surface-container transition-colors" title="Unpin Item" type="button">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+</button>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors" title="Remove" type="button">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+</div>
+<!-- Content Area -->
+<div class="bg-surface-container-lowest/80 rounded p-space-sm my-space-xs font-code-md text-code-md text-secondary-fixed break-all line-clamp-3 select-text">
+              ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOrX45hV732kLmnzP0qRwXG021kL4OpQ329v1Kcassandra-sec01
+            </div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Pinned 2h ago</span>
+<div class="flex items-center gap-space-xs">
+<span class="hidden group-hover:inline-block font-label-sm text-label-sm text-outline">↵ Enter</span>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded bg-primary text-on-primary hover:bg-surface-tint hover:text-on-primary-fixed transition-colors font-label-sm text-label-sm font-semibold active:scale-95" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pinned 2: Bash Shell Command -->
+<div class="group relative flex flex-col justify-between bg-surface-container rounded-xl p-space-md shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/40 text-tertiary-fixed font-code-sm text-code-sm uppercase font-medium tracking-wide">Bash</span>
+<span class="font-code-sm text-code-sm text-outline">build-matrix</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-6 h-6 flex items-center justify-center rounded text-tertiary hover:bg-surface-container transition-colors" title="Unpin Item" type="button">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+</button>
+<button class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors" title="Remove" type="button">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+</div>
+<!-- Content Area -->
+<div class="bg-surface-container-lowest/80 rounded p-space-sm my-space-xs font-code-md text-code-md text-tertiary select-text line-clamp-2">
+<span class="text-outline mr-1">$</span>cargo run --release --target x86_64-unknown-linux-gnu
+            </div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Pinned Yesterday</span>
+<div class="flex items-center gap-space-xs">
+<span class="hidden group-hover:inline-block font-label-sm text-label-sm text-outline">↵ Enter</span>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded bg-primary text-on-primary hover:bg-surface-tint hover:text-on-primary-fixed transition-colors font-label-sm text-label-sm font-semibold active:scale-95" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Recent History -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[18px]">history</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold tracking-wider uppercase">Recent History</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Active Stack</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Recent 1: Code Snippet Card (Rust / Engine Config) -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between bg-surface-container-low hover:bg-surface-container p-space-md rounded-xl shadow transition-all gap-space-md">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/30 text-secondary font-code-sm text-code-sm font-semibold uppercase tracking-wider">Code</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">node_config.rs • Pipeline Dispatcher</span>
+<span class="font-code-sm text-code-sm text-outline ml-auto md:ml-0">4m ago</span>
+</div>
+<div class="bg-surface-container-lowest/90 rounded p-space-sm font-code-sm text-code-sm text-on-surface overflow-x-auto select-text">
+<span class="text-tertiary">pub fn</span> <span class="text-secondary-fixed">dispatch_telemetry</span>(bus: &amp;<span class="text-primary">EventStream</span>) -&gt; <span class="text-tertiary">Result</span>&lt;(), <span class="text-error">CassandraErr</span>&gt; {<br/>
+                  bus.broadcast(<span class="text-tertiary-fixed">"sys.metrics.v1"</span>, Payload::<span class="text-secondary-fixed">raw</span>())?<br/>
+                }
+              </div>
+</div>
+<div class="flex items-center justify-end md:flex-col md:justify-center gap-space-xs shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high transition-colors" title="Pin to Top" type="button">
+<span class="material-symbols-outlined text-[16px]">push_pin</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high transition-colors" title="Delete Snippet" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1 rounded bg-primary text-on-primary hover:bg-surface-tint hover:text-on-primary-fixed transition-colors font-label-sm text-label-sm font-medium active:scale-95" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+<span class="hidden group-hover:inline ml-0.5 text-on-primary/70 font-code-sm text-code-sm">↵</span>
+</button>
+</div>
+</div>
+<!-- Recent 2: Rich Text / Color Code Snippet -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between bg-surface-container-low hover:bg-surface-container p-space-md rounded-xl shadow transition-all gap-space-md">
+<div class="flex-1 min-w-0 flex items-center gap-space-md">
+<!-- Visual Color Block Indicator -->
+<div class="w-12 h-12 rounded-lg bg-tertiary shrink-0 shadow-lg shadow-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-container-lowest text-[20px]">palette</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/30 text-tertiary-fixed font-code-sm text-code-sm font-semibold uppercase tracking-wider">Color</span>
+<span class="font-code-md text-code-md text-on-surface font-semibold tracking-wide">#4CC9F0</span>
+<span class="font-code-sm text-code-sm text-outline ml-auto md:ml-0">18m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Laser Cyan Accent — OS Primary Phosphor Token for HUD telemetry</p>
+</div>
+</div>
+<div class="flex items-center justify-end md:flex-col md:justify-center gap-space-xs shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high transition-colors" title="Pin to Top" type="button">
+<span class="material-symbols-outlined text-[16px]">push_pin</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high transition-colors" title="Delete Snippet" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1 rounded bg-primary text-on-primary hover:bg-surface-tint hover:text-on-primary-fixed transition-colors font-label-sm text-label-sm font-medium active:scale-95" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+<span class="hidden group-hover:inline ml-0.5 text-on-primary/70 font-code-sm text-code-sm">↵</span>
+</button>
+</div>
+</div>
+<!-- Recent 3: Image Snippet Card with Graphic Thumbnail -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between bg-surface-container-low hover:bg-surface-container p-space-md rounded-xl shadow transition-all gap-space-md">
+<div class="flex-1 min-w-0 flex items-center gap-space-md">
+<!-- Image Thumbnail Preview with realistic technical topology prompt -->
+<div class="w-20 h-14 rounded-lg overflow-hidden shrink-0 bg-surface-container-lowest relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Technical dark mode network topology graph visual with glowing laser cyan nodes and cobalt blue vector link lines over deep indigo grid background, vector style high tech dashboard screenshot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBTf0a-QbDCEPZ-hHnUP2i_4YdPrlFMWf0iYitYtMpCOfywCMR8U7NYxvZbr8JC0Qfx7l8OxSVSOVnE4wgF6RdUyuUNTzjUujMm5koFQFj09q4yTRD-u3lr2xqH_L75yk9DSG8MS2r2LOSQVauTdDLVUv537_HsOeqUX3MSkqwMokiWgF9SL8P2MUDNbq6lb2plDraveBOqpNYN0EstbppBJc40Vglpz93Ga5iIVACWLQRq37IP2GP"/>
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest/80 text-center font-code-sm text-code-sm text-outline py-0.5">PNG</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/30 text-primary-fixed font-code-sm text-code-sm font-semibold uppercase tracking-wider">Image</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Network Topology Screenshot</span>
+<span class="font-code-sm text-code-sm text-outline ml-auto md:ml-0">42m ago</span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-tertiary">480 × 320 px</span>
+<span>•</span>
+<span>142 KB</span>
+<span>•</span>
+<span class="truncate">Copied via Screencap Utility</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end md:flex-col md:justify-center gap-space-xs shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high transition-colors" title="Pin to Top" type="button">
+<span class="material-symbols-outlined text-[16px]">push_pin</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high transition-colors" title="Delete Snippet" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1 rounded bg-primary text-on-primary hover:bg-surface-tint hover:text-on-primary-fixed transition-colors font-label-sm text-label-sm font-medium active:scale-95" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+<span class="hidden group-hover:inline ml-0.5 text-on-primary/70 font-code-sm text-code-sm">↵</span>
+</button>
+</div>
+</div>
+<!-- Recent 4: URL Snippet -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between bg-surface-container-low hover:bg-surface-container p-space-md rounded-xl shadow transition-all gap-space-md">
+<div class="flex-1 min-w-0 flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">link</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary-fixed font-code-sm text-code-sm font-semibold uppercase tracking-wider">URL</span>
+<span class="font-code-md text-code-md text-tertiary truncate font-medium">https://internal.mesh.cassandra-os.org/telemetry</span>
+<span class="font-code-sm text-code-sm text-outline ml-auto md:ml-0">1h ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Direct RPC endpoint • Cluster node 0x8F9A ingress socket</p>
+</div>
+</div>
+<div class="flex items-center justify-end md:flex-col md:justify-center gap-space-xs shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high transition-colors" title="Pin to Top" type="button">
+<span class="material-symbols-outlined text-[16px]">push_pin</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high transition-colors" title="Delete Snippet" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1 rounded bg-primary text-on-primary hover:bg-surface-tint hover:text-on-primary-fixed transition-colors font-label-sm text-label-sm font-medium active:scale-95" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+<span class="hidden group-hover:inline ml-0.5 text-on-primary/70 font-code-sm text-code-sm">↵</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel Footer Status & Keybinding Bar -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium font-code-sm text-code-sm shadow-sm">Super + V</kbd>
+<span>Open Palette</span>
+</div>
+<div class="flex items-center gap-1.5">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium font-code-sm text-code-sm shadow-sm">Esc</kbd>
+<span>Dismiss</span>
+</div>
+<div class="hidden sm:flex items-center gap-1.5">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium font-code-sm text-code-sm shadow-sm">↑ ↓</kbd>
+<span>Navigate</span>
+</div>
+<div class="hidden sm:flex items-center gap-1.5">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium font-code-sm text-code-sm shadow-sm">↵</kbd>
+<span>Paste Active</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-code-sm text-code-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Storage: 4.8MB / 64MB</span>
+</div>
+</div>
+</div>
+<!-- Micro Interaction Notification Toast (Hidden by default) -->
+<div class="fixed bottom-16 right-8 bg-surface-container-highest/95 backdrop-blur-md text-on-surface px-space-md py-space-sm rounded-lg shadow-2xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Copied to active clipboard</span>
+</div>
+</div>
+<!-- Client-side Interactive Scripting -->
+<script>
+  (function() {
+    const clearTrigger = document.getElementById('clearAllTrigger');
+    const confirmBox = document.getElementById('clearConfirmBox');
+    const cancelClear = document.getElementById('cancelClear');
+    const confirmClear = document.getElementById('confirmClear');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const searchInput = document.getElementById('searchClippings');
+
+    function showToast(text) {
+      if (!toast) return;
+      toastMsg.innerText = text;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2200);
+    }
+
+    if (clearTrigger && confirmBox) {
+      clearTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        confirmBox.classList.toggle('hidden');
+      });
+
+      cancelClear.addEventListener('click', (e) => {
+        e.stopPropagation();
+        confirmBox.classList.add('hidden');
+      });
+
+      confirmClear.addEventListener('click', (e) => {
+        e.stopPropagation();
+        confirmBox.classList.add('hidden');
+        showToast('Recent clipboard history purged');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!confirmBox.contains(e.target) && e.target !== clearTrigger) {
+          confirmBox.classList.add('hidden');
+        }
+      });
+    }
+
+    // Attach copy feedback to buttons
+    const copyButtons = document.querySelectorAll('button');
+    copyButtons.forEach(btn => {
+      if (btn.innerText.includes('Copy') || btn.querySelector('.material-symbols-outlined')?.innerText === 'content_copy') {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          showToast('Copied to system clipboard');
+        });
+      }
+    });
+
+    // Simple live search filter
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const cards = document.querySelectorAll('.group.relative');
+        cards.forEach(card => {
+          const content = card.innerText.toLowerCase();
+          if (!query || content.includes(query)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

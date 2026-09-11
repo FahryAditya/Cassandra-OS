@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full p-gutter">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Top Window System Frame / Active Application Canvas -->
+<div class="w-full bg-surface-container-low/95 backdrop-blur-2xl rounded-xl shadow-2xl p-space-lg flex flex-col gap-space-lg">
+<!-- Window Chrome Bar -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-md">
+<!-- Traffic Lights -->
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#F5C400] inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#26B170] inline-block"></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">layers</span>
+<span class="font-headline-md text-headline-md text-on-surface">Application Governor</span>
+<span class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-tertiary ml-space-xs">SYS_APPMGR_75</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-space-2xs rounded">
+<span class="w-2 h-2 rounded-full bg-[#26B170] animate-pulse"></span>
+<span>WAYLAND COMPOSITOR 1.24</span>
+</div>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Settings">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Top Metric KPI Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Running Apps -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between shadow-sm relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Apps</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">8</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">GUI Native</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">0 unresponsive processes</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">apps</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary/40"></div>
+</div>
+<!-- Metric 2: Windows count -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between shadow-sm relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Windows Open</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">14</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">3 Workspaces</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">11 visible / 3 minimized</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">view_quilt</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary/40"></div>
+</div>
+<!-- Metric 3: RAM Footprint -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between shadow-sm relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">RAM Allocation</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold">5.4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 32.0 GB</span>
+</div>
+<div class="w-28 bg-surface-container-highest rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 16.8%"></div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">memory</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-tertiary/40"></div>
+</div>
+<!-- Metric 4: Combined CPU -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between shadow-sm relative overflow-hidden group">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Aggregate CPU</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-[#26B170] font-bold">14.2%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 Cores</span>
+</div>
+<div class="w-28 bg-surface-container-highest rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-[#26B170] h-full rounded-full" style="width: 14.2%"></div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-[#26B170] group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-[#26B170]/40"></div>
+</div>
+</div>
+<!-- Control, Filter and Workspace Toolbar -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left: Search & Filter Chips -->
+<div class="flex flex-wrap items-center gap-space-sm flex-1 min-w-[280px]">
+<!-- App Search Input -->
+<div class="relative min-w-[220px] max-w-xs flex-1">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-9 pr-3 py-1.5 rounded outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-tertiary transition-all placeholder:text-outline" placeholder="Filter active apps (Ctrl+F)..." type="text"/>
+</div>
+<!-- Workspace Selector Pills -->
+<div class="flex items-center bg-surface-container-low p-space-2xs rounded gap-space-2xs">
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-medium">All (8)</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">WS-01 Dev (4)</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">WS-02 Telemetry (3)</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">WS-03 Storage (1)</button>
+</div>
+</div>
+<!-- Right: Sort & Global Flush Actions -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Sort:</span>
+<div class="relative inline-block">
+<select class="bg-surface-container-low text-on-surface font-label-sm text-label-sm py-1 pl-space-sm pr-7 rounded appearance-none outline-none cursor-pointer focus:ring-1 focus:ring-tertiary">
+<option selected="">Memory (Desc)</option>
+<option>CPU (Desc)</option>
+<option>Name (A-Z)</option>
+<option>Window Count</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[14px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded bg-error-container/40 text-error hover:bg-error hover:text-on-error font-label-sm text-label-sm font-medium transition-all active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">close_fullscreen</span>
+<span>Close Background Apps</span>
+</button>
+</div>
+</div>
+<!-- Application Matrix Table / Rows -->
+<div class="flex flex-col gap-space-sm">
+<!-- List Header -->
+<div class="hidden lg:grid grid-cols-12 gap-space-md px-space-md py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<div class="col-span-4">Application &amp; Surface</div>
+<div class="col-span-2">Workspace &amp; Placement</div>
+<div class="col-span-2 text-right">CPU Profile</div>
+<div class="col-span-2 text-right">Memory (RAM)</div>
+<div class="col-span-2 text-right">Operations</div>
+</div>
+<!-- Row 1: Cassandra Studio IDE -->
+<div class="bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-lg p-space-md shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md items-start lg:items-center">
+<!-- Col 1: App Info -->
+<div class="col-span-4 flex items-center gap-space-md w-full min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Cassandra Studio IDE</span>
+<span class="px-1.5 py-0.5 rounded font-code-sm text-code-sm bg-primary-container text-on-primary-container">v3.4.1</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span>PID: 8092</span>
+<span>•</span>
+<span class="text-tertiary">Wayland Native</span>
+<span>•</span>
+<span class="text-on-surface-variant">3 windows open</span>
+</div>
+</div>
+</div>
+<!-- Col 2: Workspace -->
+<div class="col-span-2 flex items-center gap-space-xs w-full lg:w-auto">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm">WS-01 Dev</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary" title="Active Focus">visibility</span>
+</div>
+<!-- Col 3: CPU -->
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span class="font-code-md text-code-md text-on-surface font-medium">6.2%</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">1.2 GHz avg</span>
+</div>
+<!-- Col 4: Memory -->
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-[#F5C400]/20 text-[#F5C400] font-label-sm text-label-sm font-semibold">1,840 MB</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Heap: 1,420 MB</span>
+</div>
+<!-- Col 5: Actions -->
+<div class="col-span-2 flex items-center justify-end gap-space-xs w-full lg:w-auto">
+<button class="px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm font-medium transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">center_focus_strong</span>
+<span>Focus (3)</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-error hover:bg-error hover:text-on-error font-label-sm text-label-sm transition-colors" title="Close all windows of this app">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Cassandra Terminal (zsh) -->
+<div class="bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-lg p-space-md shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md items-start lg:items-center">
+<div class="col-span-4 flex items-center gap-space-md w-full min-w-0">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">code</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Cassandra Terminal</span>
+<span class="px-1.5 py-0.5 rounded font-code-sm text-code-sm bg-surface-container-highest text-on-surface-variant">zsh</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span>PID: 1042</span>
+<span>•</span>
+<span>4 split panes / tabs</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex items-center gap-space-xs w-full lg:w-auto">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">WS-01 &amp; WS-02</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span class="font-code-md text-code-md text-on-surface font-medium">0.8%</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Idle poll</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-[#26B170]/20 text-[#26B170] font-label-sm text-label-sm font-semibold">180 MB</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">PSS: 142 MB</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs w-full lg:w-auto">
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">center_focus_strong</span>
+<span>Focus</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Docker Desktop -->
+<div class="bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-lg p-space-md shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md items-start lg:items-center">
+<div class="col-span-4 flex items-center gap-space-md w-full min-w-0">
+<div class="w-10 h-10 rounded-lg bg-[#036ec6]/20 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">deployed_code</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Docker Desktop</span>
+<span class="px-1.5 py-0.5 rounded font-code-sm text-code-sm bg-tertiary-container/40 text-on-tertiary-container">Daemon</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span>PID: 4381</span>
+<span>•</span>
+<span class="text-secondary font-medium">4 active containers</span>
+<span>•</span>
+<span>1 window</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex items-center gap-space-xs w-full lg:w-auto">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-outline font-label-sm text-label-sm">Background / Tray</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-code-md text-code-md text-on-surface font-medium">3.4%</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">qemu-guest</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-[#F5C400]/20 text-[#F5C400] font-label-sm text-label-sm font-semibold">1,210 MB</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Engine: 980 MB</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs w-full lg:w-auto">
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors">
+<span>Focus</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-surface-container-high text-tertiary font-label-sm text-label-sm transition-colors">
+<span>Pause</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-colors" title="Quit Daemon">
+<span class="material-symbols-outlined text-[14px]">power_settings_new</span>
+</button>
+</div>
+</div>
+<!-- Row 4: File Manager -->
+<div class="bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-lg p-space-md shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md items-start lg:items-center">
+<div class="col-span-4 flex items-center gap-space-md w-full min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">folder</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold truncate">File Manager</span>
+<span class="px-1.5 py-0.5 rounded font-code-sm text-code-sm bg-surface-container-highest text-on-surface-variant">Nautilus</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span>PID: 3910</span>
+<span>•</span>
+<span>2 windows open</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex items-center gap-space-xs w-full lg:w-auto">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm">WS-01 Dev</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span class="font-code-md text-code-md text-on-surface font-medium">0.2%</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Inotify loop</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-[#26B170]/20 text-[#26B170] font-label-sm text-label-sm font-semibold">94 MB</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">VFS cached</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs w-full lg:w-auto">
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors">
+<span>Focus</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Row 5: Wireshark Network Analyzer -->
+<div class="bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-lg p-space-md shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md items-start lg:items-center">
+<div class="col-span-4 flex items-center gap-space-md w-full min-w-0">
+<div class="w-10 h-10 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">radar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Wireshark Network Analyzer</span>
+<span class="px-1.5 py-0.5 rounded font-code-sm text-code-sm bg-tertiary-container/30 text-tertiary">Promisc</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span>PID: 9128</span>
+<span>•</span>
+<span>1 window • eth0 capture</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex items-center gap-space-xs w-full lg:w-auto">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-tertiary font-label-sm text-label-sm">WS-02 Telemetry</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-code-md text-code-md text-on-surface font-medium">2.1%</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">1,400 pkts/sec</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-semibold">420 MB</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Ring Buffer 256MB</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs w-full lg:w-auto">
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors">
+<span>Focus</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Row 6: System Monitor -->
+<div class="bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-lg p-space-md shadow-sm flex flex-col lg:grid lg:grid-cols-12 gap-space-md items-start lg:items-center">
+<div class="col-span-4 flex items-center gap-space-md w-full min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">monitoring</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold truncate">System Monitor</span>
+<span class="px-1.5 py-0.5 rounded font-code-sm text-code-sm bg-surface-container-highest text-on-surface-variant">Kernel Poller</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span>PID: 2204</span>
+<span>•</span>
+<span>1 window • 500ms cycle</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex items-center gap-space-xs w-full lg:w-auto">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-tertiary font-label-sm text-label-sm">WS-02 Telemetry</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span class="font-code-md text-code-md text-on-surface font-medium">1.5%</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Syscall tracing</span>
+</div>
+<div class="col-span-2 flex flex-col lg:items-end w-full lg:w-auto">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded bg-[#26B170]/20 text-[#26B170] font-label-sm text-label-sm font-semibold">210 MB</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Timeseries store</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs w-full lg:w-auto">
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors">
+<span>Focus</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Tiling & Layout Automation Strip -->
+<div class="mt-space-sm bg-surface-container p-space-md rounded-lg flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">dashboard_customize</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Workspace Arrangement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-balance open GUI windows across 3 active virtual monitors</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">grid_goldenratio</span>
+<span>Tile Grid (2x2)</span>
+</button>
+<button class="px-space-md py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">splitscreen</span>
+<span>Master &amp; Stacks</span>
+</button>
+<button class="px-space-md py-1.5 rounded bg-primary text-on-primary hover:bg-primary/90 font-label-sm text-label-sm font-medium transition-colors flex items-center gap-space-2xs shadow-sm">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Re-anchor Workspaces</span>
+</button>
+</div>
+</div>
+<!-- Window Status Bar Footer -->
+<div class="flex items-center justify-between pt-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span>COMPOSITOR: Weston/CassandraWM</span>
+<span class="hidden sm:inline-block">•</span>
+<span class="hidden sm:inline-block">VSYNC: Enabled (120 Hz)</span>
+<span class="hidden sm:inline-block">•</span>
+<span class="hidden sm:inline-block">IPC SOCKET: /run/user/1000/wayland-0</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-[#26B170]">check_circle</span>
+<span class="text-[#26B170]">XWayland Bridge: Synced</span>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

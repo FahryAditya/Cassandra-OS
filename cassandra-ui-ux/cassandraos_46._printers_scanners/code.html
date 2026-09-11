@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#d4e3ff",
+          "on-error-container": "#ffdad6",
+          "surface-container-highest": "#273647",
+          "surface-container-low": "#0d1c2d",
+          "on-primary": "#00218d",
+          "background": "#051424",
+          "tertiary-fixed-dim": "#5bd5fc",
+          "on-surface": "#d4e4fa",
+          "surface": "#051424",
+          "primary-fixed": "#dee1ff",
+          "on-surface-variant": "#c4c5d7",
+          "on-tertiary-container": "#e4f6ff",
+          "secondary": "#a4c9ff",
+          "on-secondary": "#00315d",
+          "tertiary-fixed": "#b7eaff",
+          "inverse-primary": "#2e4edc",
+          "error-container": "#93000a",
+          "on-primary-container": "#f4f2ff",
+          "on-tertiary-fixed": "#001f28",
+          "primary-container": "#4361ee",
+          "on-secondary-fixed": "#001c39",
+          "on-tertiary-fixed-variant": "#004e61",
+          "on-error": "#690005",
+          "primary": "#bac3ff",
+          "on-secondary-fixed-variant": "#004884",
+          "surface-tint": "#bac3ff",
+          "tertiary-container": "#007995",
+          "surface-bright": "#2c3a4c",
+          "inverse-surface": "#d4e4fa",
+          "secondary-fixed-dim": "#a4c9ff",
+          "inverse-on-surface": "#233143",
+          "outline": "#8e8fa1",
+          "secondary-container": "#036ec6",
+          "on-secondary-container": "#eaf0ff",
+          "on-primary-fixed-variant": "#0031c4",
+          "primary-fixed-dim": "#bac3ff",
+          "error": "#ffb4ab",
+          "outline-variant": "#444655",
+          "surface-container": "#122131",
+          "surface-container-high": "#1c2b3c",
+          "on-primary-fixed": "#001159",
+          "tertiary": "#5bd5fc",
+          "surface-dim": "#051424",
+          "on-background": "#d4e4fa",
+          "surface-container-lowest": "#010f1f",
+          "on-tertiary": "#003543",
+          "surface-variant": "#273647"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "titlebar-height": "36px",
+          "space-md": "12px",
+          "space-sm": "8px",
+          "space-2xs": "2px",
+          "space-lg": "16px",
+          "space-xs": "4px",
+          "taskbar-height": "48px",
+          "panel-dock-width": "320px",
+          "gutter": "12px",
+          "space-xl": "24px",
+          "space-2xl": "32px"
+        },
+        "fontFamily": {
+          "code-sm": [
+            "JetBrains Mono"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "label-sm": [
+            "JetBrains Mono"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "JetBrains Mono"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "code-md": [
+            "JetBrains Mono"
+          ]
+        },
+        "fontSize": {
+          "code-sm": [
+            "11px",
+            {
+              "lineHeight": "15px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "code-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-12 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span></div><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Cassandra<span class="text-tertiary">OS</span></span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-tertiary font-medium"><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="wi-fi-networks" href="#">Wi-Fi</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ethernet" href="#">Ethernet</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vpn" href="#">VPN</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="network-details" href="#">Telemetry</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bluetooth-devices" href="#">Bluetooth</a><a aria-current="page" class="px-space-sm py-1 rounded transition-colors bg-surface-container-high text-tertiary font-medium" data-path="printers-and-scanners" href="#">Peripherals</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-secondary text-[14px]">memory</span><span class="font-label-sm text-label-sm text-secondary">CPU 14%</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="font-label-sm text-label-sm text-tertiary">RAM 4.2G</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="material-symbols-outlined text-primary text-[14px]">swap_vert</span><span class="font-label-sm text-label-sm text-on-surface-variant">1.2 Gbps</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="pt-12 pb-16"><aside class="fixed left-0 top-12 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col justify-between p-space-md shadow-[2px_0_12px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Connectivity Suite</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="wi-fi-networks" href="#"><span class="material-symbols-outlined text-[18px]">wifi</span><span class="font-body-md text-body-md">Wi-Fi Networks</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ethernet" href="#"><span class="material-symbols-outlined text-[18px]">settings_ethernet</span><span class="font-body-md text-body-md">Ethernet</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vpn" href="#"><span class="material-symbols-outlined text-[18px]">vpn_lock</span><span class="font-body-md text-body-md">VPN &amp; Tunnels</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="network-details" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-body-md text-body-md">Network Details</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bluetooth-devices" href="#"><span class="material-symbols-outlined text-[18px]">bluetooth</span><span class="font-body-md text-body-md">Bluetooth Devices</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container" data-path="printers-and-scanners" href="#"><span class="material-symbols-outlined text-[18px]">print</span><span class="font-body-md text-body-md">Printers &amp; Scanners</span></a></nav></div><div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Gateway Status</span><span class="font-label-sm text-label-sm text-tertiary">ONLINE</span></div><div class="font-code-sm text-code-sm text-outline">192.168.1.1 (eth0)</div></div></aside><div class="pl-64"><div class="p-space-lg"><div class="bg-surface-container/95 backdrop-blur-2xl rounded-xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height px-space-md bg-surface-container-high/90 flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><div class="w-[11px] h-[11px] rounded-full bg-[#EF4444] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#F5C400] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26B170] cursor-pointer hover:opacity-80 transition-opacity"></div></div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">settings</span><span>System Preferences — Network &amp; Hardware</span></div><div class="w-12"></div></div><main class="w-full p-space-xl bg-surface min-h-[calc(100vh-176px)]"><div class="flex flex-col w-full gap-space-xl">
+<!-- Window Sub-Header & Global Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span>Settings</span>
+<span>/</span>
+<span>Peripherals &amp; Hardware</span>
+<span>/</span>
+<span class="text-tertiary">Printers &amp; Scanners</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Printers &amp; Imaging</h1>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-code-sm text-code-sm shadow-inner">cass-cups-daemon v2.4</span>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170] animate-pulse"></span>
+<span class="font-label-sm text-label-sm">IPP Polling Active</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all text-body-sm font-body-sm shadow-sm active:scale-95" id="refreshDiscoveryBtn">
+<span class="material-symbols-outlined text-[16px] text-tertiary" id="refreshIcon">sync</span>
+<span>Refresh Nodes</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-2 rounded-lg bg-primary-container hover:bg-[#4895EF] text-on-primary-container transition-all font-body-md text-body-md shadow-md active:scale-98" id="addDeviceToggleBtn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Printer or Scanner</span>
+</button>
+</div>
+</div>
+<!-- Discovered Devices Notification Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-md shadow-lg transition-all duration-300" id="discoveryBanner">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">radar</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md font-medium text-on-surface">Local Network Broadcast Detected</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-code-sm text-code-sm uppercase">mDNS / Bonjour</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Discovered 1 device: <span class="font-code-md text-code-md text-tertiary">Xerox WorkCentre 6515</span> (AirPrint / IPP Everywhere • <span class="text-outline">10.14.88.92</span>)
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-center">
+<button class="px-space-md py-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container font-body-sm text-body-sm transition-colors" id="dismissDiscoveryBtn">
+          Ignore
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary-container hover:text-on-secondary font-body-sm text-body-sm transition-all shadow" id="addDiscoveredBtn">
+<span class="material-symbols-outlined text-[16px]">add_link</span>
+<span>Pair &amp; Provision</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Installed Printers -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">print</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Installed Printers</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-code-sm">3 Configured</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Spooler Mode: Concurrent Priority</span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Printer Card 1: HP LaserJet Enterprise MFP M528 (Ready / Default) -->
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md transition-all hover:shadow-xl hover:bg-surface-container/90">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<!-- Main Info -->
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-tertiary flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px]">print</span>
+</div>
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">HP LaserJet Enterprise MFP M528</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-[#26B170]"></span>
+<span>Ready</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-medium">Default System Printer</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lan</span>
+<span>IPP Network Host</span>
+</span>
+<span class="font-code-sm text-code-sm text-outline">10.14.88.45:631</span>
+<span class="text-surface-container-highest">•</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">CUPS PostScript v3.2 (x86_64)</span>
+<span class="text-surface-container-highest">•</span>
+<span class="text-outline">Duplex: Available</span>
+</div>
+</div>
+</div>
+<!-- Consumables Sub-card -->
+<div class="w-full xl:w-72 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">opacity</span>
+<span>Toner Cartridge (Black)</span>
+</span>
+<span class="font-code-sm text-code-sm text-tertiary font-medium">68%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 68%;"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-code-sm text-code-sm">
+<span>HP CF289A (Page Yield ~5,000)</span>
+<span class="text-[#26B170]">Optimal</span>
+</div>
+</div>
+</div>
+<!-- Inline Actions & Telemetry -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-high/40 px-space-md py-space-xs rounded-lg">
+<div class="flex items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">inventory_2</span>
+<span>Tray 2: Plain A4 (82%)</span>
+</span>
+<span class="text-surface-container-highest">|</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">history</span>
+<span>Completed Today: 14 jobs</span>
+</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1" onclick="simulatePrintTest('HP LaserJet Enterprise MFP M528')">
+<span class="material-symbols-outlined text-[14px] text-tertiary">note_add</span>
+<span>Print Test Page</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">format_list_bulleted</span>
+<span>Open Queue (0 jobs)</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Printer Options</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Printer Card 2: Canon imagePROGRAF PRO-1000 (Low Ink Warning) -->
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md transition-all hover:shadow-xl hover:bg-surface-container/90">
+<div class="flex flex-col xl:flex-row xl:items-start justify-between gap-space-lg">
+<!-- Main Info -->
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Canon imagePROGRAF PRO-1000</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-[#F5C400] font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-[#F5C400]"></span>
+<span>Low Ink Warning</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">17" Pro Photographics</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">usb</span>
+<span>USB 3.0 Direct Interface</span>
+</span>
+<span class="font-code-sm text-code-sm text-outline">/dev/usb/lp0</span>
+<span class="text-surface-container-highest">•</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">LUCIA PRO 12-Channel Pigment Engine</span>
+<span class="text-surface-container-highest">•</span>
+<span class="text-outline">ColorSync Profile: WideGamut-RGB</span>
+</div>
+</div>
+</div>
+<!-- Multi-Channel Ink Level Bars -->
+<div class="w-full xl:w-80 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Consumables Diagnostic (PFI-1000)</span>
+<span class="font-code-sm text-code-sm text-[#F5C400]">Needs Attention</span>
+</div>
+<!-- 4 Visual Bars -->
+<div class="grid grid-cols-2 gap-x-space-md gap-y-2 mt-1">
+<!-- Cyan -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Cyan
+                  </span>
+<span class="text-tertiary">12%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 12%;"></div>
+</div>
+</div>
+<!-- Magenta (Low alert) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-[#F5C400] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#EF4444]"></span> Magenta
+                  </span>
+<span class="text-[#EF4444] font-bold">8% Low</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-[#EF4444] rounded-full" style="width: 8%;"></div>
+</div>
+</div>
+<!-- Yellow -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#F5C400]"></span> Yellow
+                  </span>
+<span class="text-on-surface-variant">44%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-[#F5C400] rounded-full" style="width: 44%;"></div>
+</div>
+</div>
+<!-- Photo Black -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Photo Blk
+                  </span>
+<span class="text-secondary">82%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Actions -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-high/40 px-space-md py-space-xs rounded-lg">
+<div class="flex items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-[#F5C400]">warning</span>
+<span>Reorder Magenta (PFI-1000M 80ml) Recommended</span>
+</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-secondary-container/40 hover:bg-secondary-container text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">water_drop</span>
+<span>Manage Ink Levels</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_list_bulleted</span>
+<span>Print Queue</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">settings</span>
+<span>Settings</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Printer Card 3: Brother HL-L2350DW (Offline) -->
+<div class="rounded-xl bg-surface-container/60 p-space-lg shadow-sm transition-all hover:bg-surface-container">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-outline flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">devices_other</span>
+</div>
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface/80 font-semibold tracking-tight">Brother HL-L2350DW</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Offline</span>
+</span>
+<span class="text-outline font-code-sm text-code-sm">• Last ping: Yesterday, 18:32 UTC</span>
+</div>
+<div class="flex items-center gap-space-sm text-outline font-body-sm text-body-sm">
+<span>Wi-Fi Direct • IP: 192.168.1.184 (unreachable) • Driver: brlaser v6.1</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors flex items-center gap-1" onclick="pingPrinter(this)">
+<span class="material-symbols-outlined text-[14px] text-tertiary">power_settings_new</span>
+<span>Wake On LAN</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-outline hover:text-on-surface font-body-sm text-body-sm transition-colors">
+              Troubleshoot
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Installed Scanners & Imaging -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">scanner</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Installed Scanners &amp; Optical Imaging</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-code-sm">1 Online</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">scanner</span>
+<span>SANE API Backend: epkowa/pixma</span>
+</div>
+</div>
+<!-- Scanner Card: Epson Perfection V600 Photo -->
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md transition-all hover:shadow-xl hover:bg-surface-container/90">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px]">document_scanner</span>
+</div>
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Epson Perfection V600 Photo Scanner</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-[#26B170]"></span>
+<span>Ready (SANE backend active)</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">Film / Negative Unit Mounted</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">cable</span>
+<span>USB 2.0 High-Speed</span>
+</span>
+<span class="font-code-sm text-code-sm text-outline">libusb:002:009</span>
+<span class="text-surface-container-highest">•</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Optical Density: 3.4 Dmax • Max: 6400 × 9600 dpi</span>
+<span class="text-surface-container-highest">•</span>
+<span class="text-[#26B170]">DIGITAL ICE Hardware Active</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container hover:bg-[#4895EF] text-on-primary-container transition-all font-body-md text-body-md shadow active:scale-98" onclick="launchScannerModal()">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Launch Document Scanner</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all font-body-md text-body-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">picture_as_pdf</span>
+<span>Scan to PDF / OCR</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors" title="Calibration &amp; Cleaning">
+<span class="material-symbols-outlined text-[18px]">build</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: System Print Policies & Subsystem Config -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Default Configuration Card -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">star_rate</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Default System Target</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Assign which printer receives standard document routing from applications without manual print prompt confirmation.
+        </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Default Destination</label>
+<div class="relative w-full">
+<select class="w-full bg-surface-container-low text-on-surface px-space-md py-2.5 rounded-lg appearance-none font-body-md text-body-md shadow-inner cursor-pointer focus:outline-none focus:ring-1 focus:ring-tertiary pr-10">
+<option selected="">HP LaserJet Enterprise MFP M528 (Network IPP - 10.14.88.45)</option>
+<option>Canon imagePROGRAF PRO-1000 (USB 3.0 Photo Engine)</option>
+<option>Brother HL-L2350DW (Offline)</option>
+<option>Save as PDF (Virtual CUPS Emulation)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-code-sm text-code-sm text-outline">
+<span>Paper Size fallback: ISO A4</span>
+<button class="text-tertiary hover:underline">Edit Media Presets</button>
+</div>
+</div>
+<!-- Print Server & Daemon Card -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">share</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Print Server Sharing (CUPS RAW)</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Advertise locally connected printers to authorized subnet peers over Apple AirPrint, IPP 2.0, and SMB/Samba protocols.
+        </p>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col gap-0.5">
+<span class="font-body-md text-body-md font-medium text-on-surface">Publish Local Printers on Network</span>
+<span class="font-code-sm text-code-sm text-outline">Daemon listening on 0.0.0.0:631</span>
+</div>
+<!-- Toggle Button -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="serverShareToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-space-2xs">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span>Samba spool routing enabled</span>
+</span>
+<button class="text-secondary hover:underline font-code-sm text-code-sm">Configure ACL • SSL/TLS</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Notification Toast (Hidden by default) -->
+<div class="fixed bottom-16 right-6 hidden z-50 flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container-highest text-on-surface shadow-2xl transition-all border border-tertiary/20" id="actionToast">
+<span class="material-symbols-outlined text-tertiary text-[18px]" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Test page dispatched to queue.</span>
+</div>
+</div>
+<script>
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('actionToast');
+    const msg = document.getElementById('toastMessage');
+    const ico = document.getElementById('toastIcon');
+    if (!toast) return;
+    msg.textContent = message;
+    ico.textContent = icon;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3200);
+  }
+
+  function simulatePrintTest(printerName) {
+    showToast(`Test page successfully sent to ${printerName}`, 'print');
+  }
+
+  function pingPrinter(btn) {
+    const origText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[14px] animate-spin">sync</span><span>Sending Magic Packet...</span>`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[14px] text-[#26B170]">check</span><span>WOL Dispatched</span>`;
+      showToast('WOL Magic Packet sent across eth0/192.168.1.255', 'router');
+      setTimeout(() => {
+        btn.innerHTML = origText;
+      }, 4000);
+    }, 1200);
+  }
+
+  function launchScannerModal() {
+    showToast('Initializing SANE optical pipeline (Epson Perfection V600)...', 'document_scanner');
+  }
+
+  // Interactive hooks
+  document.getElementById('refreshDiscoveryBtn')?.addEventListener('click', function() {
+    const icon = document.getElementById('refreshIcon');
+    icon.classList.add('animate-spin');
+    showToast('Polling Avahi / mDNS daemons for network peripherals...', 'radar');
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      showToast('Discovery scan complete: 1 new device available', 'done_all');
+    }, 1500);
+  });
+
+  document.getElementById('addDeviceToggleBtn')?.addEventListener('click', function() {
+    const banner = document.getElementById('discoveryBanner');
+    banner.classList.remove('hidden');
+    showToast('Scanning local buses (USB, PCIe, IPP, AirPrint)...', 'search');
+  });
+
+  document.getElementById('dismissDiscoveryBtn')?.addEventListener('click', function() {
+    document.getElementById('discoveryBanner').classList.add('hidden');
+  });
+
+  document.getElementById('addDiscoveredBtn')?.addEventListener('click', function() {
+    const banner = document.getElementById('discoveryBanner');
+    banner.classList.add('hidden');
+    showToast('Provisioned Xerox WorkCentre 6515 into CUPS registry!', 'verified');
+  });
+</script></main></div></div></div></div><footer class="fixed bottom-0 left-0 right-0 h-taskbar-height bg-surface-container-lowest/95 backdrop-blur-xl z-50 flex items-center justify-between px-space-lg shadow-[0_-2px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-5 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-sm relative"><span class="material-symbols-outlined text-[20px]">settings</span><span class="absolute -bottom-1 w-1.5 h-1.5 rounded-full bg-tertiary"></span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">terminal</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">folder</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">public</span></button></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-tertiary cursor-pointer hover:text-on-surface">wifi</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">bluetooth</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">volume_up</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">battery_full</span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-on-surface font-medium">10:42 AM</span><span class="font-code-sm text-code-sm text-outline">Oct 24, 2024</span></div></div></footer></body></html>

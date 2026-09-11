@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full p-gutter gap-space-md">
+<!-- Window Container mimicking active tactical desktop window -->
+<div class="w-full rounded-xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-2xl overflow-hidden flex flex-col">
+<!-- Titlebar / Header -->
+<div class="h-titlebar-height px-space-md bg-surface-container flex items-center justify-between gap-space-md select-none">
+<!-- Traffic lights & Breadcrumb -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-[11px] h-[11px] rounded-full bg-[#EF4444] inline-block shadow-sm"></span>
+<span class="w-[11px] h-[11px] rounded-full bg-[#F5C400] inline-block shadow-sm"></span>
+<span class="w-[11px] h-[11px] rounded-full bg-[#26B170] inline-block shadow-sm"></span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<nav class="flex items-center gap-space-xs font-code-sm text-code-sm truncate">
+<span class="text-on-surface-variant">Settings</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant">System</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-medium">Hardware Information</span>
+<span class="text-outline-variant font-label-sm text-label-sm ml-space-xs px-1.5 py-0.5 rounded bg-surface-container-high text-tertiary">cass-hwinfo v4.2</span>
+</nav>
+</div>
+<!-- Live Diagnostics Status & Actions -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<div class="hidden md:flex items-center gap-space-xs px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>SMBIOS 3.6 • DMI Validated</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-all active:scale-95" id="exportBtn" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">data_object</span>
+<span class="hidden sm:inline">Export Spec Report (JSON)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-primary-container hover:bg-primary-container/80 text-on-primary-container font-label-sm text-label-sm transition-all active:scale-95 shadow-sm" id="refreshBtn" type="button">
+<span class="material-symbols-outlined text-[15px]" id="refreshIcon">sync</span>
+<span>Refresh Probes</span>
+</button>
+</div>
+</div>
+<!-- Window Interior Content -->
+<div class="p-space-lg flex flex-col gap-space-lg bg-surface-dim/40">
+<!-- Hardware Summary Overview Card -->
+<div class="w-full rounded-lg bg-surface-container p-space-lg relative overflow-hidden shadow-md">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[28px]">developer_board</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Cassandra DevStation Pro</h1>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-secondary tracking-wider">NODE-X1-STATION</span>
+</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant mt-0.5 truncate">
+                ASUSTeK COMPUTER INC. ProArt X670E-CREATOR WIFI <span class="text-tertiary">(BIOS v2401 - AGESA 1.2.0.2)</span>
+</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md lg:justify-end">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">tune</span>
+<span class="text-on-surface-variant">Chassis:</span>
+<span class="font-medium">Custom ATX Desktop</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-[#26B170]">security</span>
+<span class="text-on-surface-variant">Secure Boot:</span>
+<span class="text-[#26B170] font-medium">Enforced (TPM 2.0 PCR-7)</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="text-on-surface-variant">Arch:</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">x86_64</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 6 Detailed Component Cards (3x2 Grid on Large screens, 2x3 on Medium) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- 1. Processor (CPU) Card -->
+<div class="rounded-lg bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high/60 transition-colors shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-primary-container">memory</span>
+</div>
+<h2 class="font-headline-md text-[14px] leading-tight text-on-surface">Processor (CPU)</h2>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-tertiary">Socket AM5</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Model</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block">AMD Ryzen 9 7950X 16-Core</span>
+<span class="font-code-sm text-code-sm text-secondary">32 Threads • 16 Physical Cores</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Fabrication</span>
+<span class="font-code-sm text-code-sm text-on-surface">Zen 4 (5nm TSMC)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Base / Peak Clocks</span>
+<span class="font-code-sm text-code-sm text-tertiary">4.50 / 5.70 GHz</span>
+</div>
+</div>
+<div class="pt-1">
+<span class="font-label-sm text-label-sm text-outline block">Cache Architecture</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1.5 flex-wrap">
+<span class="px-1 rounded bg-surface-container-lowest text-on-surface">L1: 1MB</span>
+<span class="px-1 rounded bg-surface-container-lowest text-on-surface">L2: 16MB</span>
+<span class="px-1 rounded bg-surface-container-lowest text-secondary font-medium">L3: 64MB Unified</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low/60 rounded px-2.5 py-2">
+<span class="font-label-sm text-label-sm text-outline block mb-0.5">Instruction Extensions</span>
+<span class="font-code-sm text-[10px] leading-tight text-on-surface-variant tracking-tight block truncate">
+              x86-64-v4, AVX-512, AMD-V, AES-NI, SHA-NI
+            </span>
+</div>
+</div>
+<!-- 2. Graphics Processing Unit (GPU) Card -->
+<div class="rounded-lg bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high/60 transition-colors shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-tertiary">desktop_windows</span>
+</div>
+<h2 class="font-headline-md text-[14px] leading-tight text-on-surface">Graphics (GPU)</h2>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-[#26B170]">Direct DRM</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Primary Device</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block">NVIDIA GeForce RTX 4090</span>
+<span class="font-code-sm text-code-sm text-secondary">AD102-300 Silicon • PCIe 4.0 x16</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Dedicated VRAM</span>
+<span class="font-code-sm text-code-sm text-on-surface">24,576 MB GDDR6X</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Bus Throughput</span>
+<span class="font-code-sm text-code-sm text-tertiary">384-bit @ 1,008 GB/s</span>
+</div>
+</div>
+<div class="pt-1">
+<span class="font-label-sm text-label-sm text-outline block">Wayland Driver Subsystem</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Open Kernel Module 560.35.03</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low/60 rounded px-2.5 py-2 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Compute Cap</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">v8.9</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Core Matrix</span>
+<span class="font-code-sm text-code-sm text-secondary font-medium">16,384 CUDA • 512 Tensor</span>
+</div>
+</div>
+</div>
+<!-- 3. System Memory (RAM) Card -->
+<div class="rounded-lg bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high/60 transition-colors shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">memory_alt</span>
+</div>
+<h2 class="font-headline-md text-[14px] leading-tight text-on-surface">System Memory (RAM)</h2>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary">DDR5 EXPO-1</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Physical Pool</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block">64.0 GB Synchronous</span>
+<span class="font-code-sm text-code-sm text-secondary">2x 32 GB DIMMs (Bank 2 / 4)</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Frequency &amp; Timings</span>
+<span class="font-code-sm text-code-sm text-on-surface">6000 MT/s (CL30)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Topological Bus</span>
+<span class="font-code-sm text-code-sm text-tertiary">Dual-Channel 128-bit</span>
+</div>
+</div>
+<div class="pt-1">
+<span class="font-label-sm text-label-sm text-outline block">Integrity Shielding</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-[#26B170]"></span>
+<span class="font-code-sm text-code-sm text-on-surface">On-Die Hardware ECC Active</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Memory Usage Mini Bar Graphic -->
+<div class="mt-space-md pt-2 bg-surface-container-low/60 rounded px-2.5 py-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-outline">Active Allocation</span>
+<span class="text-on-surface font-code-sm text-code-sm font-medium">20.48 GB / 64.0 GB (32%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 32%"></div>
+</div>
+</div>
+</div>
+<!-- 4. Primary Storage & Controllers Card -->
+<div class="rounded-lg bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high/60 transition-colors shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-[#26B170]">hard_drive</span>
+</div>
+<h2 class="font-headline-md text-[14px] leading-tight text-on-surface">Storage Controllers</h2>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">NVMe Subsys</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Drive 0 (Root/OS)</span>
+<span class="font-label-sm text-[10px] text-tertiary">PCIe 4.0 x4</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium block truncate">Samsung 990 PRO 2TB</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">/root, /home • Btrfs + Snapper</span>
+</div>
+<div class="pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Drive 1 (Scratch Array)</span>
+<span class="font-label-sm text-[10px] text-[#26B170]">PCIe 5.0 x4</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium block truncate">Crucial T700 1TB</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">/mnt/fast_scratch • DirectIO</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low/60 rounded px-2.5 py-2">
+<div class="flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-[#26B170] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                SMART: 100% Health
+              </span>
+<span class="text-tertiary">41°C Stable</span>
+</div>
+<div class="font-label-sm text-[10px] text-outline mt-1 truncate">
+              Written: 14.2 TB • AES-256 SED + LUKS2 Enclave
+            </div>
+</div>
+</div>
+<!-- 5. Displays & Compositor Pipeline Card -->
+<div class="rounded-lg bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high/60 transition-colors shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-[#F5C400]">monitor</span>
+</div>
+<h2 class="font-headline-md text-[14px] leading-tight text-on-surface">Display &amp; Panels</h2>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-[#F5C400]">Dual Heads</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Display 1 (Primary)</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block truncate">Dell UltraSharp U3224KB 31.5"</span>
+<span class="font-code-sm text-code-sm text-secondary">6144 x 3456 @ 60Hz • 10-bit HDR</span>
+</div>
+<div class="pt-1">
+<span class="font-label-sm text-label-sm text-outline block">Display 2 (Auxiliary)</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block truncate">LG 27GP950-B 27"</span>
+<span class="font-code-sm text-code-sm text-secondary">3840 x 2160 @ 144Hz • FreeSync</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low/60 rounded px-2.5 py-2 space-y-0.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Color Space</span>
+<span class="text-on-surface font-code-sm text-code-sm">DCI-P3 98% Calibrated</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Compositor</span>
+<span class="text-tertiary font-code-sm text-code-sm">Wayland Tear-free VSync Locked</span>
+</div>
+</div>
+</div>
+<!-- 6. Network & Interface Buses Card -->
+<div class="rounded-lg bg-surface-container p-space-md flex flex-col justify-between hover:bg-surface-container-high/60 transition-colors shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-tertiary">hub</span>
+</div>
+<h2 class="font-headline-md text-[14px] leading-tight text-on-surface">Network &amp; Peripherals</h2>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-tertiary">2.5GbE / 6E</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Wired NIC (eth0)</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block truncate">Intel I225-V 2.5GbE Controller</span>
+<span class="font-code-sm text-code-sm text-tertiary">2500 Mbps Full Duplex • Link Active</span>
+</div>
+<div class="pt-1">
+<span class="font-label-sm text-label-sm text-outline block">Wireless Transceiver (wlan0)</span>
+<span class="font-body-md text-body-md text-on-surface font-medium block truncate">MediaTek MT7922 Wi-Fi 6E</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">2400 Mbps 6GHz Band • 160MHz</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low/60 rounded px-2.5 py-2 space-y-0.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Bluetooth Engine</span>
+<span class="text-on-surface font-code-sm text-code-sm">v5.3 Host (HCI v12.19)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">High-Speed Bus</span>
+<span class="text-secondary font-code-sm text-code-sm">USB4 / Thunderbolt 4 (40 Gbps)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Peripheral & Extension Devices Bar -->
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">keyboard</span>
+<span>Keychron Q1 Pro (USB HID)</span>
+</div>
+<div class="h-3 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">mouse</span>
+<span>Logitech MX Master 3S (BT LE)</span>
+</div>
+<div class="h-3 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">headphones</span>
+<span>Universal Audio Apollo Solo (TB3)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-outline">
+<span>Sysfs Nodes:</span>
+<span class="text-on-surface font-medium">1,482 mapped</span>
+</div>
+</div>
+</div>
+<!-- Bottom Status Bar -->
+<div class="h-9 px-space-md bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant select-none">
+<div class="flex items-center gap-space-md truncate">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26B170]"></span>
+<span class="text-on-surface font-code-sm text-code-sm">Kernel hw-bus tree: ONLINE (ACPI 6.5)</span>
+</div>
+<div class="h-3 w-px bg-surface-container-highest hidden sm:block"></div>
+<span class="hidden sm:inline font-code-sm text-code-sm text-outline">PCIe Topology: 28 lanes root complex active</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm flex-shrink-0">
+<span class="text-outline">Last Probe:</span>
+<span class="text-secondary font-medium" id="lastProbeTime">14:28:02 UTC</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const refreshBtn = document.getElementById('refreshBtn');
+    const refreshIcon = document.getElementById('refreshIcon');
+    const lastProbeTime = document.getElementById('lastProbeTime');
+    const exportBtn = document.getElementById('exportBtn');
+
+    if (refreshBtn && refreshIcon) {
+      refreshBtn.addEventListener('click', () => {
+        refreshIcon.classList.add('animate-spin');
+        refreshBtn.disabled = true;
+        
+        setTimeout(() => {
+          refreshIcon.classList.remove('animate-spin');
+          refreshBtn.disabled = false;
+          const now = new Date();
+          const timeString = now.toISOString().substring(11, 19) + ' UTC';
+          if (lastProbeTime) {
+            lastProbeTime.textContent = timeString;
+          }
+        }, 650);
+      });
+    }
+
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const specData = {
+          system: "Cassandra DevStation Pro (Workstation Node X1)",
+          smbios: "3.6 DMI Validated",
+          motherboard: "ASUSTeK ProArt X670E-CREATOR WIFI",
+          cpu: "AMD Ryzen 9 7950X 16-Core Processor",
+          gpu: "NVIDIA GeForce RTX 4090 (24GB GDDR6X)",
+          ram: "64.0 GB DDR5-6000 (CL30 EXPO)",
+          storage: [
+            "Samsung 990 PRO 2TB NVMe PCIe 4.0 x4",
+            "Crucial T700 1TB NVMe PCIe 5.0 x4"
+          ],
+          displays: [
+            "Dell U3224KB 31.5\" 6K @ 60Hz HDR",
+            "LG 27GP950-B 27\" 4K @ 144Hz"
+          ],
+          networking: "Intel I225-V 2.5GbE + MediaTek MT7922 Wi-Fi 6E"
+        };
+        const blob = new Blob([JSON.stringify(specData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'cassandra-devstation-hw-spec.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+    }
+  })();
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#007995", "surface-variant": "#273647", "surface-tint": "#bac3ff", "secondary-fixed": "#d4e3ff", "primary-fixed": "#dee1ff", "on-secondary-fixed-variant": "#004884", "on-background": "#d4e4fa", "on-tertiary-fixed": "#001f28", "surface-container-highest": "#273647", "surface-container-lowest": "#010f1f", "primary-fixed-dim": "#bac3ff", "on-error": "#690005", "on-tertiary": "#003543", "on-secondary-container": "#eaf0ff", "on-secondary": "#00315d", "tertiary": "#5bd5fc", "error-container": "#93000a", "surface-container-low": "#0d1c2d", "inverse-surface": "#d4e4fa", "on-primary-fixed": "#001159", "surface-bright": "#2c3a4c", "on-tertiary-container": "#e4f6ff", "secondary-container": "#036ec6", "tertiary-fixed-dim": "#5bd5fc", "on-surface-variant": "#c4c5d7", "error": "#ffb4ab", "primary": "#bac3ff", "surface-container-high": "#1c2b3c", "outline": "#8e8fa1", "primary-container": "#4361ee", "tertiary-fixed": "#b7eaff", "surface-container": "#122131", "on-error-container": "#ffdad6", "on-secondary-fixed": "#001c39", "outline-variant": "#444655", "secondary-fixed-dim": "#a4c9ff", "inverse-primary": "#2e4edc", "secondary": "#a4c9ff", "surface-dim": "#051424", "on-primary-fixed-variant": "#0031c4", "inverse-on-surface": "#233143", "on-primary": "#00218d", "surface": "#051424", "on-primary-container": "#f4f2ff", "on-surface": "#d4e4fa", "on-tertiary-fixed-variant": "#004e61", "background": "#051424" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "12px", "space-md": "12px", "space-2xl": "32px", "space-lg": "16px", "space-xs": "4px", "space-sm": "8px", "taskbar-height": "48px", "titlebar-height": "36px", "space-xl": "24px", "space-2xs": "2px", "panel-dock-width": "320px" }, "fontFamily": { "body-sm": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "code-sm": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-xl": [ "Inter" ], "code-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "code-sm": [ "11px", { "lineHeight": "15px", "fontWeight": "400" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background text-on-surface antialiased min-h-screen pb-taskbar-height"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-space-lg flex flex-col justify-between py-space-xs"><div class="h-titlebar-height flex items-center justify-between w-full"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-[11px] h-[11px] rounded-full bg-[#ef4444]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#f5c400]"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26b170]"></div></div><div class="flex items-center gap-space-xs text-on-surface-variant"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-body-sm text-body-sm text-tertiary font-semibold tracking-wide">CassandraOS</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface-variant">Settings</span><span class="font-code-sm text-code-sm text-outline">/</span><span class="font-body-sm text-body-sm text-on-surface">Preferences &amp; Administration</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg"><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">CPU</span><span class="font-code-sm text-code-sm text-tertiary">14%</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">RAM</span><span class="font-code-sm text-code-sm text-secondary">6.2G</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-space-2xs"><span class="font-label-sm text-label-sm text-outline">NET</span><span class="font-code-sm text-code-sm text-on-surface">↓42K ↑8K</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#">Language &amp; Region</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="date-and-time" href="#">Date &amp; Time</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#">Default Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#">Startup Applications</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#">App Storage</a><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="application-details" href="#">Application Details</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-diagnostics" href="#">System Diagnostics</a><a class="font-body-sm text-body-sm px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-report" href="#">System Report</a></nav></div></div></header><aside class="fixed left-0 top-20 bottom-taskbar-height w-64 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-2xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Administration</span></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="language-and-region" href="#"><span class="material-symbols-outlined text-[18px]">translate</span><span class="font-body-md text-body-md">Localization</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="default-applications" href="#"><span class="material-symbols-outlined text-[18px]">apps</span><span class="font-body-md text-body-md">App Packages</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="startup-applications" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span class="font-body-md text-body-md">Startup Daemons</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="app-storage" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span><span class="font-body-md text-body-md">Storage Quotas</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span class="font-body-md text-body-md">Kernel Health</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="system-report" href="#"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-body-md text-body-md">System Logs</span></a></nav></div><div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline">Cassandra Kernel</span><span class="font-code-sm text-code-sm text-tertiary">v4.19.8-cs</span></div><span class="material-symbols-outlined text-tertiary text-[20px]">verified</span></div></aside><div class="pl-64"><main class="w-full pt-20 px-space-lg bg-surface min-h-[calc(100vh-theme(spacing.taskbar-height))] flex flex-col"><div class="flex flex-col w-full pb-space-2xl gap-space-xl">
+<!-- Top Hero Header Section -->
+<section class="relative w-full rounded-xl bg-surface-container-low p-space-xl shadow-xl overflow-hidden">
+<div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-0 right-0 w-96 h-64 bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-xl">
+<!-- Icon + Meta Info -->
+<div class="flex items-start md:items-center gap-space-lg">
+<!-- App Icon with Laser Cyan Halo -->
+<div class="relative flex-shrink-0 w-24 h-24 rounded-2xl bg-surface-container-highest flex items-center justify-center shadow-[0_0_24px_rgba(91,213,252,0.25)] ring-1 ring-tertiary/40">
+<div class="absolute inset-1 rounded-xl bg-gradient-to-br from-surface-container-high to-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[44px]" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<span class="absolute -bottom-1.5 -right-1.5 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-tertiary"></span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Cassandra Studio IDE</h1>
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-medium">v2.4.0-pro (Build 2024.10)</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-space-2xs">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container-highest text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+              Sandboxed Flatpak / Wayland-Native
+            </span>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-primary-container/20 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">code</span>
+              Development
+            </span>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container text-on-surface-variant font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#26b170]"></span>
+              Active Runtime
+            </span>
+</div>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="flex items-center gap-space-md flex-shrink-0">
+<button class="px-space-lg py-space-sm rounded-lg bg-error-container/30 text-error hover:bg-error-container/50 active:scale-95 transition-all flex items-center gap-space-xs font-body-md text-body-md font-medium shadow-sm" id="btn-uninstall">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+<span>Uninstall</span>
+</button>
+<button class="px-space-xl py-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-inverse-primary hover:text-white active:scale-95 transition-all flex items-center gap-space-xs font-body-md text-body-md font-semibold shadow-md shadow-primary-container/30" id="btn-open-app">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+<span>Open App</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Spec Grid & Storage Analytics Bento Section -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Detailed Specifications (2 cols on LG) -->
+<div class="lg:col-span-2 rounded-xl bg-surface-container-low p-space-xl flex flex-col gap-space-lg shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">info</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">System Specifications</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Target Node: localhost</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Maintainer -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Publisher / Maintainer</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-medium">CassandraOS Core Team</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
+</div>
+</div>
+<!-- License -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Software License</span>
+<span class="font-body-lg text-body-lg text-on-surface font-medium">Apache 2.0 / Open Source</span>
+</div>
+<!-- Install Date -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Installation Date</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-medium">October 12, 2024</span>
+<span class="font-label-sm text-label-sm text-outline">(12 days ago)</span>
+</div>
+</div>
+<!-- Last Updated -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Last Package Synchronization</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-medium">October 24, 2024</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-tertiary font-code-sm text-code-sm">Latest</span>
+</div>
+</div>
+<!-- Architecture -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Binary Architecture</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[16px]">memory</span>
+<span class="font-code-md text-code-md text-on-surface font-medium">x86_64 (AVX-512 Optimized)</span>
+</div>
+</div>
+<!-- Runtime Integrity -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Isolation Profile</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[#26b170] text-[16px]">lock</span>
+<span class="font-body-lg text-body-lg text-on-surface font-medium">Bubblewrap / Seccomp Level 3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Storage Footprint Visual Card -->
+<div class="rounded-xl bg-surface-container-low p-space-xl flex flex-col justify-between gap-space-lg shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wide">Disk Footprint</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">hard_drive</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">18.4</span>
+<span class="font-body-lg text-body-lg text-outline">GB</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Allocated across virtual zfs dataset /dev/zpool0/apps</span>
+</div>
+<!-- Donut / Metric Bar Breakdown -->
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="bg-secondary h-full transition-all" style="width: 33.7%"></div>
+<div class="bg-primary-container h-full transition-all" style="width: 66.3%"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Binaries (6.2 GB)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Data Cache (12.2 GB)</span>
+</div>
+</div>
+</div>
+<!-- Quick Maintenance Actions -->
+<div class="flex items-center gap-space-sm pt-space-sm">
+<button class="flex-1 py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors flex items-center justify-center gap-space-xs" id="btn-purge-cache">
+<span class="material-symbols-outlined text-[16px]">mop</span>
+<span>Clean Cache</span>
+</button>
+<button class="py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" id="btn-explore-files">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Granular Permissions Section -->
+<section class="rounded-xl bg-surface-container-low p-space-xl flex flex-col gap-space-lg shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px]">security</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Security Matrix &amp; Granular Permissions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage Linux portal sandboxing privileges and device node access</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-container px-space-sm py-space-2xs rounded-lg">5 of 6 Allowed</span>
+</div>
+</div>
+<!-- Permissions List -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Permission 1: File System Access -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">folder_special</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">File System Access</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Full Home Directory (~/)</span>
+</div>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-toggle="" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Permission 2: Camera Sensors -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Camera &amp; Optical Sensors</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">PipeWire video nodes</span>
+</div>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-toggle="" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Permission 3: Microphone Ingress -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Microphone Audio Ingress</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">ALSA / PulseAudio bridge</span>
+</div>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-toggle="" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Permission 4: Network Sockets -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">lan</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Network Sockets &amp; SOCKS5 Proxy</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">TCP/UDP direct binds</span>
+</div>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-toggle="" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Permission 5: Hardware GPU Direct Rendering -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">developer_board</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Hardware GPU Direct Rendering</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Vulkan 1.3 / DRI3 node mapping</span>
+</div>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-toggle="" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Permission 6: Background Daemon Mode (OFF) -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-outline flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Background Daemon Mode</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Headless background persistence</span>
+</div>
+</div>
+<button aria-checked="false" class="toggle-btn relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full bg-surface-variant p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-toggle="" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 translate-x-0 transform rounded-full bg-outline-variant shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- Advanced Sandboxing Administration Controls -->
+<section class="rounded-xl bg-surface-container-low p-space-xl flex flex-col gap-space-md shadow-md">
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Advanced Sandboxing &amp; Governance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Low-level isolation overrides, configuration export, and zero-trust revocation</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-space-xs font-body-sm text-body-sm transition-colors shadow-sm" id="btn-reset-data">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset App Data</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-space-xs font-body-sm text-body-sm transition-colors shadow-sm" id="btn-export-conf">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Configuration (.json)</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-error-container/20 hover:bg-error-container/40 text-error flex items-center gap-space-xs font-body-sm text-body-sm transition-colors ml-auto shadow-sm" id="btn-revoke-all">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+<span>Revoke All Permissions</span>
+</button>
+</div>
+</section>
+<!-- Toast Notification Modal / Bar -->
+<div class="fixed bottom-taskbar-height right-space-lg mb-space-md bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded-lg shadow-2xl flex items-center gap-space-sm translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toast-banner">
+<span class="material-symbols-outlined text-tertiary text-[18px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-message">Configuration updated</span>
+</div>
+</div>
+<script>
+  // Interactive Toggle Behavior
+  document.querySelectorAll('[data-toggle]').forEach(button => {
+    button.addEventListener('click', () => {
+      const isChecked = button.getAttribute('aria-checked') === 'true';
+      const thumb = button.querySelector('span');
+      
+      if (isChecked) {
+        button.setAttribute('aria-checked', 'false');
+        button.classList.remove('bg-primary-container');
+        button.classList.add('bg-surface-variant');
+        thumb.classList.remove('translate-x-5', 'bg-white');
+        thumb.classList.add('translate-x-0', 'bg-outline-variant');
+        triggerToast('Permission revoked from sandbox');
+      } else {
+        button.setAttribute('aria-checked', 'true');
+        button.classList.remove('bg-surface-variant');
+        button.classList.add('bg-primary-container');
+        thumb.classList.remove('translate-x-0', 'bg-outline-variant');
+        thumb.classList.add('translate-x-5', 'bg-white');
+        triggerToast('Permission granted to Flatpak container');
+      }
+    });
+  });
+
+  // Toast Functionality
+  function triggerToast(text, icon = 'info') {
+    const toast = document.getElementById('toast-banner');
+    const msg = document.getElementById('toast-message');
+    const ico = document.getElementById('toast-icon');
+    if (!toast) return;
+
+    msg.textContent = text;
+    ico.textContent = icon;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }, 2800);
+  }
+
+  // Interactive buttons
+  document.getElementById('btn-open-app')?.addEventListener('click', () => {
+    triggerToast('Spawning Cassandra Studio IDE session [PID 8912]...', 'launch');
+  });
+
+  document.getElementById('btn-uninstall')?.addEventListener('click', () => {
+    triggerToast('Prompting uninstall confirmation dialog', 'warning');
+  });
+
+  document.getElementById('btn-reset-data')?.addEventListener('click', () => {
+    triggerToast('Local user caches cleared safely', 'restart_alt');
+  });
+
+  document.getElementById('btn-export-conf')?.addEventListener('click', () => {
+    triggerToast('Policy manifest exported to ~/Downloads', 'file_download');
+  });
+
+  document.getElementById('btn-purge-cache')?.addEventListener('click', () => {
+    triggerToast('Reclaimed 3.8 GB transient build caches', 'mop');
+  });
+
+  document.getElementById('btn-revoke-all')?.addEventListener('click', () => {
+    document.querySelectorAll('[data-toggle]').forEach(button => {
+      const thumb = button.querySelector('span');
+      button.setAttribute('aria-checked', 'false');
+      button.classList.remove('bg-primary-container');
+      button.classList.add('bg-surface-variant');
+      thumb.classList.remove('translate-x-5', 'bg-white');
+      thumb.classList.add('translate-x-0', 'bg-outline-variant');
+    });
+    triggerToast('All portal permissions suspended', 'lock_reset');
+  });
+</script></main></div><footer class="fixed bottom-0 left-0 w-full h-taskbar-height z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)] flex items-center justify-between px-space-md"><div class="flex items-center gap-space-sm"><button class="h-8 w-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-4 w-px bg-surface-variant"></div><div class="flex items-center gap-space-2xs"><button class="h-8 px-space-sm rounded-lg bg-surface-container-high text-tertiary flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-sm text-body-sm">Preferences</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">folder_open</span></button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">volume_up</span><span class="material-symbols-outlined text-[18px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div><div class="h-4 w-px bg-surface-variant"></div><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-medium">10:42 AM</span><span class="font-label-sm text-label-sm text-outline">OCT 24</span></div></div></footer></body></html>

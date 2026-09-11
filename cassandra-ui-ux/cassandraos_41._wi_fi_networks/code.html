@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#d4e3ff",
+          "on-error-container": "#ffdad6",
+          "surface-container-highest": "#273647",
+          "surface-container-low": "#0d1c2d",
+          "on-primary": "#00218d",
+          "background": "#051424",
+          "tertiary-fixed-dim": "#5bd5fc",
+          "on-surface": "#d4e4fa",
+          "surface": "#051424",
+          "primary-fixed": "#dee1ff",
+          "on-surface-variant": "#c4c5d7",
+          "on-tertiary-container": "#e4f6ff",
+          "secondary": "#a4c9ff",
+          "on-secondary": "#00315d",
+          "tertiary-fixed": "#b7eaff",
+          "inverse-primary": "#2e4edc",
+          "error-container": "#93000a",
+          "on-primary-container": "#f4f2ff",
+          "on-tertiary-fixed": "#001f28",
+          "primary-container": "#4361ee",
+          "on-secondary-fixed": "#001c39",
+          "on-tertiary-fixed-variant": "#004e61",
+          "on-error": "#690005",
+          "primary": "#bac3ff",
+          "on-secondary-fixed-variant": "#004884",
+          "surface-tint": "#bac3ff",
+          "tertiary-container": "#007995",
+          "surface-bright": "#2c3a4c",
+          "inverse-surface": "#d4e4fa",
+          "secondary-fixed-dim": "#a4c9ff",
+          "inverse-on-surface": "#233143",
+          "outline": "#8e8fa1",
+          "secondary-container": "#036ec6",
+          "on-secondary-container": "#eaf0ff",
+          "on-primary-fixed-variant": "#0031c4",
+          "primary-fixed-dim": "#bac3ff",
+          "error": "#ffb4ab",
+          "outline-variant": "#444655",
+          "surface-container": "#122131",
+          "surface-container-high": "#1c2b3c",
+          "on-primary-fixed": "#001159",
+          "tertiary": "#5bd5fc",
+          "surface-dim": "#051424",
+          "on-background": "#d4e4fa",
+          "surface-container-lowest": "#010f1f",
+          "on-tertiary": "#003543",
+          "surface-variant": "#273647"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "titlebar-height": "36px",
+          "space-md": "12px",
+          "space-sm": "8px",
+          "space-2xs": "2px",
+          "space-lg": "16px",
+          "space-xs": "4px",
+          "taskbar-height": "48px",
+          "panel-dock-width": "320px",
+          "gutter": "12px",
+          "space-xl": "24px",
+          "space-2xl": "32px"
+        },
+        "fontFamily": {
+          "code-sm": [
+            "JetBrains Mono"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "label-sm": [
+            "JetBrains Mono"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "JetBrains Mono"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "code-md": [
+            "JetBrains Mono"
+          ]
+        },
+        "fontSize": {
+          "code-sm": [
+            "11px",
+            {
+              "lineHeight": "15px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "code-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-12 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shadow-inner"><span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span></div><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Cassandra<span class="text-tertiary">OS</span></span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-tertiary font-medium"><a aria-current="page" class="px-space-sm py-1 rounded transition-colors bg-surface-container-high text-tertiary font-medium" data-path="wi-fi-networks" href="#">Wi-Fi</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ethernet" href="#">Ethernet</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vpn" href="#">VPN</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="network-details" href="#">Telemetry</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bluetooth-devices" href="#">Bluetooth</a><a class="px-space-sm py-1 rounded text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container hover:text-on-surface transition-colors" data-path="printers-and-scanners" href="#">Peripherals</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-secondary text-[14px]">memory</span><span class="font-label-sm text-label-sm text-secondary">CPU 14%</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="font-label-sm text-label-sm text-tertiary">RAM 4.2G</span><span class="text-surface-container-highest mx-space-2xs">|</span><span class="material-symbols-outlined text-primary text-[14px]">swap_vert</span><span class="font-label-sm text-label-sm text-on-surface-variant">1.2 Gbps</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="pt-12 pb-16"><aside class="fixed left-0 top-12 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col justify-between p-space-md shadow-[2px_0_12px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-sm"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Connectivity Suite</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container" data-path="wi-fi-networks" href="#"><span class="material-symbols-outlined text-[18px]">wifi</span><span class="font-body-md text-body-md">Wi-Fi Networks</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ethernet" href="#"><span class="material-symbols-outlined text-[18px]">settings_ethernet</span><span class="font-body-md text-body-md">Ethernet</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vpn" href="#"><span class="material-symbols-outlined text-[18px]">vpn_lock</span><span class="font-body-md text-body-md">VPN &amp; Tunnels</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="network-details" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-body-md text-body-md">Network Details</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bluetooth-devices" href="#"><span class="material-symbols-outlined text-[18px]">bluetooth</span><span class="font-body-md text-body-md">Bluetooth Devices</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="printers-and-scanners" href="#"><span class="material-symbols-outlined text-[18px]">print</span><span class="font-body-md text-body-md">Printers &amp; Scanners</span></a></nav></div><div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Gateway Status</span><span class="font-label-sm text-label-sm text-tertiary">ONLINE</span></div><div class="font-code-sm text-code-sm text-outline">192.168.1.1 (eth0)</div></div></aside><div class="pl-64"><div class="p-space-lg"><div class="bg-surface-container/95 backdrop-blur-2xl rounded-xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height px-space-md bg-surface-container-high/90 flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><div class="w-[11px] h-[11px] rounded-full bg-[#EF4444] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#F5C400] cursor-pointer hover:opacity-80 transition-opacity"></div><div class="w-[11px] h-[11px] rounded-full bg-[#26B170] cursor-pointer hover:opacity-80 transition-opacity"></div></div><div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">settings</span><span>System Preferences — Network &amp; Hardware</span></div><div class="w-12"></div></div><main class="w-full p-space-xl bg-surface min-h-[calc(100vh-176px)]"><div class="flex flex-col w-full gap-space-lg select-none">
+<!-- Window Context & Master Switch Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-outline">
+<span>sys.conn</span>
+<span>/</span>
+<span class="text-tertiary">wpa_supplicant-v3.2.1-lts</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm">wl0s20f3</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Wireless Interfaces &amp; 802.11ax Mesh</h1>
+<span class="font-code-sm text-code-sm text-tertiary px-space-xs py-0.5 rounded bg-surface-container-high">LINK_UP</span>
+</div>
+</div>
+<!-- Master Wi-Fi Power Toggle -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-xl shadow-md">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface font-medium" id="toggle-label">Wireless Radio</span>
+<span class="font-code-sm text-code-sm text-tertiary" id="toggle-status">Scanning • Active</span>
+</div>
+<button class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center transition-all duration-200 cursor-pointer shadow-inner" id="wifi-toggle">
+<div class="w-5 h-5 rounded-full bg-on-primary-container shadow-md transform translate-x-6 transition-transform duration-200 flex items-center justify-center" id="toggle-knob">
+<span class="material-symbols-outlined text-[12px] text-primary">check</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Primary Active Connection Banner / Bento Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg shadow-xl">
+<!-- Ambient cyan glow highlight -->
+<div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Title & Live Pill -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative flex items-center justify-center">
+<div class="w-3 h-3 rounded-full bg-tertiary animate-ping absolute opacity-75"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary"></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Hyperion-SecNet-6E</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-tertiary font-code-sm text-code-sm">CURRENT DEFAULT</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-tertiary bg-surface-container-high px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>WPA3-SAE Enterprise • 6 GHz Direct</span>
+</div>
+</div>
+<!-- Telemetry Matrix -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-2xs shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Signal Quality</span>
+<div class="flex items-center gap-space-xs">
+<div class="flex items-end gap-0.5 h-4 w-5">
+<span class="w-1 h-1.5 rounded-sm bg-tertiary"></span>
+<span class="w-1 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="w-1 h-3.5 rounded-sm bg-tertiary"></span>
+<span class="w-1 h-4 rounded-sm bg-tertiary"></span>
+</div>
+<span class="font-code-md text-code-md text-tertiary font-medium">-48 dBm</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">100% Link Margin</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-2xs shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">PHY Protocol</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">wifi</span>
+<span class="font-code-md text-code-md text-on-surface">Wi-Fi 6E (802.11ax)</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">160 MHz Bandwidth</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-2xs shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Assigned IPv4</span>
+<div class="flex items-center justify-between">
+<span class="font-code-md text-code-md text-on-surface font-medium">192.168.1.142</span>
+<button class="text-outline hover:text-tertiary transition-colors" title="Copy IP">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Subnet 255.255.255.0</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-2xs shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Gateway / BSSID</span>
+<div class="flex items-center justify-between">
+<span class="font-code-md text-code-md text-on-surface">3c:84:6a:92:ef:10</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">router</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">Tx Power 22 dBm</span>
+</div>
+</div>
+<!-- Quick Action Controls & Gateway Graph Mini-Strip -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-all active:scale-[0.98] shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">dns</span>
+<span class="font-body-sm text-body-sm font-medium">DNS &amp; Routing</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-all active:scale-[0.98] shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span class="font-body-sm text-body-sm font-medium">Static Lease</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-all active:scale-[0.98] shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">lock_reset</span>
+<span class="font-body-sm text-body-sm font-medium">Certificate</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-auto">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-highest text-error font-body-sm text-body-sm transition-all shadow-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[15px]">link_off</span>
+<span>Disconnect</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-error-container/40 hover:bg-error-container text-on-error-container font-body-sm text-body-sm transition-all shadow-sm flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[15px]">delete_sweep</span>
+<span>Forget</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Available Networks Section Header -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Detected Access Points</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-tertiary font-code-sm text-code-sm flex items-center justify-center">5</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] animate-spin text-tertiary">autorenew</span>
+<span class="font-label-sm text-label-sm">Scanning (every 4s)</span>
+</button>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-outline hover:text-on-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Network Candidates Bento Grid -->
+<div class="flex flex-col gap-space-sm">
+<!-- Network 1: Cyberdyne-Lab-Mesh -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md group">
+<div class="flex items-center gap-space-md">
+<!-- Signal Indicator -->
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<div class="flex items-end gap-0.5 h-4 w-4">
+<span class="w-0.5 h-1.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-3.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-4 rounded-sm bg-tertiary"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary-fixed transition-colors">Cyberdyne-Lab-Mesh</span>
+<span class="material-symbols-outlined text-[14px] text-outline">lock</span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-outline">
+<span>5 GHz (Ch 44)</span>
+<span>•</span>
+<span class="text-on-surface-variant">WPA3-Enterprise 802.1X</span>
+<span>•</span>
+<span>-54 dBm</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-sm sm:mt-0">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all font-body-sm text-body-sm font-medium shadow-sm active:scale-95">
+          Connect
+        </button>
+</div>
+</div>
+<!-- Network 2: Quantum-Guest-Open -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md group">
+<div class="flex items-center gap-space-md">
+<!-- Signal Indicator -->
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<div class="flex items-end gap-0.5 h-4 w-4">
+<span class="w-0.5 h-1.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-3.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-4 rounded-sm bg-surface-container-highest"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary-fixed transition-colors">Quantum-Guest-Open</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container/30 text-error font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">no_encryption</span>
+              Unsecured
+            </span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-outline">
+<span>2.4 GHz (Ch 6)</span>
+<span>•</span>
+<span class="text-error font-medium">Captive Portal Detected</span>
+<span>•</span>
+<span>-62 dBm</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-sm sm:mt-0">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-all font-body-sm text-body-sm font-medium shadow-sm active:scale-95">
+          Join Open
+        </button>
+</div>
+</div>
+<!-- Network 3: Aetheria-Node-09 (Active Inline Password Prompt) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-high shadow-lg gap-space-md">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary shadow-inner">
+<div class="flex items-end gap-0.5 h-4 w-4">
+<span class="w-0.5 h-1.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-3.5 rounded-sm bg-tertiary"></span>
+<span class="w-0.5 h-4 rounded-sm bg-surface-container-highest"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-tertiary font-semibold">Aetheria-Node-09</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-on-surface-variant">
+<span>5 GHz (Ch 149)</span>
+<span>•</span>
+<span>WPA2/WPA3 Personal (PSK)</span>
+<span>•</span>
+<span>-67 dBm</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary mt-space-xs sm:mt-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+          Awaiting Handshake Key
+        </span>
+</div>
+<!-- Inline Authenticator Dock -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shadow-inner">
+<div class="relative flex-1">
+<span class="material-symbols-outlined text-[16px] text-outline absolute left-3 top-2.5">key</span>
+<input class="w-full bg-surface-container pl-9 pr-8 py-1.5 rounded-lg text-on-surface font-code-md text-code-md focus:outline-none shadow-sm" placeholder="Passphrase..." type="password" value="K3y-992-Omega"/>
+<button class="absolute right-2.5 top-2.5 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-body-sm text-body-sm font-medium transition-all shadow-sm active:scale-95 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">vpn_key</span>
+<span>Authenticate</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-outline hover:text-on-surface font-body-sm text-body-sm transition-colors">
+            Cancel
+          </button>
+</div>
+</div>
+</div>
+<!-- Network 4: Starlink-Mobile-Uplink -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md group">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<div class="flex items-end gap-0.5 h-4 w-4">
+<span class="w-0.5 h-1.5 rounded-sm bg-secondary"></span>
+<span class="w-0.5 h-2.5 rounded-sm bg-secondary"></span>
+<span class="w-0.5 h-3.5 rounded-sm bg-surface-container-highest"></span>
+<span class="w-0.5 h-4 rounded-sm bg-surface-container-highest"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary-fixed transition-colors">Starlink-Mobile-Uplink</span>
+<span class="material-symbols-outlined text-[14px] text-outline">lock</span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-outline">
+<span>5 GHz (Ch 36)</span>
+<span>•</span>
+<span>WPA3-Personal</span>
+<span>•</span>
+<span>-76 dBm</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-sm sm:mt-0">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-all font-body-sm text-body-sm font-medium shadow-sm active:scale-95">
+          Connect
+        </button>
+</div>
+</div>
+<!-- Network 5: Spectre-Hotspot-Pro -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md group">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-outline">
+<div class="flex items-end gap-0.5 h-4 w-4">
+<span class="w-0.5 h-1.5 rounded-sm bg-outline"></span>
+<span class="w-0.5 h-2.5 rounded-sm bg-surface-container-highest"></span>
+<span class="w-0.5 h-3.5 rounded-sm bg-surface-container-highest"></span>
+<span class="w-0.5 h-4 rounded-sm bg-surface-container-highest"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary-fixed transition-colors">Spectre-Hotspot-Pro</span>
+<span class="material-symbols-outlined text-[14px] text-outline">lock</span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-outline">
+<span>2.4 GHz (Ch 1)</span>
+<span>•</span>
+<span>WPA2-PSK (Legacy)</span>
+<span>•</span>
+<span>-88 dBm (Faint)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-sm sm:mt-0">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-all font-body-sm text-body-sm font-medium shadow-sm active:scale-95">
+          Connect
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Advanced Actions & Utilities Panel -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Hidden Network Connector Button / Block -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Hidden SSID Broadcast</span>
+<span class="font-code-sm text-code-sm text-outline">Target manually via probe requests</span>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-tertiary font-body-sm text-body-sm font-medium transition-all shadow-sm active:scale-95">
+        Join SSID
+      </button>
+</div>
+<!-- Wi-Fi Direct / P2P Mesh Sharing Switch -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Wi-Fi Direct • P2P Node Share</span>
+<span class="font-code-sm text-code-sm text-outline">Ad-hoc zero-config mesh discovery</span>
+</div>
+</div>
+<button class="w-11 h-6 rounded-full bg-surface-container-highest p-0.5 flex items-center transition-all duration-200 cursor-pointer" id="mesh-toggle">
+<div class="w-5 h-5 rounded-full bg-outline shadow-sm transform translate-x-0 transition-transform duration-200" id="mesh-knob"></div>
+</button>
+</div>
+</div>
+<!-- Radio Diagnostics Console Strip -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col md:flex-row items-center justify-between gap-space-sm shadow-inner text-outline font-code-sm text-code-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">memory</span>
+<span class="text-on-surface-variant font-medium">Intel Wi-Fi 6E AX211</span>
+</div>
+<span>•</span>
+<div>Ch: <span class="text-on-surface font-medium">36 / 160MHz DFS</span></div>
+<span>•</span>
+<div>Tx Power: <span class="text-on-surface font-medium">22 dBm</span></div>
+<span>•</span>
+<div>Noise Floor: <span class="text-on-surface font-medium">-96 dBm</span></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface-variant">HW State: READY_MONITOR</span>
+</div>
+</div>
+<script>
+    // Wi-Fi Master Toggle Micro-interaction
+    const wifiToggle = document.getElementById('wifi-toggle');
+    const toggleKnob = document.getElementById('toggle-knob');
+    const toggleStatus = document.getElementById('toggle-status');
+    let wifiActive = true;
+
+    wifiToggle.addEventListener('click', () => {
+      wifiActive = !wifiActive;
+      if (wifiActive) {
+        wifiToggle.classList.remove('bg-surface-container-highest');
+        wifiToggle.classList.add('bg-primary-container');
+        toggleKnob.classList.add('translate-x-6');
+        toggleKnob.classList.remove('translate-x-0', 'bg-outline');
+        toggleKnob.classList.add('bg-on-primary-container');
+        toggleStatus.textContent = 'Scanning • Active';
+        toggleStatus.classList.remove('text-outline');
+        toggleStatus.classList.add('text-tertiary');
+      } else {
+        wifiToggle.classList.remove('bg-primary-container');
+        wifiToggle.classList.add('bg-surface-container-highest');
+        toggleKnob.classList.remove('translate-x-6', 'bg-on-primary-container');
+        toggleKnob.classList.add('translate-x-0', 'bg-outline');
+        toggleStatus.textContent = 'Disabled';
+        toggleStatus.classList.remove('text-tertiary');
+        toggleStatus.classList.add('text-outline');
+      }
+    });
+
+    // Mesh Direct Toggle Micro-interaction
+    const meshToggle = document.getElementById('mesh-toggle');
+    const meshKnob = document.getElementById('mesh-knob');
+    let meshActive = false;
+
+    meshToggle.addEventListener('click', () => {
+      meshActive = !meshActive;
+      if (meshActive) {
+        meshToggle.classList.remove('bg-surface-container-highest');
+        meshToggle.classList.add('bg-primary-container');
+        meshKnob.classList.add('translate-x-5');
+        meshKnob.classList.remove('translate-x-0', 'bg-outline');
+        meshKnob.classList.add('bg-on-primary-container');
+      } else {
+        meshToggle.classList.remove('bg-primary-container');
+        meshToggle.classList.add('bg-surface-container-highest');
+        meshKnob.classList.remove('translate-x-5', 'bg-on-primary-container');
+        meshKnob.classList.add('translate-x-0', 'bg-outline');
+      }
+    });
+  </script>
+</div></main></div></div></div></div><footer class="fixed bottom-0 left-0 right-0 h-taskbar-height bg-surface-container-lowest/95 backdrop-blur-xl z-50 flex items-center justify-between px-space-lg shadow-[0_-2px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">grid_view</span></button><div class="h-5 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-sm relative"><span class="material-symbols-outlined text-[20px]">settings</span><span class="absolute -bottom-1 w-1.5 h-1.5 rounded-full bg-tertiary"></span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">terminal</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">folder</span></button><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">public</span></button></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-tertiary cursor-pointer hover:text-on-surface">wifi</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">bluetooth</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">volume_up</span><span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-on-surface">battery_full</span></div><div class="h-4 w-[1px] bg-surface-container-highest"></div><div class="flex flex-col items-end"><span class="font-label-sm text-label-sm text-on-surface font-medium">10:42 AM</span><span class="font-code-sm text-code-sm text-outline">Oct 24, 2024</span></div></div></footer></body></html>

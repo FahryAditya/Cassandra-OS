@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#273647","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c39","surface-tint":"#bac3ff","surface-container":"#122131","surface-container-low":"#0d1c2d","outline-variant":"#444655","outline":"#8e8fa1","surface-container-high":"#1c2b3c","surface-dim":"#051424","secondary":"#a4c9ff","inverse-on-surface":"#233143","on-secondary":"#00315d","error":"#ffb4ab","on-tertiary":"#003543","inverse-primary":"#2e4edc","on-error":"#690005","on-tertiary-fixed-variant":"#004e61","tertiary-fixed":"#b7eaff","on-surface":"#d4e4fa","surface":"#051424","on-secondary-fixed-variant":"#004884","secondary-fixed-dim":"#a4c9ff","on-primary":"#00218d","on-tertiary-container":"#e4f6ff","tertiary-fixed-dim":"#5bd5fc","error-container":"#93000a","surface-bright":"#2c3a4c","surface-variant":"#273647","inverse-surface":"#d4e4fa","on-tertiary-fixed":"#001f28","primary-fixed-dim":"#bac3ff","on-primary-fixed":"#001159","on-background":"#d4e4fa","tertiary":"#5bd5fc","on-surface-variant":"#c4c5d7","background":"#051424","on-primary-container":"#f4f2ff","surface-container-lowest":"#010f1f","on-error-container":"#ffdad6","primary":"#bac3ff","on-primary-fixed-variant":"#0031c4","primary-fixed":"#dee1ff","on-secondary-container":"#eaf0ff","secondary-container":"#036ec6","tertiary-container":"#007995","primary-container":"#4361ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"panel-dock-width":"320px","gutter":"12px","space-md":"12px","space-xs":"4px","space-2xl":"32px","space-lg":"16px","space-sm":"8px","space-2xs":"2px","space-xl":"24px","titlebar-height":"36px","taskbar-height":"48px"},"fontFamily":{"headline-lg":["Inter"],"body-sm":["Inter"],"code-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"code-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-titlebar-height w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/><span class="font-label-md text-label-md text-primary tracking-wider uppercase">CassandraOS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="workspace" href="#">Workspace</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="utility-inspector" href="#">Inspector</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="network-diagnostics" href="#">Network</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="process-governor" href="#">Governor</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="storage-profiler" href="#">Profiler</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded font-label-sm text-label-sm transition-colors" data-path="security-vault" href="#">Vault</a></nav></div><div class="flex items-center gap-space-md font-code-sm text-code-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-tertiary">RAM:</span><span>32%</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs rounded bg-surface-container-low text-on-surface-variant"><span class="text-primary">CPU:</span><span>18.4%</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-titlebar-height pb-taskbar-height min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Desktop Window Canvas Container -->
+<div class="p-gutter sm:p-space-lg flex flex-col gap-space-lg max-w-[1400px] mx-auto w-full">
+<!-- Active Window Unit -->
+<div class="relative flex flex-col w-full rounded-xl bg-surface-container-low shadow-[0_16px_40px_-8px_rgba(1,15,31,0.8),0_0_1px_1px_rgba(67,97,238,0.2)] overflow-hidden">
+<!-- Top Subtle Gradient Scrim Accent -->
+<div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-primary-container/10 via-tertiary/5 to-transparent pointer-events-none"></div>
+<!-- Window Chrome / Draggable Bar -->
+<div class="h-titlebar-height px-space-md bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between z-10">
+<!-- Traffic Light Controls -->
+<div class="flex items-center gap-2">
+<span class="w-[11px] h-[11px] rounded-full bg-[#EF4444] cursor-pointer hover:opacity-80 transition-opacity"></span>
+<span class="w-[11px] h-[11px] rounded-full bg-[#F5C400] cursor-pointer hover:opacity-80 transition-opacity"></span>
+<span class="w-[11px] h-[11px] rounded-full bg-[#26B170] cursor-pointer hover:opacity-80 transition-opacity"></span>
+</div>
+<!-- Window Center Title -->
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">history_toggle_off</span>
+<span>audit.daemon.cass://history/view</span>
+<span class="px-space-xs py-[1px] rounded bg-surface-container-highest font-code-sm text-[10px] text-tertiary">PID: 8812</span>
+</div>
+<!-- Window Quick Action Helpers -->
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<button class="w-6 h-6 rounded flex items-center justify-center hover:bg-surface-container hover:text-on-surface transition-colors" title="Diagnostics Stream" type="button">
+<span class="material-symbols-outlined text-[15px]">terminal</span>
+</button>
+<button class="w-6 h-6 rounded flex items-center justify-center hover:bg-surface-container hover:text-on-surface transition-colors" title="Pin Surface" type="button">
+<span class="material-symbols-outlined text-[15px]">push_pin</span>
+</button>
+</div>
+</div>
+<!-- Window Body Area -->
+<div class="p-space-lg sm:p-space-xl flex flex-col gap-space-lg relative z-10">
+<!-- Header Controls Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Left: Title, Stats & Badge -->
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Notification History &amp; Audit Log</h1>
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container text-tertiary font-code-sm text-code-sm">128 logged alerts</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Archived system telemetry, background process dispatches, and security mitigations.</p>
+</div>
+<!-- Right: Controls & Actions -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Search History Input -->
+<div class="relative flex items-center min-w-[240px] flex-1 sm:flex-initial">
+<span class="material-symbols-outlined absolute left- space-sm text-on-surface-variant text-[18px] pl-2">search</span>
+<input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search history (Ctrl+F)..." type="text"/>
+</div>
+<!-- Date Dropdown Filter -->
+<div class="relative">
+<select class="appearance-none pl-space-md pr-8 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors cursor-pointer focus:outline-none">
+<option value="today">Today</option>
+<option value="yesterday">Yesterday</option>
+<option selected="" value="7days">Past 7 Days</option>
+<option value="all">All Time</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 pointer-events-none text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+<!-- Action: Export Log -->
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_download</span>
+<span>Export Log</span>
+</button>
+<!-- Action: Clear History -->
+<button class="px-space-md py-1.5 rounded-lg bg-error-container/40 hover:bg-error-container/70 text-error font-label-md text-label-md flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_sweep</span>
+<span>Clear History</span>
+</button>
+</div>
+</div>
+<!-- Metric Ticker & Category Filter Chips -->
+<div class="flex items-center justify-between gap-space-md overflow-x-auto pb-space-2xs">
+<!-- Filter Pill Chips -->
+<div class="flex items-center gap-space-xs min-w-max">
+<button class="px-space-md py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm shadow-sm flex items-center gap-1.5" type="button">
+<span>All</span>
+<span class="px-1.5 py-0.5 rounded-full bg-on-primary-container/20 text-[10px] font-code-sm">128</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>System Core</span>
+<span class="text-[10px] opacity-70 font-code-sm">42</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Security &amp; Network</span>
+<span class="text-[10px] opacity-70 font-code-sm">31</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Build &amp; Terminal</span>
+<span class="text-[10px] opacity-70 font-code-sm">28</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Storage</span>
+<span class="text-[10px] opacity-70 font-code-sm">15</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-[#F5C400]"></span>
+<span>Hardware</span>
+<span class="text-[10px] opacity-70 font-code-sm">12</span>
+</button>
+</div>
+<!-- Quick Selector Count Info -->
+<div class="hidden xl:flex items-center gap-space-sm text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>Policy: Retention 30 days active</span>
+</div>
+</div>
+<!-- Audit Timeline Content List -->
+<div class="flex flex-col gap-space-lg mt-space-xs">
+<!-- GROUP 1: Today -->
+<div class="flex flex-col gap-space-sm">
+<!-- Timeline Marker -->
+<div class="flex items-center gap-space-sm px-space-xs">
+<span class="font-label-md text-label-md text-tertiary tracking-wider uppercase">Today</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm opacity-60">— October 24, 2024</span>
+<div class="flex-1 h-px bg-surface-container-highest"></div>
+<span class="font-code-sm text-[11px] text-outline">3 items recorded</span>
+</div>
+<!-- Card 1: System Core -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-sm gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Category Icon -->
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[20px]">system_update</span>
+</div>
+<!-- Notification Information -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Kernel v3.4.1 hot-patch applied</span>
+<span class="px-space-xs py-[1px] rounded bg-primary/10 text-primary font-code-sm text-[10px]">core-patch::0x89C</span>
+<span class="px-space-xs py-[1px] rounded bg-surface-container-highest text-on-surface-variant font-code-sm text-[10px]">terminal daemon</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Live scheduler memory boundaries adjusted without restart. Process latch 0 errors reported.</p>
+</div>
+</div>
+<!-- Metadata & Quick Action Bar -->
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>2h ago (12:28)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"></span>
+<span class="text-on-surface-variant/70">Dismissed</span>
+</div>
+<!-- Hover Actions -->
+<div class="flex items-center gap-space-2xs opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Restore to Active" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">replay</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="View Logs" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">read_more</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-error-container/50 hover:text-error flex items-center justify-center text-on-surface-variant transition-colors" title="Purge Record" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Security & Network -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-sm gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Category Icon -->
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-error shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<!-- Notification Information -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Firewall blocked inbound SYN flood on port 443</span>
+<span class="px-space-xs py-[1px] rounded bg-error/15 text-error font-code-sm text-[10px]">nftables::drop</span>
+<span class="px-space-xs py-[1px] rounded bg-[#26B170]/15 text-[#26B170] font-code-sm text-[10px]">resolved</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">8,420 anomalous spoofed payloads intercepted from AS13335 ingress gate. Rate limiter engaged.</p>
+</div>
+</div>
+<!-- Metadata & Quick Action Bar -->
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>3h ago (11:15)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"></span>
+<span class="text-[#26B170]">Auto-mitigated</span>
+</div>
+<!-- Hover Actions -->
+<div class="flex items-center gap-space-2xs opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Restore to Active" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">replay</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="View Audit Dump" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">analytics</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-error-container/50 hover:text-error flex items-center justify-center text-on-surface-variant transition-colors" title="Purge Record" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Build & Terminal -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-sm gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Category Icon -->
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-tertiary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<!-- Notification Information -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Cargo test suite passed (48 tests, 0 failures)</span>
+<span class="px-space-xs py-[1px] rounded bg-tertiary/15 text-tertiary font-code-sm text-[10px]">release::v2.1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Workspace crate 'cassandra-netflow' compiled in 4.12s. Documentation tests up to date.</p>
+</div>
+</div>
+<!-- Metadata & Quick Action Bar -->
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>4h ago (10:02)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"></span>
+<span class="text-on-surface-variant/70">Archived</span>
+</div>
+<!-- Hover Actions -->
+<div class="flex items-center gap-space-2xs opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Re-run Target" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">play_arrow</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="View Logs" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">article</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-error-container/50 hover:text-error flex items-center justify-center text-on-surface-variant transition-colors" title="Purge Record" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- GROUP 2: Yesterday -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<!-- Timeline Marker -->
+<div class="flex items-center gap-space-sm px-space-xs">
+<span class="font-label-md text-label-md text-secondary tracking-wider uppercase">Yesterday</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm opacity-60">— October 23, 2024</span>
+<div class="flex-1 h-px bg-surface-container-highest"></div>
+<span class="font-code-sm text-[11px] text-outline">2 items recorded</span>
+</div>
+<!-- Card 4: Storage Profiler -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-sm gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Category Icon -->
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[20px]">hard_drive</span>
+</div>
+<!-- Notification Information -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">NVMe-Core volume snapshot auto-created</span>
+<span class="px-space-xs py-[1px] rounded bg-surface-container-highest text-secondary font-code-sm text-[10px]">snap-e91b4028</span>
+<span class="px-space-xs py-[1px] rounded bg-surface-container-highest text-on-surface-variant font-code-sm text-[10px]">btrfs::pool0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Point-in-time state verified against checksum blake3. Delta size 1.48 GiB written to local ledger.</p>
+</div>
+</div>
+<!-- Metadata & Quick Action Bar -->
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>24h ago (14:30)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"></span>
+<span class="text-on-surface-variant/70">Automatic</span>
+</div>
+<!-- Hover Actions -->
+<div class="flex items-center gap-space-2xs opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Restore to Active" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">replay</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Inspect Volume" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">database</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-error-container/50 hover:text-error flex items-center justify-center text-on-surface-variant transition-colors" title="Purge Record" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Hardware Peripheral -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-sm gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Category Icon -->
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-[#F5C400] shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[20px]">battery_alert</span>
+</div>
+<!-- Notification Information -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Bluetooth peripheral battery low: MX Master 3S</span>
+<span class="px-space-xs py-[1px] rounded bg-[#F5C400]/15 text-[#F5C400] font-code-sm text-[10px]">charge 8%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Device transitioned to low-frequency polling mode. Fast re-connect available on USB-C bridge.</p>
+</div>
+</div>
+<!-- Metadata & Quick Action Bar -->
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Yesterday (18:40)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"></span>
+<span class="text-on-surface-variant/70">Dismissed</span>
+</div>
+<!-- Hover Actions -->
+<div class="flex items-center gap-space-2xs opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Restore to Active" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">replay</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Device Manager" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">devices</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-error-container/50 hover:text-error flex items-center justify-center text-on-surface-variant transition-colors" title="Purge Record" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- GROUP 3: Earlier this week -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<!-- Timeline Marker -->
+<div class="flex items-center gap-space-sm px-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Earlier This Week</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm opacity-60">— October 21 – 22, 2024</span>
+<div class="flex-1 h-px bg-surface-container-highest"></div>
+<span class="font-code-sm text-[11px] text-outline">1 item shown</span>
+</div>
+<!-- Card 6: Network -->
+<div class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-sm gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Category Icon -->
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-tertiary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<!-- Notification Information -->
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">WireGuard peer handshakes re-keyed</span>
+<span class="px-space-xs py-[1px] rounded bg-tertiary/15 text-tertiary font-code-sm text-[10px]">wg0-tokyo-edge</span>
+<span class="px-space-xs py-[1px] rounded bg-surface-container-highest text-on-surface-variant font-code-sm text-[10px]">latency 24ms</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Session keys rotated via Curve25519 ratchet protocol. 0 packets dropped during transient sync.</p>
+</div>
+</div>
+<!-- Metadata & Quick Action Bar -->
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto shrink-0 pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Oct 22 (09:18)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"></span>
+<span class="text-on-surface-variant/70">Routine</span>
+</div>
+<!-- Hover Actions -->
+<div class="flex items-center gap-space-2xs opacity-90 md:opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Restore to Active" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">replay</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors" title="Network Inspector" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">wifi_tethering</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high hover:bg-error-container/50 hover:text-error flex items-center justify-center text-on-surface-variant transition-colors" title="Purge Record" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer / Pagination Status Strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm border-t-0 mt-space-sm bg-surface-container/30 p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-code-sm text-code-sm">
+<span class="w-2 h-2 rounded-full bg-[#26B170]"></span>
+<span>Audit Journal Daemon: active, zero-loss persistent logging</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors disabled:opacity-40" disabled="" type="button">
+              Previous
+            </button>
+<span class="px-space-sm py-1 text-on-surface-variant font-code-sm text-code-sm">Page 1 of 22</span>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" type="button">
+              Next
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="fixed bottom-0 left-0 right-0 z-50 h-taskbar-height bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="h-full w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="flex items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high transition-colors" type="button"><img alt="Brand logo. - Primary color: #4361ee - Font: inter - Mode: dark - Roundness: rounded-md" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V8zovojIF_4IxFKpZ4dahF3Hl_fN_lDCIEHLsK8JpKu9NoxI8CtDM3J2X2-XUhdaGCyM54sZttxj5B5NnczqIK5vrSSPLWKjlEiDaAVk0JXUvetSV5_zu2r-QaXrBOw1Afiutkf4sFMvSDbJkD2Y2F1uDGwWY9OW_BnNY75TfodUy7ZIMgsShmjPcdzMkagj4qM3zRPkLJ3ZZW9gvGG5ps13IgHGlQA3Spk12UD3_NR1cA7hqqClBUUfU"/></button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-all" title="Workspace" type="button"><span class="material-symbols-outlined text-[18px]">desktop_windows</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Utility Inspector (66)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" title="Network Diagnostics (67)" type="button"><span class="material-symbols-outlined text-[18px]">hub</span><span class="absolute bottom-0.5 w-1.5 h-0.5 rounded-full bg-tertiary"></span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Process Governor (68)" type="button"><span class="material-symbols-outlined text-[18px]">memory</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Storage Profiler (69)" type="button"><span class="material-symbols-outlined text-[18px]">hard_drive</span></button><button class="relative flex flex-col items-center justify-center w-8 h-8 rounded hover:bg-surface-container-high text-on-surface-variant transition-all" title="Security Vault (70)" type="button"><span class="material-symbols-outlined text-[18px]">lock</span></button></div></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="material-symbols-outlined text-[16px]">bluetooth</span><span class="material-symbols-outlined text-[16px]">volume_up</span><div class="flex items-center gap-space-2xs text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">battery_full</span><span>98%</span></div><span class="material-symbols-outlined text-[16px]">notifications</span></div><div class="h-4 w-px bg-surface-container-highest"></div><div class="text-right"><span class="text-on-surface font-medium font-code-sm text-code-sm">14:28</span><span class="hidden sm:inline-block ml-space-xs text-on-surface-variant font-code-sm text-code-sm">Thu, Oct 24</span></div></div></div></footer></body></html>

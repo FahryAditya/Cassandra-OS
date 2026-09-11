@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#c4c5d7","primary":"#bac3ff","on-secondary-container":"#eaf0ff","error":"#ffb4ab","primary-container":"#4361ee","secondary-container":"#036ec6","tertiary":"#5bd5fc","outline":"#8e8fa1","inverse-primary":"#2e4edc","surface-variant":"#273647","on-secondary-fixed":"#001c39","secondary":"#a4c9ff","on-tertiary-container":"#e4f6ff","on-primary-fixed-variant":"#0031c4","on-secondary":"#00315d","tertiary-container":"#007995","surface-container-low":"#0d1c2d","surface-container-highest":"#273647","tertiary-fixed-dim":"#5bd5fc","on-tertiary":"#003543","surface-dim":"#051424","on-primary-container":"#f4f2ff","on-error":"#690005","surface-container":"#122131","primary-fixed":"#dee1ff","surface":"#051424","on-surface":"#d4e4fa","surface-container-lowest":"#010f1f","on-primary-fixed":"#001159","surface-container-high":"#1c2b3c","on-primary":"#00218d","error-container":"#93000a","outline-variant":"#444655","on-secondary-fixed-variant":"#004884","secondary-fixed":"#d4e3ff","surface-tint":"#bac3ff","background":"#051424","secondary-fixed-dim":"#a4c9ff","inverse-surface":"#d4e4fa","tertiary-fixed":"#b7eaff","on-tertiary-fixed":"#001f28","on-background":"#d4e4fa","on-tertiary-fixed-variant":"#004e61","primary-fixed-dim":"#bac3ff","surface-bright":"#2c3a4c","inverse-on-surface":"#233143","on-error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"taskbar-height":"48px","gutter":"12px","space-md":"12px","space-xs":"4px","space-sm":"8px","titlebar-height":"36px","space-xl":"24px","space-2xl":"32px","space-lg":"16px","space-2xs":"2px","panel-dock-width":"320px"},fontFamily:{"headline-lg":["Inter"],"body-sm":["Inter"],"headline-xl":["Inter"],"label-md":["JetBrains Mono"],"body-md":["Inter"],"code-sm":["JetBrains Mono"],"headline-md":["Inter"],"body-lg":["Inter"],"label-sm":["JetBrains Mono"],"code-md":["JetBrains Mono"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"15px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen relative"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-14 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #4361ee
+- Font: inter
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhelaM2DKdHRe3ik2YYJCp2Q5jfoFPLkmcW82mfhnVyvgd_pQJVLQC_V8KLpvV3cd0LTjB6BL0kBc9ESyzQPET3X5sxBhR1RyG4aa9dYwBnyNmBpInth1B1GeWbdhvqYHprMQ4xD7kSBuLleXxWab0T1FE23G98DNRtq4-WJAe-qHxq_Sx6Qq9Vx3X0krzivJpRLN4PsLm1KsiL7CRa3jO_HRRh-6xhT0VS4VHJzbfXdJQzC-azl8ij8A"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CassandraOS</span><span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-surface-container-highest text-tertiary rounded">v4.19-PRO</span></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">memory</span>CPU: 14.2%</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[16px]">storage</span>MEM: 6.8/32 GB</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px]">speed</span>IOPS: 18.4k</span></div><div class="flex items-center gap-space-sm"><button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">terminal</span></button><button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-14 bottom-12 w-64 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col p-space-md justify-between"><div class="flex flex-col gap-space-md"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">System Control</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Configuration</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="application-management" href="#"><span class="material-symbols-outlined text-[18px]">apps</span>Application Manager</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="diagnostics" href="#"><span class="material-symbols-outlined text-[18px]">vital_signs</span>Diagnostics &amp; Metrics</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="network-telemetry" href="#"><span class="material-symbols-outlined text-[18px]">hub</span>Network Telemetry</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="security-policies" href="#"><span class="material-symbols-outlined text-[18px]">security</span>Security &amp; Auth</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="storage-volumes" href="#"><span class="material-symbols-outlined text-[18px]">hard_drive</span>Storage Volumes</a></nav></div><div class="p-space-sm bg-surface-container rounded-lg"><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-space-xs"><span>Node Uptime</span><span class="text-tertiary">19d 04h 12m</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-primary h-1 rounded-full w-4/5"></div></div></div></aside><div class="pl-64"><main class="w-full pt-14 pb-16 px-space-gutter min-h-screen bg-surface"><div class="w-full my-space-gutter rounded-xl bg-surface-container-low/95 backdrop-blur-2xl shadow-[0_16px_40px_-8px_rgba(0,7,32,0.8)] overflow-hidden"><div class="h-titlebar-height bg-surface-container-high/80 px-space-md flex items-center justify-between select-none"><div class="flex items-center gap-space-sm"><span class="w-[11px] h-[11px] rounded-full bg-[#EF4444] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="w-[11px] h-[11px] rounded-full bg-[#F5C400] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="w-[11px] h-[11px] rounded-full bg-[#26B170] inline-block cursor-pointer opacity-90 hover:opacity-100"></span><span class="ml-space-sm font-body-sm text-body-sm text-on-surface-variant">Cassandra Control Panel // Session active</span></div><div class="flex items-center gap-space-xs text-outline"><button class="w-6 h-6 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">dock_to_right</span></button><button class="w-6 h-6 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">close_fullscreen</span></button></div></div><div class="p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- System Sub-Header Context Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-outline">SYS-CFG // DAEMON</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate">Time &amp; Synchronization</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-tertiary">systemd-timesyncd v256.2</span>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-space-xs hover:bg-inverse-primary transition-all shadow-md active:scale-95" id="resync-daemon-btn">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Re-poll NTP</span>
+</button>
+</div>
+</div>
+<!-- Hero Section: Precision Chronometer Display -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-xl p-space-xl">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="absolute -top-16 -right-16 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 left-1/3 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<!-- Chrono Digits -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-outline font-code-sm text-code-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Local Node RTC Pulse</span>
+<span class="text-outline-variant">/</span>
+<span class="text-tertiary font-label-sm" id="epoch-time">1729776525.849</span>
+</div>
+<div class="flex items-baseline gap-space-xs font-headline-xl text-[48px] leading-none tracking-tighter text-on-surface select-none">
+<span class="font-bold" id="clock-hours">14</span>
+<span class="text-tertiary font-light transition-opacity duration-200" id="colon-1">:</span>
+<span class="font-bold" id="clock-minutes">28</span>
+<span class="text-tertiary font-light transition-opacity duration-200" id="colon-2">:</span>
+<span class="font-bold text-primary" id="clock-seconds">45</span>
+<span class="font-code-md text-headline-md text-tertiary ml-space-xs tabular-nums">.<span id="clock-millis">392</span></span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-surface-container text-tertiary rounded ml-space-sm uppercase">WITA</span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<span class="font-headline-md text-headline-md text-secondary">Kamis, 24 Oktober 2024</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Week 43 • Day 298</span>
+</div>
+</div>
+<!-- Telemetry Vector Status Chip & Stratum Stats -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm lg:items-end">
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">radio</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Hardware Clock Synchronized</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">RTC precision 1ppm • Stratum 2 (ID)</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[18px] ml-space-xs">check_circle</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs w-full sm:w-auto">
+<div class="px-space-sm py-space-xs rounded bg-surface-container-high text-center">
+<div class="font-code-sm text-code-sm text-outline">OFFSET</div>
+<div class="font-label-md text-label-md text-tertiary">+0.12 ms</div>
+</div>
+<div class="px-space-sm py-space-xs rounded bg-surface-container-high text-center">
+<div class="font-code-sm text-code-sm text-outline">JITTER</div>
+<div class="font-label-md text-label-md text-on-surface">0.038 ms</div>
+</div>
+<div class="px-space-sm py-space-xs rounded bg-surface-container-high text-center">
+<div class="font-code-sm text-code-sm text-outline">POLL INT</div>
+<div class="font-label-md text-label-md text-on-surface">1024s</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Network Time Configuration Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Column 1 & 2: NTP Daemon Master Toggle & Server Diagnostics -->
+<div class="lg:col-span-2 flex flex-col gap-space-md">
+<!-- NTP Master Toggle Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary mt-space-2xs">
+<span class="material-symbols-outlined text-[24px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Set time automatically</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Continuous network clock calibration via NTP protocol daemon</span>
+</div>
+</div>
+<!-- Master Interactive Switch -->
+<label class="relative inline-flex items-center cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="auto-ntp-toggle" type="checkbox"/>
+<div class="w-14 h-8 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-on-surface after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Active Server Pool Node Card -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md" id="ntp-server-panel">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs truncate">
+<span class="font-code-md text-code-md font-semibold text-primary">0.id.pool.ntp.org</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-tertiary font-code-sm text-code-sm">Stratum 2</span>
+</div>
+<div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant mt-space-2xs">
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-tertiary">network_check</span> Latency: 4.8ms</span>
+<span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary">tune</span> Offset: +0.12ms</span>
+<span class="hidden md:inline text-outline">DNS: 202.169.224.16</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center shrink-0">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" id="sync-now-btn">
+<span class="material-symbols-outlined text-[16px]" id="sync-icon">sync</span>
+<span id="sync-text">Sync Now</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Server Configuration">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Inline Latency Sparkline Graph -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex justify-between items-center text-outline font-code-sm text-code-sm">
+<span>NTP OFFSET DRIFT (LAST 60 SECONDS)</span>
+<span class="text-tertiary">STABLE ±0.08ms</span>
+</div>
+<div class="w-full h-10 bg-surface-container-lowest rounded-lg p-space-xs flex items-end gap-1 overflow-hidden">
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-5 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-3 w-full bg-primary-container/50 rounded-t-sm"></div>
+<div class="h-6 w-full bg-tertiary/60 rounded-t-sm"></div>
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-5 w-full bg-primary-container/50 rounded-t-sm"></div>
+<div class="h-7 w-full bg-tertiary/70 rounded-t-sm"></div>
+<div class="h-5 w-full bg-primary-container/50 rounded-t-sm"></div>
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-6 w-full bg-primary-container/60 rounded-t-sm"></div>
+<div class="h-5 w-full bg-tertiary/70 rounded-t-sm"></div>
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-5 w-full bg-primary-container/50 rounded-t-sm"></div>
+<div class="h-6 w-full bg-tertiary/80 rounded-t-sm"></div>
+<div class="h-5 w-full bg-primary-container/60 rounded-t-sm"></div>
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-5 w-full bg-primary-container/50 rounded-t-sm"></div>
+<div class="h-4 w-full bg-primary-container/40 rounded-t-sm"></div>
+<div class="h-5 w-full bg-tertiary rounded-t-sm"></div>
+</div>
+</div>
+</div>
+<!-- Manual Adjustment Card (Dimmed state controlled via JS) -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-md opacity-45 pointer-events-none transition-all duration-300" id="manual-adjust-card">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_calendar</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Manual Override Calibration</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Requires NTP daemon deactivation to prevent clock skew</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-space-2xs bg-surface-container-highest text-outline rounded flex items-center gap-space-xs" id="manual-lock-indicator">
+<span class="material-symbols-outlined text-[14px]">lock</span> NTP LOCKED
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Date Picker Button Wrapper -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-outline uppercase">Calendar Target</label>
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-body-md text-body-md hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">calendar_today</span>
+<span>2024-10-24</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_drop_down</span>
+</div>
+</div>
+<!-- Time Input Stepper & Segmented Switch -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-outline uppercase">Clock Reference</label>
+<!-- Segmented 12h / 24h -->
+<div class="flex p-0.5 bg-surface-container-highest rounded-lg">
+<button class="px-space-xs py-0.5 rounded font-code-sm text-code-sm bg-primary-container text-on-primary-container" type="button">24h</button>
+<button class="px-space-xs py-0.5 rounded font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface" type="button">12h</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="flex-1 flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-code-md text-code-md">
+<span>14 : 28 : 45</span>
+<div class="flex flex-col gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline hover:text-on-surface cursor-pointer leading-none">expand_less</span>
+<span class="material-symbols-outlined text-[14px] text-outline hover:text-on-surface cursor-pointer leading-none">expand_more</span>
+</div>
+</div>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-md text-label-md">
+                Apply
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Timezone Selection & World Map Projection -->
+<div class="flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-md h-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">public</span>
+<span class="font-headline-md text-headline-md text-on-surface">Time Zone</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded bg-surface-container-high text-secondary">UTC +08:00</span>
+</div>
+<!-- Automatic Timezone Location Toggle -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">my_location</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Auto-detect timezone</span>
+<span class="font-code-sm text-code-sm text-outline">GeoClue GeoIP agent</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Selected Timezone Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-outline uppercase">Active Zone Descriptor</label>
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container flex items-center justify-between cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col truncate">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">GMT+8:00 — Asia/Makassar</span>
+<span class="font-code-sm text-code-sm text-tertiary truncate">WITA / Balikpapan (IKN Hub)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] ml-space-xs">unfold_more</span>
+</div>
+</div>
+<!-- World Map Mini Projection with Meridian Pin -->
+<div class="relative w-full h-44 rounded-lg bg-surface-container-lowest overflow-hidden flex flex-col justify-end p-space-sm group">
+<!-- Vector Map Background Schema -->
+<svg class="absolute inset-0 w-full h-full opacity-35 group-hover:opacity-45 transition-opacity" fill="none" viewbox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line stroke="#273647" stroke-dasharray="2 2" stroke-width="0.5" x1="0" x2="400" y1="50" y2="50"></line>
+<line stroke="#273647" stroke-width="1" x1="0" x2="400" y1="100" y2="100"></line>
+<line stroke="#273647" stroke-dasharray="2 2" stroke-width="0.5" x1="0" x2="400" y1="150" y2="150"></line>
+<line stroke="#273647" stroke-dasharray="2 2" stroke-width="0.5" x1="100" x2="100" y1="0" y2="200"></line>
+<line stroke="#273647" stroke-width="0.75" x1="200" x2="200" y1="0" y2="200"></line>
+<line stroke="#273647" stroke-dasharray="2 2" stroke-width="0.5" x1="300" x2="300" y1="0" y2="200"></line>
+<!-- Simplified Continental Outlines -->
+<path d="M40,50 Q60,30 90,45 T140,80 Q120,120 100,160 Q80,140 60,110 Z" fill="#1c2b3c"></path>
+<path d="M180,40 Q220,35 240,60 T220,130 Q190,120 180,90 Z" fill="#1c2b3c"></path>
+<path d="M260,60 Q320,40 370,70 T350,140 Q300,160 270,110 Z" fill="#1c2b3c"></path>
+<path d="M280,120 Q310,115 325,130 T315,160 Q290,165 280,140 Z" fill="#273647"></path>
+<!-- Active Timezone Meridian Line & Indicator Pin (Makassar Longitude ~119°E) -->
+<line class="animate-pulse" stroke="#5bd5fc" stroke-dasharray="3 2" stroke-width="1.5" x1="310" x2="310" y1="0" y2="200"></line>
+<circle cx="310" cy="115" fill="#4361ee" r="4" stroke="#5bd5fc" stroke-width="1.5"></circle>
+<circle class="animate-ping" cx="310" cy="115" r="8" stroke="#5bd5fc" stroke-width="0.5"></circle>
+</svg>
+<!-- Floating Coordinates Badge -->
+<div class="relative z-10 px-space-sm py-space-2xs rounded bg-surface-container-high/90 backdrop-blur-md flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-tertiary">116°50'E • 01°15'S</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sultan Aji Muhammad Sulaiman</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-space-xs">
+<span>Solar noon: 11:54 AM</span>
+<span class="text-secondary">Daylight duration: 12h 08m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Clock Format & Taskbar Preferences Bento Row -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">dock_to_bottom</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Clock Display &amp; Taskbar Integration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">System tray and titlebar chrono rendering rules</p>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-outline">GSETTINGS: org.cassandra.shell.clock</span>
+</div>
+<!-- Toggle Matrix Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Option 1: Seconds Toggle -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Show Seconds</span>
+<span class="font-code-sm text-code-sm text-outline">HH:mm:ss precision</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="pref-show-seconds" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Option 2: Show Date -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Show Date</span>
+<span class="font-code-sm text-code-sm text-outline">Taskbar calendar strip</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Option 3: Show Day of Week -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Day of Week</span>
+<span class="font-code-sm text-code-sm text-outline">Prefix with weekday</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Option 4: ISO 8601 Standard Date Format -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">ISO 8601 Format</span>
+<span class="font-code-sm text-code-sm text-tertiary">YYYY-MM-DD</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Live Preview Pill Container -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs border-t-0">
+<span class="font-code-sm text-code-sm text-outline uppercase tracking-wider">Simulated Shell Taskbar Preview:</span>
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg bg-surface-container-highest/60 text-on-surface font-code-sm text-code-sm shadow-inner">
+<span class="material-symbols-outlined text-[14px] text-tertiary">calendar_clock</span>
+<span id="taskbar-preview-text">Kamis, 24 Okt 14:28:45 WITA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Behavior Scripts -->
+<script>
+  (function() {
+    // Interactive Colons Blinking & Clock Milliseconds Simulation
+    const colon1 = document.getElementById('colon-1');
+    const colon2 = document.getElementById('colon-2');
+    const millisEl = document.getElementById('clock-millis');
+    const epochEl = document.getElementById('epoch-time');
+    let colonState = true;
+
+    setInterval(() => {
+      colonState = !colonState;
+      if (colon1 && colon2) {
+        colon1.style.opacity = colonState ? '1' : '0.2';
+        colon2.style.opacity = colonState ? '1' : '0.2';
+      }
+    }, 1000);
+
+    setInterval(() => {
+      if (millisEl) {
+        const rand = Math.floor(Math.random() * 900 + 100);
+        millisEl.textContent = rand;
+      }
+      if (epochEl) {
+        const currentEpoch = (Date.now() / 1000).toFixed(3);
+        epochEl.textContent = currentEpoch;
+      }
+    }, 85);
+
+    // Automatic NTP Master Toggle behavior
+    const ntpToggle = document.getElementById('auto-ntp-toggle');
+    const manualCard = document.getElementById('manual-adjust-card');
+    const lockIndicator = document.getElementById('manual-lock-indicator');
+    const ntpServerPanel = document.getElementById('ntp-server-panel');
+
+    if (ntpToggle && manualCard && lockIndicator) {
+      ntpToggle.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          manualCard.classList.add('opacity-45', 'pointer-events-none');
+          lockIndicator.innerHTML = '<span class="material-symbols-outlined text-[14px]">lock</span> NTP LOCKED';
+          ntpServerPanel.classList.remove('opacity-40');
+        } else {
+          manualCard.classList.remove('opacity-45', 'pointer-events-none');
+          lockIndicator.innerHTML = '<span class="material-symbols-outlined text-[14px] text-primary">lock_open</span> EDITABLE';
+          ntpServerPanel.classList.add('opacity-40');
+        }
+      });
+    }
+
+    // Sync Now Trigger Animation
+    const syncBtn = document.getElementById('sync-now-btn');
+    const syncIcon = document.getElementById('sync-icon');
+    const syncText = document.getElementById('sync-text');
+
+    if (syncBtn && syncIcon && syncText) {
+      syncBtn.addEventListener('click', () => {
+        syncIcon.classList.add('animate-spin');
+        syncText.textContent = 'Syncing...';
+        syncBtn.disabled = true;
+
+        setTimeout(() => {
+          syncIcon.classList.remove('animate-spin');
+          syncText.textContent = 'Synchronized';
+          setTimeout(() => {
+            syncText.textContent = 'Sync Now';
+            syncBtn.disabled = false;
+          }, 2000);
+        }, 1200);
+      });
+    }
+
+    // Daemon Repoll Button Micro-Interaction
+    const repollBtn = document.getElementById('resync-daemon-btn');
+    if (repollBtn) {
+      repollBtn.addEventListener('click', () => {
+        const originalHtml = repollBtn.innerHTML;
+        repollBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Polling pool...</span>';
+        setTimeout(() => {
+          repollBtn.innerHTML = originalHtml;
+        }, 1000);
+      });
+    }
+  })();
+</script></div></div></main></div><footer class="fixed bottom-0 left-0 right-0 h-12 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.4)]"><div class="h-full w-full px-space-md flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface flex items-center gap-space-xs font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[16px]">grid_view</span>Root</button><div class="h-5 w-px bg-surface-container-highest mx-space-xs"></div><div class="flex items-center gap-space-xs font-code-sm text-code-sm"><span class="px-space-sm py-space-xs rounded bg-primary-container text-on-primary-container">1</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">2</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">3</span><span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer">4</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-code-sm text-code-sm text-on-surface">Settings</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded opacity-75"><span class="w-2 h-2 rounded-full bg-outline"></span><span class="font-code-sm text-code-sm text-on-surface-variant">Logs Tail</span></div></div><div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">wifi</span>ENG-NET</span><span class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[16px]">volume_up</span>100%</span><span class="text-on-surface font-label-md text-label-md">14:48:22 UTC</span></div></div></footer></body></html>
